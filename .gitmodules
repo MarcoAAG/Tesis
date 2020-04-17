@@ -1,3 +1,6 @@
 [submodule "ROS/src/rosserial"]
 	path = ROS/src/rosserial
 	url = https://github.com/ros-drivers/rosserial.git
+[submodule "ROS/src/image_pipeline"]
+	path = ROS/src/image_pipeline
+	url = https://github.com/ros-perception/image_pipeline.git
