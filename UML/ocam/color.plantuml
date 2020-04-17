@@ -1,0 +1,9 @@
+@startuml color
+start
+:creamos objeto cv::mat "frame";
+:captura de Frame en "frame";
+:cambiamos a espacio de color cv::cvtColor();
+:Establecemos un rago de valores para modelo HSV;
+:Ingremaos rango en la función cv::inRange();
+stop
+@enduml

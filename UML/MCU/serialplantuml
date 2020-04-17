@@ -1,0 +1,16 @@
+@startuml serial
+
+== Comunicación serial ==
+MCU -> Odroid: Configurar puerto
+MCU -> MCU: Establecer el baud rate
+MCU -> MCU: Establecer el COM
+MCU -> Odroid: Abrir puerto
+Odroid -[#0000FF]-> MCU: Mandar datos
+
+== ROS ==
+loop n veces
+MCU -> Odroid: Suscribirse a nodo
+Odroid -[#0000FF]-> MCU: Enviar coordenadas
+end
+
+@enduml

@@ -1,0 +1,36 @@
+@startuml object_tracking
+
+class objectTracking
+{
+private:
+    -image_transport
+    -Subscriber sub
+    -string nameOriginal
+    -string nameHSV
+    -string nameFilter 
+    -string nameCentroid 
+    -Mat ImgHSV
+    -Mat ImgOpening
+    -Mat ImgClosing
+    -Mat ImgCentroid
+
+public:
+    +Mat Img
+    +int imageX
+    +int imageY 
+    +uint16_t posX 
+    +uint16_t posY
+    +uint16_t lastX 
+    +uint16_t lastY
+
+    +objectTracking(image_transport::ImageTransport *it)
+    +~objectTracking()
+    +void callBack(const sensor_msgs::ImageConstPtr &msg_)
+    +void imageViewer(Mat &Image, string _windowName)
+    +void rgb2hsv(Mat &_Image, Mat &Image_)
+    +void morphologyOperation(Mat &_Image, Mat &Image_, int oper, int size, int elemen)
+    +void centroid(Mat &_Image, uint16_t &x, uint16_t &y)
+    +void drawCentroid(Mat &_Image, Mat &Image_, uint16_t posx, uint16_t posy, uint16_t lastx, uint16_t lasty)
+    +void publishCoordinates(int _x, int _y)
+}
+@enduml

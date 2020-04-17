@@ -1,0 +1,16 @@
+@startuml control
+start
+:Inicializar variables (Ganancias);
+:Inicializar ROS;
+:Inicializar motores a 1450 ms de PWM;
+repeat : Suscribirse a nodo "/Coordinates";
+  :Calcular errores;
+  :Obtener valores de ganancias Kp, Ki, Kd;
+  :Calcular PID;
+  :Convertir PID a valor de PWM;
+  (A)
+  detach
+  (B)
+repeat while (ROS == ok)
+stop
+@enduml
