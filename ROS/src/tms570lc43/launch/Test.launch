@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="tms570lc43" type="data_acquisitionMG996" name="data_acquisitionMG996" output="screen">   
+    </node>
+</launch>

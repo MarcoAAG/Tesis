@@ -1,0 +1,35 @@
+<launch>
+    <param name="com" type = "int" value= "2" />
+    <param name="sampletime" type = "int" value= "60" />
+    <param name="Publisher_nodeName" type = "string" value="/ocam/image_raw"/>
+
+    <node pkg="ocam" type="publisher" name="publisher" output="screen">   
+    </node>
+    
+    <node pkg="ocam" type="cameraInfo" name="cameraInfo" >   
+    </node>
+
+    <node pkg="image_proc" type="image_proc" name="image_proc" ns="ocam">   
+    </node>
+    <remap from="ocam/Image" to="/ocam/image_rect_color"/>
+
+    <node pkg="ocam" type="enhanceGamma" name="enhanceGamma" output="screen">   
+    </node>
+    
+    <node pkg="ocam" type="objectTracking" name="objectTracking" output="screen">   
+    </node>
+
+    <!-- <node pkg="ocam" type="pointsCamera" name="pointsCamera" output="screen">    -->
+    <!-- </node> -->
+
+    <!-- <node pkg="tf2_system" type="ocam_centroid" name="ocam_centroid" output="screen">    -->
+    <!-- </node> -->
+
+
+
+
+    <!-- <node pkg="ocam" type="calibrationTest" name="calibrationTest" output="screen">    -->
+    <!-- </node>  -->
+
+
+</launch>

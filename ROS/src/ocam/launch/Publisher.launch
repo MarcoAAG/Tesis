@@ -1,0 +1,13 @@
+<launch>
+    <param name="com" type = "int" value= "2" />
+    <param name="sampletime" type = "int" value= "60" />
+    <param name="Publisher_nodeName" type = "string" value="/ocam/image_raw"/>
+
+    <node pkg="ocam" type="publisher" name="publisher" output="screen">   
+    </node>
+
+    <!-- <node pkg="ocam" type="calibrationTest" name="calibrationTest" output="screen">    -->
+    <!-- </node>  -->
+
+
+</launch>

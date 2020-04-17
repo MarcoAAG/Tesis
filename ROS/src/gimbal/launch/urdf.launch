@@ -1,0 +1,4 @@
+<launch>
+	<param name="robot_description" textfile="$(find gimbal)/urdf/ocam.urdf" />
+    
+</launch>
