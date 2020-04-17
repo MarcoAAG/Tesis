@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "os_task.h": "c",
+        "*.ipp": "c",
+        "*.tcc": "c",
+        "exception": "c",
+        "random": "c",
+        "fstream": "c",
+        "functional": "c",
+        "iostream": "c",
+        "istream": "c",
+        "limits": "c",
+        "new": "c",
+        "ostream": "c",
+        "ratio": "c",
+        "stdexcept": "c",
+        "streambuf": "c",
+        "system_error": "c",
+        "core": "c",
+        "tuple": "c",
+        "hl_spi.h": "c",
+        "hl_reg_spi.h": "c",
+        "hl_sys_core.h": "c"
+    }
+}
