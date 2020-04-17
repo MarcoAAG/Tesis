@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marco/Tesis/ROS/src/ocam/src/Test/enhanceSV/enhanceSV.cpp
+iostream
+-
+opencv2/imgcodecs.hpp
+/home/marco/Tesis/ROS/src/ocam/src/Test/enhanceSV/opencv2/imgcodecs.hpp
+opencv2/highgui.hpp
+/home/marco/Tesis/ROS/src/ocam/src/Test/enhanceSV/opencv2/highgui.hpp
+
