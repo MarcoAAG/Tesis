@@ -1,0 +1,1710 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{WEB:American}{online}{}
+      \name{author}{1}{}{%
+        {{hash=eecf744da18543a48676661bf14fee61}{%
+           family={{American Academy of Ophthalmology"}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{eecf744da18543a48676661bf14fee61}
+      \strng{fullhash}{eecf744da18543a48676661bf14fee61}
+      \strng{bibnamehash}{eecf744da18543a48676661bf14fee61}
+      \strng{authorbibnamehash}{eecf744da18543a48676661bf14fee61}
+      \strng{authornamehash}{eecf744da18543a48676661bf14fee61}
+      \strng{authorfullhash}{eecf744da18543a48676661bf14fee61}
+      \field{labelalpha}{Ame17}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fotorreceptores}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.aao.org/salud-ocular/anatomia/fotorreceptores"
+      \endverb
+      \verb{url}
+      \verb https://www.aao.org/salud-ocular/anatomia/fotorreceptores%22
+      \endverb
+    \endentry
+    \entry{Book:Anil2008}{book}{}
+      \name{author}{1}{}{%
+        {{hash=00dabe154d1c2367c73e5ac146c7e3e5}{%
+           family={{Anil Bharath}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Artech House}%
+      }
+      \strng{namehash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{fullhash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{bibnamehash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{authorbibnamehash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{authornamehash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{authorfullhash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \field{labelalpha}{Ani08}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Next Generation Artificial Vision System}
+      \field{year}{2008}
+    \endentry
+    \entry{Book:Arturo2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=29e2874f4705005a3c655d152f6b691e}{%
+           family={Escalera},
+           familyi={E\bibinitperiod},
+           given={Arturo},
+           giveni={A\bibinitperiod},
+           prefix={de\bibnamedelima la},
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{fullhash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{bibnamehash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{authorbibnamehash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{authornamehash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{authorfullhash}{29e2874f4705005a3c655d152f6b691e}
+      \field{labelalpha}{Esc11}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Visión por Computador. Fundamentos y métodos}
+      \field{year}{2011}
+    \endentry
+    \entry{Book:Jan2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c14dc8f341097fbe818bc919d748af7c}{%
+           family={Flusser},
+           familyi={F\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Sons Ltd}%
+      }
+      \strng{namehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{fullhash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{bibnamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authorbibnamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authornamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authorfullhash}{c14dc8f341097fbe818bc919d748af7c}
+      \field{labelalpha}{Flu09}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Moments and Moment Invariants in Pattern Recognition}
+      \field{year}{2009}
+    \endentry
+    \entry{WEB:HK2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7c25f72a350912714863be6893ba12bb}{%
+           family={HardKernel},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{fullhash}{7c25f72a350912714863be6893ba12bb}
+      \strng{bibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorbibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
+      \field{labelalpha}{Har20}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ODROID XU-4}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hardkernel.com/shop/odroid-xu4-special-price/
+      \endverb
+      \verb{url}
+      \verb https://www.hardkernel.com/shop/odroid-xu4-special-price/
+      \endverb
+    \endentry
+    \entry{Book:Bernd1997}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2af9a87ab3a028f0648eedb98f353969}{%
+           family={Jähne},
+           familyi={J\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{fullhash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{bibnamehash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{authorbibnamehash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{authornamehash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{authorfullhash}{2af9a87ab3a028f0648eedb98f353969}
+      \field{labelalpha}{Jäh97}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Digital Image processing}
+      \field{year}{1997}
+    \endentry
+    \entry{Book:Jose2005}{book}{}
+      \name{author}{1}{}{%
+        {{hash=048e2fceee8aa2ae64dda7e720cc2db6}{%
+           family={{José Ramón Mejía Vilet}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Facultad de Ingeniería UASLP}%
+      }
+      \strng{namehash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{fullhash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{bibnamehash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{authorbibnamehash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{authornamehash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{authorfullhash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \field{labelalpha}{Jos05}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{First}
+      \field{month}{1}
+      \field{title}{Apuntes de Procesamiento Digital de Imágenes}
+      \field{year}{2005}
+    \endentry
+    \entry{Book:Lentin2018}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6899949d3918f5d0b97064b0c6adfba7}{%
+           family={Joseph},
+           familyi={J\bibinitperiod},
+           given={Lentin},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{fullhash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{bibnamehash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{authorbibnamehash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{authornamehash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{authorfullhash}{6899949d3918f5d0b97064b0c6adfba7}
+      \field{labelalpha}{Jos18}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robot Operating System for Absolute Beginners: Robotics Programming Made Easy}
+      \field{year}{2018}
+    \endentry
+    \entry{Article:taiy2000}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e577a4d047bb13cc66f8b2bfbcab3d9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Taiyi\bibnamedelimb ChengHyun\bibnamedelimb Wook\bibnamedelima ParkYongmin},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{fullhash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{bibnamehash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{authorbibnamehash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{authornamehash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{authorfullhash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \field{labelalpha}{Kim00}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Washington}
+      \field{title}{IMAGE FILTERING IN HS COLOR SPACE}
+      \field{year}{2000}
+    \endentry
+    \entry{Book:Rolf2003}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c1f4a874ed6fccff9f8904b2209451e6}{%
+           family={Kuehni},
+           familyi={K\bibinitperiod},
+           given={Rolf\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Interscience}%
+      }
+      \strng{namehash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{fullhash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{bibnamehash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{authorbibnamehash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{authornamehash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{authorfullhash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \field{labelalpha}{Kue03}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Color Space and Its Divisions Color Order from Antiquity to the Present}
+      \field{year}{2003}
+    \endentry
+    \entry{Book:InNav}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e13687bda9e69177c6edf5345bd3ca36}{%
+           family={{Mohinder S. Grewal}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{fullhash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{bibnamehash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{authorbibnamehash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{authornamehash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{authorfullhash}{e13687bda9e69177c6edf5345bd3ca36}
+      \field{labelalpha}{Moh07}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Positioning Systems, inertial navigation, and integration}
+      \field{year}{2007}
+    \endentry
+    \entry{WEB:Cerebro}{online}{}
+      \name{author}{1}{}{%
+        {{hash=80c60a63f5ba88e97d54d995cb89559e}{%
+           family={MUNDIARIO},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{fullhash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{bibnamehash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{authorbibnamehash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{authornamehash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{authorfullhash}{80c60a63f5ba88e97d54d995cb89559e}
+      \field{labelalpha}{MUN}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cómo el cerebro procesa las imágenes}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mundiario.com/articulo/sociedad/cerebro-procesa-imagenes/20190304191451147484.html
+      \endverb
+      \verb{url}
+      \verb https://www.mundiario.com/articulo/sociedad/cerebro-procesa-imagenes/20190304191451147484.html
+      \endverb
+    \endentry
+    \entry{WEB:NASA2JX}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{labelalpha}{NAS}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{gimbal bearing – Liquid Rocket Engines (J-2X, RS-25, general)}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blogs.nasa.gov/J2X/tag/gimbal-bearing/
+      \endverb
+      \verb{url}
+      \verb https://blogs.nasa.gov/J2X/tag/gimbal-bearing/
+      \endverb
+    \endentry
+    \entry{WEB:NASA}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{labelalpha}{NAS}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{NASA's J-2X Rocket Engine Development}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nasa.gov/exploration/systems/sls/j2x
+      \endverb
+      \verb{url}
+      \verb https://www.nasa.gov/exploration/systems/sls/j2x
+      \endverb
+    \endentry
+    \entry{WEB:MERCURY}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{labelalpha}{NAS17}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Gimbal Rig Mercury Astronaut Trainer)}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
+      \endverb
+      \verb{url}
+      \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
+      \endverb
+    \endentry
+    \entry{WEB:Opencv}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+           family={OpenCV},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{fullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{bibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorbibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{About it}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opencv.org/about/
+      \endverb
+      \verb{url}
+      \verb https://opencv.org/about/
+      \endverb
+    \endentry
+    \entry{WEB:Opencvcolor}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+           family={OpenCV},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{fullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{bibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorbibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Color conversions}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/master/de/d25/imgproc_color_conversions.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/master/de/d25/imgproc_color_conversions.html
+      \endverb
+    \endentry
+    \entry{WEB:OpencvCalibracion}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8e48393f1a311e989a80615a6c4fcb78}{%
+           family={Opencv},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{fullhash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{bibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authorbibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authornamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authorfullhash}{8e48393f1a311e989a80615a6c4fcb78}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Camera calibration With OpenCV}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
+      \endverb
+    \endentry
+    \entry{10045_10053}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=296212435c6b7637b90fbd2465b3e330}{%
+           family={Ortiz\bibnamedelima Zamora},
+           familyi={O\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={Francisco\bibnamedelima Gabriel},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{fullhash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{bibnamehash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{authorbibnamehash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{authornamehash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{authorfullhash}{296212435c6b7637b90fbd2465b3e330}
+      \field{labelalpha}{Ort02}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Procesamiento morfológico de imágenes en color: aplicación a la reconstrucción geodésica}
+      \field{year}{2002}
+    \endentry
+    \entry{WEB:CameraWorks}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b783944db23ec263b7394487326a5bfe}{%
+           family={PHOTOGRAPHY},
+           familyi={P\bibinitperiod},
+           given={EASY\bibnamedelima BASIC},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b783944db23ec263b7394487326a5bfe}
+      \strng{fullhash}{b783944db23ec263b7394487326a5bfe}
+      \strng{bibnamehash}{b783944db23ec263b7394487326a5bfe}
+      \strng{authorbibnamehash}{b783944db23ec263b7394487326a5bfe}
+      \strng{authornamehash}{b783944db23ec263b7394487326a5bfe}
+      \strng{authorfullhash}{b783944db23ec263b7394487326a5bfe}
+      \field{labelalpha}{PHO}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How Cameras Work-The Parts of a Camera}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.easybasicphotography.com/the-camera.html
+      \endverb
+      \verb{url}
+      \verb http://www.easybasicphotography.com/the-camera.html
+      \endverb
+    \endentry
+    \entry{WEB:Gimbal}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d71c4ac5faccea6d260415674fd02801}{%
+           family={{PlayList}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{fullhash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{bibnamehash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{authorbibnamehash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{authornamehash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{authorfullhash}{d71c4ac5faccea6d260415674fd02801}
+      \field{labelalpha}{Pla}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gimbal}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://playlists.net/artists/gimbal
+      \endverb
+      \verb{url}
+      \verb https://playlists.net/artists/gimbal
+      \endverb
+    \endentry
+    \entry{Book:Morgan2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9404eebbe5c52f5580a6f6515ebcbb80}{%
+           family={Quigley},
+           familyi={Q\bibinitperiod},
+           given={Morgan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O’Reilly}%
+      }
+      \strng{namehash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{fullhash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{bibnamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{authorbibnamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{authornamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{authorfullhash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \field{labelalpha}{Qui15}
+      \field{sortinit}{Q}
+      \field{sortinithash}{d257e420984a3a5c57a3330114cd646a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Programming Robots with ROS}
+      \field{year}{2015}
+    \endentry
+    \entry{Book:Rafael2002}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9403851728a1964ba0310a0705300fe1}{%
+           family={Rafael\bibnamedelimb C.\bibnamedelimi Gonzalez},
+           familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Richard\bibnamedelimb E.\bibnamedelimi Woods},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{9403851728a1964ba0310a0705300fe1}
+      \strng{fullhash}{9403851728a1964ba0310a0705300fe1}
+      \strng{bibnamehash}{9403851728a1964ba0310a0705300fe1}
+      \strng{authorbibnamehash}{9403851728a1964ba0310a0705300fe1}
+      \strng{authornamehash}{9403851728a1964ba0310a0705300fe1}
+      \strng{authorfullhash}{9403851728a1964ba0310a0705300fe1}
+      \field{labelalpha}{Raf02}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Digital image processing}
+      \field{year}{2002}
+    \endentry
+    \entry{Paper::Ricolfe2008}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c6361f832fb5cfdef9690a7a1ee25065}{%
+           family={Ricolfe\bibnamedelimb Viala\bibnamedelimb y\bibnamedelimb Sánchez\bibnamedelima Salmerón},
+           familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{fullhash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{bibnamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authorbibnamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authornamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authorfullhash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \field{labelalpha}{Ric08}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Procedimiento completo para el calibrado de cámaras utilizando una plantilla plana.}
+      \field{year}{2008}
+    \endentry
+    \entry{WEB:ROS}{online}{}
+      \name{author}{1}{}{%
+        {{hash=05665b7826ff460887094429e8a32116}{%
+           family={ROS},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{05665b7826ff460887094429e8a32116}
+      \strng{fullhash}{05665b7826ff460887094429e8a32116}
+      \strng{bibnamehash}{05665b7826ff460887094429e8a32116}
+      \strng{authorbibnamehash}{05665b7826ff460887094429e8a32116}
+      \strng{authornamehash}{05665b7826ff460887094429e8a32116}
+      \strng{authorfullhash}{05665b7826ff460887094429e8a32116}
+      \field{labelalpha}{ROS}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROS/Concepts - ROS Wiki}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://wiki.ros.org/ROS/Concepts
+      \endverb
+      \verb{url}
+      \verb http://wiki.ros.org/ROS/Concepts
+      \endverb
+    \endentry
+    \entry{Book:Serra1984}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8d7a75bad90a58dc55fdb5efa83df9ff}{%
+           family={Serra},
+           familyi={S\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{fullhash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{bibnamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{authorbibnamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{authornamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{authorfullhash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \field{labelalpha}{Ser84}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Image Analysis and Mathematical Morphology, Volume 1}
+      \field{year}{1984}
+    \endentry
+    \entry{Book:Richard2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f2e556c93256e7d70895d67702e14f1a}{%
+           family={Szeliski},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{fullhash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{bibnamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorbibnamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authornamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorfullhash}{f2e556c93256e7d70895d67702e14f1a}
+      \field{labelalpha}{Sze11}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computer Vision: Algorithms and Applications}
+      \field{year}{2011}
+    \endentry
+    \entry{Book:Geoffrey2006}{book}{}
+      \name{author}{1}{}{%
+        {{hash=93be1f04dc8d8e8b8a7e2868b6106cc6}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag Berlin Heidelberg}%
+      }
+      \strng{namehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{fullhash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{bibnamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{authorbibnamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{authornamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{authorfullhash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \field{labelalpha}{Tay06}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Visual perception and robotic manipulation}
+      \field{year}{2006}
+    \endentry
+    \entry{WEB:Ubuntu}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3d945423f8e9496c429a5d8c65b4604f}{%
+           family={Ubuntu},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{fullhash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{bibnamehash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{authorbibnamehash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{authornamehash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{authorfullhash}{3d945423f8e9496c429a5d8c65b4604f}
+      \field{labelalpha}{Ubu14}
+      \field{sortinit}{U}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is Ubuntu MATE?}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ubuntu-mate.org/what-is-ubuntu-mate/
+      \endverb
+      \verb{url}
+      \verb https://ubuntu-mate.org/what-is-ubuntu-mate/
+      \endverb
+    \endentry
+    \entry{WEB:Ieeeucsa2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d952b3cfb5b37b9f5d243ef8cf430b9e}{%
+           family={UCSA},
+           familyi={U\bibinitperiod},
+           given={IEEE},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{fullhash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{bibnamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{authorbibnamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{authornamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{authorfullhash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \field{labelalpha}{UCS19}
+      \field{sortinit}{U}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Transformaciones Morfológicas con Visión Artificial}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb http://ucsa.ieeeparaguay.org/2019/05/15/transformaciones-morfologicas-con-vision-artificial/
+      \endverb
+      \verb{url}
+      \verb http://ucsa.ieeeparaguay.org/2019/05/15/transformaciones-morfologicas-con-vision-artificial/
+      \endverb
+    \endentry
+    \entry{Paper::Lauren1994}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f3ea4947755623b7180b9ff28d692124}{%
+           family={YANG},
+           familyi={Y\bibinitperiod},
+           given={LUREN},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{fullhash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{bibnamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authorbibnamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authornamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authorfullhash}{f3ea4947755623b7180b9ff28d692124}
+      \field{labelalpha}{YAN94}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FAST AND EXACT COMPUTATION OF CARTESIAN GEOMETRIC MOMENTS USING DISCRETE GREEN'S THEOREM}
+      \field{year}{1994}
+    \endentry
+  \enddatalist
+  \datalist[entry]{anyt/global/@/global/global}
+    \entry{WEB:American}{online}{}
+      \name{author}{1}{}{%
+        {{hash=eecf744da18543a48676661bf14fee61}{%
+           family={{American Academy of Ophthalmology"}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{eecf744da18543a48676661bf14fee61}
+      \strng{fullhash}{eecf744da18543a48676661bf14fee61}
+      \strng{bibnamehash}{eecf744da18543a48676661bf14fee61}
+      \strng{authorbibnamehash}{eecf744da18543a48676661bf14fee61}
+      \strng{authornamehash}{eecf744da18543a48676661bf14fee61}
+      \strng{authorfullhash}{eecf744da18543a48676661bf14fee61}
+      \field{labelalpha}{Ame17}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fotorreceptores}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.aao.org/salud-ocular/anatomia/fotorreceptores"
+      \endverb
+      \verb{url}
+      \verb https://www.aao.org/salud-ocular/anatomia/fotorreceptores%22
+      \endverb
+    \endentry
+    \entry{Book:Anil2008}{book}{}
+      \name{author}{1}{}{%
+        {{hash=00dabe154d1c2367c73e5ac146c7e3e5}{%
+           family={{Anil Bharath}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Artech House}%
+      }
+      \strng{namehash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{fullhash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{bibnamehash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{authorbibnamehash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{authornamehash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \strng{authorfullhash}{00dabe154d1c2367c73e5ac146c7e3e5}
+      \field{labelalpha}{Ani08}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Next Generation Artificial Vision System}
+      \field{year}{2008}
+    \endentry
+    \entry{Book:Arturo2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=29e2874f4705005a3c655d152f6b691e}{%
+           family={Escalera},
+           familyi={E\bibinitperiod},
+           given={Arturo},
+           giveni={A\bibinitperiod},
+           prefix={de\bibnamedelima la},
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{fullhash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{bibnamehash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{authorbibnamehash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{authornamehash}{29e2874f4705005a3c655d152f6b691e}
+      \strng{authorfullhash}{29e2874f4705005a3c655d152f6b691e}
+      \field{labelalpha}{Esc11}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Visión por Computador. Fundamentos y métodos}
+      \field{year}{2011}
+    \endentry
+    \entry{Book:Jan2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c14dc8f341097fbe818bc919d748af7c}{%
+           family={Flusser},
+           familyi={F\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Sons Ltd}%
+      }
+      \strng{namehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{fullhash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{bibnamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authorbibnamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authornamehash}{c14dc8f341097fbe818bc919d748af7c}
+      \strng{authorfullhash}{c14dc8f341097fbe818bc919d748af7c}
+      \field{labelalpha}{Flu09}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Moments and Moment Invariants in Pattern Recognition}
+      \field{year}{2009}
+    \endentry
+    \entry{WEB:HK2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7c25f72a350912714863be6893ba12bb}{%
+           family={HardKernel},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{fullhash}{7c25f72a350912714863be6893ba12bb}
+      \strng{bibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorbibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
+      \field{labelalpha}{Har20}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ODROID XU-4}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hardkernel.com/shop/odroid-xu4-special-price/
+      \endverb
+      \verb{url}
+      \verb https://www.hardkernel.com/shop/odroid-xu4-special-price/
+      \endverb
+    \endentry
+    \entry{Book:Bernd1997}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2af9a87ab3a028f0648eedb98f353969}{%
+           family={Jähne},
+           familyi={J\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{fullhash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{bibnamehash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{authorbibnamehash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{authornamehash}{2af9a87ab3a028f0648eedb98f353969}
+      \strng{authorfullhash}{2af9a87ab3a028f0648eedb98f353969}
+      \field{labelalpha}{Jäh97}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Digital Image processing}
+      \field{year}{1997}
+    \endentry
+    \entry{Book:Jose2005}{book}{}
+      \name{author}{1}{}{%
+        {{hash=048e2fceee8aa2ae64dda7e720cc2db6}{%
+           family={{José Ramón Mejía Vilet}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Facultad de Ingeniería UASLP}%
+      }
+      \strng{namehash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{fullhash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{bibnamehash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{authorbibnamehash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{authornamehash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \strng{authorfullhash}{048e2fceee8aa2ae64dda7e720cc2db6}
+      \field{labelalpha}{Jos05}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{First}
+      \field{month}{1}
+      \field{title}{Apuntes de Procesamiento Digital de Imágenes}
+      \field{year}{2005}
+    \endentry
+    \entry{Book:Lentin2018}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6899949d3918f5d0b97064b0c6adfba7}{%
+           family={Joseph},
+           familyi={J\bibinitperiod},
+           given={Lentin},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{fullhash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{bibnamehash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{authorbibnamehash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{authornamehash}{6899949d3918f5d0b97064b0c6adfba7}
+      \strng{authorfullhash}{6899949d3918f5d0b97064b0c6adfba7}
+      \field{labelalpha}{Jos18}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robot Operating System for Absolute Beginners: Robotics Programming Made Easy}
+      \field{year}{2018}
+    \endentry
+    \entry{Article:taiy2000}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e577a4d047bb13cc66f8b2bfbcab3d9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Taiyi\bibnamedelimb ChengHyun\bibnamedelimb Wook\bibnamedelima ParkYongmin},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{fullhash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{bibnamehash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{authorbibnamehash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{authornamehash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \strng{authorfullhash}{9e577a4d047bb13cc66f8b2bfbcab3d9}
+      \field{labelalpha}{Kim00}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Washington}
+      \field{title}{IMAGE FILTERING IN HS COLOR SPACE}
+      \field{year}{2000}
+    \endentry
+    \entry{Book:Rolf2003}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c1f4a874ed6fccff9f8904b2209451e6}{%
+           family={Kuehni},
+           familyi={K\bibinitperiod},
+           given={Rolf\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Interscience}%
+      }
+      \strng{namehash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{fullhash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{bibnamehash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{authorbibnamehash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{authornamehash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \strng{authorfullhash}{c1f4a874ed6fccff9f8904b2209451e6}
+      \field{labelalpha}{Kue03}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Color Space and Its Divisions Color Order from Antiquity to the Present}
+      \field{year}{2003}
+    \endentry
+    \entry{Book:InNav}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e13687bda9e69177c6edf5345bd3ca36}{%
+           family={{Mohinder S. Grewal}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{fullhash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{bibnamehash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{authorbibnamehash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{authornamehash}{e13687bda9e69177c6edf5345bd3ca36}
+      \strng{authorfullhash}{e13687bda9e69177c6edf5345bd3ca36}
+      \field{labelalpha}{Moh07}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Positioning Systems, inertial navigation, and integration}
+      \field{year}{2007}
+    \endentry
+    \entry{WEB:Cerebro}{online}{}
+      \name{author}{1}{}{%
+        {{hash=80c60a63f5ba88e97d54d995cb89559e}{%
+           family={MUNDIARIO},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{fullhash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{bibnamehash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{authorbibnamehash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{authornamehash}{80c60a63f5ba88e97d54d995cb89559e}
+      \strng{authorfullhash}{80c60a63f5ba88e97d54d995cb89559e}
+      \field{labelalpha}{MUN}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cómo el cerebro procesa las imágenes}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mundiario.com/articulo/sociedad/cerebro-procesa-imagenes/20190304191451147484.html
+      \endverb
+      \verb{url}
+      \verb https://www.mundiario.com/articulo/sociedad/cerebro-procesa-imagenes/20190304191451147484.html
+      \endverb
+    \endentry
+    \entry{WEB:NASA2JX}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{labelalpha}{NAS}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelprefix}{@}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{gimbal bearing – Liquid Rocket Engines (J-2X, RS-25, general)}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blogs.nasa.gov/J2X/tag/gimbal-bearing/
+      \endverb
+      \verb{url}
+      \verb https://blogs.nasa.gov/J2X/tag/gimbal-bearing/
+      \endverb
+    \endentry
+    \entry{WEB:NASA}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{labelalpha}{NAS}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelprefix}{@}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{NASA's J-2X Rocket Engine Development}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nasa.gov/exploration/systems/sls/j2x
+      \endverb
+      \verb{url}
+      \verb https://www.nasa.gov/exploration/systems/sls/j2x
+      \endverb
+    \endentry
+    \entry{WEB:MERCURY}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{labelalpha}{NAS17}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Gimbal Rig Mercury Astronaut Trainer)}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
+      \endverb
+      \verb{url}
+      \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
+      \endverb
+    \endentry
+    \entry{WEB:Opencv}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+           family={OpenCV},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{fullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{bibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorbibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelprefix}{@}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{About it}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opencv.org/about/
+      \endverb
+      \verb{url}
+      \verb https://opencv.org/about/
+      \endverb
+    \endentry
+    \entry{WEB:Opencvcolor}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+           family={OpenCV},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{fullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{bibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorbibnamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
+      \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelprefix}{@}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Color conversions}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/master/de/d25/imgproc_color_conversions.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/master/de/d25/imgproc_color_conversions.html
+      \endverb
+    \endentry
+    \entry{WEB:OpencvCalibracion}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8e48393f1a311e989a80615a6c4fcb78}{%
+           family={Opencv},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{fullhash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{bibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authorbibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authornamehash}{8e48393f1a311e989a80615a6c4fcb78}
+      \strng{authorfullhash}{8e48393f1a311e989a80615a6c4fcb78}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelprefix}{@}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Camera calibration With OpenCV}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
+      \endverb
+    \endentry
+    \entry{10045_10053}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=296212435c6b7637b90fbd2465b3e330}{%
+           family={Ortiz\bibnamedelima Zamora},
+           familyi={O\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={Francisco\bibnamedelima Gabriel},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{fullhash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{bibnamehash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{authorbibnamehash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{authornamehash}{296212435c6b7637b90fbd2465b3e330}
+      \strng{authorfullhash}{296212435c6b7637b90fbd2465b3e330}
+      \field{labelalpha}{Ort02}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Procesamiento morfológico de imágenes en color: aplicación a la reconstrucción geodésica}
+      \field{year}{2002}
+    \endentry
+    \entry{WEB:CameraWorks}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b783944db23ec263b7394487326a5bfe}{%
+           family={PHOTOGRAPHY},
+           familyi={P\bibinitperiod},
+           given={EASY\bibnamedelima BASIC},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b783944db23ec263b7394487326a5bfe}
+      \strng{fullhash}{b783944db23ec263b7394487326a5bfe}
+      \strng{bibnamehash}{b783944db23ec263b7394487326a5bfe}
+      \strng{authorbibnamehash}{b783944db23ec263b7394487326a5bfe}
+      \strng{authornamehash}{b783944db23ec263b7394487326a5bfe}
+      \strng{authorfullhash}{b783944db23ec263b7394487326a5bfe}
+      \field{labelalpha}{PHO}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How Cameras Work-The Parts of a Camera}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.easybasicphotography.com/the-camera.html
+      \endverb
+      \verb{url}
+      \verb http://www.easybasicphotography.com/the-camera.html
+      \endverb
+    \endentry
+    \entry{WEB:Gimbal}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d71c4ac5faccea6d260415674fd02801}{%
+           family={{PlayList}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{fullhash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{bibnamehash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{authorbibnamehash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{authornamehash}{d71c4ac5faccea6d260415674fd02801}
+      \strng{authorfullhash}{d71c4ac5faccea6d260415674fd02801}
+      \field{labelalpha}{Pla}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gimbal}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://playlists.net/artists/gimbal
+      \endverb
+      \verb{url}
+      \verb https://playlists.net/artists/gimbal
+      \endverb
+    \endentry
+    \entry{Book:Morgan2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9404eebbe5c52f5580a6f6515ebcbb80}{%
+           family={Quigley},
+           familyi={Q\bibinitperiod},
+           given={Morgan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O’Reilly}%
+      }
+      \strng{namehash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{fullhash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{bibnamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{authorbibnamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{authornamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \strng{authorfullhash}{9404eebbe5c52f5580a6f6515ebcbb80}
+      \field{labelalpha}{Qui15}
+      \field{sortinit}{Q}
+      \field{sortinithash}{d257e420984a3a5c57a3330114cd646a}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Programming Robots with ROS}
+      \field{year}{2015}
+    \endentry
+    \entry{Book:Rafael2002}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9403851728a1964ba0310a0705300fe1}{%
+           family={Rafael\bibnamedelimb C.\bibnamedelimi Gonzalez},
+           familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Richard\bibnamedelimb E.\bibnamedelimi Woods},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{9403851728a1964ba0310a0705300fe1}
+      \strng{fullhash}{9403851728a1964ba0310a0705300fe1}
+      \strng{bibnamehash}{9403851728a1964ba0310a0705300fe1}
+      \strng{authorbibnamehash}{9403851728a1964ba0310a0705300fe1}
+      \strng{authornamehash}{9403851728a1964ba0310a0705300fe1}
+      \strng{authorfullhash}{9403851728a1964ba0310a0705300fe1}
+      \field{labelalpha}{Raf02}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Digital image processing}
+      \field{year}{2002}
+    \endentry
+    \entry{Paper::Ricolfe2008}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c6361f832fb5cfdef9690a7a1ee25065}{%
+           family={Ricolfe\bibnamedelimb Viala\bibnamedelimb y\bibnamedelimb Sánchez\bibnamedelima Salmerón},
+           familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{fullhash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{bibnamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authorbibnamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authornamehash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \strng{authorfullhash}{c6361f832fb5cfdef9690a7a1ee25065}
+      \field{labelalpha}{Ric08}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Procedimiento completo para el calibrado de cámaras utilizando una plantilla plana.}
+      \field{year}{2008}
+    \endentry
+    \entry{WEB:ROS}{online}{}
+      \name{author}{1}{}{%
+        {{hash=05665b7826ff460887094429e8a32116}{%
+           family={ROS},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{05665b7826ff460887094429e8a32116}
+      \strng{fullhash}{05665b7826ff460887094429e8a32116}
+      \strng{bibnamehash}{05665b7826ff460887094429e8a32116}
+      \strng{authorbibnamehash}{05665b7826ff460887094429e8a32116}
+      \strng{authornamehash}{05665b7826ff460887094429e8a32116}
+      \strng{authorfullhash}{05665b7826ff460887094429e8a32116}
+      \field{labelalpha}{ROS}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ROS/Concepts - ROS Wiki}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://wiki.ros.org/ROS/Concepts
+      \endverb
+      \verb{url}
+      \verb http://wiki.ros.org/ROS/Concepts
+      \endverb
+    \endentry
+    \entry{Book:Serra1984}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8d7a75bad90a58dc55fdb5efa83df9ff}{%
+           family={Serra},
+           familyi={S\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{fullhash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{bibnamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{authorbibnamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{authornamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \strng{authorfullhash}{8d7a75bad90a58dc55fdb5efa83df9ff}
+      \field{labelalpha}{Ser84}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Image Analysis and Mathematical Morphology, Volume 1}
+      \field{year}{1984}
+    \endentry
+    \entry{Book:Richard2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f2e556c93256e7d70895d67702e14f1a}{%
+           family={Szeliski},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{fullhash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{bibnamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorbibnamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authornamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorfullhash}{f2e556c93256e7d70895d67702e14f1a}
+      \field{labelalpha}{Sze11}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computer Vision: Algorithms and Applications}
+      \field{year}{2011}
+    \endentry
+    \entry{Book:Geoffrey2006}{book}{}
+      \name{author}{1}{}{%
+        {{hash=93be1f04dc8d8e8b8a7e2868b6106cc6}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag Berlin Heidelberg}%
+      }
+      \strng{namehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{fullhash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{bibnamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{authorbibnamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{authornamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \strng{authorfullhash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
+      \field{labelalpha}{Tay06}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Visual perception and robotic manipulation}
+      \field{year}{2006}
+    \endentry
+    \entry{WEB:Ubuntu}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3d945423f8e9496c429a5d8c65b4604f}{%
+           family={Ubuntu},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{fullhash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{bibnamehash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{authorbibnamehash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{authornamehash}{3d945423f8e9496c429a5d8c65b4604f}
+      \strng{authorfullhash}{3d945423f8e9496c429a5d8c65b4604f}
+      \field{labelalpha}{Ubu14}
+      \field{sortinit}{U}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is Ubuntu MATE?}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ubuntu-mate.org/what-is-ubuntu-mate/
+      \endverb
+      \verb{url}
+      \verb https://ubuntu-mate.org/what-is-ubuntu-mate/
+      \endverb
+    \endentry
+    \entry{WEB:Ieeeucsa2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d952b3cfb5b37b9f5d243ef8cf430b9e}{%
+           family={UCSA},
+           familyi={U\bibinitperiod},
+           given={IEEE},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{fullhash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{bibnamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{authorbibnamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{authornamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \strng{authorfullhash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
+      \field{labelalpha}{UCS19}
+      \field{sortinit}{U}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Transformaciones Morfológicas con Visión Artificial}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb http://ucsa.ieeeparaguay.org/2019/05/15/transformaciones-morfologicas-con-vision-artificial/
+      \endverb
+      \verb{url}
+      \verb http://ucsa.ieeeparaguay.org/2019/05/15/transformaciones-morfologicas-con-vision-artificial/
+      \endverb
+    \endentry
+    \entry{Paper::Lauren1994}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f3ea4947755623b7180b9ff28d692124}{%
+           family={YANG},
+           familyi={Y\bibinitperiod},
+           given={LUREN},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{fullhash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{bibnamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authorbibnamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authornamehash}{f3ea4947755623b7180b9ff28d692124}
+      \strng{authorfullhash}{f3ea4947755623b7180b9ff28d692124}
+      \field{labelalpha}{YAN94}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FAST AND EXACT COMPUTATION OF CARTESIAN GEOMETRIC MOMENTS USING DISCRETE GREEN'S THEOREM}
+      \field{year}{1994}
+    \endentry
+  \enddatalist
+  \missing{hardkernel2017}
+  \missing{opencvcolor}
+\endrefsection
+\endinput
+

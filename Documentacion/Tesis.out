@@ -1,0 +1,63 @@
+\BOOKMARK [0][]{Cover.0}{Cover}{}% 1
+\BOOKMARK [0][]{Titlepage.0}{Titlepage}{}% 2
+\BOOKMARK [0][]{Abstract.0}{Abstract}{}% 3
+\BOOKMARK [0][]{Acknowledgement.0}{Acknowledgement}{}% 4
+\BOOKMARK [0][]{toc.0}{\315ndice general}{}% 5
+\BOOKMARK [0][]{chapter.1}{1 Introducci\363n}{}% 6
+\BOOKMARK [1][]{section*.7}{1.1 Tema de investigaci\363n}{chapter.1}% 7
+\BOOKMARK [1][]{section*.8}{1.2 Justificaci\363n}{chapter.1}% 8
+\BOOKMARK [1][]{section*.9}{1.3 Objetivo}{chapter.1}% 9
+\BOOKMARK [1][]{section*.11}{1.4 Objetivos espec\355ficos}{chapter.1}% 10
+\BOOKMARK [1][]{section*.12}{1.5 Estado de la cuestion}{chapter.1}% 11
+\BOOKMARK [1][]{section*.14}{1.6 Contribuciones}{chapter.1}% 12
+\BOOKMARK [1][]{section*.15}{1.7 Alcances}{chapter.1}% 13
+\BOOKMARK [0][]{chapter.2}{2 Marco T\351orico}{}% 14
+\BOOKMARK [1][]{section*.17}{2.1 \323ptica}{chapter.2}% 15
+\BOOKMARK [2][]{section*.18}{2.1.1 Descripci\363n general del sistema visual humano}{section*.17}% 16
+\BOOKMARK [2][]{section*.19}{2.1.2 Estructura del ojo humano}{section*.17}% 17
+\BOOKMARK [2][]{section*.20}{2.1.3 Formaci\363n de im\341genes en el ojo}{section*.17}% 18
+\BOOKMARK [2][]{section*.21}{2.1.4 Camara digital}{section*.17}% 19
+\BOOKMARK [2][]{section*.22}{2.1.5 Componetes de la camara}{section*.17}% 20
+\BOOKMARK [2][]{section*.23}{2.1.6 Formaci\363n de la imagen en la camara}{section*.17}% 21
+\BOOKMARK [2][]{section*.24}{2.1.7 C\341lculo de la imagen}{section*.17}% 22
+\BOOKMARK [2][]{section*.25}{2.1.8 Modelo de la c\341mara}{section*.17}% 23
+\BOOKMARK [1][]{section*.26}{2.2 Procesamiento de datos}{chapter.2}% 24
+\BOOKMARK [2][]{section*.27}{2.2.1 Tarjeta procesadora}{section*.26}% 25
+\BOOKMARK [2][]{section*.28}{2.2.2 Sistema operativo}{section*.26}% 26
+\BOOKMARK [2][]{section*.29}{2.2.3 ROS}{section*.26}% 27
+\BOOKMARK [2][]{section*.30}{2.2.4 Procesamiento de imagenes}{section*.26}% 28
+\BOOKMARK [2][]{section*.31}{2.2.5 Cuantizaci\363n}{section*.26}% 29
+\BOOKMARK [2][]{section*.32}{2.2.6 Librerias OPENCV}{section*.26}% 30
+\BOOKMARK [2][]{section*.33}{2.2.7 Calibraci\363n de camara}{section*.26}% 31
+\BOOKMARK [2][]{section*.34}{2.2.8 Transformaciones morfol\363gicas}{section*.26}% 32
+\BOOKMARK [2][]{section*.35}{2.2.9 Contraste y brillo}{section*.26}% 33
+\BOOKMARK [2][]{section*.36}{2.2.10 Teorema de Green}{section*.26}% 34
+\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 35
+\BOOKMARK [1][]{section*.38}{3.1 Marco de referencia}{chapter.3}% 36
+\BOOKMARK [2][]{section*.39}{3.1.1 Marco de referencia Inercial [I]}{section*.38}% 37
+\BOOKMARK [2][]{section*.40}{3.1.2 Marco de referencia del cuerpo [B]}{section*.38}% 38
+\BOOKMARK [2][]{section*.41}{3.1.3 Marco de referencia de la gimbal [G]}{section*.38}% 39
+\BOOKMARK [1][]{section*.42}{3.2 Modelo matematico gimbal}{chapter.3}% 40
+\BOOKMARK [0][]{chapter.4}{4 Vision Artificial}{}% 41
+\BOOKMARK [1][]{section*.44}{4.1 Camara}{chapter.4}% 42
+\BOOKMARK [1][]{section*.45}{4.2 Algoritmo general}{chapter.4}% 43
+\BOOKMARK [1][]{section*.46}{4.3 Comunicaci\363n con ROS}{chapter.4}% 44
+\BOOKMARK [2][]{section*.47}{4.3.1 Publisher}{section*.46}% 45
+\BOOKMARK [2][]{section*.48}{4.3.2 Subscriber}{section*.46}% 46
+\BOOKMARK [1][]{section*.49}{4.4 Calibraci\363n de camara}{chapter.4}% 47
+\BOOKMARK [1][]{section*.50}{4.5 Espacio de color}{chapter.4}% 48
+\BOOKMARK [2][]{section*.52}{4.5.1 Pruebas de campo}{section*.50}% 49
+\BOOKMARK [1][]{section*.54}{4.6 Correcci\363n de brillo}{chapter.4}% 50
+\BOOKMARK [1][]{section*.55}{4.7 Filtro morfologico}{chapter.4}% 51
+\BOOKMARK [1][]{section*.56}{4.8 Centroide}{chapter.4}% 52
+\BOOKMARK [0][]{chapter.5}{5 Sistema Embebido}{}% 53
+\BOOKMARK [1][]{section*.58}{5.1 Sistema fisico}{chapter.5}% 54
+\BOOKMARK [1][]{section*.59}{5.2 ROS-Microcontrolador}{chapter.5}% 55
+\BOOKMARK [1][]{section*.60}{5.3 Control}{chapter.5}% 56
+\BOOKMARK [0][]{chapter*.61}{Bibliograf\355a}{}% 57
+\BOOKMARK [0][]{section*.64}{\315ndice de figuras}{}% 58
+\BOOKMARK [0][]{section*.65}{\315ndice de cuadros}{}% 59
+\BOOKMARK [0][]{section*.67}{Lista de c\363digos}{}% 60
+\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 61
+\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 62
+\BOOKMARK [1][]{section*.70}{B.1 ODROID}{appendix.Alph2}% 63

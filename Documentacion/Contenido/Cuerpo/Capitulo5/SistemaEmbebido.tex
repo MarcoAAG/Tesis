@@ -1,0 +1,114 @@
+\chapter{Sistema Embebido}
+\cleanchapterquote{I do not fear computers. I fear lack of them.}{Isaac Asimov}{(American writer and professor of biochemistry)}
+
+En este capitulo se abordan los procedimientos de diseño del sistema embebido desde la parte mecánica hasta la
+obtención del controlador.
+
+\section{Sistema fisico}
+El sistema físico de la gimbal fue hecho en colaboración con el alumno "Nombre" perteneciente
+a la Universidad Aeronáutica en Querétaro. Dicho trabajo es detallado en seguida.\\
+La idea de tener un sistema mecánico con dos ejes de libertad capaz de mover una cámara
+es una tarea retadora, debido a que no se puede hacer de cualquier material ya que
+los motores podrían no soportar el peso y no tener el torque necesario para mover la
+estructura, por eso mismo se decidió por hacer una impresión 3D.
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo5/Fig0.eps}
+	\captionof{figure}{CAD del sistema gimbal}\label{Fig1}
+\end{center}
+La imagen superior ilustra desde diferentes ángulos el ensamble de todas las piezas que
+conforman al sistema mecánico.
+
+\section{ROS-Microcontrolador}
+La parte mecánica encargada de hacer mover la cámara alrededor de dos ejes son los motores de corriente directa, que están conectados
+a un microcontrolador que es el encargado de ejecutar el controlador.\\
+El control tiene como entrada las coordenadas obtenidas por el algoritmo descrito en el capitulo 4. Y con base en ese pixel, podemos
+calcular el error teniendo en cuenta que la referencia es el centro de la cámara.\\
+Una vez dicho lo anterior queda una pregunta clara, ¿Como comunicar el microcontrolador encargado de los motores, con la cámara que
+esta siendo ejecutada en ROS?
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo5/Fig1.eps}
+	\captionof{figure}{Protocolo de comunicación}\label{Fig2}
+\end{center}
+Como se ilustra en la imagen anterior el protocolo de comunicación que se utilizó es el serial, debido a su practicad y que ya
+cuenta con librerías de ROS para el microcontrolador, que para la primera etapa de esta investigación se utiliza el Atmega328p.\\
+La comunicación esta basado en ser asíncrona, y se detalla mejor en el siguiente diagrama:
+\begin{center}
+	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo5/Fig2.eps}
+	\captionof{figure}{Diagrama de secuencia}\label{Fig3}
+\end{center}
+La velocidad de la comunicación es de 570000 baudios y se conecta a través de un cable usb. El microcontrolador tiene además
+la función de publicar el error con la finalidad de graficar dicho error y obtener conclusiones. Que visto desde el plano
+de ROS tenemos los siguientes Topics y Nodes:
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo5/Fig3.eps}
+	\captionof{figure}{Nodos y Topicos activos}\label{Fig4}
+\end{center}
+
+
+\section{Control}
+Durante el estudio de diseño del controlador, los parámetros del controlador PID se ajustan con el sistema no lineal, basado
+en la obtención de la función de transferencia de los motores de corriente directa, como se mostrará enseguida el lazo de control
+principal esta dado por una entrada que es la coordenada en algún eje y la deseada que se localiza en el pixel central de la
+cámara.
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig6.eps}
+	\captionof{figure}{Lazo de control}\label{Fig4}
+\end{center}
+
+El lazo de control es aplicable también para la coordenada Y, como fue abordado en la sección 5.2 la comunicación se da mediante
+el protocolo serial, y debido a que la tarea que se encarga de realizar el algoritmo de control se debe suscribir al nodo de
+coordenadas, este se ve limitado, a un tiempo de muestreo de 60fps, o dicho de otro modo a 16.66 ms.\\
+El algoritmo general del control esta descrito en los siguientes diagramas, basado en programación orientado a objetos
+donde hay dos puntos claves, la obtención de datos y la publicación de los errores para después ser graficados.
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig7.eps}
+	\captionof{figure}{Lazo de control}\label{Fig4}
+\end{center}
+
+% Una vez que obtenemos los datos las primeras que se hicieron fueron con los siguientes valores:
+% \begin{table}[ht]
+% 	\begin{center}
+% 		\begin{tabular}[t]{lcccccc}
+% 			\hline
+% 			         & K$_p$ & K$_{i}$ & K$_{d}$ \\
+% 			\hline
+% 			Yaw     & 1         & 0        & 0       \\
+% 			Pitch	 & 1        & 0        & 0       \\
+% 			\hline
+% 		\end{tabular}
+% 	\end{center}
+% 	\caption{Valores del controlador Proporcional}
+% \end{table}
+
+Lo primero que se realizo fue un controlador proporcional y analizar su respuesta, de la cual se grafico el error, teniendo como
+referencia el cero.
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo5/Fig8.eps}
+	\captionof{figure}{Control proporcional sobre el eje X}\label{Fig4}
+\end{center}
+El primer control se hizo variando el valor de Kp para poder ver la respuesta de la oscilación del sistema, donde se puede ver claramente que la 
+frecuencia aumenta conforme la ganancia lo hace, por lo que mete inestabilidad a la lectura.\\
+Haciendo el mismo procedimiento en el eje Y variando las ganancias tenemos:
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo5/Fig9.eps}
+	\captionof{figure}{Control proporcional sobre el eje Y}\label{Fig4}
+\end{center}
+Similar a lo que pasa en X ocurre a Y, donde conforme la oscilación aumenta a un nivel incontrolable.\\
+El siguiente paso es reducir las oscilaciones utilizando el control Derivativo, que sirve como amortiguador para tener un mejor control.
+Empezando por agregar varios valores de Kd hasta lograr que pueda amortiguar y llegar a un punto donde las oscilaciones sean en estado
+estacionario.\\
+El metodo de sintonización esta basado en primero hacer oscilar al sistema por medio de la adicion de un control proporcional para despues 
+amortiguar el sistema agregando un control derivativo, dejando entonces al sistema con pequeñas oscilaciones que pueden ser corregidas con un 
+control integral. \\
+Las siguientes graficas ilustran las variaciones de Kd en el control del Yaw:
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo5/Fig10.eps}
+	\captionof{figure}{Control proporcional derivativo sobre el eje X}\label{Fig4}
+\end{center}
+De donde podemos observar como es que la señal es amortiguada a tal nivel que el error se acerca a cero con +-3, que para ser
+un error de pixeles se vuelve un control deseado, debido a que la diferencia entre un pixel y otro esta en el orden de los milis.\\
+Por su parte tenemos el control en Pitch donde se siguio el mismo procedimiento que en el otro eje descrito.
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig11.eps}
+	\captionof{figure}{Control proporcional derivativo sobre el eje Y}\label{Fig4}
+\end{center}

@@ -1,0 +1,168 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Representaci\IeC {\'o}n grafica del objetivo del proyecto\relax }}{2}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Uso de una gimbal para un sensor inercial \cite {Book:InNav}\relax }}{3}{figure.caption.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Uso de una gimbal en un motor de propulsi\IeC {\'o}n \cite {WEB:NASA2JX} \relax }}{4}{figure.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Jerrie Cobb, uno de los Mercury 13, da un giro en la plataforma gimbal. Cr\IeC {\'e}ditos: NASA \relax }}{4}{figure.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Primer uso de la steadicam\relax }}{5}{figure.1.5}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Similitudes entre humano y computadora\relax }}{7}{figure.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces El camino que sigue la se\IeC {\~n}al \IeC {\'o}ptica dentro de la cabeza humana.\relax }}{8}{figure.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Formaci\IeC {\'o}n de una imagen en el ojo\relax }}{10}{figure.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Componentes de la camara\relax }}{12}{figure.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Proceso general de captura de imagen por la c\IeC {\'a}mara\relax }}{12}{figure.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Captura de imagen\relax }}{13}{figure.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Regla 1\relax }}{14}{figure.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Regla 2\relax }}{14}{figure.2.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Regla 3\relax }}{14}{figure.2.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Obtenci\IeC {\'o}n geom\IeC {\'e}trica de la imagen\relax }}{15}{figure.2.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Modelo de lente fina\relax }}{15}{figure.2.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Modelo pinhole tomado de \cite {Book:Geoffrey2006}\relax }}{16}{figure.2.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Tarjetas procesadoras de datos\relax }}{17}{figure.2.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Pruebas de performance\relax }}{18}{figure.2.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Nodos conectados al Master\relax }}{20}{figure.2.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Representaci\IeC {\'o}n grafica de Topics\relax }}{20}{figure.2.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Comunicaci\IeC {\'o}n de mensajes\relax }}{21}{figure.2.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Representaci\IeC {\'o}n 2D de im\IeC {\'a}genes digitales mediante conjuntos de puntos discretos en una matriz rectangular\relax }}{23}{figure.2.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Ilustraci\IeC {\'o}n de cuantizaci\IeC {\'o}n\cite {Book:Bernd1997}.La misma imagen se muestra con diferentes niveles de cuantizaci\IeC {\'o}n: a 16, b 8, c 4, d 2. Muy pocos niveles de cuantificaci\IeC {\'o}n producen bordes falsos y hacen que las caracter\IeC {\'\i }sticas con bajo contraste desaparezcan parcial o totalmente.\relax }}{24}{figure.2.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.20}{\ignorespaces S\IeC {\'\i }mbolo caracter\IeC {\'\i }stico RGB de OpenCV\relax }}{25}{figure.2.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Representaci\IeC {\'o}n del espacio de color RGB\relax }}{26}{figure.2.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Representaci\IeC {\'o}n del espacio de color HSI\relax }}{27}{figure.2.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Ejemplo de formas b\IeC {\'a}sicas de elementos estructurantes planos\relax }}{31}{figure.2.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.24}{\ignorespaces (a) Erosi\IeC {\'o}n de X por el elemento estructurante Y. (b) Los elementos conectados del conjunto X m\IeC {\'a}s peque\IeC {\~n}os que Y son eliminados. \relax }}{32}{figure.2.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.25}{\ignorespaces (a) Dilataci\IeC {\'o}n de X por el elemento estructurante Y. (b) El conjunto X aumenta su definici\IeC {\'o}n. \relax }}{33}{figure.2.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.26}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) Eliminaci\IeC {\'o}n de objetos menores en tama\IeC {\~n}o al elemento estructurante. La apertura redondea las convexidades importantes. \relax }}{33}{figure.2.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.27}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) El cierre redondea las concavidades importantes. \relax }}{34}{figure.2.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Area de D limitada por C \relax }}{35}{figure.2.28}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Angulo de azimuth\relax }}{37}{figure.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Seguimiento de un objetivo utilizando una c\IeC {\'a}mara sujeta a una gimbal embebida en un veh\IeC {\'\i }culo a\IeC {\'e}reo no tripulado.\relax }}{38}{figure.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Marco de referencia inercial\relax }}{38}{figure.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Rotaci\IeC {\'o}n en 3 ejes.\relax }}{39}{figure.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Marco de referencia del cuerpo.\relax }}{39}{figure.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Marco de referencia del la c\IeC {\'a}mara.\relax }}{40}{figure.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Marco de referencia Body y gimbal\relax }}{40}{figure.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Rotaci\IeC {\'o}n del marco de referencia Gimbal respecto al del cuerpo\relax }}{41}{figure.3.8}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Camara 'Ocam'\relax }}{43}{figure.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{44}{figure.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{45}{figure.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{46}{figure.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de clases del subscriber\relax }}{47}{figure.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comunicaci\IeC {\'o}n ROS con calibrador\relax }}{47}{figure.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Proceso de calibraci\IeC {\'o}n utilizando un tablero de ajedrez\relax }}{48}{figure.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Proceso de calibraci\IeC {\'o}n utilizando un tablero de ajedrez\relax }}{48}{figure.4.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Diagrama de flujo para cambio de espacio de color\relax }}{49}{figure.4.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Funci\IeC {\'o}n Color \cite {opencvcolor}\relax }}{49}{figure.4.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Funci\IeC {\'o}n inRange\relax }}{50}{figure.4.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Espectro de colores\relax }}{51}{figure.4.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{51}{figure.4.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{51}{figure.4.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Separaci\IeC {\'o}n de color azul\relax }}{52}{figure.4.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Separaci\IeC {\'o}n de colore azul\relax }}{52}{figure.4.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Separaci\IeC {\'o}n de colores RGB utilizando el modelo HSV\relax }}{53}{figure.4.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Comunicaci\IeC {\'o}n de nodos\relax }}{54}{figure.4.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.19}{\ignorespaces correci\IeC {\'o}n de gamma, la imagen de la derecha es la corregida\relax }}{54}{figure.4.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.20}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros\relax }}{55}{figure.4.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.21}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros. Con size de 3\relax }}{56}{figure.4.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.22}{\ignorespaces A) Imagen original,B) Espacio de color HSV C)Aplicaci\IeC {\'o}n de flitros\relax }}{56}{figure.4.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Obtenci\IeC {\'o}n del centroide del color azul\relax }}{57}{figure.4.23}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces CAD del sistema gimbal\relax }}{59}{figure.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{60}{figure.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de secuencia\relax }}{60}{figure.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Nodos y Topicos activos\relax }}{61}{figure.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Lazo de control\relax }}{61}{figure.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Lazo de control\relax }}{62}{figure.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Control proporcional sobre el eje X\relax }}{62}{figure.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Control proporcional sobre el eje Y\relax }}{63}{figure.5.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{64}{figure.5.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{64}{figure.5.10}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{81}{figure.Alph2.1}

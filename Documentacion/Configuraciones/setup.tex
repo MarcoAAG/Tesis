@@ -1,0 +1,148 @@
+% !TEX root = my-thesis.tex
+
+
+% **************************************************
+% Files' Character Encoding
+% **************************************************
+\PassOptionsToPackage{utf8}{inputenc}
+\usepackage{inputenc}
+
+
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\thesisTitle}{Desarrollo y control de una gimbal de dos grados de libertad mediante visión artificial para el seguimiento de objetivos}
+\newcommand{\thesisName}{Marco Antonio Aguilar Gallardo}
+\newcommand{\thesisSubject}{Innovación educativa para el desarrollo de México}
+\newcommand{\thesisDate}{\today}
+\newcommand{\thesisVersion}{Versión 3.0}
+
+\newcommand{\thesisFirstReviewer}{Antonio Flores Moreno}
+\newcommand{\thesisFirstReviewerUniversity}{\protect{Asesor Tecnico}}
+\newcommand{\thesisFirstReviewerDepartment}{Maestro en ciencias}
+
+\newcommand{\thesisSecondReviewer}{Edith Hernandez Hernandez}
+\newcommand{\thesisSecondReviewerUniversity}{\protect{Asesor de estilo}}
+\newcommand{\thesisSecondReviewerDepartment}{Profesora}
+
+\newcommand{\thesisFirstSupervisor}{Antonio Flores Moreno}
+\newcommand{\thesisSecondSupervisor}{Maria del Carmen}
+
+\newcommand{\thesisUniversity}{\protect{Proyecto de titulación}}
+\newcommand{\thesisUniversityDepartment}{Departamento de Ingeniería}
+\newcommand{\thesisUniversityInstitute}{Universidad Aeronáutica en Querétaro}
+\newcommand{\thesisUniversityGroup}{Ingeniería en Electrónica y Control de Sistemas de Aeronaves}
+\newcommand{\thesisUniversityCity}{Querétaro}
+\newcommand{\thesisUniversityStreetAddress}{Carretera Estatal 200 Querétaro – Tequisquiapan No. 22154 }
+\newcommand{\thesisUniversityPostalCode}{76278}
+
+
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+\usepackage[spanish]{babel} % babel system, adjust the language of the content
+\PassOptionsToPackage{% setup clean thesis style
+    figuresep=colon,%
+    hangfigurecaption=false,%
+    hangsection=true,%
+    hangsubsection=true,%
+    sansserif=false,%
+    configurelistings=true,%
+    colorize=full,%
+    colortheme=bluemagenta,%
+    configurebiblatex=true,%
+    bibsys=biber,%
+    bibfile=Referencias,%
+    bibstyle=alphabetic,%
+    bibsorting=nty,%
+}{cleanthesis}
+\usepackage{cleanthesis}
+
+\hypersetup{% setup the hyperref-package options
+    pdftitle={\thesisTitle},    %   - title (PDF meta)
+    pdfsubject={\thesisSubject},%   - subject (PDF meta)
+    pdfauthor={\thesisName},    %   - author (PDF meta)
+    plainpages=false,           %   -
+    colorlinks=false,           %   - colorize links?
+    pdfborder={0 0 0},          %   -
+    breaklinks=true,            %   - allow line break inside links
+    bookmarksnumbered=true,     %
+    bookmarksopen=true          %
+}
+
+% **************************************************
+% Other Packages
+% **************************************************
+\usepackage{scrhack}
+\usepackage{graphicx,lipsum,afterpage,caption}
+\usepackage{biblatex}
+\usepackage[nottoc]{tocbibind}
+\usepackage{amssymb, amsmath, amsbsy, amsfonts}    % ECUACIONES Y SÍMBOLOS MATEMÁTICOS
+\usepackage{mathrsfs}                    % para formato de letra en ecuaciones
+\usepackage{amsthm}     %Libreria para agregar teoremas
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{multicol}
+
+% generar los cuadros de color---------------------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{listingsutf8} % o listings o minted
+% Cuadro numerado para ejemplos
+\newtcolorbox[auto counter, number within=section]{example}[2][]
+{colback=green!5!white,colframe=green!75!black,
+fonttitle=\bfseries, title=Función~\thetcbcounter: #2,#1}
+% generar los cuadros de color---------------------------------------------------
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}[section]
+ 
+\lstset{ frame=Ltb,
+framerule=0pt,
+aboveskip=0.5cm,
+framextopmargin=3pt,
+framexbottommargin=3pt,
+framexleftmargin=0.4cm,
+framesep=0pt,
+rulesep=.4pt,
+backgroundcolor=\color{gray97},
+rulesepcolor=\color{black},
+%
+stringstyle=\ttfamily,
+showstringspaces = false,
+basicstyle=\small\ttfamily,
+commentstyle=\color{gray45},
+keywordstyle=\bfseries,
+%
+numbers=left,
+numbersep=15pt,
+numberstyle=\tiny,
+numberfirstline = false,
+breaklines=true,
+}
+
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+{\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+\lstdefinestyle{consola}
+{basicstyle=\scriptsize\bf\ttfamily,
+backgroundcolor=\color{gray75},
+}
+
+\lstdefinestyle{C++}
+{language=C++,
+}
+
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
