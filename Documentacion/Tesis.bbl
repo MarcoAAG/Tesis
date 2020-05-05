@@ -124,6 +124,35 @@
       \field{title}{Moments and Moment Invariants in Pattern Recognition}
       \field{year}{2009}
     \endentry
+    \entry{WEB:Ocam}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7c25f72a350912714863be6893ba12bb}{%
+           family={HardKernel},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{fullhash}{7c25f72a350912714863be6893ba12bb}
+      \strng{bibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorbibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
+      \field{labelalpha}{Har}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{oCam : 5MP USB 3.0 Camera}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
+      \endverb
+      \verb{url}
+      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
+      \endverb
+    \endentry
     \entry{WEB:HK2020}{online}{}
       \name{author}{1}{}{%
         {{hash=7c25f72a350912714863be6893ba12bb}{%
@@ -955,6 +984,36 @@
       \field{title}{Moments and Moment Invariants in Pattern Recognition}
       \field{year}{2009}
     \endentry
+    \entry{WEB:Ocam}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7c25f72a350912714863be6893ba12bb}{%
+           family={HardKernel},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{fullhash}{7c25f72a350912714863be6893ba12bb}
+      \strng{bibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorbibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
+      \field{labelalpha}{Har}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{oCam : 5MP USB 3.0 Camera}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
+      \endverb
+      \verb{url}
+      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
+      \endverb
+    \endentry
     \entry{WEB:HK2020}{online}{}
       \name{author}{1}{}{%
         {{hash=7c25f72a350912714863be6893ba12bb}{%
@@ -1704,7 +1763,6 @@
     \endentry
   \enddatalist
   \missing{hardkernel2017}
-  \missing{opencvcolor}
 \endrefsection
 \endinput
 

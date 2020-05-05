@@ -1,0 +1,22 @@
+@startuml publisher1
+start
+partition ROS_Init {
+	:Creamos nodo;
+	:Creamos objeto de la clase ImageTransport;
+    :Obtenemos parametros;
+    :Creamos el Topic;
+    
+}
+partition OpenCV {
+	:Creamos objeto de la clase VideoCapture;
+    :Abrimos el COM de la camara;
+    if (COM abierto?) then (si)
+      :Creamos un frame tipo Mat;
+    else (no)
+      :Return 1;
+    stop
+    endif
+
+}
+(A)
+@enduml

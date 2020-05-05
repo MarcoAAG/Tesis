@@ -103,27 +103,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Modelo matematico gimbal}{40}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Vision Artificial}{43}{chapter.4}
+\contentsline {chapter}{\numberline {4}Visi\IeC {\'o}n Artificial}{43}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Camara}{43}{section*.44}
+\contentsline {section}{\numberline {4.1}C\IeC {\'a}mara}{43}{section*.44}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Algoritmo general}{44}{section*.45}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Comunicaci\IeC {\'o}n con ROS}{44}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Publisher}{44}{section*.47}
+\contentsline {subsection}{\numberline {4.3.1}Publisher}{45}{section*.47}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.2}Subscriber}{46}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Calibraci\IeC {\'o}n de camara}{47}{section*.49}
+\contentsline {section}{\numberline {4.4}Calibraci\IeC {\'o}n de camara}{46}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Espacio de color}{49}{section*.50}
+\contentsline {section}{\numberline {4.5}Espacio de color}{48}{section*.50}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5.1}Pruebas de campo}{52}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Correcci\IeC {\'o}n de brillo}{53}{section*.54}
+\contentsline {section}{\numberline {4.6}Correcci\IeC {\'o}n de brillo}{54}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Filtro morfologico}{54}{section*.55}
+\contentsline {section}{\numberline {4.7}Filtro morfologico}{55}{section*.55}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}Centroide}{56}{section*.56}
 \defcounter {refsection}{0}\relax 

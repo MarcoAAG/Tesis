@@ -1,15 +1,15 @@
-\chapter{Vision Artificial}
+\chapter{Visión Artificial}
 \cleanchapterquote{Let's go invent tomorrow instead of worrying about what happened yesterday.}{Steve Jobs}{(American business magnate, industrial designer, investor, and media proprietor.)}
 
-\section{Camara}
-Como se abordo al inicio de este proyecto, la cámara es la parte fundamental en
+\section{Cámara}
+Como se abordó al inicio de este proyecto, la cámara es la parte fundamental en
 la captura de datos, suple la función de un ojo y depende de diversos
 parámetros el que tengamos una captura de calidad. Para este trabajo profesional
-la cámara que se utilizo fue la del fabricante HardKernel y que lleva de nombre
+la cámara que se utilizó fue la del fabricante HardKernel y que lleva de nombre
 Ocam.
 \begin{center}
 	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo4/Fig0_1.eps}
-	\captionof{figure}{Camara 'Ocam'}\label{Fig1}
+	\captionof{figure}{Cámara 'Ocam' obtenida de \cite{WEB:Ocam}}\label{Fig1}
 \end{center}
 Que tiene las siguientes especificaciones.
 \begin{itemize}
@@ -26,18 +26,26 @@ El acceso directo a la memoria a través de USB 3.0 permite que los datos se
 escriban en la memoria principal sin pasar por la CPU. Reduce significativamente
 la carga de trabajo de la CPU.
 
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+
 \section{Algoritmo general}
+El proceso de la obtención del centroide de la figura requiere seguir una serie de pasos relacionados con el
+procesamiento de imágenes, podemos entonces definir esos pasos como un algoritmo, descrito en la siguiente lista.
+
 \begin{algorithm}
-	\caption{Algoritmo general del sistema de vision}
+	\caption{Obtener centroide de figura}
 	\begin{algorithmic}[1]
-		\State{Calibrar camara}
-		\State{Capturar frame a 60fps}
-		\State{Publicar frame en ROS}
-		\State{Suscribirse al nodo publicador}
+		\State{Calibrar cámara}
+		\State{Capturar frames a 60fps}
+		\State{Publicar frames en ROS}
+		\State{Corrección de brillo y saturación}
 		\State{Convertir RGB a HSV}
 		\State{Acotar el modelo HSV al color de elección}
-		\State{Agregar filtro morfologico}
-		\State{Obtener centroide de la figura obtenida en 6}
+		\State{Agregar filtro morfológico}
+		\State{Obtener centroide de la figura obtenida en 7 con función moments de openCV}
 		\State{Publicar coordenadas del centroide}
 	\end{algorithmic}
 \end{algorithm}
@@ -60,15 +68,15 @@ con la información obtenida para posterior publicar coordenadas.
 En la figura 4.1 se puede observar dos nodos conectados por un topic llamado /Image
 encargado de comunicar la imagen de un nodo a otro.
 \subsection{Publisher}
-Como vimos anteriormente opencv es una libreria open-source que se encarga del procesamiento
-de imagenes, también abordamos un poco acerca de como ROS comunica nodos y los
-tipos de datos que puden ser publicados. Al hablar de que se va a publicar una imagen
-estamos refiriendonos a una matriz que en este caso sera de 640 x 480.\\
-ROS pasa las imágenes en su propio formato sensor\_msgs/Image , pero
-en este caso usaremos ROS junto con las librerias de  OpenCV. CvBridge es una
+Como vimos anteriormente opencv es una librería open-source que se encarga del procesamiento
+de imágenes, también abordamos un poco acerca de como ROS comunica nodos y los
+tipos de datos que pueden ser publicados. Al hablar de que se va a publicar una imagen
+estamos refiriéndonos a una matriz que en este caso sera de 640 x 480.\\
+ROS pasa las imágenes en su propio formato sensor\_msgs/Image, pero
+en este caso usaremos ROS junto con las librerías de OpenCV. CvBridge es una
 biblioteca ROS que proporciona una interfaz entre ROS y OpenCV.
 \begin{center}
-	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig1.eps}
+	\includegraphics[width=0.4\textwidth]{Contenido/Cuerpo/Capitulo4/Fig1.eps}
 	\captionof{figure}{Comunicación entre opencv y ROS}\label{Fig1}
 \end{center}
 Al convertir un mensaje sensor\_msgs/Image en una imagen Cv, CvBridge
@@ -79,7 +87,6 @@ reconoce dos casos de uso distintos:
 	\item No modificaremos los datos.\\
 	      \textbf{Podemos compartir con seguridad los datos que posee el mensaje ROS en lugar de copiarlos.}
 \end{itemize}
-
 La entrada es el puntero del mensaje de imagen, así como un argumento de
 codificación opcional. La codificación se refiere al destino CvImage.\\
 Para codificaciones de imágenes populares, CvBridge opcionalmente realizará
@@ -87,18 +94,18 @@ conversiones de color o profundidad de píxeles según sea necesario. Para este 
 se utiliza bgr8: CV\_8UC3, es decir, que el orden del color es Azul, Verde y Rojo.\\
 Con el fin de entender este nodo se hizo el siguiente diagrama de flujo:
 \begin{center}
-	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo4/publisher.eps}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/publisher.eps}
 	\captionof{figure}{Diagrama de flujo del programa publisher}\label{Fig5}
 \end{center}
-El codigo se encuentra en la parte del Apendice A, 'codigo1'
+El código se encuentra en la parte del Apéndice A, 'código 1'
 
 \subsection{Subscriber}
 Este nodo tiene dos funciones principales, Suscribirse al nodo publisher y publicar
-un array de tamaño 2 tipo entero que guardara las coordenadas en X y Y del centroide
-del target.\\
-El proceso que se ejecuta se vera más a detalle en las siguientes secciones de este
-capitulo.\\
-Dichos procesos están incluidos en una clase llamada objecttracking que se ilustra
+un array de tamaño 2, tipo entero que guardara las coordenadas en X y Y del centroide
+del objetivo.\\
+El proceso que se ejecuta sé vera más a detalle en las siguientes secciones de este
+capítulo.\\
+Dichos procesos están incluidos en una clase llamada 'objectTracking' que se ilustra
 en el siguiente diagrama.
 \begin{center}
 	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo4/object_tracking.eps}
@@ -182,18 +189,20 @@ de RGB a HSV, además ya sabemos el porque es mejor generar colores partiendo de
 modelo HSV. Así que lo que ahora sigue es la implementación en código y las pruebas
 que se hicieron para tener un rango de colores y así tener una base de datos a la
 cual recurriremos después.\\
-El siguiente digrama muestra el flujo que el programa 2(ver apendice A) siguio para
+El siguiente diagrama muestra el flujo que el programa 2(ver apéndice A) siguió para
 el cambio de espacio de color.
 \begin{center}
 	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/color.eps}
 	\captionof{figure}{Diagrama de flujo para cambio de espacio de color}\label{color}
 \end{center}
-Empezamos con la función definida que nos dan las libreias de opencv para transformar
+Empezamos con la función definida que nos dan las librerías de opencv para transformar
 de RGB a HSV.
-\begin{center}
-	\includegraphics[width=0.85\textwidth]{Contenido/Cuerpo/Capitulo4/Fig2.eps}
-	\captionof{figure}{Función Color \cite{opencvcolor}}\label{Fig2}
-\end{center}
+\begin{example}[label={ex:serie}]{cvtColor()}
+	\textcolor{Mulberry}{void} \textcolor{RoyalBlue}{cv::cvtColor(}\textcolor{BurntOrange}{Mat}
+	\textcolor{Mulberry}{\&}\textcolor{Bittersweet}{\_src}, \textcolor{BurntOrange}{Mat} \textcolor{Mulberry}{\&}\textcolor{Bittersweet}{dst}
+	,\textcolor{Mulberry}{int} \textcolor{Bittersweet}{code}, \textcolor{Mulberry}{int} \textcolor{Bittersweet}{dstCn}
+	\textcolor{RoyalBlue}{)}
+\end{example}
 Donde
 \begin{itemize}
 	\item \textbf{src}: Imagen de entrada de 8 bits sin signo
@@ -202,17 +211,31 @@ Donde
 	\item \textbf{dstCn}: Número de canales en la imagen de destino; si el parámetro es 0, el
 	      número de canales se deriva automáticamente de src y código.
 \end{itemize}
-
 El formato de color predeterminado en OpenCV a menudo se denomina RGB, pero en realidad
 es BGR (los bytes se invierten). Entonces, el primer byte en una imagen en color estándar
 (24 bits) será un componente azul de 8 bits, el segundo byte será verde y el tercer
 byte será rojo. El cuarto, quinto y sexto bytes serían el segundo píxel (Azul, luego
-Verde, luego Rojo), y así sucesivamente.\\
-Ahora pasamos a la función que acota el color que deseemos, esta es la llamada inRange()
+Verde, luego Rojo), y así sucesivamente.
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo4/Fig2.eps}
+	\captionof{figure}{a)Imagen RGB; b) Imagen HSV}\label{Fig6}
+\end{center}
+En la figura anterior podemos apreciar el cambio del espacio de color, en b) tenemos el resultado de aplicar la función cvtColor
+con el código COLOR\_BGR2HSV, que podemos dividir a su vez en 3 canales, H$\arrowvert$Hue, S$\arrowvert$Saturation y
+V$\arrowvert$Value.
 \begin{center}
 	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo4/Fig3.eps}
-	\captionof{figure}{Función inRange}\label{Fig6}
+	\captionof{figure}{Espacio de color HSV, a)Hue; b)Saturation; c)Value}\label{Fig6}
 \end{center}
+
+Ahora pasamos a la función que acota el color que deseemos, esta es la llamada inRange()
+\begin{example}[label={ex:serie}]{inRange()}
+	\textcolor{Mulberry}{void} \textcolor{RoyalBlue}{cv::cvtColor(}\textcolor{BurntOrange}{Mat}
+	\textcolor{Mulberry}{\&}\textcolor{Bittersweet}{src}, \textcolor{BurntOrange}{Mat} \textcolor{Mulberry}{\&}\textcolor{Bittersweet}{lowerb},
+	\textcolor{BurntOrange}{Mat} \textcolor{Mulberry}{\&}\textcolor{Bittersweet}{upperb},
+	\textcolor{BurntOrange}{Mat} \textcolor{Mulberry}{\&}\textcolor{Bittersweet}{dst}
+	\textcolor{RoyalBlue}{)}
+\end{example}
 Donde
 \begin{itemize}
 	\item \textbf{src} primera matriz de entrada.
@@ -353,7 +376,7 @@ nuestra imagen.
 Dicho filtros son los que abordamos en el capitulo 1, opening y closing que nos ayudaran
 a limpiar el objetivo por dentro y por fuera.
 \begin{example}[label={ex:serie}]{Operación Morfologica}
-	\textcolor{Mulberry}{void} \textcolor{RoyalBlue}{morphologyOperation(}\textcolor{BurntOrange}{Mat}  
+	\textcolor{Mulberry}{void} \textcolor{RoyalBlue}{morphologyOperation(}\textcolor{BurntOrange}{Mat}
 	\textcolor{Mulberry}{\&}\textcolor{Bittersweet}{\_Image}, \textcolor{BurntOrange}{Mat} \textcolor{Mulberry}{\&}\textcolor{Bittersweet}{Image\_}
 	,\textcolor{Mulberry}{int} \textcolor{Bittersweet}{oper}, \textcolor{Mulberry}{int} \textcolor{Bittersweet}{size},
 	\textcolor{Mulberry}{int} \textcolor{Bittersweet}{elemen}\textcolor{RoyalBlue}{)}
@@ -364,8 +387,8 @@ De la función anterior tenemos que:
 	\item \textbf{Image\_} es la imagen de salida
 	\item \textbf{Oper} indica la operación Morfologica, 0 para opening y 1 para closing.
 	\item \textbf{size} El tamaño del kernel.
-	\item \textbf{elemn} La forma del kernel; 0 $\rightarrow$ Rectangular; 1 $\rightarrow$ Elipse y 
-	2 $\rightarrow$ Cruz.
+	\item \textbf{elemn} La forma del kernel; 0 $\rightarrow$ Rectangular; 1 $\rightarrow$ Elipse y
+	      2 $\rightarrow$ Cruz.
 \end{itemize}
 Los últimos dos parámetros son lo que se modificaron en las siguientes pruebas.
 \begin{center}
@@ -403,7 +426,7 @@ Para obtener los momentos de la imagen la siguiente función es útil
 \end{example}
 Dicha función nos arroja los momentos de la imagen, siendo el m00 el área. La primera
 prueba se hizo con cubo rubrik de 3x3, siendo el azul el color target y de dimensión
-1.6cm por cada cuadrito de color. Las pruebas se hicieron de noche ambientado con luz 
+1.6cm por cada cuadrito de color. Las pruebas se hicieron de noche ambientado con luz
 emitida por una seria de leds blancos.
 \begin{center}
 	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig18.eps}

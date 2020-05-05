@@ -1,0 +1,17 @@
+@startuml publisher2
+
+(A)
+partition ROS_Publisher {
+    :Creamos objeto de la clase ImagePtr;
+    :Establecemos tiempo de muestreo;
+    while (Nodo de ROS vivo?) is (si)
+      :Obtenemos frame de camara;
+      :convertimos frame a mensaje tipo CvImage;
+      :Codificamos la imagen a 8bits;
+      :Publicamos frame;
+    endwhile (no)
+    :return 0;
+}
+
+stop
+@enduml
