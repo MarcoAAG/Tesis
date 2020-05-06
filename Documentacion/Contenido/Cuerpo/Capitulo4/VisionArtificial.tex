@@ -339,14 +339,23 @@ agregando un par de filtros básicos, los llamadas opening y closing.
 \section{Corrección de brillo}
 Como se pudo observar en pruebas anteriores el rango que se asigna a cada color en el modelo HSV está
 completamente ligado con la cantidad de iluminación de nuestra imagen, es por eso que predefinir
-un conjunto de valores se hace una tarea complicada, una solución seria poner 3 barras de interfaz
-para acomodar los valores de H S y V, lo cual seria una solución sencilla pero un poco tardada ya que
+un conjunto de valores se hace una tarea complicada, una solución sería poner 3 barras de interfaz
+para acomodar los valores de H S y V, lo cual sería una solución sencilla pero un poco tardada, ya que
 el sistema tendrá que responder en tiempo real a los cambios de los valores antes descritos.\\
-Indagando en internet otra solución es corregir el brillo por medio de las librería de OpenCV,
+Otra posible solución es corregir el brillo por medio de la librería de OpenCV,
 y de la misma manera poner una barra en la interfaz que ajuste el brillo de modo manual. Dicha solución
-parece ser la mejor para este proyecto debido a que solo necesitamos mover un rango de valor y dejar
+parece ser la mejor opción para este proyecto debido a que solo necesitamos mover un rango de valor y dejar
 fijos los parámetros del espacio de color, esto, claro se tiene que hacer antes de transformar de RGB
-a HSV. Que visto desde los nodos de ROS quedaría así:
+a HSV.\\
+El ajuste de brillo y saturación se da a partir de la siguiente expresión
+\begin{equation}
+	g(i,j) = \alpha * f(i,j) + \beta
+\end{equation}
+Donde $\alpha$ es el encargado de ajustar el contraste, mientras que $\beta$ se encarga del brillo.
+Los valores de $\alpha$ van en el rango de 1 a 3, de tipo float y los de $\beta$ van de 0 a 100 de tipo entero.
+
+
+Que visto desde los nodos de ROS quedaría así:
 \begin{center}
 	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig14.eps}
 	\captionof{figure}{Comunicación de nodos}\label{Fig9}

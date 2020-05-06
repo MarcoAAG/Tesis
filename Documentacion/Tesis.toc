@@ -125,7 +125,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.7}Filtro morfologico}{55}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Centroide}{56}{section*.56}
+\contentsline {section}{\numberline {4.8}Centroide}{57}{section*.56}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Sistema Embebido}{59}{chapter.5}
 \defcounter {refsection}{0}\relax 
