@@ -125,44 +125,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Separaci\IeC {\'o}n de colores RGB utilizando el modelo HSV\relax }}{53}{figure.4.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Comunicaci\IeC {\'o}n de nodos\relax }}{54}{figure.4.18}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de contraste; c) Histograma de a y b\relax }}{54}{figure.4.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces correci\IeC {\'o}n de gamma, la imagen de la derecha es la corregida\relax }}{55}{figure.4.19}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de contraste en 1.5; c) Histograma de a y b\relax }}{55}{figure.4.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros\relax }}{56}{figure.4.20}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de brillo en 50; c) Histograma de a y b\relax }}{56}{figure.4.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.21}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros. Con size de 3\relax }}{56}{figure.4.21}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de brillo en 100; c) Histograma de a y b\relax }}{56}{figure.4.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.22}{\ignorespaces A) Imagen original,B) Espacio de color HSV C)Aplicaci\IeC {\'o}n de flitros\relax }}{56}{figure.4.22}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de gamma < 1; c) Histograma de a y b\relax }}{57}{figure.4.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Obtenci\IeC {\'o}n del centroide del color azul\relax }}{57}{figure.4.23}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de gamma > 1; c) Histograma de a y b\relax }}{58}{figure.4.23}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Comunicaci\IeC {\'o}n de nodos\relax }}{58}{figure.4.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces CAD del sistema gimbal\relax }}{59}{figure.5.1}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces correci\IeC {\'o}n de gamma, la imagen de la derecha es la corregida\relax }}{58}{figure.4.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{60}{figure.5.2}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros\relax }}{59}{figure.4.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de secuencia\relax }}{60}{figure.5.3}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros. Con size de 3\relax }}{60}{figure.4.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Nodos y Topicos activos\relax }}{61}{figure.5.4}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces A) Imagen original,B) Espacio de color HSV C)Aplicaci\IeC {\'o}n de flitros\relax }}{60}{figure.4.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Lazo de control\relax }}{61}{figure.5.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Lazo de control\relax }}{62}{figure.5.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Control proporcional sobre el eje X\relax }}{62}{figure.5.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Control proporcional sobre el eje Y\relax }}{63}{figure.5.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{64}{figure.5.9}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{64}{figure.5.10}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Obtenci\IeC {\'o}n del centroide del color azul\relax }}{61}{figure.4.29}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces CAD del sistema gimbal\relax }}{63}{figure.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{64}{figure.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de secuencia\relax }}{64}{figure.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Nodos y Topicos activos\relax }}{65}{figure.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Lazo de control\relax }}{65}{figure.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Lazo de control\relax }}{66}{figure.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Control proporcional sobre el eje X\relax }}{66}{figure.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Control proporcional sobre el eje Y\relax }}{67}{figure.5.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{68}{figure.5.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{68}{figure.5.10}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{81}{figure.Alph2.1}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{85}{figure.Alph2.1}

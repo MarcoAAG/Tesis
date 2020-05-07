@@ -353,7 +353,62 @@ El ajuste de brillo y saturación se da a partir de la siguiente expresión
 \end{equation}
 Donde $\alpha$ es el encargado de ajustar el contraste, mientras que $\beta$ se encarga del brillo.
 Los valores de $\alpha$ van en el rango de 1 a 3, de tipo float y los de $\beta$ van de 0 a 100 de tipo entero.
-
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig19.eps}
+	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de contraste; c) Histograma de a y b}\label{Fig9}
+\end{center}
+Al aplicar un valor de $\alpha$ de 1.2 podemos observar que la imagen b) contrasta mejor los colores, esto puede ser observado
+mediante un histograma que muestra en Y las incidencias de pixeles y en el eje X muestra los valores de 0 a 256 bits correspondientes
+a una imagen en escala de grises, es decir, que son histogramas que muestran la cantidad de negro de un píxel, siendo el 0 el negro
+y el 256 el blanco.\\
+El histograma de color verde está notablemente desplazado hacia la derecha, esto se debe a que la imagen ahora tiene más tonos grises
+que negros, por lo que tenemos una imagen más clara.
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig20.eps}
+	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de contraste en 1.5; c) Histograma de a y b}\label{Fig9}
+\end{center}
+Ahora vemos en b) una imagen más clara y a su vez vemos como la mayor parte de píxeles están llevados hacia la derecha del
+histograma, esto quiere decir que la intensidad ahora tiende a ser blanca.\\
+Esto es con respecto a $\alpha$, pero ahora veamos que pasa si modificamos el brillo. En la siguiente imagen mantenemos
+el valor de contraste en 0 pero el brillo lo modificamos a 50.\\
+Como se puede observar la imagen esta más clara pero a su vez esta más opaca. Esto hace que los colores se vean un poco matizados,
+Y en el histograma vemos que la mayoría de los píxeles están sobre la izquierda.
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig21.eps}
+	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de brillo en 50; c) Histograma de a y b}\label{Fig9}
+\end{center}
+Finalmente probamos el valor del brillo al máximo, es decir, al 100 dando como resultado la siguiente imagen.
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig22.eps}
+	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de brillo en 100; c) Histograma de a y b}\label{Fig9}
+\end{center}
+Al igual que el histograma al modificar el contraste en 1.5 la gráfica c) muestra la mayor parte de los píxeles en blanco, debido
+a que ahora la imagen ya está muy clara que a su ves se ve con poco brillo.\\
+Puede ocurrir que jugar con el valor de $\beta$ mejore el brillo, pero al mismo tiempo la imagen aparecerá con un ligero
+velo a medida que se reducirá el contraste. La ganancia $\alpha$ se puede usar para disminuir este efecto, pero debido a la
+saturación, perderemos algunos detalles en las regiones brillantes originales.
+\subsection{Corrección de Gamma}
+Corrección de $\gamma$ puede ser utilizado para modificar el brillo de una imagen utilizando una transformación no lineal entre
+valores de entrada y su salida mapeada.
+\begin{equation}
+	O = \left( \frac{I}{255} \right)^\gamma * 255
+\end{equation}
+Cuando $\gamma <1$, las regiones oscuras originales serán más brillantes y el histograma se desplazará hacia la derecha, mientras que será
+lo opuesto con $\gamma> 1$.
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig23.eps}
+	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de gamma < 1; c) Histograma de a y b}\label{Fig9}
+\end{center}
+La figura anterior ilustra una modificación de gamma a 0.5, es decir, que hace que la imagen se vea con más brillo de lo que originalmente
+es, esto nos permite obtener mejores resultados al momento de aplicar técnicas de identificación de color cuando el entorno de la imagen
+es un tanto oscuro.\\
+Por otro lado tenemos cuando gamma es mayor a 1, que en la figura 4.23 el valor de $\gamma$ es de 1.5
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig24.eps}
+	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de gamma > 1; c) Histograma de a y b}\label{Fig9}
+\end{center}
+De esta manera el valor de gamma va a variar dependiendo del entorno en el que se encuentre la cámara, una manera de no hacerlo
+manual seria con la implementación de un sensor de luminosidad pero eso no entra en los límites de este proyecto.
 
 Que visto desde los nodos de ROS quedaría así:
 \begin{center}

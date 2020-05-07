@@ -123,28 +123,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.6}Correcci\IeC {\'o}n de brillo}{54}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Filtro morfologico}{55}{section*.55}
+\contentsline {subsection}{\numberline {4.6.1}Correcci\IeC {\'o}n de Gamma}{57}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Centroide}{57}{section*.56}
+\contentsline {section}{\numberline {4.7}Filtro morfologico}{59}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Sistema Embebido}{59}{chapter.5}
+\contentsline {section}{\numberline {4.8}Centroide}{60}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Sistema fisico}{59}{section*.58}
+\contentsline {chapter}{\numberline {5}Sistema Embebido}{63}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}ROS-Microcontrolador}{60}{section*.59}
+\contentsline {section}{\numberline {5.1}Sistema fisico}{63}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Control}{61}{section*.60}
+\contentsline {section}{\numberline {5.2}ROS-Microcontrolador}{64}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{65}{chapter*.61}
+\contentsline {section}{\numberline {5.3}Control}{65}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{69}{section*.64}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{69}{chapter*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{73}{section*.65}
+\contentsline {chapter}{\'{I}ndice de figuras}{73}{section*.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{75}{section*.67}
+\contentsline {chapter}{\'{I}ndice de cuadros}{77}{section*.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{77}{appendix.Alph1}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{79}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{81}{appendix.Alph2}
+\contentsline {chapter}{\numberline {A}Apendice A}{81}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{81}{section*.70}
+\contentsline {chapter}{\numberline {B}Apendice B}{85}{appendix.Alph2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}ODROID}{85}{section*.71}
