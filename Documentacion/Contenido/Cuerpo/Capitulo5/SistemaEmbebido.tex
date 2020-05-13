@@ -4,19 +4,74 @@
 En este capitulo se abordan los procedimientos de diseño del sistema embebido desde la parte mecánica hasta la
 obtención del controlador.
 
-\section{Sistema fisico}
-El sistema físico de la gimbal fue hecho en colaboración con el alumno "Nombre" perteneciente
-a la Universidad Aeronáutica en Querétaro. Dicho trabajo es detallado en seguida.\\
-La idea de tener un sistema mecánico con dos ejes de libertad capaz de mover una cámara
-es una tarea retadora, debido a que no se puede hacer de cualquier material ya que
-los motores podrían no soportar el peso y no tener el torque necesario para mover la
-estructura, por eso mismo se decidió por hacer una impresión 3D.
+\section{Arquitectura}
+La arquitectura general del sistema embebido está dividido en 3 diferentes sub-áreas que en su conjunto ayudan al
+seguimiento de un objetivo mediante visión artificial.
 \begin{center}
-	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo5/Fig0.eps}
-	\captionof{figure}{CAD del sistema gimbal}\label{Fig1}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo5/Fig12.eps}
+	\captionof{figure}{Modulos del sistema}\label{Fig1}
 \end{center}
-La imagen superior ilustra desde diferentes ángulos el ensamble de todas las piezas que
-conforman al sistema mecánico.
+Tal y como se ilustra en la figura anterior, dichas sub-áreas se relacionan entre si, compartiendo datos para tener un
+sistema integrado y robusto.
+\begin{itemize}
+	\item Visión: Identifica el centroide del objetivo, el desarrollo del algoritmo se abordó en el Capitulo 4
+	\item Control: Un micro-controlador es el encargado de interactuar con los datos de la cámara y retroalimentarlos con la
+	      salida deseada, para después controlar con un PID.
+	\item Mecánico: Son los actuadores del sistema que hacen que la cámara tenga dos grados de libertad de movimiento, que
+	      son las rotaciones en Pitch y Yaw, el modelo se abordó en el Capitulo 3.
+\end{itemize}
+La comunicación de datos se da por varios buses de datos, entre todos los componentes del sistema, la siguiente imagen ilustra
+la interacción entre ellos y se presenta la arquitectura propuesta
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo5/Fig13.eps}
+	\captionof{figure}{Arquitectura del sistema}\label{Fig1}
+\end{center}
+El microcontrolador es de 32bits arquitectura RISC, las especificaciones detalladas de los motores y de la tarjeta de desarrollo
+ODROID puede ser consultada en el Apéndice B.\\
+Este tipo de Arquitectura permite que la ODROID pueda comunicarse paralelamente con el MCU por medio del protocolo serial, que va
+a 57000 baudios, ademas de que permite que el microcontrolador tenga la posibilidad de publicar en ROS.
+
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+
+
+\section{Mecanismo móvil}
+El diseño del sistema fue hecho mediante el uso de software libre llamado OpenSCAD, en el cual se trazó el prototipo del
+sistema utilizando dos motores tipo servo, es decir, que tienen su propio controlador de velocidad integrado vía PWM.
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo5/Fig14.eps}
+	\captionof{figure}{Diseño CAD del prototipo}\label{Fig1}
+\end{center}
+Los motores estan representados en color azul, mienntras que la camara esta de amarillo, como se puede apreciar
+la camra recae sobre un soporte de color verde, dicha camara esta sujeta por un par de ligas que ayudan a que esta no se
+caiga cuando hay movimientos de "\ Till "\.\\
+A continuación se presentan algunas medidas del diseño, las unidades estan en mm.
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig16.eps}
+	\captionof{figure}{Dimensiones del CAD}\label{Fig1}
+\end{center}
+Como se vio previamente en los capítulos 2 y 3 este sistema tendrá dos ejes de libertad, que en términos técnicos, a estos
+movimientos también se les conoce como "\ Till \" y "\ Pan \" que es no es mas que otra manera de decirle a la rotación
+sobre el eje Y y Z.\\
+Es entonces que esos movimientos pueden ser visualizados como se presenta a continuación.
+\begin{center}
+	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo5/Fig15.eps}
+	\captionof{figure}{Grados de libertad del sistema}\label{Fig1}
+\end{center}
+Donde 
+\begin{itemize}
+	\item $\theta$ representa el movimiento de "\ Till "
+	\item $\psi$ representa el movimiento de "\ Pan  "
+\end{itemize}
+
+
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+
 
 \section{ROS-Microcontrolador}
 La parte mecánica encargada de hacer mover la cámara alrededor de dos ejes son los motores de corriente directa, que están conectados
@@ -86,7 +141,7 @@ referencia el cero.
 	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo5/Fig8.eps}
 	\captionof{figure}{Control proporcional sobre el eje X}\label{Fig4}
 \end{center}
-El primer control se hizo variando el valor de Kp para poder ver la respuesta de la oscilación del sistema, donde se puede ver claramente que la 
+El primer control se hizo variando el valor de Kp para poder ver la respuesta de la oscilación del sistema, donde se puede ver claramente que la
 frecuencia aumenta conforme la ganancia lo hace, por lo que mete inestabilidad a la lectura.\\
 Haciendo el mismo procedimiento en el eje Y variando las ganancias tenemos:
 \begin{center}
@@ -97,8 +152,8 @@ Similar a lo que pasa en X ocurre a Y, donde conforme la oscilación aumenta a u
 El siguiente paso es reducir las oscilaciones utilizando el control Derivativo, que sirve como amortiguador para tener un mejor control.
 Empezando por agregar varios valores de Kd hasta lograr que pueda amortiguar y llegar a un punto donde las oscilaciones sean en estado
 estacionario.\\
-El metodo de sintonización esta basado en primero hacer oscilar al sistema por medio de la adicion de un control proporcional para despues 
-amortiguar el sistema agregando un control derivativo, dejando entonces al sistema con pequeñas oscilaciones que pueden ser corregidas con un 
+El metodo de sintonización esta basado en primero hacer oscilar al sistema por medio de la adicion de un control proporcional para despues
+amortiguar el sistema agregando un control derivativo, dejando entonces al sistema con pequeñas oscilaciones que pueden ser corregidas con un
 control integral. \\
 Las siguientes graficas ilustran las variaciones de Kd en el control del Yaw:
 \begin{center}

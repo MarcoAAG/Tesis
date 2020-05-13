@@ -29,36 +29,38 @@
 \BOOKMARK [2][]{section*.31}{2.2.5 Cuantizaci\363n}{section*.26}% 29
 \BOOKMARK [2][]{section*.32}{2.2.6 Librerias OPENCV}{section*.26}% 30
 \BOOKMARK [2][]{section*.33}{2.2.7 Calibraci\363n de camara}{section*.26}% 31
-\BOOKMARK [2][]{section*.34}{2.2.8 Transformaciones morfol\363gicas}{section*.26}% 32
-\BOOKMARK [2][]{section*.35}{2.2.9 Contraste y brillo}{section*.26}% 33
-\BOOKMARK [2][]{section*.36}{2.2.10 Teorema de Green}{section*.26}% 34
-\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 35
-\BOOKMARK [1][]{section*.38}{3.1 Marco de referencia}{chapter.3}% 36
-\BOOKMARK [2][]{section*.39}{3.1.1 Marco de referencia Inercial [I]}{section*.38}% 37
-\BOOKMARK [2][]{section*.40}{3.1.2 Marco de referencia del cuerpo [B]}{section*.38}% 38
-\BOOKMARK [2][]{section*.41}{3.1.3 Marco de referencia de la gimbal [G]}{section*.38}% 39
-\BOOKMARK [1][]{section*.42}{3.2 Modelo matematico gimbal}{chapter.3}% 40
-\BOOKMARK [0][]{chapter.4}{4 Visi\363n Artificial}{}% 41
-\BOOKMARK [1][]{section*.44}{4.1 C\341mara}{chapter.4}% 42
-\BOOKMARK [1][]{section*.45}{4.2 Algoritmo general}{chapter.4}% 43
-\BOOKMARK [1][]{section*.46}{4.3 Comunicaci\363n con ROS}{chapter.4}% 44
-\BOOKMARK [2][]{section*.47}{4.3.1 Publisher}{section*.46}% 45
-\BOOKMARK [2][]{section*.48}{4.3.2 Subscriber}{section*.46}% 46
-\BOOKMARK [1][]{section*.49}{4.4 Calibraci\363n de camara}{chapter.4}% 47
-\BOOKMARK [1][]{section*.50}{4.5 Espacio de color}{chapter.4}% 48
-\BOOKMARK [2][]{section*.52}{4.5.1 Pruebas de campo}{section*.50}% 49
-\BOOKMARK [1][]{section*.54}{4.6 Correcci\363n de brillo}{chapter.4}% 50
-\BOOKMARK [2][]{section*.55}{4.6.1 Correcci\363n de Gamma}{section*.54}% 51
-\BOOKMARK [1][]{section*.56}{4.7 Filtro morfologico}{chapter.4}% 52
-\BOOKMARK [1][]{section*.57}{4.8 Centroide}{chapter.4}% 53
-\BOOKMARK [0][]{chapter.5}{5 Sistema Embebido}{}% 54
-\BOOKMARK [1][]{section*.59}{5.1 Sistema fisico}{chapter.5}% 55
-\BOOKMARK [1][]{section*.60}{5.2 ROS-Microcontrolador}{chapter.5}% 56
-\BOOKMARK [1][]{section*.61}{5.3 Control}{chapter.5}% 57
-\BOOKMARK [0][]{chapter*.62}{Bibliograf\355a}{}% 58
-\BOOKMARK [0][]{section*.65}{\315ndice de figuras}{}% 59
-\BOOKMARK [0][]{section*.66}{\315ndice de cuadros}{}% 60
-\BOOKMARK [0][]{section*.68}{Lista de c\363digos}{}% 61
-\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 62
-\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 63
-\BOOKMARK [1][]{section*.71}{B.1 ODROID}{appendix.Alph2}% 64
+\BOOKMARK [2][]{section*.34}{2.2.8 Espacio de color}{section*.26}% 32
+\BOOKMARK [2][]{section*.35}{2.2.9 Transformaciones morfol\363gicas}{section*.26}% 33
+\BOOKMARK [2][]{section*.36}{2.2.10 Contraste y brillo}{section*.26}% 34
+\BOOKMARK [2][]{section*.37}{2.2.11 Teorema de Green}{section*.26}% 35
+\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 36
+\BOOKMARK [1][]{section*.39}{3.1 Marco de referencia}{chapter.3}% 37
+\BOOKMARK [2][]{section*.40}{3.1.1 Marco de referencia Inercial [I]}{section*.39}% 38
+\BOOKMARK [2][]{section*.41}{3.1.2 Marco de referencia del cuerpo [B]}{section*.39}% 39
+\BOOKMARK [2][]{section*.42}{3.1.3 Marco de referencia de la gimbal [G]}{section*.39}% 40
+\BOOKMARK [1][]{section*.43}{3.2 Modelo matematico gimbal}{chapter.3}% 41
+\BOOKMARK [0][]{chapter.4}{4 Visi\363n Artificial}{}% 42
+\BOOKMARK [1][]{section*.45}{4.1 C\341mara}{chapter.4}% 43
+\BOOKMARK [1][]{section*.46}{4.2 Algoritmo general}{chapter.4}% 44
+\BOOKMARK [1][]{section*.47}{4.3 Comunicaci\363n con ROS}{chapter.4}% 45
+\BOOKMARK [2][]{section*.48}{4.3.1 Publisher}{section*.47}% 46
+\BOOKMARK [2][]{section*.49}{4.3.2 Subscriber}{section*.47}% 47
+\BOOKMARK [1][]{section*.50}{4.4 Calibraci\363n de camara}{chapter.4}% 48
+\BOOKMARK [1][]{section*.51}{4.5 Espacio de color}{chapter.4}% 49
+\BOOKMARK [2][]{section*.53}{4.5.1 Pruebas de campo}{section*.51}% 50
+\BOOKMARK [1][]{section*.55}{4.6 Correcci\363n de brillo}{chapter.4}% 51
+\BOOKMARK [2][]{section*.56}{4.6.1 Correcci\363n de Gamma}{section*.55}% 52
+\BOOKMARK [1][]{section*.57}{4.7 Filtro morfologico}{chapter.4}% 53
+\BOOKMARK [1][]{section*.58}{4.8 Centroide}{chapter.4}% 54
+\BOOKMARK [0][]{chapter.5}{5 Sistema Embebido}{}% 55
+\BOOKMARK [1][]{section*.60}{5.1 Arquitectura}{chapter.5}% 56
+\BOOKMARK [1][]{section*.61}{5.2 Mecanismo m\363vil}{chapter.5}% 57
+\BOOKMARK [1][]{section*.62}{5.3 ROS-Microcontrolador}{chapter.5}% 58
+\BOOKMARK [1][]{section*.63}{5.4 Control}{chapter.5}% 59
+\BOOKMARK [0][]{chapter*.64}{Bibliograf\355a}{}% 60
+\BOOKMARK [0][]{section*.67}{\315ndice de figuras}{}% 61
+\BOOKMARK [0][]{section*.68}{\315ndice de cuadros}{}% 62
+\BOOKMARK [0][]{section*.70}{Lista de c\363digos}{}% 63
+\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 64
+\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 65
+\BOOKMARK [1][]{section*.73}{B.1 ODROID}{appendix.Alph2}% 66

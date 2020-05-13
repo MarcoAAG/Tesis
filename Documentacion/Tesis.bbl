@@ -72,6 +72,31 @@
       \field{title}{Next Generation Artificial Vision System}
       \field{year}{2008}
     \endentry
+    \entry{Book:Corke2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+           family={Corke},
+           familyi={C\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{fullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{bibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorbibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authornamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorfullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \field{labelalpha}{Cor11}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robotics, Vision and Control: Fundamental Algoritms in MATLAB}
+      \field{year}{2011}
+    \endentry
     \entry{Book:Arturo2011}{book}{}
       \name{author}{1}{}{%
         {{hash=29e2874f4705005a3c655d152f6b691e}{%
@@ -929,6 +954,32 @@
       \field{labeltitlesource}{title}
       \field{title}{Next Generation Artificial Vision System}
       \field{year}{2008}
+    \endentry
+    \entry{Book:Corke2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+           family={Corke},
+           familyi={C\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{fullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{bibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorbibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authornamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorfullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \field{labelalpha}{Cor11}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robotics, Vision and Control: Fundamental Algoritms in MATLAB}
+      \field{year}{2011}
     \endentry
     \entry{Book:Arturo2011}{book}{}
       \name{author}{1}{}{%

@@ -291,13 +291,13 @@ El modelo básico de la cámara también llamado
 coordenadas de los puntos de la escena en las
 coordenadas de la imagen. \cite{Paper::Ricolfe2008}\\
 La siguiente imagen ilustra la proyeccion del punto \textbf{X} de ${\textbf{I\!R}^3}$ al punto \text{x}
-de ${\textbf{I\!R}^2}$ 
+de ${\textbf{I\!R}^2}$
 \begin{center}
 	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo2/Fig19.eps}
 	\captionof{figure}{Modelo pinhole tomado de \cite{Book:Geoffrey2006}}
 	\label{fig:MarcoTeorico:Fig11}
 \end{center}
-Por triangulo semejantes podemos obtener las ecuaciones que relacionan un punto en el espacio con 
+Por triangulo semejantes podemos obtener las ecuaciones que relacionan un punto en el espacio con
 su proyección en la imagen.
 \begin{equation}
 	\textbf{x} = \frac{f}{Z}\textbf{X}
@@ -308,11 +308,36 @@ su proyección en la imagen.
 Queda aquí clara la perdida de una dimensión que se explicó en la introducción,
 ya que todos los puntos cuya relación entre la coordenadas X y Z sea constante darán la
 misma coordenada x en la imagen (igual con Y, Z e y).\cite{Book:Jose2005}\\
-DEspejando de las ecuaciones anteriores obtenemos la distancia focal como
+Despejando de las ecuaciones anteriores obtenemos la distancia focal como
 \begin{equation}
 	f = Z \frac{\textbf{x}}{\textbf{X}}=ZM
 \end{equation}
-De donde M es el factor de magnificación.
+De donde M es el factor de magnificación.\\
+En la visión artificial es común el uso del modelo de pin-hole mostrado en la figura 2.12. Los rayos convergen en el origen
+del plano de la cámara y una imagen invertida es proyectada dentro del plano como se describió en las ecuaciones 2.2 y 2.3.\\
+Podemos escribir el punto del plano de la imagen en forma homogénea $\tilde{\textbf{p}}$ = ($x'$,$y'$,$z'$) donde
+\begin{equation}
+	x' = \frac{fX}{z'}, y' = \frac{fY}{z'}, z' = Z
+\end{equation}
+La ecuación 2.5 puede ser vista también como una matriz
+\begin{equation}
+	\tilde{\textbf{p}} = \left(
+	\begin{array}{ccc}
+			f & 0 & 0 \\
+			0 & f & 0 \\
+			0 & 0 & 1
+		\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+			X \\
+			Y \\
+			Z
+		\end{array}
+	\right)
+\end{equation}
+Dicha matriz es de utilidad cuando se la lente presenta un tipo de distorsión y hay que corregirlo, en los proximos capitulos se
+hablara acerca del metodo de calibracion de camara.
 
 % **************************************************************************************************************************
 % **************************************************************************************************************************
@@ -593,11 +618,11 @@ objetos, reconocimiento facial, calibración de cámaras, visión estéreo y vis
 robótica y no dejan de añadirse nuevos algoritmos continuamente. Su principal ventaja
 es que se puede utilizar de manera gratuita, incluso para realizar aplicaciones
 comerciales.\cite{WEB:Opencv}
-\begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo2/Fig12.eps}
-	\captionof{figure}{Símbolo característico RGB de OpenCV}
-	\label{fig:MarcoTeorico:Fig19}
-\end{center}
+% \begin{center}
+% \includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo2/Fig12.eps}
+% \captionof{figure}{Símbolo característico RGB de OpenCV}
+% \label{fig:MarcoTeorico:Fig19}
+% \end{center}
 Tiene interfaces C ++, Python, Java y MATLAB y es compatible con Windows, Linux,
 Android y Mac OS.
 
@@ -606,10 +631,8 @@ Android y Mac OS.
 % ----------------------------------------------------------------------------------------------------------------------------
 \subsection{Calibración de camara}
 La calibración de cámaras es un paso esencial en la obtención de buenos resultados
-el los algoritmos de visión artificial, dado su importancia es que hay múltiples
+en los algoritmos de visión artificial, dado su importancia es que hay múltiples
 algoritmos que satisfacen la necesidad de tener una imagen clara y calibrada.\\
-Cada uno estos algoritmos está destinado a ciertas características ópticas de nuestra
-cámara.\\
 Las cámaras han existido por mucho, mucho tiempo. Sin embargo, con la introducción de
 las cámaras baratas de modelo pinhole a fines del siglo XX, se convirtieron en una
 ocurrencia común en nuestra vida cotidiana. Desafortunadamente, este ahorro economico viene
@@ -622,11 +645,36 @@ que básicamente consiste en utilizar una plantilla 2D y que toma ventaja el hec
 calibración basadas en las medidas de
 las coordenadas de la plantilla con las ventajas de la
 auto calibración en la cual no es necesaria utilizar
-plantilla.
+plantilla.\\
+La distorsión geométrica es generalmente el efecto más problemático que encontramos para las aplicaciones robóticas,
+y comprende dos componentes: radial y tangencial. La distorsión radial hace que los puntos de la imagen se
+traduzcan a lo largo de líneas radiales desde el punto principal. \cite{Book:Corke2011}. El error radial puede
+aproximarse a un polinomio de la siguiente manera.
+\begin{equation}
+	\delta r = k_1 r^3 + k_2 r^5 + k_3 r^7 + ...
+\end{equation}
+Donde definimos a r como la distancia del punto de imagen desde el punto principal.\\
+La distorsión ocurre cuando la ampliación disminuye con la distancia desde el punto principal, lo que hace
+que las líneas rectas cerca del borde de la imagen se curven hacia afuera.
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo2/Fig20.eps}
+	\captionof{figure}{Tomada de \cite{Book:Corke2011}; a) Imagen con distorsión; b) Imagen despues de calibrar}
+	\label{fig:MarcoTeorico:Fig19}
+\end{center}
+Las coordenadas del punto (u,v) despues de la distorsion es dado por
+\begin{equation}
+	u^d = u + \delta_u, v^d = v+\delta_v
+\end{equation}
+Donde tenemos que 
+\begin{equation}
+	x= algo
+\end{equation}
+
+
 % ----------------------------------------------------------------------------------------------------------------------------
 % NUEVA SUBSECCION
 % ----------------------------------------------------------------------------------------------------------------------------
-\subsubsection{Espacio de color}
+\subsection{Espacio de color}
 El uso del color en el procesamiento de imágenes está motivado por dos factores principales.
 Primero, el color es un poderoso descriptor que a menudo simplifica la identificación y
 extracción de objetos de una escena. En segundo lugar, los humanos pueden discernir miles
@@ -945,14 +993,14 @@ como
 \begin{equation}
 	m_{pq} = \int_{y}^{} \int_{x}^{} g(x,y) x^p y^q dx dy
 \end{equation}
-Que para imagenes digitales tenemos entonces 
+Que para imagenes digitales tenemos entonces
 \begin{equation}
-	m_{pq} = \sum_{y}^{}\sum_{x}^{} g(x,y) x^p y^q 
+	m_{pq} = \sum_{y}^{}\sum_{x}^{} g(x,y) x^p y^q
 \end{equation}
 Que de lo anterior y suponiendo que tenemos imagenes binarias, osea que 1 para objetos
 y 0 para el fondo la ecuación queda asi
 \begin{equation}
-	m_{pq} = \sum_{(x,y)}^{}\sum_{\in R}^{}  x^p y^q 
+	m_{pq} = \sum_{(x,y)}^{}\sum_{\in R}^{}  x^p y^q
 \end{equation}
 De donde R es la region del objeto.
 \begin{definition}{\textbf{Momento}}
@@ -961,7 +1009,7 @@ De donde R es la region del objeto.
 	\begin{equation}
 		M_{pq}^{(f)} = \int_{D}^{} \int_{}^{} p_{pq}(x,y) f(x.y) dxdy
 	\end{equation}
-	donde $p_{00}(x,y)$, $p_{10}(x,y)$, \dots, $p_{kj}(x,y)$ son funciones de base polinomiales 
+	donde $p_{00}(x,y)$, $p_{10}(x,y)$, \dots, $p_{kj}(x,y)$ son funciones de base polinomiales
 	definidas en D.
 \end{definition}
 
@@ -971,7 +1019,7 @@ eso lleva a momentos geométricos. Que para imagenes binarias obtenemos lo sigui
 \begin{itemize}
 	\item $m_{00}$ =  Es la 'masa' de la imagen, para imagenes binarias es el area del objeto.
 	\item $m_{10}/m_{00}$ y $m_{01}/m_{00}$ = define el centro de gravedad, o en otras palabras
-	el centroide de la imagen.
+	      el centroide de la imagen.
 	\item $m_{20}$ y $m_{02}$ = Describen la 'distribución de masas' de la imagen con respecto a
-	los ejes x,y
+	      los ejes x,y
 \end{itemize}
