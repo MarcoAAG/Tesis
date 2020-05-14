@@ -57,7 +57,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Representaci\IeC {\'o}n del espacio de color RGB\relax }}{27}{figure.2.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Representaci\IeC {\'o}n del espacio de color HSI\relax }}{28}{figure.2.22}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Representaci\IeC {\'o}n del espacio de color HSI\relax }}{29}{figure.2.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.23}{\ignorespaces Ejemplo de formas b\IeC {\'a}sicas de elementos estructurantes planos\relax }}{32}{figure.2.23}
 \defcounter {refsection}{0}\relax 
@@ -65,7 +65,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.25}{\ignorespaces (a) Dilataci\IeC {\'o}n de X por el elemento estructurante Y. (b) El conjunto X aumenta su definici\IeC {\'o}n. \relax }}{34}{figure.2.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.26}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) Eliminaci\IeC {\'o}n de objetos menores en tama\IeC {\~n}o al elemento estructurante. La apertura redondea las convexidades importantes. \relax }}{34}{figure.2.26}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) Eliminaci\IeC {\'o}n de objetos menores en tama\IeC {\~n}o al elemento estructurante. La apertura redondea las convexidades importantes. \relax }}{35}{figure.2.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.27}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) El cierre redondea las concavidades importantes. \relax }}{35}{figure.2.27}
 \defcounter {refsection}{0}\relax 
@@ -93,7 +93,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces C\IeC {\'a}mara 'Ocam' obtenida de \cite {WEB:Ocam}\relax }}{45}{figure.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{46}{figure.4.2}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{47}{figure.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{47}{figure.4.3}
 \defcounter {refsection}{0}\relax 
@@ -147,42 +147,52 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.28}{\ignorespaces A) Imagen original,B) Espacio de color HSV C)Aplicaci\IeC {\'o}n de flitros\relax }}{62}{figure.4.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Obtenci\IeC {\'o}n del centroide del color azul\relax }}{63}{figure.4.29}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Obtenci\IeC {\'o}n del centroide sin correci\IeC {\'o}n de $\gamma $\relax }}{63}{figure.4.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Obtenci\IeC {\'o}n del centroide con correci\IeC {\'o}n de $\gamma $ en 0.4\relax }}{64}{figure.4.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Obtenci\IeC {\'o}n del centroide con correci\IeC {\'o}n de $\gamma $ en 0.2\relax }}{64}{figure.4.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Pruebas del centroide con diferentes formas geom\IeC {\'e}tricas\relax }}{65}{figure.4.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.33}{\ignorespaces teorema de Green\relax }}{65}{figure.4.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Nodos de ROS\relax }}{66}{figure.4.34}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Modulos del sistema\relax }}{65}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Modulos del sistema\relax }}{67}{figure.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura del sistema\relax }}{66}{figure.5.2}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura del sistema\relax }}{68}{figure.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Dise\IeC {\~n}o CAD del prototipo\relax }}{66}{figure.5.3}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Dise\IeC {\~n}o CAD del prototipo\relax }}{68}{figure.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Dimensiones del CAD\relax }}{67}{figure.5.4}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Dimensiones del CAD\relax }}{69}{figure.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Grados de libertad del sistema\relax }}{67}{figure.5.5}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Grados de libertad del sistema\relax }}{69}{figure.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{68}{figure.5.6}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{70}{figure.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagrama de secuencia\relax }}{69}{figure.5.7}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagrama de secuencia\relax }}{71}{figure.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Nodos y Topicos activos\relax }}{69}{figure.5.8}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Nodos y Topicos activos\relax }}{71}{figure.5.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Lazo de control\relax }}{69}{figure.5.9}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Lazo de control\relax }}{71}{figure.5.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Lazo de control\relax }}{70}{figure.5.10}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Lazo de control\relax }}{72}{figure.5.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Control proporcional sobre el eje X\relax }}{71}{figure.5.11}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Control proporcional sobre el eje X\relax }}{73}{figure.5.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Control proporcional sobre el eje Y\relax }}{71}{figure.5.12}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Control proporcional sobre el eje Y\relax }}{73}{figure.5.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{72}{figure.5.13}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{74}{figure.5.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{73}{figure.5.14}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{75}{figure.5.14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{91}{figure.Alph2.1}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{93}{figure.Alph2.1}

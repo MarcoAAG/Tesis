@@ -1,6 +1,10 @@
 \chapter{Visión Artificial}
 \cleanchapterquote{Let's go invent tomorrow instead of worrying about what happened yesterday.}{Steve Jobs}{(American business magnate, industrial designer, investor, and media proprietor.)}
 
+En este capítulo se abordarán temas relacionados con la obtención del centroide de una figura, pasando por la calibración de la
+cámara, el cambio del espacio de color y aplicación de filtros morfológicos. Además de presentar el algoritmo de visión y
+dando pruebas hechas con una cámara corriendo en el framework ROS.
+
 \section{Cámara}
 Como se abordó al inicio de este proyecto, la cámara es la parte fundamental en
 la captura de datos, suple la función de un ojo y depende de diversos
@@ -483,23 +487,70 @@ limpió el ruido externo, es decir, desapareció los puntos que no están asocia
 
 \section{Centroide}
 Para obtener el centroide de un objeto en una imagen binaria tenemos que hacer uso del
-teorema de green, visto en el capítulo 1, y de las librerías opencv.\\
-Para obtener los momentos de la imagen la siguiente función es útil
-\begin{example}[label={ex:serie}]{Moments}
-	\textcolor{RoyalBlue}{moments(}\textcolor{Bittersweet}{\_Image}\textcolor{RoyalBlue}{)}
+teorema de green, visto en el capítulo 2, y de las librerías opencv.\\
+En esta sección haremos uso de los métodos \textbf{centroid}, \textbf{drawCentroid} y \textbf{publishCoordinates} de la clase
+\textbf{objectTracking} descrita en la sección 4.3.2\\
+El metodo centroid tiene los siguientes parametros
+\begin{example}[label={ex:serie}]{Centroid}
+	\textcolor{Mulberry}{void} \textcolor{RoyalBlue}{centroid(}\textcolor{BurntOrange}{Mat}
+	\textcolor{Mulberry}{\&}\textcolor{Bittersweet}{\_Image}, \textcolor{BurntOrange}{uint16\_t} \textcolor{Mulberry}{\&}\textcolor{Bittersweet}{x}
+	,\textcolor{BurntOrange}{uint\_y} \textcolor{Mulberry}{\&} \textcolor{Bittersweet}{y}
+	\textcolor{RoyalBlue}{)}
 \end{example}
-Dicha función nos arroja los momentos de la imagen, siendo el m00 el área. La primera
-prueba se hizo con cubo rubrik de 3x3, siendo el azul el color target y de dimensión
-1.6cm por cada cuadrito de color. Las pruebas se hicieron de noche ambientado con luz
-emitida por una seria de leds blancos.
+La salida del filtro morfológico es una de las entradas de la función 4.8.1, además de pedir dos variables de tipo uint16 donde
+se almacenaran las coordenadas (X, Y) del centroide de la figura.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig18.eps}
-	\captionof{figure}{Obtención del centroide del color azul}\label{Fig9}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig25.eps}
+	\captionof{figure}{Obtención del centroide sin correción de $\gamma$}\label{Fig9}
 \end{center}
-En la figura anterior podemos observar un punto rojo situado en el origen del sistema
-de coordenadas de la imagen, dado en el pixel [320,480]. Debido al ambiente se tuvo
-que ajustar gamma a un valor de 60, esto con el objetivo de aclarar los colores
-ya que el azul parecía más un negro.\\
-El punto verde es el centroide de la figura que está localizado en [366,284], que
-a simple vista parece estar en lo correcto, sin embargo hay que comprobarlo. Por lo
-que da pie a la siguiente prueba.
+Como primera prueba tenemos en a) la ventana donde se puede modificar el valor de gamma para la corrección de brillo, que en la
+la figura anterior no tenemos ninguna corrección de $\gamma$, en b) tenemos la aplicación del algoritmo de HSV, pero podemos
+observar que detecta a los cuadros blancos como si fueran azules, en c) tenemos la imagen procesada por dos filtros: opening
+y closing y finalmente en d) observamos un punto rojo al centro del plano de la cámara y un punto verde que representa el resultado
+del teorema de green, que debería estar en el centro del recuadro azul, sin embargo, esta lejos del centroide esto debido a que con
+los valores que establecimos en HSV y con dada iluminación del ambiente el algoritmo toma algunos tonos de blanco como azules,
+para eso la solución propuesta es la modificación del valor de gamma para ajustar los tonos.\\
+Para la siguiente prueba ahora modificamos a gamma en un valor de 0.4 y el resultado es el siguiente.
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig26.eps}
+	\captionof{figure}{Obtención del centroide con correción de $\gamma$ en 0.4}\label{Fig9}
+\end{center}
+Es notable la mejora que tuvo con una corrección de gamma en 0.4, ya que ahora podemos ver que en b) detecta por completo el
+recuadro azul con un poco de ruido añadido pero en c) el ruido es limpiado completamente para que en d) tengamos el círculo verde
+dibujado en el centroide del cuadro azul.
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig27.eps}
+	\captionof{figure}{Obtención del centroide con correción de $\gamma$ en 0.2}\label{Fig9}
+\end{center}
+Si se baja aún más el valor de gamma podemos observar que en la imagen anterior en b) la salida del proceso HSV sale con muy
+poco ruido, que después se limpia por completo en c) para tener como resultado el centroide localizado y dibujado en el
+centro del cuadro azul.\\
+Con esto solucionamos los problemas de tener que ajustar el rango de 3 valores durante el proceso del cambio de espacio de color
+y así facilitamos al usuario la tarea de encontrar dichos valores. El valor de gamma podría ser ajustado por software con
+ayuda de un sensor de iluminación, pero eso sale de los rangos del proyecto, y queda como desarrollo a futuro.\\
+Además de las pruebas anteriores se hicieron otras para conocer como funciona el algoritmo ante otras figuras geométricas.
+\begin{center}
+	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo4/Fig28.eps}
+	\captionof{figure}{Pruebas del centroide con diferentes formas geométricas}\label{Fig9}
+\end{center}
+Podemos observar que las figuras a) y b) tienen un respectivo punto blanco, esto con la finalidad de poder saber con exactitud si
+el centroide que encuentra el sistema es el real, y como se puede observar el punto verde encaja justo con el punto blanco
+impreso en la figura, por lo que podemos afirmar que encuentra el centroide real, pero que pasa con figuras de geometría irregulares,
+como sucede en c) hay un punto rojo que no coincide con el punto verde creado por el sistema, esto es porque el punto impreso
+en la figura es el centro del rectángulo que toca los bordes de la figura, como se ilustra en la siguiente imagen
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo4/Fig29.eps}
+	\captionof{figure}{teorema de Green}\label{Fig9}
+\end{center}
+En a) tenemos un centro que no es el correcto, hay que recordar que la búsqueda del centroide se basa en el teorema de Green,
+es decir que busca en centroide con base en momentos, esto es que pone a la figura en un plano b) de dos dimensiones y es
+entonces que se realiza una integral de línea en sentido antihorario por todo el contorno de la silueta, y con base en eso
+se puede obtener el centroide real, el propósito de esta última prueba era la de verificar que el sistema no haga lo que
+no debe de hacer y es un tipo de prueba típica en el proceso de pruebas de software.\\
+Visto desde nodos de ROS tenemos
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo4/Fig30.eps}
+	\captionof{figure}{Nodos de ROS}\label{Fig9}
+\end{center}
+El nodo llamado objectTracking tiene la clase que se encarga de hacer el proceso de HSV del filtro y de la búsqueda del
+centroide, y publica dos variables de tipo uint16 que son las coordenadas del centro de la figura.

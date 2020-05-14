@@ -115,7 +115,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.2}Subscriber}{48}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Calibraci\IeC {\'o}n de camara}{48}{section*.50}
+\contentsline {section}{\numberline {4.4}Calibraci\IeC {\'o}n de camara}{49}{section*.50}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}Espacio de color}{50}{section*.51}
 \defcounter {refsection}{0}\relax 
@@ -129,26 +129,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}Centroide}{62}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Sistema Embebido}{65}{chapter.5}
+\contentsline {chapter}{\numberline {5}Sistema Embebido}{67}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Arquitectura}{65}{section*.60}
+\contentsline {section}{\numberline {5.1}Arquitectura}{67}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Mecanismo m\IeC {\'o}vil}{66}{section*.61}
+\contentsline {section}{\numberline {5.2}Mecanismo m\IeC {\'o}vil}{68}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}ROS-Microcontrolador}{68}{section*.62}
+\contentsline {section}{\numberline {5.3}ROS-Microcontrolador}{70}{section*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Control}{69}{section*.63}
+\contentsline {section}{\numberline {5.4}Control}{71}{section*.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{75}{chapter*.64}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{77}{chapter*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{79}{section*.67}
+\contentsline {chapter}{\'{I}ndice de figuras}{81}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{83}{section*.68}
+\contentsline {chapter}{\'{I}ndice de cuadros}{85}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{85}{section*.70}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{87}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{87}{appendix.Alph1}
+\contentsline {chapter}{\numberline {A}Apendice A}{89}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{91}{appendix.Alph2}
+\contentsline {chapter}{\numberline {B}Apendice B}{93}{appendix.Alph2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{91}{section*.73}
+\contentsline {section}{\numberline {B.1}ODROID}{93}{section*.73}

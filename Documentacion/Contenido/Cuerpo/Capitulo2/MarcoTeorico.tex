@@ -665,11 +665,30 @@ Las coordenadas del punto (u,v) despues de la distorsion es dado por
 \begin{equation}
 	u^d = u + \delta_u, v^d = v+\delta_v
 \end{equation}
-Donde tenemos que 
+Donde tenemos que
 \begin{equation}
-	x= algo
+	\left(
+	\begin{array}{c}
+			\delta_u \\
+			\delta_v
+		\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+			u(k_1r^2 + k_2r^4 + k_3r^6 + \dots) \\
+			v(k_1r^2 + k_2r^4 + k_3r^6 + \dots)
+		\end{array}
+	\right)
+	+ 
+	\left(
+		\begin{array}{c}
+			2p_1uv + p_2(r^2+2u^2)\\
+			p_1(r^2+2v^2) + 2p_1uv			
+		\end{array}
+	\right)
 \end{equation}
-
+Donde el primer termino corresponde a la distorsión radial, mientras que el segundo corresponde a la distorsión tangencial.
 
 % ----------------------------------------------------------------------------------------------------------------------------
 % NUEVA SUBSECCION
