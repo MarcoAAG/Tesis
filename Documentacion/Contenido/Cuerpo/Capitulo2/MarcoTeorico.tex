@@ -680,11 +680,11 @@ Donde tenemos que
 			v(k_1r^2 + k_2r^4 + k_3r^6 + \dots)
 		\end{array}
 	\right)
-	+ 
+	+
 	\left(
-		\begin{array}{c}
-			2p_1uv + p_2(r^2+2u^2)\\
-			p_1(r^2+2v^2) + 2p_1uv			
+	\begin{array}{c}
+			2p_1uv + p_2(r^2+2u^2) \\
+			p_1(r^2+2v^2) + 2p_1uv
 		\end{array}
 	\right)
 \end{equation}
@@ -1042,3 +1042,75 @@ eso lleva a momentos geométricos. Que para imagenes binarias obtenemos lo sigui
 	\item $m_{20}$ y $m_{02}$ = Describen la 'distribución de masas' de la imagen con respecto a
 	      los ejes x,y
 \end{itemize}
+
+% **************************************************************************************************************************
+% **************************************************************************************************************************
+% NUEVA SECCION 
+% PROCESAMIENTO DE DATOS
+% **************************************************************************************************************************
+% **************************************************************************************************************************
+\section{Control}
+Una vez que nuestro sistema visual tiene ya la captación de imágenes y el procesamiento de
+la información, el siguiente paso que realiza es el envío de impulsos a traves del cuerpo para
+poder generar movimientos. Estos movimientos podemos trasladarlos en un mecanismo con actuadores,
+donde dichos actuadores pueden ser válvulas, motores, pistones, etc.\\
+De \cite{Book:Nise2010} podemos definir que un sistema de control consiste en subsistemas y procesos
+(o plantas) ensamblados con el fin de obtener una salida deseada con el rendimiento deseado, dada una
+entrada especificada.
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo2/Fig22.eps}
+	\captionof{figure}{Diagrama de bloques de sistema de control}
+	\label{fig:MarcoTeorico:Fig25}
+\end{center}
+La figura anterior muestra un sistema de control en su forma más simple, donde la entrada representa
+una salida deseada.\\
+A manera de ejemplo tenemos los sistemas de desarrollo de piloto automático en los automóviles de
+última generación, donde un usuario puede ingresar el destino deseado y el automóvil debe llevarlo.
+Al ubicar el punto en el mapa le damos al sistema una entrada que es la salida deseada, mostrada
+en la siguiente gráfica y la respuesta del sistema se ilustra con la curva azul.
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo2/Fig23.eps}
+	\captionof{figure}{Diagrama de bloques de sistema de control}
+	\label{fig:MarcoTeorico:Fig25}
+\end{center}
+
+Dos medidas principales de rendimiento son evidentes: (1) la respuesta transitoria y (2) el error
+de estado estacionario. En nuestro ejemplo, la seguridad del pasajero y la paciencia del pasajero
+dependen de la respuesta transitoria. Si esta respuesta es demasiado rápida, se sacrifica la
+seguridad del pasajero; si es demasiado lento, se sacrifica la paciencia del pasajero.
+El error de estado estacionario es otra especificación de rendimiento importante, ya que la seguridad
+de llegar al destino correcto y la conveniencia del pasajero se sacrificarían si el automóvil no
+logra llegar al destino deseado.
+
+% ----------------------------------------------------------------------------------------------------------------------------
+% NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+
+\subsection{Lazo abierto y cerrado}
+Para poder tener la seguridad que nuestro sistema va a hacer lo que tiene que hacer, es importante
+aplicar un controlador al sistema este variara dependiendo de la aplicación y de los recursos
+disponibles.\\
+La teoría de control se basa en dos principales ramas, de lazo abierto y lazo cerrado.
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo2/Fig21.eps}
+	\captionof{figure}{(a) Lazo abierto (b) Lazo cerrado}
+	\label{fig:MarcoTeorico:Fig25}
+\end{center}
+La gran diferencia entre las dos maneras de control es la incorporación de un sensor que nos
+permita leer la salida del sistema y retroalimentar con la entrada, de esta manera se genera
+el error entre la salida deseada con la salida real. Por otra parte el lazo abierto solo nos permite
+tener una entrada no retroalimentada.\\
+Para propósitos específicos de este proyecto vamos a emplear un sistema de control en lazo cerrado
+porque necesitamos controlar a partir del error generado por la diferencia de coordenadas del
+centroide de la figura a seguir.
+
+% ----------------------------------------------------------------------------------------------------------------------------
+% NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+
+\subsection{Sistemas controlados por computadora}
+En muchos sistemas modernos, el controlador (o compensador) es una computadora digital. La ventaja
+de usar una computadora es que muchos bucles pueden ser controlados o compensados por la misma
+computadora a través del tiempo. \cite{Book:Nise2010}\\
+Además, cualquier ajuste de los parámetros del compensador requerido para producir una respuesta
+deseada puede realizarse mediante cambios en el software en lugar del hardware.

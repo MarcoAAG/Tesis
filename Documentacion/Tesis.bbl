@@ -473,6 +473,31 @@
       \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
       \endverb
     \endentry
+    \entry{Book:Nise2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=438e6a4c1af119bdd6d516a62eea69ab}{%
+           family={Nise},
+           familyi={N\bibinitperiod},
+           given={Norman\bibnamedelima S.},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{fullhash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{bibnamehash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{authorbibnamehash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{authornamehash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{authorfullhash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \field{labelalpha}{Nis10}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Control systems engineering}
+      \field{year}{2010}
+    \endentry
     \entry{WEB:Opencv}{online}{}
       \name{author}{1}{}{%
         {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
@@ -1370,6 +1395,32 @@
       \verb{url}
       \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
       \endverb
+    \endentry
+    \entry{Book:Nise2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=438e6a4c1af119bdd6d516a62eea69ab}{%
+           family={Nise},
+           familyi={N\bibinitperiod},
+           given={Norman\bibnamedelima S.},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{fullhash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{bibnamehash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{authorbibnamehash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{authornamehash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \strng{authorfullhash}{438e6a4c1af119bdd6d516a62eea69ab}
+      \field{labelalpha}{Nis10}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Control systems engineering}
+      \field{year}{2010}
     \endentry
     \entry{WEB:Opencv}{online}{}
       \name{author}{1}{}{%
