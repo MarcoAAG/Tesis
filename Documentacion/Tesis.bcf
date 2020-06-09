@@ -1972,8 +1972,9 @@
     <bcf:citekey order="46">Book:Jan2009</bcf:citekey>
     <bcf:citekey order="47">Book:Nise2010</bcf:citekey>
     <bcf:citekey order="48">Book:Nise2010</bcf:citekey>
-    <bcf:citekey order="49">WEB:Ocam</bcf:citekey>
-    <bcf:citekey order="56">hardkernel2017</bcf:citekey>
+    <bcf:citekey order="49">Book:Nise2010</bcf:citekey>
+    <bcf:citekey order="50">WEB:Ocam</bcf:citekey>
+    <bcf:citekey order="57">hardkernel2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

@@ -1085,6 +1085,96 @@ logra llegar al destino deseado.
 % ----------------------------------------------------------------------------------------------------------------------------
 % NUEVA SUBSECCION
 % ----------------------------------------------------------------------------------------------------------------------------
+\subsection{Obtencion de sistemas de control}
+Los ingenieros de control deben encontrar elmodelo matematico que se mas se acerque
+al comportamiento del sistema, para poder realizar el diseño de un controlador se
+debe obtener primero el modelo matematico, puede estar en el dominio de la frecuencia
+o del tiempo, esto ultimo es arbitrario.\\
+El siguiente paso es desarrollar modelos matemáticos a partir de esquemas de sistemas
+físicos. Discutiremos dos métodos: (1) funciones de transferencia en el dominio de
+frecuencia y (2) ecuaciones de estado en el dominio de tiempo.
+
+\subsubsection{Función de transferencia}
+Esta función permitirá la separación de la entrada, el sistema y la salida en tres partes separadas y
+distintas, a diferencia de la ecuación diferencial. La función también nos permitirá combinar
+algebraicamente representaciones matemáticas de subsistemas para obtener una representación total
+del sistema. Esta función es útil porque nos permite conocer donde están las raíces de nuestra planta y por ende saber si es estable o no,
+además de que podemos diseñar un controlador partiendo de esta función.\\
+Comencemos escribiendo una ecuación diferencial general de orden n, lineal, invariante en el tiempo siguiendo el procedimiento propuesto
+en la obra de \cite{Book:Nise2010}
+\begin{equation}
+	a_n \frac{d^nc(t)}{dt^n} + a_{n-1} \frac{d^{n-1}c(t)}{dt^{n-1}} + \dots + a_0c(t) = b_m \frac{d^mr(t)}{dt^m} +
+	b_{m-1} \frac{d^{m-1}r(t)}{dt^{m-1}} + \dots + b_0r(t)
+\end{equation}
+Donde c(t) es la salida, r(t) es la entrada y las $a_i's$ , $b_i's$ representan al sistema. Tomando la transformada de Laplace de ambos
+lados.
+\begin{equation*}
+	a_ns^nC(s) + a_{n-1}s^{n-1}C(s) + \dots + a_0C(s) + C.I c(t)
+\end{equation*}
+\begin{equation}
+	= b_mS^mR(s) + b_{m-1}S^{m-1}R(s) + \dots + b_0R(s) + C.I r(t)
+\end{equation}
+Donde C.I es la condición inicial. Pero si asumimos que todas las condiciones iniciales son cero, por lo tanto, la ecuación anterior
+se reduce a
+\begin{equation}
+	(a_ns^n + a_{n-1}s^{n-1} + \dots + a_0)C(s) = (b_ms^m + b_{m-1}s^{m-1} + \dots + b_0)R(s)
+\end{equation}
+Y ahora obteniendo la relación de salida respecto a la entrada nos queda la siguiente ecuación.
+\begin{equation}
+	\colorbox[rgb]{0.1,0.9,1}{$ \frac{C(s)}{R(s)} = G(s) = \frac{b_ms^m + b_{m-1}s^{m-1} + \dots + b_0}{a_ns^n + a_{n-1}s^{n-1} + \dots + a_0} $}
+\end{equation}
+
+La ecuación anterior separa la salida de la entrada y nos da una relación entre ellas, llamamos a esta relación, G(s), la función de
+transferencia y la evaluamos con condiciones iniciales cero.\\
+La función de transferencia puede ser representada en un diagrama de bloques tal y como se ilustra en la siguiente figura.
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo2/Fig24.eps}
+	\captionof{figure}{Diagrama de bloques de la función de transferencia}
+	\label{fig:MarcoTeorico:Fig25}
+\end{center}
+Observe que el denominador de la función de transferencia es idéntico al polinomio característico de la ecuación diferencial. Además, podemos
+encontrar la salida, C (s) usando
+\begin{equation}
+	\colorbox[rgb]{0.1,0.9,1}{C(s) = R(s)G(s)}
+\end{equation}
+
+
+\subsubsection{Representación en espacio de estados}
+Ahora que ya hemos definido lo que es un sistema de control y la obtención de la función de transferencia es importante conocer una de las
+maneras para representar una ecuación diferencial lineal, esto con el propósito de poder acercarnos a las técnicas de diseño de control
+El espacio de estados es el espacio n-dimensional cuyos ejes son las variables de estado. Este es un término nuevo y se ilustra en la
+siguiente figura.
+\begin{center}
+	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo2/Fig25.eps}
+	\captionof{figure}{Representación gráfica del espacio de estado y vector de estado}
+	\label{fig:MarcoTeorico:Fig25}
+\end{center}
+Donde se supone que las variables de estado son un voltaje de resistencia, $V_R$, y un voltaje de capacitor,$V_C$. Estas variables forman los
+ejes del espacio de estados. Se puede pensar que una trayectoria está trazada por el vector de estado, x (t), para un rango de t. También se
+muestra el vector de estado en el momento particular t=4.\\
+Un sistema se representa en el espacio de estado mediante las siguientes ecuaciones:
+\begin{equation}
+	\colorbox[rgb]{0.5,0.9,0.9}{\textbf{$\dot{x}$} = \textbf{Ax} + \textbf{Bu} }
+\end{equation}
+\begin{equation}
+	\colorbox[rgb]{0.5,0.9,0.9}{\textbf{y} = \textbf{Cx} + \textbf{Du}}
+\end{equation}
+
+Para $t \geq t_0$ y condición inicial, \textbf{x}($t_0$), donde \\
+\textbf{x} = Vector de estado.\\
+$\dot{\textbf{x}}$ = derivada del vector de estado respecto al tiempo.\\
+\textbf{y} = vector de salida\\
+\textbf{u} = vector de entrada o control\\
+\textbf{A} = Matriz del sistema\\
+\textbf{B} = Matriz de entrada\\
+\textbf{C} = Matriz de salida.\\
+La ecuacion (2.42) es llamada ecuacion de estado, y el vector \textbf{x}, el vector de estado, contiene las variables de estado, por otro 
+lado la ecuacion (2.43) es llamada ecuacion de salida. Esta ecuación se usa para calcular cualquier otra variable del sistema. Esta 
+representación de un sistema proporciona un conocimiento completo de todas las variables del sistema en cualquier $t \geq t_0$.
+
+% ----------------------------------------------------------------------------------------------------------------------------
+% NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
 
 \subsection{Lazo abierto y cerrado}
 Para poder tener la seguridad que nuestro sistema va a hacer lo que tiene que hacer, es importante

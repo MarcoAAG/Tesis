@@ -1,22 +1,22 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'Tesis.blg'
-[31] biber:313> INFO - === lun jun  1, 2020, 16:50:43
-[63] Biber.pm:371> INFO - Reading 'Tesis.bcf'
-[152] Biber.pm:857> INFO - Found 35 citekeys in bib section 0
-[177] Biber.pm:3981> INFO - Processing section 0
-[190] Biber.pm:4154> INFO - Looking for bibtex format file 'Referencias.bib' for section 0
-[192] bibtex.pm:1468> INFO - LaTeX decoding ...
-[224] bibtex.pm:1294> INFO - Found BibTeX data source 'Referencias.bib'
-[258] Utils.pm:169> WARN - month field 'Jan' in entry 'Book:Jose2005' is not an integer - this will probably not sort properly.
-[349] Utils.pm:169> WARN - month field 'may' in entry 'WEB:Ieeeucsa2019' is not an integer - this will probably not sort properly.
-[366] Utils.pm:169> WARN - BibTeX subsystem: /tmp/55Kh1cstO2/Referencias.bib_12870.utf8, line 2, warning: 93 characters of junk seen at toplevel
-[370] Utils.pm:169> WARN - I didn't find a database entry for 'hardkernel2017' (section 0)
-[422] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[422] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[423] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
-[487] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[487] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[487] Biber.pm:3809> INFO - Sorting list 'anyt/global/@/global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
-[530] bbl.pm:617> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
-[565] bbl.pm:720> INFO - Output to Tesis.bbl
-[565] Biber.pm:110> INFO - WARNINGS: 4
+[27] biber:313> INFO - === mar jun  9, 2020, 15:59:47
+[47] Biber.pm:371> INFO - Reading 'Tesis.bcf'
+[119] Biber.pm:857> INFO - Found 35 citekeys in bib section 0
+[136] Biber.pm:3981> INFO - Processing section 0
+[148] Biber.pm:4154> INFO - Looking for bibtex format file 'Referencias.bib' for section 0
+[149] bibtex.pm:1468> INFO - LaTeX decoding ...
+[176] bibtex.pm:1294> INFO - Found BibTeX data source 'Referencias.bib'
+[205] Utils.pm:169> WARN - month field 'Jan' in entry 'Book:Jose2005' is not an integer - this will probably not sort properly.
+[282] Utils.pm:169> WARN - month field 'may' in entry 'WEB:Ieeeucsa2019' is not an integer - this will probably not sort properly.
+[297] Utils.pm:169> WARN - BibTeX subsystem: /tmp/kYmtKliHp3/Referencias.bib_16485.utf8, line 2, warning: 93 characters of junk seen at toplevel
+[298] Utils.pm:169> WARN - I didn't find a database entry for 'hardkernel2017' (section 0)
+[342] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[342] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[342] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
+[396] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[396] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[397] Biber.pm:3809> INFO - Sorting list 'anyt/global/@/global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
+[430] bbl.pm:617> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
+[454] bbl.pm:720> INFO - Output to Tesis.bbl
+[455] Biber.pm:110> INFO - WARNINGS: 4
