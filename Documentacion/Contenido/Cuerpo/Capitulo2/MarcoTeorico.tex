@@ -1168,9 +1168,129 @@ $\dot{\textbf{x}}$ = derivada del vector de estado respecto al tiempo.\\
 \textbf{A} = Matriz del sistema\\
 \textbf{B} = Matriz de entrada\\
 \textbf{C} = Matriz de salida.\\
-La ecuacion (2.42) es llamada ecuacion de estado, y el vector \textbf{x}, el vector de estado, contiene las variables de estado, por otro 
-lado la ecuacion (2.43) es llamada ecuacion de salida. Esta ecuación se usa para calcular cualquier otra variable del sistema. Esta 
-representación de un sistema proporciona un conocimiento completo de todas las variables del sistema en cualquier $t \geq t_0$.
+La ecuacion (2.42) es llamada ecuacion de estado, y el vector \textbf{x}, el vector de estado, contiene las variables de estado, por otro
+lado la ecuacion (2.43) es llamada ecuacion de salida. Esta ecuación se usa para calcular cualquier otra variable del sistema. Esta
+representación de un sistema proporciona un conocimiento completo de todas las variables del sistema en cualquier $t \geq t_0$.\\
+Una ventaja de la representación del espacio de estado es que puede usarse para la simulación de sistemas físicos en la computadora. Por lo
+tanto, si queremos simular un sistema representado por una función de transferencia, primero debemos convertir la representación de la función
+de transferencia en espacio de estado.
+
+\subsubsection{Convertir una función de transferencia a espacio de estados}
+
+Al principio, seleccionamos un conjunto de variables de estado, llamadas variables de fase, donde cada variable de estado posterior se define
+como la derivada de la variable de estado anterior. Siguiendo el procedimiento de la obra \cite{Book:Ogata2010}\\
+Empezamos por la representación general de una ecuación diferencial lineal de n orden.
+\begin{equation}
+	\frac{d^ny}{dt^n} + a_{n-1}\frac{d^{n-1}y}{dt^{n-1}} + a_1\frac{dy}{dt} + a_0y = b_0u
+\end{equation}
+Una forma conveniente de elegir variables de estado es elegir la salida, y(t) y sus derivados(n-1) como variables de estado. Esta elección se
+llama elección de variables de fase. Al elegir las variables de estado, $x_i$ obtenemos
+\begin{subequations}
+	\begin{equation}
+		x_1 = y
+	\end{equation}
+	\begin{equation}
+		x_2 = \frac{dy}{dt}
+	\end{equation}
+	\begin{equation}
+		x_3 = \frac{d^2y}{dt^2}
+	\end{equation}
+	\centering
+	\vdots
+	\begin{equation}
+		x_n = \frac{d^{n-1}y}{dt^{n-1}}
+	\end{equation}
+\end{subequations}
+Y haciendo la diferencial a ambos lados
+\begin{subequations}
+	\begin{equation}
+		\dot{x_1} = \frac{dy}{dt}
+	\end{equation}
+	\begin{equation}
+		\dot{x_2} = \frac{d^2y}{dt^2}
+	\end{equation}
+	\begin{equation}
+		\dot{x_3} = \frac{d^3y}{dt^3}
+	\end{equation}
+	\centering
+	\vdots
+	\begin{equation}
+		\dot{x_n} = \frac{d^{n}y}{dt^{n}}
+	\end{equation}
+\end{subequations}
+Sustituyendo la ecuación 2.45 en 2.46 tenemos
+\begin{subequations}
+	\begin{equation}
+		\dot{x_1} = x_2
+	\end{equation}
+	\begin{equation}
+		\dot{x_2} = x_3
+	\end{equation}
+	\centering
+	\vdots
+	\begin{equation}
+		\dot{x_{n-1}} = x_n
+	\end{equation}
+	\begin{equation}
+		\dot{x_n} = -a_0x_1 -a_1x_2 \ldots -a_{n-1}x_n +b_0u
+	\end{equation}
+\end{subequations}
+Y acomodando la ecuación en una matriz
+\begin{equation}
+	\begin{bmatrix}
+		\dot{x}_1\\ 
+		\dot{x}_2\\
+		\dot{x}_3\\
+		\vdots\\
+		\dot{x}_{n-1}\\
+		\dot{x}_n
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		0 & 1 & 0 & 0 & 0 & 0 & \dots & 0\\
+		0 & 0 & 1 & 0 & 0 & 0 & \dots & 0\\
+		0 & 0 & 0 & 1 & 0 & 0 & \dots & 0\\
+		\vdots\\
+		0 & 0 & 0 & 0 & 0 & 0 & \dots & 1\\
+		-a_0 & -a_1 & -a_2 & -a_3 & -a_4 & -a_5 & \dots & -a_{n-1}
+	\end{bmatrix}
+	\begin{bmatrix}
+		x_1\\
+		x_2\\
+		x_3\\
+		\vdots\\
+		x_{n-1}\\
+		x_n\\
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+		0\\
+		0\\
+		0\\
+		\vdots\\
+		0\\
+		b_0
+	\end{bmatrix}
+	u
+\end{equation}
+Finalmente, dado que la solución a la ecuación diferencial es y(t) o $x_1$, la ecuación de salida es
+\begin{equation}
+	y = 
+	\begin{bmatrix}
+		1 & 0 & 0 & \dots & 0
+	\end{bmatrix}
+	\begin{bmatrix}
+		x_1\\
+		x_2\\
+		x_3\\
+		\vdots\\
+		x_{n-1}\\
+		x_n
+	\end{bmatrix}
+\end{equation}
+En resumen, para convertir una función de transferencia en ecuaciones de estado en forma matricial, primero convertimos la función de 
+transferencia en una ecuación diferencial mediante la multiplicación cruzada y tomando la transformada inversa de Laplace, suponiendo 
+condiciones iniciales cero. Luego representamos la ecuación diferencial en el espacio de estados en forma matricial.
 
 % ----------------------------------------------------------------------------------------------------------------------------
 % NUEVA SUBSECCION
@@ -1193,6 +1313,30 @@ tener una entrada no retroalimentada.\\
 Para propósitos específicos de este proyecto vamos a emplear un sistema de control en lazo cerrado
 porque necesitamos controlar a partir del error generado por la diferencia de coordenadas del
 centroide de la figura a seguir.
+
+% ----------------------------------------------------------------------------------------------------------------------------
+% NUEVA SUBSECCION
+% ----------------------------------------------------------------------------------------------------------------------------
+\subsection{Respuesta en el tiempo}
+La respuesta de salida de un sistema es la suma de dos respuestas: la respuesta forzada y la respuesta natural.\\
+El uso de polos y ceros y su relación con la respuesta temporal de un sistema es una técnica de control. Aprender esta relación nos da un 
+"manejo" cualitativo de los problemas. El concepto de polos y ceros, fundamental para el análisis y diseño de sistemas de control, simplifica 
+la evaluación de la respuesta de un sistema.\cite{Book:Nise2010}
+\subsubsection{Polos de la función de transferencia}
+Los polos de una función de transferencia son (1) los valores de la variable de la transformada de Laplace, s, que hacen que la función de 
+transferencia se vuelva infinita o (2) cualquier raíz del denominador de la función de transferencia que sea común a las raíces del numerador.
+\subsubsection{Ceros en la función de transferencia}
+Los ceros de una función de transferencia son (1) los valores de la variable de la transformada de Laplace, s, que hacen que la función de 
+transferencia sea cero, o (2) cualquier raíz del numerador de la función de transferencia que sea común a las raíces del denominador.
+\subsubsection{Sistemas de segundo orden}
+La mayoría de lo sistemas de control se basan en la obtención de su sistema dinámico que se encuentra en el orden cuadrático, siendo este
+donde se realizan las diversas técnicas de diseño de control, por lo que si el sistema es mayor a segundo orden, lo que se hace es dividir
+el sistema para poder verlo en pedazos de segundo orden.\\
+La forma general de una planta de segundo orden es la siguiente
+\begin{equation}
+	\frac{b}{s^2+as+b}
+\end{equation}
+Esta ecuación nos entrega 4 diferentes comportamientos en la salida de nuestro sistema, tal y como se ilustra en la siguiente figura
 
 % ----------------------------------------------------------------------------------------------------------------------------
 % NUEVA SUBSECCION

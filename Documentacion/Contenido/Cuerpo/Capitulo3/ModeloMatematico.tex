@@ -3,7 +3,103 @@
 
 En el presente capitulo se aborda el modelo matemático para el seguimiento de objetivos de una gimbal embebida en un UAV.
 
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
 \section{Marco de referencia}
+Hay un concepto clave que ayuda establecer la bases para la comprensión del movimiento de
+un cuerpo rígido, que es el de marco de referencia.\\
+En la siguiente imagen asociamos con cualquier posición y orientación un marco de referencia
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig10.eps}
+	\captionof{figure}{Desplazamiento cuerpo rigido}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+En el marco A, podemos encontrar 3 vectores linealmente independientes $a_1$, $a_2$ y $a_3$
+y de la misma manera en el marco B tenemos tres vectores $b_1$, $b_2$ y $b_3$, podemos
+escribir cualquier vector como una combinación lineal del vector base en cualquier marco
+\begin{equation}
+	\textbf{v} = v_1 \textbf{a}_1 + v_2 \textbf{a}_2 + v_3 \textbf{a}_3
+\end{equation}
+Tales vectores pueden ser vistos como ortogonales y si aplicamos una rotación del marco A
+la transformación g queda ilustrada en la siguiente figura.
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig11.eps}
+	\captionof{figure}{Desplazamiento cuerpo rigido}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+Podemos escribir ambos vectores ortogonales unitarios en un solo marco de referencia como
+una combinacipon lineal de ambos
+\begin{subequations}
+	\begin{equation}
+		\textbf{b}_1 = R_{11}\textbf{a}_1 + R_{12}\textbf{a}_2 + R_{13}\textbf{a}_3
+	\end{equation}
+	\begin{equation}
+		\textbf{b}_2 = R_{21}\textbf{a}_1 + R_{22}\textbf{a}_2 + R_{23}\textbf{a}_3
+	\end{equation}
+	\begin{equation}
+		\textbf{b}_3 = R_{31}\textbf{a}_1 + R_{32}\textbf{a}_2 + R_{33}\textbf{a}_3
+	\end{equation}
+\end{subequations}
+Para este caso se escoge \textbf{b}$_1$, \textbf{b}$_2$ y \textbf{b}$_3$ como la combinación
+lineal para \textbf{a}$_1$, \textbf{a}$_2$ y \textbf{a}$_3$ y los coeficientes de R se
+pueden acomodar en un arreglo de 3x3 llamada matriz de rotación
+\begin{equation}
+	R=
+	\begin{bmatrix}
+		R_{11} & R_{12} & R_{13} \\
+		R_{21} & R_{22} & R_{23} \\
+		R_{31} & R_{32} & R_{33}
+	\end{bmatrix}
+\end{equation}
+Y las propiedades de esta matriz son las siguientes
+\begin{itemize}
+	\item Ortogonal
+	\item Su determínate es +1
+	\item El producto de dos matrices de rotación da como resultado otra matriz de rotación
+	\item La inversa de una matriz de rotación es también una matriz de rotación
+\end{itemize}
+La importancia de las matrices de rotación radican en que con ayuda de software y hardware
+podemos aplicar técnicas de mapeo y simulación, además de que para el sistema de la gimbal
+entra en juego múltiples marcos de referencia que constantemente cambian su orientación y
+desplazamiento.\\
+Ahora bien si trazamos un vector Q en cada marco de referencia como en la siguiente imagen
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo3/Fig12.eps}
+	\captionof{figure}{Vectores de rotación}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+Si trasladamos el marco B en A podremos obtener de nuevo una combinación lineal pero con
+diferentes conjuntos de coeficientes
+\begin{equation}
+	\overrightarrow{PQ} = q_1\textbf{a}_1 + q_2\textbf{a}_2 + q_3\textbf{a}_3
+\end{equation}
+\begin{equation}
+	\overrightarrow{PQ'} = q'_1\textbf{a}_1 + q'_2\textbf{a}_2 + q'_3\textbf{a}_3
+\end{equation}
+La matriz que conecta $q_1$, $q_2$ y $q_3$ con $q'_1$ , $q'_2$ y $q'_3$ es la matriz de
+rotación vista en la ecuación 3.3
+\begin{equation}
+	\begin{bmatrix}
+		q_1 \\
+		q_2 \\
+		q_3
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		R_{11} & R_{12} & R_{13} \\
+		R_{21} & R_{22} & R_{23} \\
+		R_{31} & R_{32} & R_{33}
+	\end{bmatrix}
+	\begin{bmatrix}
+		q'_1 \\
+		q'_2 \\
+		q'_3
+	\end{bmatrix}
+\end{equation}
+Dicha matriz nos dice como se transforman los vectores de un marco de referencia a otro.
+
 Los movimientos de la gimbal se basan en las coordenadas horizontales de azimuth y elevación, para gimbal de 3 grados de libertad
 se agrega un tercer eje cuyo movimiento se conoce como roll. El eje de azimuth y la elevación se visualizan más fácilmente al
 pensar en la posición de un objeto en relación con el horizonte.
@@ -126,12 +222,19 @@ Donde la matriz de rotación etsa dada por:
 \begin{equation*}
 	R=
 	\begin{bmatrix}
-		i^B\cdot i^G & i^B \cdot j^G\\
+		i^B\cdot i^G & i^B \cdot j^G \\
 		j^B\cdot i^G & j^B \cdot j^G
 	\end{bmatrix}
 	=
 	\begin{bmatrix}
-		cos(\psi) & -sin(\psi)\\
+		cos(\psi) & -sin(\psi) \\
 		sin(\psi) & cos(\psi)
 	\end{bmatrix}
 \end{equation*}
+
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
+\section{Modelo matemático del motor DC}
+Los actuadores del sistemas son un apr de motores de corriente directa.

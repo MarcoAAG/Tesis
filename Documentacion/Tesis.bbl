@@ -498,6 +498,31 @@
       \field{title}{Control systems engineering}
       \field{year}{2010}
     \endentry
+    \entry{Book:Ogata2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=72cb1e667ce543119df1b777c0db24de}{%
+           family={Ogata},
+           familyi={O\bibinitperiod},
+           given={Katsuhiko},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PEARSON EDUCACIÓN, S.A.,}%
+      }
+      \strng{namehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{fullhash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{bibnamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authorbibnamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authornamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authorfullhash}{72cb1e667ce543119df1b777c0db24de}
+      \field{labelalpha}{Oga10}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{INGENIERÍA DE CONTROL MODERNA}
+      \field{year}{2010}
+    \endentry
     \entry{WEB:Opencv}{online}{}
       \name{author}{1}{}{%
         {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
@@ -1420,6 +1445,32 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Control systems engineering}
+      \field{year}{2010}
+    \endentry
+    \entry{Book:Ogata2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=72cb1e667ce543119df1b777c0db24de}{%
+           family={Ogata},
+           familyi={O\bibinitperiod},
+           given={Katsuhiko},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PEARSON EDUCACIÓN, S.A.,}%
+      }
+      \strng{namehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{fullhash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{bibnamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authorbibnamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authornamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authorfullhash}{72cb1e667ce543119df1b777c0db24de}
+      \field{labelalpha}{Oga10}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{INGENIERÍA DE CONTROL MODERNA}
       \field{year}{2010}
     \endentry
     \entry{WEB:Opencv}{online}{}
