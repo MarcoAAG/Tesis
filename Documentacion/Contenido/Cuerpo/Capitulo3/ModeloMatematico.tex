@@ -98,30 +98,33 @@ rotación vista en la ecuación 3.3
 		q'_3
 	\end{bmatrix}
 \end{equation}
-Dicha matriz nos dice como se transforman los vectores de un marco de referencia a otro.
+Dicha matriz nos dice como se transforman los vectores de un marco de referencia a otro. La matrices
+de rotación nos van a servir, como se mencionó anteriormente, para poder hacer mapeos del entorno, por
+lo que necesitamos primero definir los marcos de referencia inercial y del cuerpo para posteriormente
+hacer sus matrices de transformación.
 
-Los movimientos de la gimbal se basan en las coordenadas horizontales de azimuth y elevación, para gimbal de 3 grados de libertad
-se agrega un tercer eje cuyo movimiento se conoce como roll. El eje de azimuth y la elevación se visualizan más fácilmente al
-pensar en la posición de un objeto en relación con el horizonte.
-\begin{center}
-	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig1.eps}
-	\captionof{figure}{Angulo de azimuth}
-	\label{fig:ModeloMat:Fig1}
-\end{center}
-El angulo de azimuth es la posición alrededor del horizonte, medida desde un punto de referencia como el norte verdadero o el sur
-verdadero. Los movimientos de azimuth ocurren alrededor del eje Z (vertical).
+% Los movimientos de la gimbal se basan en las coordenadas horizontales de azimuth y elevación, para gimbal de 3 grados de libertad
+% se agrega un tercer eje cuyo movimiento se conoce como roll. El eje de azimuth y la elevación se visualizan más fácilmente al
+% pensar en la posición de un objeto en relación con el horizonte.
+% \begin{center}
+% 	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig1.eps}
+% 	\captionof{figure}{Angulo de azimuth}
+% 	\label{fig:ModeloMat:Fig1}
+% \end{center}
+% El angulo de azimuth es la posición alrededor del horizonte, medida desde un punto de referencia como el norte verdadero o el sur
+% verdadero. Los movimientos de azimuth ocurren alrededor del eje Z (vertical).
 
-La elevación es la distancia del objeto por encima o por debajo del horizonte (también conocida como altitud en aplicaciones de
-astronomía y aeroespaciales). Los movimientos de elevación ocurren alrededor del eje Y.
+% La elevación es la distancia del objeto por encima o por debajo del horizonte (también conocida como altitud en aplicaciones de
+% astronomía y aeroespaciales). Los movimientos de elevación ocurren alrededor del eje Y.
 
-Los movimientos de balanceo ocurren alrededor del eje X a medida que gira con los ejes Y y Z.\\
-El control que se hace en la gimbal está dado por un motor con control de posición y una IMU (sensor inercial).Dicha gimbal esta
-montada en la parte delantera del vehículo aéreo como se muestra en la siguiente figura.
-\begin{center}
-	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig2.eps}
-	\captionof{figure}{Seguimiento de un objetivo utilizando una cámara sujeta a una gimbal embebida en un vehículo aéreo no tripulado.}
-	\label{fig:ModeloMat:Fig1}
-\end{center}
+% Los movimientos de balanceo ocurren alrededor del eje X a medida que gira con los ejes Y y Z.\\
+% El control que se hace en la gimbal está dado por un motor con control de posición y una IMU (sensor inercial).Dicha gimbal esta
+% montada en la parte delantera del vehículo aéreo como se muestra en la siguiente figura.
+% \begin{center}
+% 	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo3/Fig2.eps}
+% 	\captionof{figure}{Seguimiento de un objetivo utilizando una cámara sujeta a una gimbal embebida en un vehículo aéreo no tripulado.}
+% 	\label{fig:ModeloMat:Fig1}
+% \end{center}
 
 \subsection{Marco de referencia Inercial [I]}
 Antes de abordar el control de la gimbal, es necesario y obvio conocer el comportamiento
@@ -167,70 +170,158 @@ la aeronave y que el centro de la gimbal es el origen.
 De donde el subíndice G hace referencia a que estamos en el plano de la gimbal. El vector unitario K apunta hacia afuera,
 es decir hacia nosotros.
 
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
 
-\section{Modelo matematico gimbal}
-Poniendo en el mismo plano dos referencias, el de la gimbal y el del body, tal como se ilustra en la siguiente figura
+\section{Matrices de rotación}
+Considerando el marco de referencia del cuerpo(B) y el de la Gimbal(G) tenemos los puntos Q y Q'
+como se ilustra en la siguiente imagen
 \begin{center}
-	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig8.eps}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo3/Fig13.eps}
 	\captionof{figure}{Marco de referencia Body y gimbal}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
-Cualquier punto en el plano puede ser expresado como:
-\begin{equation}
-	p_{i^B,j^B} = [p_i^B , p_j^B]^T = p_i i^B + p_j p^B
-\end{equation}
-\begin{equation}
-	p_{i^G,j^G} = [p_i^G , p_j^G]^T = p_i \cdot i^G + p_j\cdot  p^G
-\end{equation}
-\begin{equation}
-	\textbf{P}_{i,j}^B = \textbf{P}_{i,j}^G
-\end{equation}
-
-Si hacemos rotar el frame de la gimbal respecto al eje K obtenemos que:
+Que podemos expresarlo en una combinación lineal para $\overrightarrow{PQ}$ y para $\overrightarrow{P'Q'}$
+\begin{subequations}
+	\begin{equation}
+		PQ = q_1i^B + q_2j^B + q_3k^B
+	\end{equation}
+	\begin{equation}
+		P'Q' = q_1i^G + q_2j^G + q_3k^G
+	\end{equation}
+\end{subequations}
+Trasladamos el marco de referencia del gimbal en el del cuerpo
 \begin{center}
-	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig9.eps}
-	\captionof{figure}{Rotación del marco de referencia Gimbal respecto al del cuerpo}
+	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo3/Fig14.eps}
+	\captionof{figure}{Marco de referencia del gimbal trasladado en el del cuerpo}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
+Ahora tenemos un punto Q'' que es el punto Q' trasladado en el marco de referencia del cuerpo
 \begin{equation}
-	p_{i^B,j^B} = [p_i^B , p_j^B]^T = p_i i^B + p_j p^B
+	PQ'' = q_1i^B + q_2j^B + q_3k^B = q_1''i^G + q_2''j^G + q_3''k^G
 \end{equation}
 \begin{equation}
-	p_{i^G,j^G} = [p_i^G , p_j^G]^T = p_i i^G + p_j p^G
-\end{equation}
-Como
-\begin{equation}
-	p_i = p_{i,j}^G \cdot i^B = p_i^G i^B \cdot i^G + p_j^G i^B \cdot j^G
-\end{equation}
-\begin{equation}
-	p_j = p_{i,j}^G \cdot j^B = p_i^G j^B \cdot i^G + p_j^G j^B \cdot j^G
-\end{equation}
-Entonces
-\begin{equation*}
 	\begin{bmatrix}
-		p_i^B \\
-		p_j^B
-	\end{bmatrix}
-	=
-	R
-	\begin{bmatrix}
-		p_i^G \\
-		p_j^G
-	\end{bmatrix}
-\end{equation*}
-Donde la matriz de rotación etsa dada por:
-\begin{equation*}
-	R=
-	\begin{bmatrix}
-		i^B\cdot i^G & i^B \cdot j^G \\
-		j^B\cdot i^G & j^B \cdot j^G
+		q_1'' \\
+		q_2'' \\
+		q_3''
 	\end{bmatrix}
 	=
 	\begin{bmatrix}
-		cos(\psi) & -sin(\psi) \\
-		sin(\psi) & cos(\psi)
+		R_{11} & R_{12} & R_{13} \\
+		R_{21} & R_{22} & R_{23} \\
+		R_{31} & R_{32} & R_{33}
 	\end{bmatrix}
-\end{equation*}
+	\begin{bmatrix}
+		q_1 \\
+		q_2 \\
+		q_3
+	\end{bmatrix}
+\end{equation}
+La rotación sobre el eje k queda de la siguiente manera
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo3/Fig15.eps}
+	\captionof{figure}{Rotación en el eje k}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+Se obtiene el cambio para $j^B$ y $i^B$
+\begin{equation}
+	i^B = |i^B|cos(\psi)i^G + |i^B|sin(\psi)j^G = cos(\psi)i^G + sin(\psi)j^G
+\end{equation}
+\begin{equation}
+	j^B = -|j^B|sin(\psi)i^G + |j^B|cos\psi)j^G = -sin(\psi)i^G + cos(\psi)j^G
+\end{equation}
+Y de la ecuación 3.8 sustituimos $j^B$ y $i^B$
+\begin{equation}
+	PQ'' = q_1(cos(\psi)i^G + sin(\psi)j^G) + q_2(-sin(\psi)i^G + cos(\psi)j^G) + q_3(k^G)
+\end{equation}
+Simplificando la ecuación anterior tenemos
+\begin{equation}
+	PQ''= (q_1cos(\psi) - q_2sin(\psi))i^G + (q_1sin(\psi) + q_2cos(\psi))j^G + q_3(k^G)
+\end{equation}
+Y acomodando al ecuación 3.13 en matrices tenemos
+\begin{equation}
+	\begin{bmatrix}
+		q_1'' \\
+		q_2'' \\
+		q_3''
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		cos(\psi) & -sin(\psi) & 0 \\
+		sin(\psi) & cos(\psi) & 0 \\
+		0 & 0 & 1
+	\end{bmatrix}
+	\begin{bmatrix}
+		q_1 \\
+		q_2 \\
+		q_3
+	\end{bmatrix}
+\end{equation}
+% Poniendo en el mismo plano dos referencias, el de la gimbal y el del body, tal como se ilustra en la siguiente figura
+% \begin{center}
+% 	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig8.eps}
+% 	\captionof{figure}{Marco de referencia Body y gimbal}
+% 	\label{fig:ModeloMat:Fig1}
+% \end{center}
+% Cualquier punto en el plano puede ser expresado como:
+% \begin{equation}
+% 	p_{i^B,j^B} = [p_i^B , p_j^B]^T = p_i i^B + p_j p^B
+% \end{equation}
+% \begin{equation}
+% 	p_{i^G,j^G} = [p_i^G , p_j^G]^T = p_i \cdot i^G + p_j\cdot  p^G
+% \end{equation}
+% \begin{equation}
+% 	\textbf{P}_{i,j}^B = \textbf{P}_{i,j}^G
+% \end{equation}
+
+% Si hacemos rotar el frame de la gimbal respecto al eje K obtenemos que:
+% \begin{center}
+% 	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig9.eps}
+% 	\captionof{figure}{Rotación del marco de referencia Gimbal respecto al del cuerpo}
+% 	\label{fig:ModeloMat:Fig1}
+% \end{center}
+% \begin{equation}
+% 	p_{i^B,j^B} = [p_i^B , p_j^B]^T = p_i i^B + p_j p^B
+% \end{equation}
+% \begin{equation}
+% 	p_{i^G,j^G} = [p_i^G , p_j^G]^T = p_i i^G + p_j p^G
+% \end{equation}
+% Como
+% \begin{equation}
+% 	p_i = p_{i,j}^G \cdot i^B = p_i^G i^B \cdot i^G + p_j^G i^B \cdot j^G
+% \end{equation}
+% \begin{equation}
+% 	p_j = p_{i,j}^G \cdot j^B = p_i^G j^B \cdot i^G + p_j^G j^B \cdot j^G
+% \end{equation}
+% Entonces
+% \begin{equation*}
+% 	\begin{bmatrix}
+% 		p_i^B \\
+% 		p_j^B
+% 	\end{bmatrix}
+% 	=
+% 	R
+% 	\begin{bmatrix}
+% 		p_i^G \\
+% 		p_j^G
+% 	\end{bmatrix}
+% \end{equation*}
+% Donde la matriz de rotación etsa dada por:
+% \begin{equation*}
+% 	R=
+% 	\begin{bmatrix}
+% 		i^B\cdot i^G & i^B \cdot j^G \\
+% 		j^B\cdot i^G & j^B \cdot j^G
+% 	\end{bmatrix}
+% 	=
+% 	\begin{bmatrix}
+% 		cos(\psi) & -sin(\psi) \\
+% 		sin(\psi) & cos(\psi)
+% 	\end{bmatrix}
+% \end{equation*}
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************

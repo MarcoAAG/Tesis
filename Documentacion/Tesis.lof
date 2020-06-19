@@ -89,21 +89,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Vectores de rotaci\IeC {\'o}n\relax }}{49}{figure.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Angulo de azimuth\relax }}{49}{figure.3.4}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Marco de referencia inercial\relax }}{50}{figure.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Seguimiento de un objetivo utilizando una c\IeC {\'a}mara sujeta a una gimbal embebida en un veh\IeC {\'\i }culo a\IeC {\'e}reo no tripulado.\relax }}{50}{figure.3.5}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Rotaci\IeC {\'o}n en 3 ejes.\relax }}{50}{figure.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Marco de referencia inercial\relax }}{50}{figure.3.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Marco de referencia del cuerpo.\relax }}{50}{figure.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Rotaci\IeC {\'o}n en 3 ejes.\relax }}{51}{figure.3.7}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Marco de referencia del la c\IeC {\'a}mara.\relax }}{51}{figure.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Marco de referencia del cuerpo.\relax }}{51}{figure.3.8}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Marco de referencia Body y gimbal\relax }}{51}{figure.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Marco de referencia del la c\IeC {\'a}mara.\relax }}{52}{figure.3.9}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Marco de referencia del gimbal trasladado en el del cuerpo\relax }}{52}{figure.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Marco de referencia Body y gimbal\relax }}{52}{figure.3.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Rotaci\IeC {\'o}n del marco de referencia Gimbal respecto al del cuerpo\relax }}{53}{figure.3.11}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Rotaci\IeC {\'o}n en el eje k\relax }}{52}{figure.3.10}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
