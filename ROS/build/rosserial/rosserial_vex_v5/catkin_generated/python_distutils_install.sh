@@ -26,6 +26,7 @@ echo_and_run /usr/bin/env \
     CATKIN_BINARY_DIR="/home/marco/Tesis/ROS/build" \
     "/usr/bin/python2" \
     "/home/marco/Tesis/ROS/src/rosserial/rosserial_vex_v5/setup.py" \
+     \
     build --build-base "/home/marco/Tesis/ROS/build/rosserial/rosserial_vex_v5" \
     install \
     --root="${DESTDIR-/}" \

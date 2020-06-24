@@ -186,6 +186,7 @@ image_proc_exe_EXTERNAL_OBJECTS =
 /home/marco/Tesis/ROS/devel/lib/image_proc/image_proc: /opt/ros/melodic/lib/libmessage_filters.so
 /home/marco/Tesis/ROS/devel/lib/image_proc/image_proc: /opt/ros/melodic/lib/libnodeletlib.so
 /home/marco/Tesis/ROS/devel/lib/image_proc/image_proc: /opt/ros/melodic/lib/libbondcpp.so
+/home/marco/Tesis/ROS/devel/lib/image_proc/image_proc: /usr/lib/x86_64-linux-gnu/libuuid.so
 /home/marco/Tesis/ROS/devel/lib/image_proc/image_proc: /opt/ros/melodic/lib/libclass_loader.so
 /home/marco/Tesis/ROS/devel/lib/image_proc/image_proc: /usr/lib/libPocoFoundation.so
 /home/marco/Tesis/ROS/devel/lib/image_proc/image_proc: /usr/lib/x86_64-linux-gnu/libdl.so

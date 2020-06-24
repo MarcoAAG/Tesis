@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/marco/Tesis/ROS/devel/include/image_view/ImageViewConfig.h
+dynamic_reconfigure/config_tools.h
+-
+limits
+-
+ros/node_handle.h
+-
+dynamic_reconfigure/ConfigDescription.h
+-
+dynamic_reconfigure/ParamDescription.h
+-
+dynamic_reconfigure/Group.h
+-
+dynamic_reconfigure/config_init_mutex.h
+-
+boost/any.hpp
+-
+
 /home/marco/Tesis/ROS/src/image_pipeline/image_view/src/nodelets/disparity_nodelet.cpp
 ros/ros.h
 -
@@ -462,24 +480,6 @@ image_transport/loader_fwds.h
 
 /opt/ros/melodic/include/image_transport/transport_hints.h
 ros/ros.h
--
-
-/opt/ros/melodic/include/image_view/ImageViewConfig.h
-dynamic_reconfigure/config_tools.h
--
-limits
--
-ros/node_handle.h
--
-dynamic_reconfigure/ConfigDescription.h
--
-dynamic_reconfigure/ParamDescription.h
--
-dynamic_reconfigure/Group.h
--
-dynamic_reconfigure/config_init_mutex.h
--
-boost/any.hpp
 -
 
 /opt/ros/melodic/include/nodelet/exception.h

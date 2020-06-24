@@ -328,4 +328,65 @@ Y acomodando al ecuación 3.13 en matrices tenemos
 % *********************************************************************************************************
 % ---------------------------------------------------------------------------------------------------------
 \section{Modelo matemático del motor DC}
-Los actuadores del sistemas son un apr de motores de corriente directa.
+El mecanismo móvil del sistema esta conformado por un par de motores de corriente directa, como vimos
+en el capítulo 2 para poder hacer diseñar un controlador necesitamos primero obtener la ecuación dinámica
+del sistema, en este caso la ecuación dinámica del motor.\\
+La siguiente figura muestra el diagrama electrico de un motor de corriente directa
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo3/Fig16.eps}
+	\captionof{figure}{Diagrama electrico de motor de corriente directa}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+Tenemos que la fuerza contra motriz $v_b$ es igual a la siguiente ecuación
+\begin{equation}
+	v_b(t) =K_b \frac{d\theta_m(t)}{dt}
+\end{equation}
+donde 
+\begin{itemize}
+	\item $ \frac{d\theta_m(t)}{dt} $ = $ \omega_m(t) $
+\end{itemize}
+Aplicamos laplace a la ecuación anterior
+\begin{equation}
+	V_b(s) = K_bS\Theta_m(s)
+\end{equation}
+Aplicando la ley de Kirkoff a la red eléctrica de la figura 3.11 obtenemos
+\begin{equation}
+	R_aI_a(s) + L_aSI_a(s) + V_b(s) = E_a(s)
+\end{equation}
+El torque empleado por el motor es proporcional a la corriente del inducido; por lo tanto,
+\begin{equation}
+	\tau_m(s) = K_\tau I_a(s)
+\end{equation}
+donde $\tau_m$ es el torque del motor y $K_\tau$ es una constante de proporcionalidad, llamada constante de par del motor, que depende de las características del motor y del 
+campo magnético.\\
+En un arreglo consistente de unidades, el valor de $K_t$ es igual al valor de $K_b$. Reordenando la ecuación 3.18.
+\begin{equation}
+	I_a = \frac{1}{K_\tau} \tau_m (s)
+\end{equation}
+Para encontrar la función de transferencia del motor, primero sustituimos las ecuaciones (3.16) y (3.19) en (3.17), produciendo
+\begin{equation}
+	\frac{(R_a + L_aS) \tau_m(s)}{K_\tau} + K_bS \Theta_m(s) = E_a(s)
+\end{equation}
+El torque del motor puede ser expresado como
+\begin{equation}
+	\tau_m(s) = (J_mS^2 + D_mS) \Theta_m(s)
+\end{equation}
+$J_m$ es la inercia equivalente en la armadura e incluye tanto la inercia de la armadura como la inercia de carga reflejada en la armadura. $D_m$ es la amortiguación viscosa 
+equivalente en la armadura e incluye tanto la amortiguación viscosa de la armadura como la amortiguación viscosa de la carga reflejada en la armadura.\\
+Sustituyendo $\tau_m$ en la ecuación 3.2 obtenemos
+\begin{equation}
+	\frac{(R_a + L_aS) (J_mS^2 + D_mS) \Theta_m(s) }{K_\tau} + K_bS \Theta_m(s) = E_a(s)
+\end{equation}
+Si suponemos que la inductancia de la armadura, $L_a$, es pequeña en comparación con la resistencia de la armadura, $R_a$, que es habitual para un motor de corriente continua, 
+la ecuación. (3.22) se convierte
+\begin{equation}
+	\left[ \frac{R_a }{K_\tau} (J_mS^2 + D_mS) + k_b \right] S\Theta_m(s)  = E_a(s)
+\end{equation}
+Después de la simplificación, se encuentra que la función de transferencia deseada,
+\begin{equation}
+	\frac{\theta_m (s)}{E_a(s)} = \frac{K_t / (R_aJ_m)}{s \left[ s + \frac{1}{J_m} \left( D_m + \frac{K_tK_b}{R_a} \right) \right]}
+\end{equation}
+Que en manera simple se obtiene.
+\begin{equation}
+	\frac{\theta_m (s)}{E_a(s)} = \frac{K}{s(s+\alpha)}
+\end{equation}

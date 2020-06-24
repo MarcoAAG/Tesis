@@ -98,6 +98,7 @@ image_rotate_EXTERNAL_OBJECTS =
 /home/marco/Tesis/ROS/devel/lib/libimage_rotate.so: /opt/ros/melodic/lib/libimage_transport.so
 /home/marco/Tesis/ROS/devel/lib/libimage_rotate.so: /opt/ros/melodic/lib/libnodeletlib.so
 /home/marco/Tesis/ROS/devel/lib/libimage_rotate.so: /opt/ros/melodic/lib/libbondcpp.so
+/home/marco/Tesis/ROS/devel/lib/libimage_rotate.so: /usr/lib/x86_64-linux-gnu/libuuid.so
 /home/marco/Tesis/ROS/devel/lib/libimage_rotate.so: /opt/ros/melodic/lib/libclass_loader.so
 /home/marco/Tesis/ROS/devel/lib/libimage_rotate.so: /usr/lib/libPocoFoundation.so
 /home/marco/Tesis/ROS/devel/lib/libimage_rotate.so: /usr/lib/x86_64-linux-gnu/libdl.so

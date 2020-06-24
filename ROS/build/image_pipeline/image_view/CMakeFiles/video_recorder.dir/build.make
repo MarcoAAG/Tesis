@@ -100,6 +100,7 @@ video_recorder_EXTERNAL_OBJECTS =
 /home/marco/Tesis/ROS/devel/lib/image_view/video_recorder: /opt/ros/melodic/lib/libmessage_filters.so
 /home/marco/Tesis/ROS/devel/lib/image_view/video_recorder: /opt/ros/melodic/lib/libnodeletlib.so
 /home/marco/Tesis/ROS/devel/lib/image_view/video_recorder: /opt/ros/melodic/lib/libbondcpp.so
+/home/marco/Tesis/ROS/devel/lib/image_view/video_recorder: /usr/lib/x86_64-linux-gnu/libuuid.so
 /home/marco/Tesis/ROS/devel/lib/image_view/video_recorder: /opt/ros/melodic/lib/libclass_loader.so
 /home/marco/Tesis/ROS/devel/lib/image_view/video_recorder: /usr/lib/libPocoFoundation.so
 /home/marco/Tesis/ROS/devel/lib/image_view/video_recorder: /usr/lib/x86_64-linux-gnu/libdl.so
