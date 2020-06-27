@@ -165,16 +165,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.5}Control}{86}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{91}{chapter*.71}
+\contentsline {subsection}{\numberline {5.5.1}Funci\IeC {\'o}n de tranferencia}{87}{section*.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{95}{section*.74}
+\contentsline {subsection}{\numberline {5.5.2}Algortimo de control}{89}{section*.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{99}{section*.75}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{93}{chapter*.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{101}{section*.77}
+\contentsline {chapter}{\'{I}ndice de figuras}{97}{section*.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{103}{appendix.Alph1}
+\contentsline {chapter}{\'{I}ndice de cuadros}{101}{section*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{107}{appendix.Alph2}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{103}{section*.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{107}{section*.80}
+\contentsline {chapter}{\numberline {A}Apendice A}{105}{appendix.Alph1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Apendice B}{109}{appendix.Alph2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}ODROID}{109}{section*.82}

@@ -60,7 +60,7 @@ Es entonces que esos movimientos pueden ser visualizados como se presenta a cont
 	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo5/Fig15.eps}
 	\captionof{figure}{Grados de libertad del sistema}\label{Fig1}
 \end{center}
-Donde 
+Donde
 \begin{itemize}
 	\item $\theta$ representa el movimiento de "\ Till "
 	\item $\psi$ representa el movimiento de "\ Pan  "
@@ -152,10 +152,72 @@ La siguiente imagen ilustra el diagrama de bloques correspondiente al control de
 	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig6.eps}
 	\captionof{figure}{Lazo de control}\label{Fig4}
 \end{center}
-Es un sistema de segundo orden retroalimentado por la camara y procesado en ROS. El lazo de control es aplicable también para la coordenada Y, como 
+Es un sistema de segundo orden retroalimentado por la camara y procesado en ROS. El lazo de control es aplicable también para la coordenada Y, como
 fue abordado en la sección 5.4 la comunicación se da mediante
 el protocolo serial, y debido a que la tarea que se encarga de realizar el algoritmo de control se debe suscribir al nodo de
-coordenadas, este se ve limitado, a un tiempo de muestreo de 60fps, o dicho de otro modo a 16.66 ms.\\
+coordenadas, este se ve limitado, a un tiempo de muestreo de 60fps, o dicho de otro modo a 16.66 ms.
+
+\subsection{Función de tranferencia}
+Como vimos en el capítulo 3, la función de transferencia de un motor de corriente continua es de segundo orden, e involucra algunas constantes que dependen del toque máximo y
+de la velocidad sin carga.
+\begin{equation}
+	\frac{\theta_m (s)}{E_a(s)} = \frac{K_t / (R_aJ_m)}{s \left[ s + \frac{1}{J_m} \left( D_m + \frac{K_tK_b}{R_a} \right) \right]}
+\end{equation}
+El motor que se utilizó para hacer el mecanismo móvil es el MG996R, es un motor de tipo servo 360 grados, esto quiere decir que da todo el giro, a diferencia de los servomotores
+convencionales. Las especificaciones técnicas son las siguientes:
+\begin{itemize}
+	\item Peso = 55g
+	\item Torque stall = 11kg/cm a 6v
+	\item Velocidad sin carga = 0.14s/ 60° a 6v
+	\item Voltaje de operación = 4.8v a 7.2v
+	\item Temperatura de operación = 0°C - 55°C
+	\item PWM = 20ms (50Hz) de operación
+\end{itemize}
+La siguiente gráfica muestra la relación que hay entre el torque y la velocidad, que como se puede observar es lineal. Esta grafica se obtuvo con los datos sugeridos del
+provedor.
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig19.eps}
+	\captionof{figure}{Gráfica torque-velocidad}\label{Fig4}
+\end{center}
+Ahora encontraremos las constantes eléctricas, $K_t / R_a$ y $K_b$. De la curva de par-velocidad de la figura anterior
+\begin{itemize}
+	\item $T_{stall}$ = 1.078
+	\item $\omega_{sincarga}$ = 0.0673
+	\item $e_a$ = 6v 
+\end{itemize}
+Las constantes electricas son
+\begin{equation}
+	\frac{K_t}{R_a} = \frac{T_{stall}}{e_a} = \frac{1.078}{6} = 0.17966
+\end{equation}
+y
+\begin{equation}
+	K_b = \frac{e_a}{\omega_{sin carga}} = \frac{6}{0.0673} = 89
+\end{equation}
+La carga en cada motor es diferente, vamos a calcularla con al siguiente ecuacion del momento de inercia
+\begin{equation}
+	I = mr^2
+\end{equation}
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig20.eps}
+	\captionof{figure}{Calculando momentos de inercia}\label{Fig4}
+\end{center}
+Para el motor 1 que en la imagen se identifica como M1 la distancia de actuación es de 7.5cm y lleva la carga de 35g de la cámara más 5g de la base. Por lo que aplicando
+la ecuación anterior tenemos que
+\begin{equation}
+	I_1 = (40g)(3.75cm)^2 = 562.5g-cm^2 = 0.00005625 Kg-m^2
+\end{equation}
+Y para el motor 2 la masa es la acumulada de la masa1 + motor1 + estructura, dando como resultado 160 gramos
+\begin{equation}
+	I_2 = (160g)(6.5cm)^2 = 6760 g-cm^2 = 0.000676 kg-m^2
+\end{equation}
+De los valores para $J_m$ de motores de correinte continua comerciales tenemos un rango de 0.0000014 - 0.00005 $kg-m^2$
+
+Debido a lo pequeño de estos valores, podemos hacer 0 a la variable $J_m$, por lo que la función de transferencia queda
+\begin{equation}
+	\frac{\theta_m (s)}{E_a(s)} = \frac{K_t / R_a}{s \left[ s +  \left( \frac{K_tK_b}{R_a} \right) \right]} = \frac{0.17966}{s(s+16)}
+\end{equation}
+
+\subsection{Algortimo de control}
 El algoritmo general del control esta descrito en los siguientes diagramas, basado en programación orientado a objetos
 donde hay dos puntos claves, la obtención de datos y la publicación de los errores para después ser graficados.
 \begin{center}

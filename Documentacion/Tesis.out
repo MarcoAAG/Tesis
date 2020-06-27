@@ -64,10 +64,12 @@
 \BOOKMARK [1][]{section*.68}{5.3 Prototipo f\355sico}{chapter.5}% 64
 \BOOKMARK [1][]{section*.69}{5.4 ROS-Microcontrolador}{chapter.5}% 65
 \BOOKMARK [1][]{section*.70}{5.5 Control}{chapter.5}% 66
-\BOOKMARK [0][]{chapter*.71}{Bibliograf\355a}{}% 67
-\BOOKMARK [0][]{section*.74}{\315ndice de figuras}{}% 68
-\BOOKMARK [0][]{section*.75}{\315ndice de cuadros}{}% 69
-\BOOKMARK [0][]{section*.77}{Lista de c\363digos}{}% 70
-\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 71
-\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 72
-\BOOKMARK [1][]{section*.80}{B.1 ODROID}{appendix.Alph2}% 73
+\BOOKMARK [2][]{section*.71}{5.5.1 Funci\363n de tranferencia}{section*.70}% 67
+\BOOKMARK [2][]{section*.72}{5.5.2 Algortimo de control}{section*.70}% 68
+\BOOKMARK [0][]{chapter*.73}{Bibliograf\355a}{}% 69
+\BOOKMARK [0][]{section*.76}{\315ndice de figuras}{}% 70
+\BOOKMARK [0][]{section*.77}{\315ndice de cuadros}{}% 71
+\BOOKMARK [0][]{section*.79}{Lista de c\363digos}{}% 72
+\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 73
+\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 74
+\BOOKMARK [1][]{section*.82}{B.1 ODROID}{appendix.Alph2}% 75

@@ -205,15 +205,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Lazo de control\relax }}{87}{figure.5.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Lazo de control\relax }}{88}{figure.5.12}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Gr\IeC {\'a}fica torque-velocidad\relax }}{88}{figure.5.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Control proporcional sobre el eje X\relax }}{88}{figure.5.13}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Calculando momentos de inercia\relax }}{89}{figure.5.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Control proporcional sobre el eje Y\relax }}{89}{figure.5.14}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Lazo de control\relax }}{90}{figure.5.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{90}{figure.5.15}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Control proporcional sobre el eje X\relax }}{90}{figure.5.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{90}{figure.5.16}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Control proporcional sobre el eje Y\relax }}{91}{figure.5.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{92}{figure.5.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{92}{figure.5.18}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -221,4 +225,4 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{107}{figure.Alph2.1}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{109}{figure.Alph2.1}
