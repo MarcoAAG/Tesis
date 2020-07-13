@@ -4,7 +4,7 @@
 \chapter{Introducción}
 \label{sec:intro}
 
-\cleanchapterquote{You can’t do better design with a computer, but you can speed up your work enormously.}{Wim Crouwel}{(Graphic designer and typographer)}
+\cleanchapterquote{El experimentador que no sabe lo que está buscando no comprenderá lo que encuentra.}{Claude Bernard}{(Biólogo teórico, médico y fisiólogo francés.)}
 
 
 En el presente capitulo se expone el objetivo general, así como sus derivados. En la
@@ -45,7 +45,7 @@ Diseñar, instrumentar y controlar un dispositivo gimbal que sea capaz de seguir
 implementarse en un UAV de categoría pequeña a velocidad baja.
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.85\textwidth]{Contenido/Cuerpo/Capitulo1/Fig0.eps}
+	\includegraphics[width=1\textwidth]{Contenido/Cuerpo/Capitulo1/Fig0.eps}
 	\captionof{figure}{Representación grafica del objetivo del proyecto}
 	\label{fig:Introduccion:Fig1}
 \end{figure}
@@ -55,7 +55,7 @@ implementarse en un UAV de categoría pequeña a velocidad baja.
 %Seran los capitulos de la tesis %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-	\item Obtener el modelo matemático de una gimbal.
+	\item Definir el modelo matemático de una gimbal con base a los grados de libertad.
 	\item Diseñar e implementar el sistema embebido que dará el soporte electrónico a la gimbal.
 	\item Capturar figuras geométricas definidas  mediante el uso de una cámara digital y emplear algoritmos de visión artificial para la obtención de datos.
 	\item Diseñar un controlador autónomo con base en el modelo matemático, previamente obtenido.
@@ -66,11 +66,7 @@ implementarse en un UAV de categoría pequeña a velocidad baja.
 %Descripción breve de las obras, proyectos, intentos universitarios más significativos %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 La aparición de la gimbal no es un termino para nada nuevo, de hecho es viejo más de lo que
-muchos podemos creer. Fue en el 250 antes de nuestra era cuando el inventor Philo of Byzantium
-describió un bote de tinta de ocho lados con una abertura en cada lado, que se puede
-girar de modo que mientras cualquier cara está en la parte superior, se puede sumergir y
-entintar un bolígrafo, aunque la tinta nunca se agota a través de los agujeros de los otros
-lados. \cite{WEB:Gimbal}\\
+muchos podemos creer. Fue en el 250 antes de nuestra era cuando el inventor Philo of Byzantium diseño un sistema que pudiera estabilizar la inyección de tinta. \cite{WEB:Gimbal}\\
 Desde entonces y hasta la fecha múltiples científicos han desarrollado investigaciones alrededor
 de dicho artefacto, algunos teniendo más éxito que otros; los cuales serán brevemente expuestos
 con la finalidad de obtener el estado actual en el que se encuentra la gimbal y su avance
@@ -105,7 +101,7 @@ tecnológico.
 	      eficiente y versátil con las características ideales de empuje y rendimiento para
 	      impulsar la etapa superior del espacio de la NASA.\cite{WEB:NASA}
 	      \begin{center}
-		      \includegraphics[width=0.4\textwidth]{Contenido/Cuerpo/Capitulo1/Fig2.eps}
+		      \includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo1/Fig2.eps}
 		      \captionof{figure}{Uso de una gimbal en un motor de propulsión \cite{WEB:NASA2JX} }
 		      \label{fig:Introduccion:Fig3}
 	      \end{center}
@@ -142,14 +138,14 @@ tecnológico.
 	      una idea simple pero revolucionaria: hacer un dispositivo que pudiera suavizar las
 	      tomas de acción manuales.
 	      \begin{center}
-		      \includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo1/Fig4.eps}
+		      \includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo1/Fig4.eps}
 		      \captionof{figure}{Primer uso de la steadicam}
 		      \label{fig:Introduccion:Fig5}
 	      \end{center}
 
 	      El resultado es el Steadicam (Que cumple con los principios físicos de la gimbal).
 	      Ganador de un Premio de la Academia, que hizo su debut cinematográfico en la
-	      película "Bound for Glory", y se destacó en las películas "Rocky" y "The Shining"
+	      película "Bound for Glory", y se destacó en las películas "Rocky y "The Shining"
 
 
 \end{itemize}
@@ -159,24 +155,26 @@ tecnológico.
 %                         Contribuciones                                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Actualmente la forma en que se desarrollan los sistemas gimbal de los vehículos aéreos no tripulados están basados en el procesamiento
-de datos con Arduino conectado a ROS, la idea de migrar a una tarjeta micro controladora mas fiable como la TMS570LC43 hace que esta sea una
+de datos con Arduino conectado a ROS, la idea de migrar a una tarjeta micro controladora más fiable como la TMS570LC43 hace que esta sea una
 de las principales aportaciones, ya que queda bajo licencia de software libre, además de la investigación en mejorar el algoritmo de búsqueda
-de centroide de la visión artificial, mediante el uso de corrección de factor gamma. Lo que nos puede permitir ajustar los filtros con un sensor 
+de centroide de la visión artificial, mediante el uso de corrección de factor gamma. Lo que nos puede permitir ajustar los filtros con un sensor
 de luminancia\\
-A nivel escolar, es la primera tesis que incluye visión artificial en la carrera de Ingeniería Electrónica y Control de Sistemas de Aeronaves, 
-siendo esta investigación el inicio de un proyecto de instrumentación de MAV con la incorporación de una tarjeta monoprocesador con ROS.
+A nivel escolar, es la primera tesis que incluye visión artificial en la carrera de Ingeniería Electrónica y Control de Sistemas de Aeronaves,
+siendo esta investigación el inicio de un proyecto de instrumentación de Vehículos Aéreos no Tripulados con la incorporación de una tarjeta monoprocesador con ROS.
 
 \section{Alcances}
+Se tendrá un sistema de control de dos grados de libertad capaz de seguir un objeto de color sólido y geometría conocida en un ambiente controlado, el sistema hará uso
+de filtros morfológicos (solo opening y closing) y sé verá limitado por la corrección del brillo mediante software y no hardware.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %¿Porque es relevante la solucion o mejora o implementacion.? ¿por que es novedosa? %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-La investigacion actual tiene los siguientes alcances:
-\begin{itemize}
-	\item Hacer el control para dos grados de libertad.
-	\item Utilizar filtros morfologicos(opening y closing).
-	\item Que la variacion de gamma sea por software y no por hardware
-	\item No sera acoplado a un vehiculo aereo, queda en simulación en tierra.
-\end{itemize}
+% La investigacion actual tiene los siguientes alcances:
+% \begin{itemize}
+	% \item Hacer el control para dos grados de libertad.
+	% \item Utilizar filtros morfologicos(opening y closing).
+	% \item Que la variacion de gamma sea por software y no por hardware
+	% \item No sera acoplado a un vehiculo aereo, queda en simulación en tierra.
+% \end{itemize}
 
 
 % \section{Estructura de la tesis}
