@@ -91,136 +91,136 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Rotaci\IeC {\'o}n en 3 ejes.\relax }}{50}{figure.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Marco de referencia del cuerpo.\relax }}{50}{figure.3.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Marco de referencia del cuerpo.\relax }}{51}{figure.3.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Marco de referencia del la c\IeC {\'a}mara.\relax }}{51}{figure.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Marco de referencia Body y gimbal\relax }}{51}{figure.3.8}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Marco de referencia Body y gimbal\relax }}{52}{figure.3.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Marco de referencia del gimbal trasladado en el del cuerpo\relax }}{52}{figure.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Rotaci\IeC {\'o}n en el eje k\relax }}{52}{figure.3.10}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Rotaci\IeC {\'o}n en el eje k\relax }}{53}{figure.3.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Rotaci\IeC {\'o}n en el eje x\relax }}{53}{figure.3.11}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Rotaci\IeC {\'o}n en el eje x\relax }}{54}{figure.3.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama electrico de motor de corriente directa\relax }}{54}{figure.3.12}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama electrico de motor de corriente directa\relax }}{55}{figure.3.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Motor DC que acciona una carga mec\IeC {\'a}nica rotacional\relax }}{56}{figure.3.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Curva de par-velocidad\relax }}{57}{figure.3.14}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Curva de par-velocidad\relax }}{58}{figure.3.14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces C\IeC {\'a}mara 'Ocam' obtenida de \cite {WEB:Ocam}\relax }}{59}{figure.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{61}{figure.4.2}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{60}{figure.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicaci\IeC {\'o}n entre opencv y ROS\relax }}{61}{figure.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{62}{figure.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de clases del subscriber\relax }}{62}{figure.4.5}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de clases del subscriber\relax }}{63}{figure.4.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Comunicaci\IeC {\'o}n ROS con calibrador\relax }}{63}{figure.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Proceso de calibraci\IeC {\'o}n utilizando un tablero de ajedrez\relax }}{63}{figure.4.7}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Proceso de calibraci\IeC {\'o}n utilizando un tablero de ajedrez\relax }}{64}{figure.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Proceso de calibraci\IeC {\'o}n utilizando un tablero de ajedrez\relax }}{64}{figure.4.8}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Proceso de calibraci\IeC {\'o}n utilizando un tablero de ajedrez; correcci\IeC {\'o}n de distorsi\IeC {\'o}n\relax }}{65}{figure.4.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Diagrama de flujo para cambio de espacio de color\relax }}{65}{figure.4.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.10}{\ignorespaces a)Imagen RGB; b) Imagen HSV\relax }}{66}{figure.4.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Espacio de color HSV, a)Hue; b)Saturation; c)Value\relax }}{66}{figure.4.11}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Espacio de color HSV, a)Hue; b)Saturation; c)Value\relax }}{67}{figure.4.11}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Espectro de colores\relax }}{67}{figure.4.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{67}{figure.4.13}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Separaci\IeC {\'o}n de colores en 4 rangos\relax }}{68}{figure.4.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Separaci\IeC {\'o}n de colores\relax }}{68}{figure.4.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Separaci\IeC {\'o}n de color azul\relax }}{68}{figure.4.15}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Separaci\IeC {\'o}n de color azul\relax }}{69}{figure.4.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Separaci\IeC {\'o}n de colore azul\relax }}{69}{figure.4.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Separaci\IeC {\'o}n de colores RGB utilizando el modelo HSV\relax }}{69}{figure.4.17}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Separaci\IeC {\'o}n de colores RGB utilizando el modelo HSV\relax }}{70}{figure.4.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de contraste; c) Histograma de a y b\relax }}{70}{figure.4.18}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de contraste; c) Histograma de a y b\relax }}{71}{figure.4.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de contraste en 1.5; c) Histograma de a y b\relax }}{71}{figure.4.19}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de contraste en 1.5; c) Histograma de a y b\relax }}{72}{figure.4.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de brillo en 50; c) Histograma de a y b\relax }}{72}{figure.4.20}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de brillo en 50; c) Histograma de a y b\relax }}{73}{figure.4.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.21}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de brillo en 100; c) Histograma de a y b\relax }}{72}{figure.4.21}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de brillo en 100; c) Histograma de a y b\relax }}{73}{figure.4.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.22}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de gamma < 1; c) Histograma de a y b\relax }}{73}{figure.4.22}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de gamma < 1; c) Histograma de a y b\relax }}{74}{figure.4.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.23}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de gamma > 1; c) Histograma de a y b\relax }}{74}{figure.4.23}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces a) Imagen captada por la c\IeC {\'a}mara; b) Correcci\IeC {\'o}n de gamma > 1; c) Histograma de a y b\relax }}{75}{figure.4.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Comunicaci\IeC {\'o}n de nodos\relax }}{74}{figure.4.24}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Comunicaci\IeC {\'o}n de nodos\relax }}{75}{figure.4.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.25}{\ignorespaces correci\IeC {\'o}n de gamma, la imagen de la derecha es la corregida\relax }}{74}{figure.4.25}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces correci\IeC {\'o}n de gamma, la imagen de la derecha es la corregida\relax }}{76}{figure.4.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.26}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros\relax }}{75}{figure.4.26}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros\relax }}{77}{figure.4.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.27}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros. Con size de 3\relax }}{76}{figure.4.27}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces A) Imagen original, B)Aplicaci\IeC {\'o}n de flitros. Con size de 3\relax }}{77}{figure.4.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.28}{\ignorespaces A) Imagen original,B) Espacio de color HSV C)Aplicaci\IeC {\'o}n de flitros\relax }}{76}{figure.4.28}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces A) Imagen original,B) Espacio de color HSV C)Aplicaci\IeC {\'o}n de flitros\relax }}{78}{figure.4.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Obtenci\IeC {\'o}n del centroide sin correci\IeC {\'o}n de $\gamma $\relax }}{77}{figure.4.29}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Obtenci\IeC {\'o}n del centroide sin correci\IeC {\'o}n de $\gamma $\relax }}{78}{figure.4.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Obtenci\IeC {\'o}n del centroide con correci\IeC {\'o}n de $\gamma $ en 0.4\relax }}{78}{figure.4.30}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Obtenci\IeC {\'o}n del centroide con correci\IeC {\'o}n de $\gamma $ en 0.4\relax }}{79}{figure.4.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Obtenci\IeC {\'o}n del centroide con correci\IeC {\'o}n de $\gamma $ en 0.2\relax }}{78}{figure.4.31}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Obtenci\IeC {\'o}n del centroide con correci\IeC {\'o}n de $\gamma $ en 0.2\relax }}{80}{figure.4.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Pruebas del centroide con diferentes formas geom\IeC {\'e}tricas\relax }}{79}{figure.4.32}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Pruebas del centroide con diferentes formas geom\IeC {\'e}tricas\relax }}{80}{figure.4.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.33}{\ignorespaces teorema de Green\relax }}{79}{figure.4.33}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Pruebas del centroide con figura de geometr\IeC {\'\i }a irregular\relax }}{81}{figure.4.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Nodos de ROS\relax }}{80}{figure.4.34}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Modulos del sistema\relax }}{81}{figure.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura del sistema\relax }}{82}{figure.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Dise\IeC {\~n}o CAD del prototipo\relax }}{82}{figure.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Dimensiones del CAD\relax }}{83}{figure.5.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Grados de libertad del sistema\relax }}{83}{figure.5.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Prototipo del sistema hecho con madera\relax }}{84}{figure.5.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Circuito el\IeC {\'e}ctrico\relax }}{85}{figure.5.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{85}{figure.5.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de secuencia\relax }}{86}{figure.5.9}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Nodos y Topicos activos\relax }}{86}{figure.5.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Lazo de control\relax }}{87}{figure.5.11}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Gr\IeC {\'a}fica torque-velocidad\relax }}{88}{figure.5.12}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Calculando momentos de inercia\relax }}{89}{figure.5.13}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Lazo de control\relax }}{90}{figure.5.14}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Control proporcional sobre el eje X\relax }}{90}{figure.5.15}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Control proporcional sobre el eje Y\relax }}{91}{figure.5.16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{92}{figure.5.17}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{92}{figure.5.18}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Nodos de ROS\relax }}{81}{figure.4.34}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Modulos del sistema\relax }}{83}{figure.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura del sistema\relax }}{84}{figure.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Dise\IeC {\~n}o CAD del prototipo\relax }}{84}{figure.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Dimensiones del CAD\relax }}{85}{figure.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Grados de libertad del sistema\relax }}{85}{figure.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Prototipo del sistema hecho con madera\relax }}{86}{figure.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Circuito el\IeC {\'e}ctrico\relax }}{87}{figure.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{87}{figure.5.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de secuencia\relax }}{88}{figure.5.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Nodos y Topicos activos\relax }}{88}{figure.5.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Lazo de control\relax }}{89}{figure.5.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Gr\IeC {\'a}fica torque-velocidad\relax }}{90}{figure.5.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Calculando momentos de inercia\relax }}{91}{figure.5.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Lazo de control\relax }}{92}{figure.5.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Control proporcional sobre el eje X\relax }}{92}{figure.5.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Control proporcional sobre el eje Y\relax }}{93}{figure.5.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Control proporcional derivativo sobre el eje X\relax }}{94}{figure.5.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Control proporcional derivativo sobre el eje Y\relax }}{94}{figure.5.18}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{109}{figure.Alph2.1}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{111}{figure.Alph2.1}

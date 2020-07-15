@@ -1,5 +1,5 @@
 \chapter{Visión Artificial}
-\cleanchapterquote{Let's go invent tomorrow instead of worrying about what happened yesterday.}{Steve Jobs}{(American business magnate, industrial designer, investor, and media proprietor.)}
+\cleanchapterquote{Vamos a inventar el mañana, en lugar de preocuparnos por lo que sucedió ayer.}{Steve Jobs}{(Empresario y magnate americano)}
 
 En este capítulo se abordarán temas relacionados con la obtención del centroide de una figura, pasando por la calibración de la
 cámara, el cambio del espacio de color y aplicación de filtros morfológicos. Además de presentar el algoritmo de visión y
@@ -37,7 +37,7 @@ la carga de trabajo de la CPU.
 
 \section{Algoritmo general}
 El proceso de la obtención del centroide de la figura requiere seguir una serie de pasos relacionados con el
-procesamiento de imágenes, podemos entonces definir esos pasos como un algoritmo, descrito en la siguiente lista.
+procesamiento de imágenes, podemos entonces definir esos pasos como un algoritmo.
 
 \begin{algorithm}
 	\caption{Obtener centroide de figura}
@@ -66,10 +66,10 @@ En la sección de vision artificial se lanzan dos nodos, uno encargado de captur
 publicar frames a 60hz y el otro que se suscribe a dicho nodo y realiza un procesamiento
 con la información obtenida para posterior publicar coordenadas.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig0.eps}
+	\includegraphics[width=0.56 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig0.eps}
 	\captionof{figure}{Nodos y topic}\label{Fig1}
 \end{center}
-En la figura 4.1 se puede observar dos nodos conectados por un topic llamado /Image
+En la figura 4.2 se puede observar dos nodos conectados por un topic llamado /Image
 encargado de comunicar la imagen de un nodo a otro.
 \subsection{Publisher}
 Como vimos anteriormente opencv es una librería open-source que se encarga del procesamiento
@@ -96,9 +96,9 @@ codificación opcional. La codificación se refiere al destino CvImage.\\
 Para codificaciones de imágenes populares, CvBridge opcionalmente realizará
 conversiones de color o profundidad de píxeles según sea necesario. Para este proyecto
 se utiliza bgr8: CV\_8UC3, es decir, que el orden del color es Azul, Verde y Rojo.\\
-Con el fin de entender este nodo se hizo el siguiente diagrama de flujo:
+Con el fin de entender este nodo se hizo el diagrama de flujo de la figura 4.4:
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/publisher.eps}
+	\includegraphics[width=1.0 \textwidth]{Contenido/Cuerpo/Capitulo4/publisher.eps}
 	\captionof{figure}{Diagrama de flujo del programa publisher}\label{Fig5}
 \end{center}
 El código se encuentra en la parte del Apéndice A, 'código 1'
@@ -110,9 +110,9 @@ del objetivo.\\
 El proceso que se ejecuta sé vera más a detalle en las siguientes secciones de este
 capítulo.\\
 Dichos procesos están incluidos en una clase llamada 'objectTracking' que se ilustra
-en el siguiente diagrama.
+en el diagrama de clases de la figura 4.5.
 \begin{center}
-	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo4/object_tracking.eps}
+	\includegraphics[width=1.0 \textwidth]{Contenido/Cuerpo/Capitulo4/object_tracking.eps}
 	\captionof{figure}{Diagrama de clases del subscriber}\label{Fig5}
 \end{center}
 
@@ -127,7 +127,7 @@ Siguiendo la calibración basada en el algoritmo de Zhangs, previamente descrito
 comenzamos por posicionar la cámara en una mesa fija y colocando un tablero de ajedrez de dimensión
 2.65 x 2.6cm cada cuadrito.\\ Lanzando los nodos de ROS y graficando en RQT
 \begin{center}
-	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig11.eps}
+	\includegraphics[width=0.8 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig11.eps}
 	\captionof{figure}{Comunicación ROS con calibrador}\label{Fig1}
 \end{center}
 
@@ -143,9 +143,9 @@ la siguiente manera:
 	\item Tablero de ajedrez que llena todo el campo de visión
 	\item Tablero de ajedrez inclinado hacia la izquierda, derecha, arriba y abajo (sesgado)
 \end{itemize}
-Tal como se ilustra en la siguiente figura
+Tal como se ilustra en la figura 4.7
 \begin{center}
-	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig12.eps}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig12.eps}
 	\captionof{figure}{Proceso de calibración utilizando un tablero de ajedrez}\label{Fig1}
 \end{center}
 Despues del proceso de calibración los resultados son los siguientes:
@@ -175,10 +175,10 @@ Matriz de proyección de cámara P
 		0.        & 0.        & 1.        & 0.
 	\end{bmatrix}
 \end{equation}
-Una vez cambiando los parametros anteriores al pubicador da como resultado la sguiente imagen
+Una vez cambiando los parametros anteriores al pubicador da como resultado la figura 4.8
 \begin{center}
-	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo4/Fig10.eps}
-	\captionof{figure}{Proceso de calibración utilizando un tablero de ajedrez}\label{Fig1}
+	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo4/Fig10.eps}
+	\captionof{figure}{Proceso de calibración utilizando un tablero de ajedrez; corrección de distorsión}\label{Fig1}
 \end{center}
 
 
@@ -193,10 +193,10 @@ de RGB a HSV, además ya sabemos el porque es mejor generar colores partiendo de
 modelo HSV. Así que lo que ahora sigue es la implementación en código y las pruebas
 que se hicieron para tener un rango de colores y así tener una base de datos a la
 cual recurriremos después.\\
-El siguiente diagrama muestra el flujo que el programa 2(ver apéndice A) siguió para
+El diagrama de la figura 4.9 muestra el flujo que el programa 2(ver apéndice A) siguió para
 el cambio de espacio de color.
 \begin{center}
-	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/color.eps}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/color.eps}
 	\captionof{figure}{Diagrama de flujo para cambio de espacio de color}\label{color}
 \end{center}
 Empezamos con la función definida que nos dan las librerías de opencv para transformar
@@ -221,14 +221,14 @@ es BGR (los bytes se invierten). Entonces, el primer byte en una imagen en color
 byte será rojo. El cuarto, quinto y sexto bytes serían el segundo píxel (Azul, luego
 Verde, luego Rojo), y así sucesivamente.
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo4/Fig2.eps}
+	\includegraphics[width=0.95 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig2.eps}
 	\captionof{figure}{a)Imagen RGB; b) Imagen HSV}\label{Fig6}
 \end{center}
-En la figura anterior podemos apreciar el cambio del espacio de color, en b) tenemos el resultado de aplicar la función cvtColor
+En la figura 4.10 podemos apreciar el cambio del espacio de color, en b) tenemos el resultado de aplicar la función cvtColor
 con el código COLOR\_BGR2HSV, que podemos dividir a su vez en 3 canales, H$\arrowvert$Hue, S$\arrowvert$Saturation y
-V$\arrowvert$Value.
+V$\arrowvert$Value como se muestra en la figura 4.11.
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo4/Fig3.eps}
+	\includegraphics[width=0.95 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig3.eps}
 	\captionof{figure}{Espacio de color HSV, a)Hue; b)Saturation; c)Value}\label{Fig6}
 \end{center}
 
@@ -252,18 +252,18 @@ la gama de azules, amarillo, naranja, etc. Por esa razón se hicieron pruebas pa
 determinar los valores HSV que corresponden a los siguientes colores: Amarillo, Azul,
 Rojo, Verde y Naranja y de esta manera a la hora de seguir un objetivo de dado color
 el sistema no tenga problemas en reconocer esa gama de color.\\
-La siguiente figura ilustra una gama de colores que va desde el rojo al azul, donde la
+La figura 4.12 ilustra una gama de colores que va desde el rojo al azul, donde la
 tarea es obtener un conjunto de imagenes que correspondan a un sector de la misma.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig4.eps}
+	\includegraphics[width=0.67\textwidth]{Contenido/Cuerpo/Capitulo4/Fig4.eps}
 	\captionof{figure}{Espectro de colores}\label{Fig6}
 \end{center}
 De donde apartir del código 2 se obtuvieron los siguientes resultados.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig5.eps}
-	\captionof{figure}{Separación de colores}\label{Fig6}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo4/Fig5.eps}
+	\captionof{figure}{Separación de colores en 4 rangos}\label{Fig6}
 \end{center}
-En la figura 4.9 se aprecia la separación en 4 colores; Rojo, Amarillo, Verde y Azul.
+En la figura 4.13 se aprecia la separación de la gigura 4.12 en 4 colores; Rojo, Amarillo, Verde y Azul.
 con los siguientes rangos de valores.\\
 \begin{table}[ht]
 	\begin{center}
@@ -293,30 +293,30 @@ dichos valores en una imagen captada por la cámara.\\
 Las pruebas se hicieron con luz emitida por un foco, y con poca interacción con la
 energía solar, probando primero el rango de color azul.
 \begin{center}
-	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo4/Fig7.eps}
+	\includegraphics[width=0.90 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig7.eps}
 	\captionof{figure}{Separación de color azul}\label{Fig7}
 \end{center}
-Como se puede observar en la figura anterior gran parte del color verde esta encapsulada
-en lo que deberia ser únicamente color azul, esto debido aunque en las pruebas iniciales
+Como se puede observar en la figura 4.15 gran parte del color verde está encapsulada
+en lo que debería ser únicamente color azul, esto debido a que en las pruebas iniciales
 no se consideró la variación de iluminación en el entorno, por lo que reajustar los
-valores se hace una tarea necesaria. Aunque los primero valores de la tabla 4.1
+valores se hace una tarea necesaria. Aunque los primeros valores de la tabla 4.1
 no son exactos, nos sirven para tener una referencia de donde empezar a trabajar.\\
-Una vez corregido el resultado del color azul se muestra en la siguiente figura.
+Una vez corregido el resultado del color azul se muestra en la figura 4.16.
 \begin{center}
 	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig9.eps}
 	\captionof{figure}{Separación de colore azul}\label{Fig8}
 \end{center}
-Que al final tenemos la separación de los colores primarios como se muestra en la siguiente
-figura, donde se debe mencionar uno de los principales problemas que presenta este algoritmo.
+Que al final tenemos la separación de los colores RGB como se muestra en la
+figura 4.17.
 \begin{center}
-	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo4/Fig8.eps}
+	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo4/Fig8.eps}
 	\captionof{figure}{Separación de colores RGB utilizando el modelo HSV}\label{Fig9}
 \end{center}
-El problema es que debido a que no tenemos un sensor que mida la intensidad de luminosidad
-nuestro rango de los valores S y V van a cambiar dependiendo del entorno en el que este la cámara
-es decir, que si hay alguna sombra que haga pensar al algoritmo que el color es verde, cuando en
-realidad es azul.
-Para las pruebas anteriores se obtuvieron de resultado los siguiente valores.\\
+Un problema evidente es que debido a que no tenemos un sensor que mida la intensidad de luminosidad
+nuestro rango de los valores S y V van a cambiar dependiendo del entorno en el que esté la cámara,
+es decir, que si hay alguna sombra que haga captar al algoritmo que el color es verde, cuando en
+realidad es azul, esto representa un ruido indeseado.
+Para las pruebas anteriores se obtuvieron de resultado los valores de la tabla 4.2.\\
 \begin{table}[ht]
 	\begin{center}
 		\caption{Valores para cada rango de color en un ambiente iluminado por energía eléctrica}
@@ -332,9 +332,9 @@ Para las pruebas anteriores se obtuvieron de resultado los siguiente valores.\\
 		\end{tabular}
 	\end{center}
 \end{table}\\
-Otro problema que es palpable de ver es la captación de ruido, en las dos figuras anteriores
+Otro problema es la entrada de ruido, en las figuras 4.16 y 4.17
 hay presencia de pequeño ruido tanto fuera como dentro de las letras. Esto se puede solucionar
-agregando un par de filtros básicos, los llamadas opening y closing.
+agregando un par de filtros básicos, llamados opening y closing.
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
@@ -351,39 +351,39 @@ y de la misma manera poner una barra en la interfaz que ajuste el brillo de modo
 parece ser la mejor opción para este proyecto debido a que solo necesitamos mover un rango de valor y dejar
 fijos los parámetros del espacio de color, esto, claro se tiene que hacer antes de transformar de RGB
 a HSV.\\
-El ajuste de brillo y saturación se da a partir de la siguiente expresión
+El ajuste de brillo y saturación se da a partir de la ecuación 4.4
 \begin{equation}
 	g(i,j) = \alpha * f(i,j) + \beta
 \end{equation}
 Donde $\alpha$ es el encargado de ajustar el contraste, mientras que $\beta$ se encarga del brillo.
 Los valores de $\alpha$ van en el rango de 1 a 3, de tipo float y los de $\beta$ van de 0 a 100 de tipo entero.
 \begin{center}
-	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig19.eps}
+	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo4/Fig19.eps}
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de contraste; c) Histograma de a y b}\label{Fig9}
 \end{center}
-Al aplicar un valor de $\alpha$ de 1.2 podemos observar que la imagen b) contrasta mejor los colores, esto puede ser observado
+Al aplicar un valor de $\alpha$ de 1.2 podemos observar que la imagen 4.18 b) contrasta mejor los colores, esto puede ser observado
 mediante un histograma que muestra en Y las incidencias de pixeles y en el eje X muestra los valores de 0 a 256 bits correspondientes
 a una imagen en escala de grises, es decir, que son histogramas que muestran la cantidad de negro de un píxel, siendo el 0 el negro
 y el 256 el blanco.\\
 El histograma de color verde está notablemente desplazado hacia la derecha, esto se debe a que la imagen ahora tiene más tonos grises
 que negros, por lo que tenemos una imagen más clara.
 \begin{center}
-	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig20.eps}
+	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig20.eps}
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de contraste en 1.5; c) Histograma de a y b}\label{Fig9}
 \end{center}
-Ahora vemos en b) una imagen más clara y a su vez vemos como la mayor parte de píxeles están llevados hacia la derecha del
-histograma, esto quiere decir que la intensidad ahora tiende a ser blanca.\\
-Esto es con respecto a $\alpha$, pero ahora veamos que pasa si modificamos el brillo. En la siguiente imagen mantenemos
+Ahora observamos en la figura 4.19 b) una imagen más clara y a su vez vemos como la mayor parte de píxeles están llevados hacia la derecha del
+histograma, esto quiere decir que la intensidad ahora tiende a ser blanco.\\
+Esto es con respecto a $\alpha$, pero ahora veamos que pasa si modificamos el brillo. En la figura 4.20 mantenemos
 el valor de contraste en 0 pero el brillo lo modificamos a 50.\\
-Como se puede observar la imagen esta más clara pero a su vez esta más opaca. Esto hace que los colores se vean un poco matizados,
+Como se puede apreciar la imagen de la figura 4.20 esta más clara pero a su vez esta más opaca. Esto hace que los colores se vean un poco matizados,
 Y en el histograma vemos que la mayoría de los píxeles están sobre la izquierda.
 \begin{center}
-	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig21.eps}
+	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig21.eps}
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de brillo en 50; c) Histograma de a y b}\label{Fig9}
 \end{center}
-Finalmente probamos el valor del brillo al máximo, es decir, al 100 dando como resultado la siguiente imagen.
+Finalmente probamos el valor del brillo al máximo, es decir, al 100 mostrada en la figura 4.21.
 \begin{center}
-	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig22.eps}
+	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig22.eps}
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de brillo en 100; c) Histograma de a y b}\label{Fig9}
 \end{center}
 Al igual que el histograma al modificar el contraste en 1.5 la gráfica c) muestra la mayor parte de los píxeles en blanco, debido
@@ -400,36 +400,36 @@ valores de entrada y su salida mapeada.
 Cuando $\gamma <1$, las regiones oscuras originales serán más brillantes y el histograma se desplazará hacia la derecha, mientras que será
 lo opuesto con $\gamma> 1$.
 \begin{center}
-	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig23.eps}
+	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig23.eps}
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de gamma < 1; c) Histograma de a y b}\label{Fig9}
 \end{center}
-La figura anterior ilustra una modificación de gamma a 0.5, es decir, que hace que la imagen se vea con más brillo de lo que originalmente
+La figura 4.22 es el resultado de una modificación de gamma a 0.5, es decir, que hace que la imagen se vea con más brillo de lo que originalmente
 es, esto nos permite obtener mejores resultados al momento de aplicar técnicas de identificación de color cuando el entorno de la imagen
 es un tanto oscuro.\\
 Por otro lado tenemos cuando gamma es mayor a 1, que en la figura 4.23 el valor de $\gamma$ es de 1.5
 \begin{center}
-	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig24.eps}
+	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig24.eps}
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de gamma > 1; c) Histograma de a y b}\label{Fig9}
 \end{center}
 De esta manera el valor de gamma va a variar dependiendo del entorno en el que se encuentre la cámara, una manera de no hacerlo
 manual seria con la implementación de un sensor de luminosidad pero eso no entra en los límites de este proyecto.
 
-Que visto desde los nodos de ROS quedaría así:
+Los nodos y topicos que estan activados en ROS se muestran en la figura 4.24
 \begin{center}
-	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig14.eps}
+	\includegraphics[width=1.0 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig14.eps}
 	\captionof{figure}{Comunicación de nodos}\label{Fig9}
 \end{center}
-El nodo en rojo es el correspondiente a la etapa de correción, que se agrega a los nodos
+El nodo en rojo es el correspondiente a la etapa de corrección, que se agrega a los nodos
 publicador y calibrador.\\
-Como pruba se utilizo un conjunto de letras de diferentes colores, impresas en papel blanco
+Como prueba se utilizó un conjunto de letras de diferentes colores, impresas en papel blanco
 \begin{center}
-	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig13.eps}
+	\includegraphics[width=0.85 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig13.eps}
 	\captionof{figure}{correción de gamma, la imagen de la derecha es la corregida}\label{Fig9}
 \end{center}
-De la imagen anterior podemos observar dos cosas importantes, la primera es la barra de valores
-que interactúan con el usuario, que va de 0 a 200 y es la correspondiente al valor de gamma. Y en
-segundo claramente se percibe un realce de colores y como es que el fondo se ve más claro, que esto
-ayuda de alguna manera a limpiar la imagen al no agregar ruido innecesario.
+De la figura 4.25 podemos observar dos cosas importantes, la primera es la barra de valores
+que interactúan con el usuario, que va de 0 a 200 y es la correspondiente al valor de gamma. Y
+segundo, claramente se percibe un realce de colores y el fondo se ve más claro al de la imagen original, que esto
+ayuda a limpiar la imagen al no agregar ruido innecesario.
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
@@ -460,24 +460,24 @@ De la función anterior tenemos que:
 \end{itemize}
 Los últimos dos parámetros son lo que se modificaron en las siguientes pruebas.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig16.eps}
+	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig16.eps}
 	\captionof{figure}{A) Imagen original, B)Aplicación de flitros}\label{Fig9}
 \end{center}
-En la imagen anterior la aplicación del filtro se hizo con un kernel para el opening cuadrado y con un tamaño de 1.
+En la figura 4.26 la aplicación del filtro se hizo con un kernel para el opening cuadrado y con un tamaño de 1.
 Se puede observar que no hay un cambio significativo por lo que se decidió cambiar a un kernel cuadrado
 de tamaño 3, la elección del kernel cuadrado es porque el objetivo tiene bordes de aproximadamente 90
 grados.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig17.eps}
+	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig17.eps}
 	\captionof{figure}{A) Imagen original, B)Aplicación de flitros. Con size de 3}\label{Fig9}
 \end{center}
-Hubo ligeros cambios, solo desaparecieron algunos puntos que son ruido por lo que es conveniente aumentar
+En la figura 4.27 hubo ligeros cambios, solo desaparecieron algunos puntos que son ruido por lo que es conveniente aumentar
 el parámetro \textbf{size}.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig15.eps}
+	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig15.eps}
 	\captionof{figure}{A) Imagen original,B) Espacio de color HSV C)Aplicación de flitros}\label{Fig9}
 \end{center}
-Con un size de 5 para el kernel del filtro opening se obtuvo un resultado que considero aceptable porque
+Para la figura 4.28 se modificó el size a 5 para el kernel del filtro opening se obtuvo un resultado que considero aceptable porque
 limpió el ruido externo, es decir, desapareció los puntos que no están asociados con nuestro objeto deseado.
 
 % ---------------------------------------------------------------------------------------------------------
@@ -500,17 +500,17 @@ El metodo centroid tiene los siguientes parametros
 La salida del filtro morfológico es una de las entradas de la función 4.8.1, además de pedir dos variables de tipo uint16 donde
 se almacenaran las coordenadas (X, Y) del centroide de la figura.
 \begin{center}
-	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig25.eps}
+	\includegraphics[width=0.45 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig25.eps}
 	\captionof{figure}{Obtención del centroide sin correción de $\gamma$}\label{Fig9}
 \end{center}
-Como primera prueba tenemos en a) la ventana donde se puede modificar el valor de gamma para la corrección de brillo, que en la
+Como primera prueba tenemos en la figura 4.29 en a) la ventana donde se puede modificar el valor de gamma para la corrección de brillo, que en la
 la figura anterior no tenemos ninguna corrección de $\gamma$, en b) tenemos la aplicación del algoritmo de HSV, pero podemos
 observar que detecta a los cuadros blancos como si fueran azules, en c) tenemos la imagen procesada por dos filtros: opening
 y closing y finalmente en d) observamos un punto rojo al centro del plano de la cámara y un punto verde que representa el resultado
 del teorema de green, que debería estar en el centro del recuadro azul, sin embargo, esta lejos del centroide esto debido a que con
 los valores que establecimos en HSV y con dada iluminación del ambiente el algoritmo toma algunos tonos de blanco como azules,
 para eso la solución propuesta es la modificación del valor de gamma para ajustar los tonos.\\
-Para la siguiente prueba ahora modificamos a gamma en un valor de 0.4 y el resultado es el siguiente.
+Para la siguiente prueba ahora modificamos a gamma en un valor de 0.4 y el resultado se muestra en la figura 4.30.
 \begin{center}
 	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig26.eps}
 	\captionof{figure}{Obtención del centroide con correción de $\gamma$ en 0.4}\label{Fig9}
@@ -522,7 +522,7 @@ dibujado en el centroide del cuadro azul.
 	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig27.eps}
 	\captionof{figure}{Obtención del centroide con correción de $\gamma$ en 0.2}\label{Fig9}
 \end{center}
-Si se baja aún más el valor de gamma podemos observar que en la imagen anterior en b) la salida del proceso HSV sale con muy
+Si se baja aún más el valor de gamma podemos observar que en la figura 4.31 en b) la salida del proceso HSV sale con muy
 poco ruido, que después se limpia por completo en c) para tener como resultado el centroide localizado y dibujado en el
 centro del cuadro azul.\\
 Con esto solucionamos los problemas de tener que ajustar el rango de 3 valores durante el proceso del cambio de espacio de color
@@ -533,23 +533,23 @@ Además de las pruebas anteriores se hicieron otras para conocer como funciona e
 	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo4/Fig28.eps}
 	\captionof{figure}{Pruebas del centroide con diferentes formas geométricas}\label{Fig9}
 \end{center}
-Podemos observar que las figuras a) y b) tienen un respectivo punto blanco, esto con la finalidad de poder saber con exactitud si
+Podemos observar que en la figura 4.23 en a) y b) tienen un respectivo punto blanco, esto con la finalidad de poder saber con exactitud si
 el centroide que encuentra el sistema es el real, y como se puede observar el punto verde encaja justo con el punto blanco
 impreso en la figura, por lo que podemos afirmar que encuentra el centroide real, pero que pasa con figuras de geometría irregulares,
 como sucede en c) hay un punto rojo que no coincide con el punto verde creado por el sistema, esto es porque el punto impreso
 en la figura es el centro del rectángulo que toca los bordes de la figura, como se ilustra en la siguiente imagen
 \begin{center}
 	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo4/Fig29.eps}
-	\captionof{figure}{teorema de Green}\label{Fig9}
+	\captionof{figure}{Pruebas del centroide con figura de geometría irregular}\label{Fig9}
 \end{center}
-En a) tenemos un centro que no es el correcto, hay que recordar que la búsqueda del centroide se basa en el teorema de Green,
+En la figura 4.33 en a) tenemos un centro que no es el correcto, hay que recordar que la búsqueda del centroide se basa en el teorema de Green,
 es decir que busca en centroide con base en momentos, esto es que pone a la figura en un plano b) de dos dimensiones y es
 entonces que se realiza una integral de línea en sentido antihorario por todo el contorno de la silueta, y con base en eso
 se puede obtener el centroide real, el propósito de esta última prueba era la de verificar que el sistema no haga lo que
 no debe de hacer y es un tipo de prueba típica en el proceso de pruebas de software.\\
 Visto desde nodos de ROS tenemos
 \begin{center}
-	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo4/Fig30.eps}
+	\includegraphics[width=1.0 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig30.eps}
 	\captionof{figure}{Nodos de ROS}\label{Fig9}
 \end{center}
 El nodo llamado objectTracking tiene la clase que se encarga de hacer el proceso de HSV del filtro y de la búsqueda del
