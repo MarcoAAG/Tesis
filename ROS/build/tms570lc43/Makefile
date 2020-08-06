@@ -56,17 +56,29 @@ CMAKE_BINARY_DIR = /home/marco/Tesis/ROS/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -79,6 +91,18 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -89,18 +113,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -122,18 +134,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+.PHONY : tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+
+# Convenience name for target.
+data_acquisitionMG996: tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
+
+.PHONY : data_acquisitionMG996
+
+# fast build rule for target.
+data_acquisitionMG996/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build
+.PHONY : data_acquisitionMG996/fast
+
+# Convenience name for target.
+tms570lc43/CMakeFiles/data_acquisition.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/data_acquisition.dir/rule
+.PHONY : tms570lc43/CMakeFiles/data_acquisition.dir/rule
+
+# Convenience name for target.
+data_acquisition: tms570lc43/CMakeFiles/data_acquisition.dir/rule
+
+.PHONY : data_acquisition
+
+# fast build rule for target.
+data_acquisition/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisition.dir/build.make tms570lc43/CMakeFiles/data_acquisition.dir/build
+.PHONY : data_acquisition/fast
+
+# Convenience name for target.
 tms570lc43/CMakeFiles/sciROS.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/sciROS.dir/rule
 .PHONY : tms570lc43/CMakeFiles/sciROS.dir/rule
@@ -196,261 +226,6 @@ mg996: tms570lc43/CMakeFiles/mg996.dir/rule
 mg996/fast:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/mg996.dir/build.make tms570lc43/CMakeFiles/mg996.dir/build
 .PHONY : mg996/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
-.PHONY : tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
-
-# Convenience name for target.
-data_acquisitionMG996: tms570lc43/CMakeFiles/data_acquisitionMG996.dir/rule
-
-.PHONY : data_acquisitionMG996
-
-# fast build rule for target.
-data_acquisitionMG996/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build.make tms570lc43/CMakeFiles/data_acquisitionMG996.dir/build
-.PHONY : data_acquisitionMG996/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/build.make tms570lc43/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : tms570lc43/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: tms570lc43/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/roscpp_generate_messages_eus.dir/build.make tms570lc43/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : tms570lc43/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: tms570lc43/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make tms570lc43/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : tms570lc43/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: tms570lc43/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make tms570lc43/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : tms570lc43/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: tms570lc43/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make tms570lc43/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : tms570lc43/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: tms570lc43/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make tms570lc43/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : tms570lc43/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: tms570lc43/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make tms570lc43/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : tms570lc43/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: tms570lc43/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make tms570lc43/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : tms570lc43/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: tms570lc43/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make tms570lc43/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : tms570lc43/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: tms570lc43/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/std_msgs_generate_messages_py.dir/build.make tms570lc43/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make tms570lc43/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-tms570lc43/CMakeFiles/data_acquisition.dir/rule:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 tms570lc43/CMakeFiles/data_acquisition.dir/rule
-.PHONY : tms570lc43/CMakeFiles/data_acquisition.dir/rule
-
-# Convenience name for target.
-data_acquisition: tms570lc43/CMakeFiles/data_acquisition.dir/rule
-
-.PHONY : data_acquisition
-
-# fast build rule for target.
-data_acquisition/fast:
-	cd /home/marco/Tesis/ROS/build && $(MAKE) -f tms570lc43/CMakeFiles/data_acquisition.dir/build.make tms570lc43/CMakeFiles/data_acquisition.dir/build
-.PHONY : data_acquisition/fast
 
 src/data_acquisition.o: src/data_acquisition.cpp.o
 
@@ -566,32 +341,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... install/strip"
-	@echo "... sciROS"
-	@echo "... mg996"
-	@echo "... data_acquisitionMG996"
-	@echo "... list_install_components"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... edit_cache"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... install"
-	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... data_acquisitionMG996"
 	@echo "... data_acquisition"
+	@echo "... rebuild_cache"
+	@echo "... sciROS"
+	@echo "... install/local"
+	@echo "... test"
+	@echo "... list_install_components"
+	@echo "... mg996"
+	@echo "... edit_cache"
 	@echo "... src/data_acquisition.o"
 	@echo "... src/data_acquisition.i"
 	@echo "... src/data_acquisition.s"

@@ -1,0 +1,8 @@
+prefix=/home/marco/Tesis/ROS/devel
+
+Name: msp430
+Description: Description of msp430
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
