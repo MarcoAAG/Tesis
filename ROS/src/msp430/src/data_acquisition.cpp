@@ -26,6 +26,9 @@ private:
 public:
     uint16_t Centroid[2];
     std::string data_received = "";
+    std::string X_str;
+    std::string Y_str;
+    std::string XY_str;
 
     data_acquisition(ros::NodeHandle *n);
     ~data_acquisition();
@@ -91,18 +94,19 @@ void data_acquisition::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &
             Centroid[i] = *it;
             i++;
         }
-        // pMyserial->write("6");
-        // pMyserial->flushOutput();
-        // pMyserial->write("4");
-        // pMyserial->flushOutput();
-        // pMyserial->write("0");
-        /*Transform int to string*/
-        std::stringstream ss_x;
-        ss_x << Centroid[0];
-        std::string X_str = ss_x.str();
-        // std::cout << X_str.c_str() << std::endl;
 
-        pMyserial->write(X_str.c_str());
+        std::stringstream ss_x;
+        std::stringstream ss_y;
+
+        ss_x << Centroid[0];
+        X_str = ss_x.str();
+
+        ss_y << Centroid[1];
+        Y_str = ss_y.str();
+
+        XY_str = X_str + Y_str;
+
+        pMyserial->write(XY_str.c_str());
         pMyserial->flushOutput();
         // std::cout << "Transmitiendo datos" << std::endl;
         if (pMyserial->waitReadable())

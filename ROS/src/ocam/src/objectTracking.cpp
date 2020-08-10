@@ -137,14 +137,18 @@ void objectTracking::callBack(const sensor_msgs::ImageConstPtr &msg_)
 
         rgb2hsv(Img, ImgHSV);
         // imageViewer(Img, nameOriginal);
-        imageViewer(ImgHSV, nameHSV);
+        //! Descomentar
+        // imageViewer(ImgHSV, nameHSV);
+
         //opening
         morphologyOperation(ImgHSV, ImgOpening, 0, 5, 0);
         // morphologyOperation(ImgHSV, ImgOpening, 0, 3, 0);
         //closing
         morphologyOperation(ImgOpening, ImgClosing, 1, 2, 2);
         // morphologyOperation(ImgOpening, ImgClosing, 1, 0, 0);
-        imageViewer(ImgClosing, nameFilter);
+        //! Descomentar
+        // imageViewer(ImgClosing, nameFilter);
+        
         centroid(ImgClosing, posX, posY);
         drawCentroid(ImgLines, Img, posX, posY, lastX, lastY);
         imageViewer(Img, nameCentroid);
