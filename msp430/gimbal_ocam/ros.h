@@ -11,6 +11,7 @@
 #pragma once
 
 void initROS(void);
+void readDataRos(void);
 
 
 
