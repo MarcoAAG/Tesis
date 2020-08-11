@@ -7,7 +7,6 @@ main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/inc
 main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/intrinsics_legacy_undefs.h
 main.obj: ../clock.h
 main.obj: ../uart.h
-main.obj: ../ros.h
 main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/stdint.h
 main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/_stdint40.h
 main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/sys/stdint.h
@@ -18,6 +17,7 @@ main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/inc
 main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/machine/_types.h
 main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/machine/_stdint.h
 main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/sys/_stdint.h
+main.obj: ../ros.h
 
 ../main.c: 
 /home/marco/ti/ccs1000/ccs/ccs_base/msp430/include/msp430g2553.h: 
@@ -26,7 +26,6 @@ main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/inc
 /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/intrinsics_legacy_undefs.h: 
 ../clock.h: 
 ../uart.h: 
-../ros.h: 
 /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/stdint.h: 
 /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/_stdint40.h: 
 /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/sys/stdint.h: 
@@ -37,3 +36,4 @@ main.obj: /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/inc
 /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/machine/_types.h: 
 /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/machine/_stdint.h: 
 /home/marco/ti/ccs1000/ccs/tools/compiler/ti-cgt-msp430_20.2.0.LTS/include/sys/_stdint.h: 
+../ros.h: 

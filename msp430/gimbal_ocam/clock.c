@@ -20,7 +20,7 @@ void clockInit(void)
 void timerAInit(void)
 {
     TA0CTL = TASSEL_2 | ID_3 | MC_1;// | TACLR;
-    TA0CCR0 = 31999;
+    TA0CCR0 = 65000-1;
     TA0CCTL0 = 0x16;
 }
 
