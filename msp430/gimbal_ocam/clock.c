@@ -23,3 +23,19 @@ void timerAInit(void)
     TA0CCR0 = 31999;
     TA0CCTL0 = 0x16;
 }
+
+
+void pwmInit(void)
+{
+    P2DIR |= BIT2;
+    P2SEL |= BIT2;
+    TA1CCR0 = 40000 -1;
+    TA1CCTL1 = OUTMOD_7;
+    TA1CTL = TASSEL_2 + MC_1 + ID_3;
+}
+
+void pwm(float duty_ms)
+{
+    int duty = 2000 * duty_ms;
+    TA1CCR1 = duty;
+}

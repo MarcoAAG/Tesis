@@ -38,6 +38,10 @@ void main(int argc, char const *argv[])
 	}
 
 	clockInit();
+
+	pwmInit();
+
+
 	timerAInit();
 	uartInit();
 
@@ -56,6 +60,7 @@ void main(int argc, char const *argv[])
 	    if(TIMER_FLAG == 1)
 	    {
 	        strtoint(&CX, &CY);
+	        pwm(1.6);
 	        TIMER_FLAG = 0;
 	    }
 	}
