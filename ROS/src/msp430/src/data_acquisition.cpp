@@ -22,7 +22,7 @@ private:
     /* data */
     ros::Subscriber sub;
     serial::Serial *pMyserial = &my_serial;
-	int testData;
+    int testData;
 
 public:
     uint16_t Centroid[2];
@@ -36,6 +36,7 @@ public:
     void arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array);
     void serialInit(void);
     void initialization(void);
+    std::string intTOstr(uint16_t _data);
 };
 
 data_acquisition::data_acquisition(ros::NodeHandle *n)
@@ -82,6 +83,23 @@ void data_acquisition::initialization(void)
     std::cout << "a fue enviado" << std::endl;
 }
 
+std::string data_acquisition::intTOstr(uint16_t _data)
+{
+    std::stringstream intostr;
+    intostr << _data;
+    std::string datastr = intostr.str();
+    if (_data < 100 && _data >= 10)
+    {
+        datastr = "0" + datastr;
+    }
+    if (_data < 10)
+    {
+        datastr = "00" + datastr;
+    }
+
+    return datastr;
+}
+
 void data_acquisition::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array)
 {
     try
@@ -95,28 +113,20 @@ void data_acquisition::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &
             Centroid[i] = *it;
             i++;
         }
-
-        std::stringstream ss_x;
-        std::stringstream ss_y;
-
-        ss_x << Centroid[0];
-        X_str = ss_x.str();
-
-        ss_y << Centroid[1];
-        Y_str = ss_y.str();
+        X_str = intTOstr(Centroid[0]);
+        Y_str = intTOstr(Centroid[1]);
+        // std::cout << X_str.c_str() << "\t" << Y_str.c_str() << std::endl;
 
         XY_str = X_str + Y_str;
 
         pMyserial->write(XY_str.c_str());
         pMyserial->flushOutput();
-        // std::cout << "Transmitiendo datos" << std::endl;
         if (pMyserial->waitReadable())
         {
             data_received = pMyserial->readline();
-			testData = std::stoul(data_received, nullptr, 16);
-			std::cout << testData << std::endl;
+            testData = std::stoul(data_received, nullptr, 16);
+            std::cout << testData << std::endl;
         }
-        
     }
 
     catch (const std::exception &e)
