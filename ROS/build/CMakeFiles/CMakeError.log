@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ba002/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ba002.dir/build.make CMakeFiles/cmTC_ba002.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cd1cf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd1cf.dir/build.make CMakeFiles/cmTC_cd1cf.dir/build
 make[1]: Entering directory '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ba002.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_ba002.dir/CheckSymbolExists.c.o   -c /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ba002
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba002.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ba002.dir/CheckSymbolExists.c.o  -o cmTC_ba002 
-CMakeFiles/cmTC_ba002.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_cd1cf.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cd1cf.dir/CheckSymbolExists.c.o   -c /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cd1cf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd1cf.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cd1cf.dir/CheckSymbolExists.c.o  -o cmTC_cd1cf 
+CMakeFiles/cmTC_cd1cf.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ba002.dir/build.make:97: recipe for target 'cmTC_ba002' failed
-make[1]: *** [cmTC_ba002] Error 1
+CMakeFiles/cmTC_cd1cf.dir/build.make:97: recipe for target 'cmTC_cd1cf' failed
+make[1]: *** [cmTC_cd1cf] Error 1
 make[1]: Leaving directory '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_ba002/fast' failed
-make: *** [cmTC_ba002/fast] Error 2
+Makefile:126: recipe for target 'cmTC_cd1cf/fast' failed
+make: *** [cmTC_cd1cf/fast] Error 2
 
 File /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_84856/fast"
-/usr/bin/make -f CMakeFiles/cmTC_84856.dir/build.make CMakeFiles/cmTC_84856.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cb696/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cb696.dir/build.make CMakeFiles/cmTC_cb696.dir/build
 make[1]: Entering directory '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_84856.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_84856.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_84856
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84856.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_84856.dir/CheckFunctionExists.c.o  -o cmTC_84856 -lpthreads 
+Building C object CMakeFiles/cmTC_cb696.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_cb696.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cb696
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb696.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_cb696.dir/CheckFunctionExists.c.o  -o cmTC_cb696 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_84856.dir/build.make:97: recipe for target 'cmTC_84856' failed
-make[1]: *** [cmTC_84856] Error 1
+CMakeFiles/cmTC_cb696.dir/build.make:97: recipe for target 'cmTC_cb696' failed
+make[1]: *** [cmTC_cb696] Error 1
 make[1]: Leaving directory '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_84856/fast' failed
-make: *** [cmTC_84856/fast] Error 2
+Makefile:126: recipe for target 'cmTC_cb696/fast' failed
+make: *** [cmTC_cb696/fast] Error 2
 
 

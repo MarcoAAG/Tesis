@@ -637,7 +637,6 @@ image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/disparity_nodel
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/disparity_nodelet.cpp.o: /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/disparity_nodelet.cpp.o: /usr/lib/x86_64-linux-gnu/gtk-2.0/include/gdkconfig.h
 
-image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /home/marco/Tesis/ROS/devel/include/image_view/ImageViewConfig.h
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /home/marco/Tesis/ROS/src/image_pipeline/image_view/src/nodelets/image_nodelet.cpp
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /home/marco/Tesis/ROS/src/image_pipeline/image_view/src/nodelets/window_thread.h
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /opt/ros/melodic/include/class_loader/class_loader.hpp
@@ -671,6 +670,7 @@ image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.c
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /opt/ros/melodic/include/image_transport/single_subscriber_publisher.h
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /opt/ros/melodic/include/image_transport/subscriber.h
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /opt/ros/melodic/include/image_transport/transport_hints.h
+image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /opt/ros/melodic/include/image_view/ImageViewConfig.h
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /opt/ros/melodic/include/nodelet/exception.h
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /opt/ros/melodic/include/nodelet/nodelet.h
 image_pipeline/image_view/CMakeFiles/image_view.dir/src/nodelets/image_nodelet.cpp.o: /opt/ros/melodic/include/pluginlib/./class_list_macros.hpp

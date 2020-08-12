@@ -22,6 +22,7 @@ private:
     /* data */
     ros::Subscriber sub;
     serial::Serial *pMyserial = &my_serial;
+	int testData;
 
 public:
     uint16_t Centroid[2];
@@ -112,8 +113,10 @@ void data_acquisition::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &
         if (pMyserial->waitReadable())
         {
             data_received = pMyserial->readline();
+			testData = std::stoul(data_received, nullptr, 16);
+			std::cout << testData << std::endl;
         }
-        std::cout << data_received << std::endl;
+        
     }
 
     catch (const std::exception &e)

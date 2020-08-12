@@ -25,6 +25,7 @@ rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/u
 rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o: /opt/ros/melodic/include/ros/exceptions.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o: /opt/ros/melodic/include/ros/forwards.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o: /opt/ros/melodic/include/ros/init.h
+rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o: /opt/ros/melodic/include/ros/internal/condition_variable.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o: /opt/ros/melodic/include/ros/macros.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o: /opt/ros/melodic/include/ros/master.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o: /opt/ros/melodic/include/ros/message.h

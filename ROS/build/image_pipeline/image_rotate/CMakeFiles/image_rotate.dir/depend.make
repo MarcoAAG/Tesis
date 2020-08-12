@@ -71,6 +71,7 @@ image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/melodic/include/ros/exceptions.h
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/melodic/include/ros/forwards.h
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/melodic/include/ros/init.h
+image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/melodic/include/ros/internal/condition_variable.h
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/melodic/include/ros/macros.h
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/melodic/include/ros/master.h
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/melodic/include/ros/message.h

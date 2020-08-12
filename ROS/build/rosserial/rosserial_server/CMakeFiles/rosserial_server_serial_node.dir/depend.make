@@ -24,6 +24,7 @@ rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/seria
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /opt/ros/melodic/include/ros/exceptions.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /opt/ros/melodic/include/ros/forwards.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /opt/ros/melodic/include/ros/init.h
+rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /opt/ros/melodic/include/ros/internal/condition_variable.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /opt/ros/melodic/include/ros/macros.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /opt/ros/melodic/include/ros/master.h
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /opt/ros/melodic/include/ros/message.h

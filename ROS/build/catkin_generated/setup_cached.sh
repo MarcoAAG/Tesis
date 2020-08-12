@@ -7,10 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/marco/Tesis/ROS/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/marco/Tesis/ROS/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/marco/Tesis/ROS/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/marco/Tesis/ROS/build"
-export PYTHONPATH="/home/marco/Tesis/ROS/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/marco/Tesis/ROS/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/marco/Tesis/ROS/src:$ROS_PACKAGE_PATH"
+export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
+export PWD='/home/marco/Tesis/ROS/build'
