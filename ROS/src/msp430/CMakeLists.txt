@@ -136,6 +136,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/msp430_node.cpp)
 add_executable(data_acquisition_msp430 src/data_acquisition.cpp)
+add_executable(transmitter src/transmitter.cpp)
 
 
 ## Rename C++ executable without prefix
@@ -155,6 +156,7 @@ add_executable(data_acquisition_msp430 src/data_acquisition.cpp)
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(data_acquisition_msp430 ${catkin_LIBRARIES})
+target_link_libraries(transmitter ${catkin_LIBRARIES})
 
 
 #############

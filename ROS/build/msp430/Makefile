@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+msp430/CMakeFiles/transmitter.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 msp430/CMakeFiles/transmitter.dir/rule
+.PHONY : msp430/CMakeFiles/transmitter.dir/rule
+
+# Convenience name for target.
+transmitter: msp430/CMakeFiles/transmitter.dir/rule
+
+.PHONY : transmitter
+
+# fast build rule for target.
+transmitter/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/transmitter.dir/build.make msp430/CMakeFiles/transmitter.dir/build
+.PHONY : transmitter/fast
+
+# Convenience name for target.
 msp430/CMakeFiles/roscpp_generate_messages_py.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 msp430/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : msp430/CMakeFiles/roscpp_generate_messages_py.dir/rule
@@ -434,6 +449,33 @@ src/data_acquisition.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/data_acquisition_msp430.dir/build.make msp430/CMakeFiles/data_acquisition_msp430.dir/src/data_acquisition.cpp.s
 .PHONY : src/data_acquisition.cpp.s
 
+src/transmitter.o: src/transmitter.cpp.o
+
+.PHONY : src/transmitter.o
+
+# target to build an object file
+src/transmitter.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/transmitter.dir/build.make msp430/CMakeFiles/transmitter.dir/src/transmitter.cpp.o
+.PHONY : src/transmitter.cpp.o
+
+src/transmitter.i: src/transmitter.cpp.i
+
+.PHONY : src/transmitter.i
+
+# target to preprocess a source file
+src/transmitter.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/transmitter.dir/build.make msp430/CMakeFiles/transmitter.dir/src/transmitter.cpp.i
+.PHONY : src/transmitter.cpp.i
+
+src/transmitter.s: src/transmitter.cpp.s
+
+.PHONY : src/transmitter.s
+
+# target to generate assembly for a file
+src/transmitter.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/transmitter.dir/build.make msp430/CMakeFiles/transmitter.dir/src/transmitter.cpp.s
+.PHONY : src/transmitter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -444,6 +486,7 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... transmitter"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
@@ -466,6 +509,9 @@ help:
 	@echo "... src/data_acquisition.o"
 	@echo "... src/data_acquisition.i"
 	@echo "... src/data_acquisition.s"
+	@echo "... src/transmitter.o"
+	@echo "... src/transmitter.i"
+	@echo "... src/transmitter.s"
 .PHONY : help
 
 

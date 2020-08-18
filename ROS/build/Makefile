@@ -1130,6 +1130,19 @@ _run_tests_serial/fast:
 .PHONY : _run_tests_serial/fast
 
 #=============================================================================
+# Target rules for targets named transmitter
+
+# Build rule for target.
+transmitter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 transmitter
+.PHONY : transmitter
+
+# fast build rule for target.
+transmitter/fast:
+	$(MAKE) -f msp430/CMakeFiles/transmitter.dir/build.make msp430/CMakeFiles/transmitter.dir/build
+.PHONY : transmitter/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -3127,6 +3140,7 @@ help:
 	@echo "... serial-test-timer"
 	@echo "... run_tests_serial_gtest_serial-test-timer"
 	@echo "... _run_tests_serial"
+	@echo "... transmitter"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
