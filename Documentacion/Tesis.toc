@@ -125,60 +125,64 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Matrices de rotaci\IeC {\'o}n}{52}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Modelo matem\IeC {\'a}tico del motor DC}{54}{section*.52}
+\contentsline {section}{\numberline {3.3}Ecuaciones de movimiento de una gimbal}{54}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Visi\IeC {\'o}n Artificial}{59}{chapter.4}
+\contentsline {subsection}{\numberline {3.3.1}Rotaci\IeC {\'o}n sobre Pitch}{56}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}C\IeC {\'a}mara}{59}{section*.54}
+\contentsline {section}{\numberline {3.4}Modelo matem\IeC {\'a}tico del motor DC}{58}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Algoritmo general}{60}{section*.55}
+\contentsline {chapter}{\numberline {4}Visi\IeC {\'o}n Artificial}{63}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Comunicaci\IeC {\'o}n con ROS}{60}{section*.56}
+\contentsline {section}{\numberline {4.1}C\IeC {\'a}mara}{63}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Publisher}{61}{section*.57}
+\contentsline {section}{\numberline {4.2}Algoritmo general}{64}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Subscriber}{62}{section*.58}
+\contentsline {section}{\numberline {4.3}Comunicaci\IeC {\'o}n con ROS}{64}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Calibraci\IeC {\'o}n de camara}{63}{section*.59}
+\contentsline {subsection}{\numberline {4.3.1}Publisher}{65}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Espacio de color}{65}{section*.60}
+\contentsline {subsection}{\numberline {4.3.2}Subscriber}{66}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Pruebas de campo}{68}{section*.62}
+\contentsline {section}{\numberline {4.4}Calibraci\IeC {\'o}n de camara}{67}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Correcci\IeC {\'o}n de brillo}{70}{section*.64}
+\contentsline {section}{\numberline {4.5}Espacio de color}{69}{section*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Correcci\IeC {\'o}n de Gamma}{74}{section*.65}
+\contentsline {subsection}{\numberline {4.5.1}Pruebas de campo}{72}{section*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Filtro morfologico}{76}{section*.66}
+\contentsline {section}{\numberline {4.6}Correcci\IeC {\'o}n de brillo}{74}{section*.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Centroide}{78}{section*.67}
+\contentsline {subsection}{\numberline {4.6.1}Correcci\IeC {\'o}n de Gamma}{78}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Sistema Embebido}{83}{chapter.5}
+\contentsline {section}{\numberline {4.7}Filtro morfologico}{80}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Arquitectura}{83}{section*.69}
+\contentsline {section}{\numberline {4.8}Centroide}{82}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Mecanismo m\IeC {\'o}vil}{84}{section*.70}
+\contentsline {chapter}{\numberline {5}Sistema Embebido}{87}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Prototipo f\IeC {\'\i }sico}{86}{section*.71}
+\contentsline {section}{\numberline {5.1}Arquitectura}{87}{section*.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}ROS-Microcontrolador}{87}{section*.72}
+\contentsline {section}{\numberline {5.2}Mecanismo m\IeC {\'o}vil}{88}{section*.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Control}{88}{section*.73}
+\contentsline {section}{\numberline {5.3}Prototipo f\IeC {\'\i }sico}{90}{section*.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Funci\IeC {\'o}n de tranferencia}{89}{section*.74}
+\contentsline {section}{\numberline {5.4}ROS-Microcontrolador}{91}{section*.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Algortimo de control}{91}{section*.75}
+\contentsline {section}{\numberline {5.5}Control}{92}{section*.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{95}{chapter*.76}
+\contentsline {subsection}{\numberline {5.5.1}Funci\IeC {\'o}n de tranferencia}{93}{section*.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{99}{section*.79}
+\contentsline {subsection}{\numberline {5.5.2}Algortimo de control}{95}{section*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{103}{section*.80}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{99}{chapter*.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{105}{section*.82}
+\contentsline {chapter}{\'{I}ndice de figuras}{103}{section*.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{107}{appendix.Alph1}
+\contentsline {chapter}{\'{I}ndice de cuadros}{107}{section*.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{111}{appendix.Alph2}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{109}{section*.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{111}{section*.85}
+\contentsline {chapter}{\numberline {A}Apendice A}{111}{appendix.Alph1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Apendice B}{115}{appendix.Alph2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}ODROID}{115}{section*.87}

@@ -258,6 +258,21 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+msp430/CMakeFiles/msp430.dir/rule:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 msp430/CMakeFiles/msp430.dir/rule
+.PHONY : msp430/CMakeFiles/msp430.dir/rule
+
+# Convenience name for target.
+msp430: msp430/CMakeFiles/msp430.dir/rule
+
+.PHONY : msp430
+
+# fast build rule for target.
+msp430/fast:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/msp430.dir/build.make msp430/CMakeFiles/msp430.dir/build
+.PHONY : msp430/fast
+
+# Convenience name for target.
 msp430/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 msp430/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : msp430/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
@@ -449,6 +464,33 @@ src/data_acquisition.cpp.s:
 	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/data_acquisition_msp430.dir/build.make msp430/CMakeFiles/data_acquisition_msp430.dir/src/data_acquisition.cpp.s
 .PHONY : src/data_acquisition.cpp.s
 
+src/msp430.o: src/msp430.cpp.o
+
+.PHONY : src/msp430.o
+
+# target to build an object file
+src/msp430.cpp.o:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/msp430.dir/build.make msp430/CMakeFiles/msp430.dir/src/msp430.cpp.o
+.PHONY : src/msp430.cpp.o
+
+src/msp430.i: src/msp430.cpp.i
+
+.PHONY : src/msp430.i
+
+# target to preprocess a source file
+src/msp430.cpp.i:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/msp430.dir/build.make msp430/CMakeFiles/msp430.dir/src/msp430.cpp.i
+.PHONY : src/msp430.cpp.i
+
+src/msp430.s: src/msp430.cpp.s
+
+.PHONY : src/msp430.s
+
+# target to generate assembly for a file
+src/msp430.cpp.s:
+	cd /home/marco/Tesis/ROS/build && $(MAKE) -f msp430/CMakeFiles/msp430.dir/build.make msp430/CMakeFiles/msp430.dir/src/msp430.cpp.s
+.PHONY : src/msp430.cpp.s
+
 src/transmitter.o: src/transmitter.cpp.o
 
 .PHONY : src/transmitter.o
@@ -495,6 +537,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... install"
+	@echo "... msp430"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -509,6 +552,9 @@ help:
 	@echo "... src/data_acquisition.o"
 	@echo "... src/data_acquisition.i"
 	@echo "... src/data_acquisition.s"
+	@echo "... src/msp430.o"
+	@echo "... src/msp430.i"
+	@echo "... src/msp430.s"
 	@echo "... src/transmitter.o"
 	@echo "... src/transmitter.i"
 	@echo "... src/transmitter.s"

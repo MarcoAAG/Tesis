@@ -137,6 +137,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/msp430_node.cpp)
 add_executable(data_acquisition_msp430 src/data_acquisition.cpp)
 add_executable(transmitter src/transmitter.cpp)
+add_executable(msp430 src/msp430.cpp)
 
 
 ## Rename C++ executable without prefix
@@ -157,6 +158,7 @@ add_executable(transmitter src/transmitter.cpp)
 # )
 target_link_libraries(data_acquisition_msp430 ${catkin_LIBRARIES})
 target_link_libraries(transmitter ${catkin_LIBRARIES})
+target_link_libraries(msp430 ${catkin_LIBRARIES})
 
 
 #############

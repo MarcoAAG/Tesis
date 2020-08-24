@@ -22,7 +22,9 @@ public:
 
     transmitter(ros::NodeHandle *n);
     ~transmitter();
+
     void arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array);
+    void initialization();
 
 private:
     ros::Subscriber sub;
@@ -40,6 +42,7 @@ transmitter::transmitter(ros::NodeHandle *n)
 {
     serial_Init();
     sub = n->subscribe("coordinates", 100, &transmitter::arrayCallback, this);
+    initialization();
 }
 
 transmitter::~transmitter()
@@ -64,6 +67,34 @@ void transmitter::serial_Init()
     {
         ROS_INFO("Conectado al puerto con exito");
     }
+
+    /*---------- Setting the Attributes of the serial port using termios structure --------- */
+
+    struct termios SerialPortSettings; /* Create the structure                          */
+
+    tcgetattr(fd, &SerialPortSettings); /* Get the current attributes of the Serial port */
+
+    /* Setting the Baud rate */
+    cfsetispeed(&SerialPortSettings, B9600); /* Set Read  Speed as 9600                       */
+    cfsetospeed(&SerialPortSettings, B9600); /* Set Write Speed as 9600                       */
+
+    /* 8N1 Mode */
+    SerialPortSettings.c_cflag &= ~PARENB; /* Disables the Parity Enable bit(PARENB),So No Parity   */
+    SerialPortSettings.c_cflag &= ~CSTOPB; /* CSTOPB = 2 Stop bits,here it is cleared so 1 Stop bit */
+    SerialPortSettings.c_cflag &= ~CSIZE;  /* Clears the mask for setting the data size             */
+    SerialPortSettings.c_cflag |= CS8;     /* Set the data bits = 8                                 */
+
+    SerialPortSettings.c_cflag &= ~CRTSCTS;       /* No Hardware flow Control                         */
+    SerialPortSettings.c_cflag |= CREAD | CLOCAL; /* Enable receiver,Ignore Modem Control lines       */
+
+    SerialPortSettings.c_iflag &= ~(IXON | IXOFF | IXANY);         /* Disable XON/XOFF flow control both i/p and o/p */
+    SerialPortSettings.c_iflag &= ~(ICANON | ECHO | ECHOE | ISIG); /* Non Cannonical mode                            */
+
+    SerialPortSettings.c_oflag &= ~OPOST; /*No Output Processing*/
+
+    /* Setting Time outs */
+    SerialPortSettings.c_cc[VMIN] = 10;  /* Read at least 1 characters */
+    SerialPortSettings.c_cc[VTIME] = 0; /* Wait indefinetly   */
 }
 
 void transmitter::sendData()
@@ -80,6 +111,32 @@ void transmitter::sendData()
     bytes_writen += write(fd, (unsigned char *)&coordinateY, sizeof(coordinateY));
 
     std::cout << bytes_writen << " Bytes enviados" << std::endl;
+    tcflush(fd, TCOFLUSH);
+}
+
+void transmitter::initialization()
+{
+    tcflush(fd, TCIFLUSH); /* Discards old data in the rx buffer            */
+
+    int bytes_read = 0;
+    char read_buffer[32];
+    char write_buffer[] = "a";
+
+    bytes_read = read(fd, &read_buffer, 32);
+    while (read_buffer[0] != '@')
+    {
+        bytes_read = read(fd, &read_buffer, 32);
+
+        if (bytes_read != -1)
+        {
+            std::cout << "Sincronizando . . ." << std::endl;
+        }
+    }
+    std::cout << read_buffer[0] << std::endl;
+
+    write(fd, write_buffer, sizeof(write_buffer));
+    tcflush(fd, TCOFLUSH);
+    std::cout << "La comunicación se ha sincronizado" << std::endl;
 }
 
 void transmitter::arrayCallback(const std_msgs::Int32MultiArray::ConstPtr &array)

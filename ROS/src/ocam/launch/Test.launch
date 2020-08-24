@@ -1,6 +1,6 @@
 <launch>
-    <param name="com" type = "int" value= "0" />
-    <param name="sampletime" type = "int" value= "60" />
+    <param name="com" type = "int" value= "2" />
+    <param name="sampletime" type = "int" value= "25" />
     <param name="Publisher_nodeName" type = "string" value="/ocam/image_raw"/>
 
     <node pkg="ocam" type="publisher" name="publisher" output="screen">   

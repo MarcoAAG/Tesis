@@ -17,7 +17,8 @@
                 "${workspaceRoot}/include",
                 "${workspaceFolder}/ROS/src/video_driver/include",
                 "/usr/local/bin/composer",
-                "${workspaceFolder}/microcontralor/GM2804/include"
+                "${workspaceFolder}/microcontralor/GM2804/include",
+                "/home/marco/ti/ccs1000/ccs/ccs_base/msp430/include"
             ],
             "defines": [],
             "intelliSenseMode": "${default}",
@@ -35,7 +36,9 @@
                     "/opt/ros/melodic/include",
                     "/home/Tesis/ROS/devel/include",
                     "${workspaceRoot}/include",
-                    "${workspaceFolder}/microcontralor/GM2804/include"
+                    "${workspaceFolder}/microcontralor/GM2804/include",
+                    "/home/marco/ti/ccs1000/ccs/ccs_base/msp430/include"
+
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""

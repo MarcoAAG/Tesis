@@ -1208,6 +1208,19 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named msp430
+
+# Build rule for target.
+msp430: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 msp430
+.PHONY : msp430
+
+# fast build rule for target.
+msp430/fast:
+	$(MAKE) -f msp430/CMakeFiles/msp430.dir/build.make msp430/CMakeFiles/msp430.dir/build
+.PHONY : msp430/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -3146,6 +3159,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... msp430"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"

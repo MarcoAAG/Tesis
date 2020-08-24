@@ -569,6 +569,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "msp430/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
   "msp430/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "msp430/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"
+  "msp430/CMakeFiles/msp430.dir/DependInfo.cmake"
   "msp430/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "msp430/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "msp430/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake"

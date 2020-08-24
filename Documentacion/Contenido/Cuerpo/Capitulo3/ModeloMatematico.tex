@@ -301,71 +301,150 @@ Y acomodando la ecuación 3.18 en matrices tenemos
 	\end{bmatrix}
 \end{equation}
 
+% ---------------------------------------------------------------------------------------------------------
+% *********************************************************************************************************
+% *********************************************************************************************************
+% ---------------------------------------------------------------------------------------------------------
 
+\section{Ecuaciones de movimiento de una gimbal}
+Tres marcos de referencia han sido introducidos en este capítulo; el del cuerpo[B], el de la gimbal[G] y el inercial[I]. Podemos
+dividir el marco de referencia de la gimbal en dos: Yaw[K] y Pitch[P], tal y como se ilustra en la figura 3.12.
+\begin{center}
+	\includegraphics[width=0.4\textwidth]{Contenido/Cuerpo/Capitulo3/Fig20.eps}
+	\captionof{figure}{Sistema gimbal de dos grados de libertad}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+El eje $x_a$ coincide con el eje óptico de la cámara, el centro de rotación está en el origen del marco de referencia, que asumimos es el mismo para los tres marcos.\\
+Podemos expresar las velocidades angulares de los marcos de referencia B,K y A en matrices de 3x1.
+\begin{equation}
+	\begin{bmatrix}
+		p \\
+		q \\
+		r
+	\end{bmatrix};
+	\begin{bmatrix}
+		p_k \\
+		q_k \\
+		r_k
+	\end{bmatrix};
+	\begin{bmatrix}
+		p_a \\
+		q_a \\
+		r_a
+	\end{bmatrix}
+\end{equation}
+Y el tensor de inercia para Pitch lo definimos como:
+\begin{equation}
+	J_A =
+	\begin{bmatrix}
+		J_{ax} & D_{xy} & D_{xz} \\
+		D_{xy} & J_{ay} & D_{yz} \\
+		D_{xz} & D_{yz} & J_{az}
+	\end{bmatrix}
+\end{equation}
+Mientras que para Yaw tenemos
+\begin{equation}
+	J_K =
+	\begin{bmatrix}
+		J_{kx} & d_{xy} & d_{xz} \\
+		d_{xy} & J_{ky} & d_{yz} \\
+		d_{xz} & d_{yz} & J_{kz}
+	\end{bmatrix}
+\end{equation}
+Para el signo de los productos de inercia, seguimos la definición de \cite{Book:Goldstein1980}; en consecuencia, no se utilizan explícitamente signos negativos en las matrices.
+Se supone que el centro de masa de la gimbal está en el centro de rotación común, es decir, asumimos que la gimbal no tienen desequilibrio de masa.\\
+En la figura 3.12 se ilustra los dos torques de entrada del sistema\\
+\begin{center}
+	$T_y$ = El torque alrededor del eje $Y_a$\\
+	$T_y$ = El torque alrededor del eje $Z_k$
+\end{center}
 
-% Poniendo en el mismo plano dos referencias, el de la gimbal y el del body, tal como se ilustra en la siguiente figura
-% \begin{center}
-% 	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig8.eps}
-% 	\captionof{figure}{Marco de referencia Body y gimbal}
-% 	\label{fig:ModeloMat:Fig1}
-% \end{center}
-% Cualquier punto en el plano puede ser expresado como:
-% \begin{equation}
-% 	p_{i^B,j^B} = [p_i^B , p_j^B]^T = p_i i^B + p_j p^B
-% \end{equation}
-% \begin{equation}
-% 	p_{i^G,j^G} = [p_i^G , p_j^G]^T = p_i \cdot i^G + p_j\cdot  p^G
-% \end{equation}
-% \begin{equation}
-% 	\textbf{P}_{i,j}^B = \textbf{P}_{i,j}^G
-% \end{equation}
+\subsection{Rotación sobre Pitch}
+La ecuación básica del movimiento en Pitch de la gimbal se obtiene directamente si pensamos en la gimbal como un cuerpo rígido por sí mismo y consideramos el hecho de que no
+hay desequilibrio, y recordando que el momento de Inercia es la resistencia que presenta un cuerpo a ser acelerado en rotación podemos hacer una analogía de la segunda
+ley de Newton equivalente para la rotación.
+\begin{equation}
+	\tau = I\alpha
+\end{equation}
+Donde
+\begin{itemize}
+	\item $\tau$ es el torque Aplicando.
+	\item $I$ es el momento de inercia.
+	\item $\alpha$ es la aceleración angular
+\end{itemize}
+Recordando que el momento angular puede ser calculado mediante la ecuación
+\begin{equation}
+	H=J\omega
+\end{equation}
+Por lo que para Pitch tenemos
+\begin{equation}
+	H_A=
+	\begin{bmatrix}
+		J_{ax}p_a + D_{xy}q_a + D_{yz}r_a \\
+		D_{xy}p_a + J_{ay}q_a + D_{yz}r_a \\
+		D_{xz}p_a + D_{yz}q_a + J_{az}r_a
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		H_{ax} \\
+		H_{ay} \\
+		H_{az}
+	\end{bmatrix}
+\end{equation}
+La ecuación de momento para un marco giratorio es
+\begin{equation}
+	T = \frac{dH}{dt} + \omega x H
+\end{equation}
+Aplicando la derivada de (3.25) y el producto cruz de (3.20) con (3.25) la suma es igual
+a la ecuación (3.27)
+\begin{equation}
+	T =
+	\begin{bmatrix}
+		\dot{H}_{ax} + q_aH_{az} - r_aH_{ay} \\
+		\dot{H}_{ax} + r_aH_{ax} - p_aH_{az} \\
+		\dot{H}_{ax} + q_aH_{ay} - q_aH_{ax}
+	\end{bmatrix}
+\end{equation}
 
-% Si hacemos rotar el frame de la gimbal respecto al eje K obtenemos que:
-% \begin{center}
-% 	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo3/Fig9.eps}
-% 	\captionof{figure}{Rotación del marco de referencia Gimbal respecto al del cuerpo}
-% 	\label{fig:ModeloMat:Fig1}
-% \end{center}
-% \begin{equation}
-% 	p_{i^B,j^B} = [p_i^B , p_j^B]^T = p_i i^B + p_j p^B
-% \end{equation}
-% \begin{equation}
-% 	p_{i^G,j^G} = [p_i^G , p_j^G]^T = p_i i^G + p_j p^G
-% \end{equation}
-% Como
-% \begin{equation}
-% 	p_i = p_{i,j}^G \cdot i^B = p_i^G i^B \cdot i^G + p_j^G i^B \cdot j^G
-% \end{equation}
-% \begin{equation}
-% 	p_j = p_{i,j}^G \cdot j^B = p_i^G j^B \cdot i^G + p_j^G j^B \cdot j^G
-% \end{equation}
-% Entonces
-% \begin{equation*}
-% 	\begin{bmatrix}
-% 		p_i^B \\
-% 		p_j^B
-% 	\end{bmatrix}
-% 	=
-% 	R
-% 	\begin{bmatrix}
-% 		p_i^G \\
-% 		p_j^G
-% 	\end{bmatrix}
-% \end{equation*}
-% Donde la matriz de rotación etsa dada por:
-% \begin{equation*}
-% 	R=
-% 	\begin{bmatrix}
-% 		i^B\cdot i^G & i^B \cdot j^G \\
-% 		j^B\cdot i^G & j^B \cdot j^G
-% 	\end{bmatrix}
-% 	=
-% 	\begin{bmatrix}
-% 		cos(\psi) & -sin(\psi) \\
-% 		sin(\psi) & cos(\psi)
-% 	\end{bmatrix}
-% \end{equation*}
-
+De la ecuación(3.27) y (3.23) llegamos a la siguiente expresión
+\begin{equation}
+	J_{ay}\dot{q}_a = T_y + (J_{az} - J_{ax})p_ar_a + D_{xz}(p^2_a - r^2_a) - D_yz(\dot{r}_a - p_aq_a)-D_{xy}(\dot{p}_a + q_ar_a)
+\end{equation}
+Es una ecuación diferencial para la velocidad angular para Pitch $q_a$ donde se incluye 
+torque externo $T_y$ velocidades angulares $p_a q_a r_a$. Como se presenta en el trabajo de
+\cite{Paper::Yoon2001} \\
+Desde el punto de vista de la estabilización, los "términos de inercia" de la derecha en la expresión 3.28 
+representan perturbaciones no deseadas. Entrarán en el sistema de control en el mismo 
+punto que el torque externo; por consiguiente, pueden considerarse como perturbaciones del torque.
+\\
+Vamos a suponer que los productos de la inercia pueden ser despreciados
+\begin{equation}
+	D_{xy} = D_{xz} D_{yz} = 0
+\end{equation}
+Asumiendo además que
+\begin{equation}
+	J_{ax} = J_{az}
+\end{equation}
+La ecuación (3.28) se convierte en
+\begin{equation}
+	J_{ay}\dot{q}_a = T_y
+\end{equation}
+Si no tenemos en cuenta los torques de perturbación externa, $T_y$ representa sólo el 
+par motor. Entonces, (3.31) es la ecuación de movimiento deseada, en el sentido de que 
+no hay perturbaciones que influyan en el movimiento sobre el eje Pitch. No importa qué 
+movimientos de cuerpo o de gimbal tengamos, la velocidad angular del gimbal $q_a$ no se 
+ve afectada.\\
+Las ecuación (3.28) puede ser representada con un diagrama de bloques como se ilustra 
+en la figura 3.13
+\begin{center}
+	\includegraphics[width=0.44\textwidth]{Contenido/Cuerpo/Capitulo3/Fig21.eps}
+	\captionof{figure}{Representación de la ecuación de movimiento en el eje Pitch}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+Donde el término $\tau_D$ entra como disturbio al sistema
+\begin{eqnarray}\nonumber
+	\tau_D = (J_{az} - J_{ax})p_ar_a + D_{xz}(p^2_a - r^2_a) - D_yz(\dot{r}_a - p_aq_a)-D_{xy}(\dot{p}_a + q_ar_a)
+\end{eqnarray}
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
 % *********************************************************************************************************
@@ -489,7 +568,7 @@ Las constantes eléctricas de la función de transferencia del motor ahora se pu
 \begin{equation}
 	\frac{K_t}{R_a} = \frac{T_{stall}}{e_a}
 \end{equation}
-y 
+y
 \begin{equation}
 	K_b = \frac{e_a}{\omega_{sincarga}}
 \end{equation}

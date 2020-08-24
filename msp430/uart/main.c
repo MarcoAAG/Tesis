@@ -1,4 +1,4 @@
-    #include "msp430g2553.h"
+#include "msp430g2553.h"
 #include "stdint.h"
 
 uint8_t data_receiver;

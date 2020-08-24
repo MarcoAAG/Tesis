@@ -149,6 +149,31 @@
       \field{title}{Moments and Moment Invariants in Pattern Recognition}
       \field{year}{2009}
     \endentry
+    \entry{Book:Goldstein1980}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c0e35b6777e73243aa18df96822aa96b}{%
+           family={Goldstein},
+           familyi={G\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Weasley}%
+      }
+      \strng{namehash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{fullhash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{bibnamehash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{authorbibnamehash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{authornamehash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{authorfullhash}{c0e35b6777e73243aa18df96822aa96b}
+      \field{labelalpha}{Gol80}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Calssical Mechanics}
+      \field{year}{1980}
+    \endentry
     \entry{WEB:Ocam}{online}{}
       \name{author}{1}{}{%
         {{hash=7c25f72a350912714863be6893ba12bb}{%
@@ -947,6 +972,28 @@
       \field{labeltitlesource}{title}
       \field{title}{FAST AND EXACT COMPUTATION OF CARTESIAN GEOMETRIC MOMENTS USING DISCRETE GREEN'S THEOREM}
       \field{year}{1994}
+    \endentry
+    \entry{Paper::Yoon2001}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=687eed717dee36009398d9d98a5da55d}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Sungpil},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{687eed717dee36009398d9d98a5da55d}
+      \strng{fullhash}{687eed717dee36009398d9d98a5da55d}
+      \strng{bibnamehash}{687eed717dee36009398d9d98a5da55d}
+      \strng{authorbibnamehash}{687eed717dee36009398d9d98a5da55d}
+      \strng{authornamehash}{687eed717dee36009398d9d98a5da55d}
+      \strng{authorfullhash}{687eed717dee36009398d9d98a5da55d}
+      \field{labelalpha}{Yoo01}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Equations of Motion for a Two-Axes Gimbal System}
+      \field{year}{2001}
     \endentry
   \enddatalist
   \datalist[entry]{anyt/global/@/global/global}
@@ -1085,6 +1132,32 @@
       \field{title}{Moments and Moment Invariants in Pattern Recognition}
       \field{year}{2009}
     \endentry
+    \entry{Book:Goldstein1980}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c0e35b6777e73243aa18df96822aa96b}{%
+           family={Goldstein},
+           familyi={G\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Weasley}%
+      }
+      \strng{namehash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{fullhash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{bibnamehash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{authorbibnamehash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{authornamehash}{c0e35b6777e73243aa18df96822aa96b}
+      \strng{authorfullhash}{c0e35b6777e73243aa18df96822aa96b}
+      \field{labelalpha}{Gol80}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Calssical Mechanics}
+      \field{year}{1980}
+    \endentry
     \entry{WEB:Ocam}{online}{}
       \name{author}{1}{}{%
         {{hash=7c25f72a350912714863be6893ba12bb}{%
@@ -1913,6 +1986,29 @@
       \field{labeltitlesource}{title}
       \field{title}{FAST AND EXACT COMPUTATION OF CARTESIAN GEOMETRIC MOMENTS USING DISCRETE GREEN'S THEOREM}
       \field{year}{1994}
+    \endentry
+    \entry{Paper::Yoon2001}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=687eed717dee36009398d9d98a5da55d}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Sungpil},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{687eed717dee36009398d9d98a5da55d}
+      \strng{fullhash}{687eed717dee36009398d9d98a5da55d}
+      \strng{bibnamehash}{687eed717dee36009398d9d98a5da55d}
+      \strng{authorbibnamehash}{687eed717dee36009398d9d98a5da55d}
+      \strng{authornamehash}{687eed717dee36009398d9d98a5da55d}
+      \strng{authorfullhash}{687eed717dee36009398d9d98a5da55d}
+      \field{labelalpha}{Yoo01}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Equations of Motion for a Two-Axes Gimbal System}
+      \field{year}{2001}
     \endentry
   \enddatalist
   \missing{hardkernel2017}
