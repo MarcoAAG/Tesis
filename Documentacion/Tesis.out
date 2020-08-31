@@ -46,32 +46,34 @@
 \BOOKMARK [1][]{section*.51}{3.2 Matrices de rotaci\363n}{chapter.3}% 46
 \BOOKMARK [1][]{section*.52}{3.3 Ecuaciones de movimiento de una gimbal}{chapter.3}% 47
 \BOOKMARK [2][]{section*.53}{3.3.1 Rotaci\363n sobre Pitch}{section*.52}% 48
-\BOOKMARK [1][]{section*.54}{3.4 Modelo matem\341tico del motor DC}{chapter.3}% 49
-\BOOKMARK [0][]{chapter.4}{4 Visi\363n Artificial}{}% 50
-\BOOKMARK [1][]{section*.56}{4.1 C\341mara}{chapter.4}% 51
-\BOOKMARK [1][]{section*.57}{4.2 Algoritmo general}{chapter.4}% 52
-\BOOKMARK [1][]{section*.58}{4.3 Comunicaci\363n con ROS}{chapter.4}% 53
-\BOOKMARK [2][]{section*.59}{4.3.1 Publisher}{section*.58}% 54
-\BOOKMARK [2][]{section*.60}{4.3.2 Subscriber}{section*.58}% 55
-\BOOKMARK [1][]{section*.61}{4.4 Calibraci\363n de camara}{chapter.4}% 56
-\BOOKMARK [1][]{section*.62}{4.5 Espacio de color}{chapter.4}% 57
-\BOOKMARK [2][]{section*.64}{4.5.1 Pruebas de campo}{section*.62}% 58
-\BOOKMARK [1][]{section*.66}{4.6 Correcci\363n de brillo}{chapter.4}% 59
-\BOOKMARK [2][]{section*.67}{4.6.1 Correcci\363n de Gamma}{section*.66}% 60
-\BOOKMARK [1][]{section*.68}{4.7 Filtro morfologico}{chapter.4}% 61
-\BOOKMARK [1][]{section*.69}{4.8 Centroide}{chapter.4}% 62
-\BOOKMARK [0][]{chapter.5}{5 Sistema Embebido}{}% 63
-\BOOKMARK [1][]{section*.71}{5.1 Arquitectura}{chapter.5}% 64
-\BOOKMARK [1][]{section*.72}{5.2 Mecanismo m\363vil}{chapter.5}% 65
-\BOOKMARK [1][]{section*.73}{5.3 Prototipo f\355sico}{chapter.5}% 66
-\BOOKMARK [1][]{section*.74}{5.4 ROS-Microcontrolador}{chapter.5}% 67
-\BOOKMARK [1][]{section*.75}{5.5 Control}{chapter.5}% 68
-\BOOKMARK [2][]{section*.76}{5.5.1 Funci\363n de tranferencia}{section*.75}% 69
-\BOOKMARK [2][]{section*.77}{5.5.2 Algortimo de control}{section*.75}% 70
-\BOOKMARK [0][]{chapter*.78}{Bibliograf\355a}{}% 71
-\BOOKMARK [0][]{section*.81}{\315ndice de figuras}{}% 72
-\BOOKMARK [0][]{section*.82}{\315ndice de cuadros}{}% 73
-\BOOKMARK [0][]{section*.84}{Lista de c\363digos}{}% 74
-\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 75
-\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 76
-\BOOKMARK [1][]{section*.87}{B.1 ODROID}{appendix.Alph2}% 77
+\BOOKMARK [2][]{section*.54}{3.3.2 Rotaci\363n sobre Yaw}{section*.52}% 49
+\BOOKMARK [1][]{section*.55}{3.4 jhgjhgj}{chapter.3}% 50
+\BOOKMARK [1][]{section*.56}{3.5 Modelo matem\341tico del motor DC}{chapter.3}% 51
+\BOOKMARK [0][]{chapter.4}{4 Visi\363n Artificial}{}% 52
+\BOOKMARK [1][]{section*.58}{4.1 C\341mara}{chapter.4}% 53
+\BOOKMARK [1][]{section*.59}{4.2 Algoritmo general}{chapter.4}% 54
+\BOOKMARK [1][]{section*.60}{4.3 Comunicaci\363n con ROS}{chapter.4}% 55
+\BOOKMARK [2][]{section*.61}{4.3.1 Publisher}{section*.60}% 56
+\BOOKMARK [2][]{section*.62}{4.3.2 Subscriber}{section*.60}% 57
+\BOOKMARK [1][]{section*.63}{4.4 Calibraci\363n de camara}{chapter.4}% 58
+\BOOKMARK [1][]{section*.64}{4.5 Espacio de color}{chapter.4}% 59
+\BOOKMARK [2][]{section*.66}{4.5.1 Pruebas de campo}{section*.64}% 60
+\BOOKMARK [1][]{section*.68}{4.6 Correcci\363n de brillo}{chapter.4}% 61
+\BOOKMARK [2][]{section*.69}{4.6.1 Correcci\363n de Gamma}{section*.68}% 62
+\BOOKMARK [1][]{section*.70}{4.7 Filtro morfologico}{chapter.4}% 63
+\BOOKMARK [1][]{section*.71}{4.8 Centroide}{chapter.4}% 64
+\BOOKMARK [0][]{chapter.5}{5 Sistema Embebido}{}% 65
+\BOOKMARK [1][]{section*.73}{5.1 Arquitectura}{chapter.5}% 66
+\BOOKMARK [1][]{section*.74}{5.2 Mecanismo m\363vil}{chapter.5}% 67
+\BOOKMARK [1][]{section*.75}{5.3 Prototipo f\355sico}{chapter.5}% 68
+\BOOKMARK [1][]{section*.76}{5.4 ROS-Microcontrolador}{chapter.5}% 69
+\BOOKMARK [1][]{section*.77}{5.5 Control}{chapter.5}% 70
+\BOOKMARK [2][]{section*.78}{5.5.1 Funci\363n de tranferencia}{section*.77}% 71
+\BOOKMARK [2][]{section*.79}{5.5.2 Algortimo de control}{section*.77}% 72
+\BOOKMARK [0][]{chapter*.80}{Bibliograf\355a}{}% 73
+\BOOKMARK [0][]{section*.83}{\315ndice de figuras}{}% 74
+\BOOKMARK [0][]{section*.84}{\315ndice de cuadros}{}% 75
+\BOOKMARK [0][]{section*.86}{Lista de c\363digos}{}% 76
+\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 77
+\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 78
+\BOOKMARK [1][]{section*.89}{B.1 ODROID}{appendix.Alph2}% 79
