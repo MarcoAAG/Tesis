@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/calibrationTest.dir/src/calibrationTest.cpp.o"
-  "/home/marco/Tesis/ROS/devel/lib/ocam/calibrationTest.pdb"
   "/home/marco/Tesis/ROS/devel/lib/ocam/calibrationTest"
+  "/home/marco/Tesis/ROS/devel/lib/ocam/calibrationTest.pdb"
+  "CMakeFiles/calibrationTest.dir/src/calibrationTest.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

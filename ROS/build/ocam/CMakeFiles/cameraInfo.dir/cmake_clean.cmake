@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cameraInfo.dir/src/cameraInfo.cpp.o"
-  "/home/marco/Tesis/ROS/devel/lib/ocam/cameraInfo.pdb"
   "/home/marco/Tesis/ROS/devel/lib/ocam/cameraInfo"
+  "/home/marco/Tesis/ROS/devel/lib/ocam/cameraInfo.pdb"
+  "CMakeFiles/cameraInfo.dir/src/cameraInfo.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

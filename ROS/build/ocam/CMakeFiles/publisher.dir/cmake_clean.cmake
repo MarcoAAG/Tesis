@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/publisher.dir/src/publisher.cpp.o"
-  "/home/marco/Tesis/ROS/devel/lib/ocam/publisher.pdb"
   "/home/marco/Tesis/ROS/devel/lib/ocam/publisher"
+  "/home/marco/Tesis/ROS/devel/lib/ocam/publisher.pdb"
+  "CMakeFiles/publisher.dir/src/publisher.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

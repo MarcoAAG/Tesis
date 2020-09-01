@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o"
-  "/home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test.pdb"
   "/home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test"
+  "/home/marco/Tesis/ROS/devel/lib/ocam/HSV_Test.pdb"
+  "CMakeFiles/HSV_Test.dir/src/Test/HSV/HSV_Test.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

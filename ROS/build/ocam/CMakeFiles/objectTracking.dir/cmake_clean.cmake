@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/objectTracking.dir/src/objectTracking.cpp.o"
-  "/home/marco/Tesis/ROS/devel/lib/ocam/objectTracking.pdb"
   "/home/marco/Tesis/ROS/devel/lib/ocam/objectTracking"
+  "/home/marco/Tesis/ROS/devel/lib/ocam/objectTracking.pdb"
+  "CMakeFiles/objectTracking.dir/src/objectTracking.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

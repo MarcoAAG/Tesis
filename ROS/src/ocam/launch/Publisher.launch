@@ -1,13 +1,17 @@
 <launch>
-    <param name="com" type = "int" value= "2" />
+    <param name="com" type = "int" value= "0" />
     <param name="sampletime" type = "int" value= "60" />
     <param name="Publisher_nodeName" type = "string" value="/ocam/image_raw"/>
 
     <node pkg="ocam" type="publisher" name="publisher" output="screen">   
     </node>
 
-    <!-- <node pkg="ocam" type="calibrationTest" name="calibrationTest" output="screen">    -->
-    <!-- </node>  -->
+    <remap from="ocam/Image" to="/ocam/image_raw"/>
 
+    <node pkg="ocam" type="enhanceGamma" name="enhanceGamma" output="screen">   
+    </node>
+
+    <node pkg="ocam" type="objectTracking" name="objectTracking" output="screen">   
+    </node>
 
 </launch>

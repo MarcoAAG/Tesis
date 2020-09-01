@@ -1,55 +1,58 @@
-Determining if the pthread_create exist failed with the following output:
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cd1cf/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cd1cf.dir/build.make CMakeFiles/cmTC_cd1cf.dir/build
-make[1]: Entering directory '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cd1cf.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_cd1cf.dir/CheckSymbolExists.c.o   -c /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_cd1cf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd1cf.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cd1cf.dir/CheckSymbolExists.c.o  -o cmTC_cd1cf 
-CMakeFiles/cmTC_cd1cf.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+Run Build Command(s):/usr/bin/make cmTC_038c2/fast && /usr/bin/make -f CMakeFiles/cmTC_038c2.dir/build.make CMakeFiles/cmTC_038c2.dir/build
+make[1]: se entra en el directorio '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_038c2.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_038c2.dir/src.c.o   -c /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_038c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_038c2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_038c2.dir/src.c.o  -o cmTC_038c2 
+/usr/bin/ld: CMakeFiles/cmTC_038c2.dir/src.c.o: en la función `main':
+src.c:(.text+0x46): referencia a `pthread_create' sin definir
+/usr/bin/ld: src.c:(.text+0x52): referencia a `pthread_detach' sin definir
+/usr/bin/ld: src.c:(.text+0x63): referencia a `pthread_join' sin definir
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_cd1cf.dir/build.make:97: recipe for target 'cmTC_cd1cf' failed
-make[1]: *** [cmTC_cd1cf] Error 1
-make[1]: Leaving directory '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_cd1cf/fast' failed
-make: *** [cmTC_cd1cf/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_038c2.dir/build.make:87: cmTC_038c2] Error 1
+make[1]: se sale del directorio '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_038c2/fast] Error 2
 
-File /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
+
+Source file was:
 #include <pthread.h>
 
-int main(int argc, char** argv)
+void* test_func(void* data)
 {
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
   return 0;
-#endif
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cb696/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cb696.dir/build.make CMakeFiles/cmTC_cb696.dir/build
-make[1]: Entering directory '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cb696.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_cb696.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_cb696
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb696.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_cb696.dir/CheckFunctionExists.c.o  -o cmTC_cb696 -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
+Run Build Command(s):/usr/bin/make cmTC_64aa3/fast && /usr/bin/make -f CMakeFiles/cmTC_64aa3.dir/build.make CMakeFiles/cmTC_64aa3.dir/build
+make[1]: se entra en el directorio '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_64aa3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_64aa3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_64aa3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64aa3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_64aa3.dir/CheckFunctionExists.c.o  -o cmTC_64aa3  -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_cb696.dir/build.make:97: recipe for target 'cmTC_cb696' failed
-make[1]: *** [cmTC_cb696] Error 1
-make[1]: Leaving directory '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_cb696/fast' failed
-make: *** [cmTC_cb696/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_64aa3.dir/build.make:87: cmTC_64aa3] Error 1
+make[1]: se sale del directorio '/home/marco/Tesis/ROS/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_64aa3/fast] Error 2
+
 
 

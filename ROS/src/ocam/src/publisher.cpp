@@ -1,10 +1,13 @@
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
-#include <opencv2/highgui/highgui.hpp>
 #include <cv_bridge/cv_bridge.h>
+#include <sensor_msgs/CameraInfo.h>
+
+//OPENCV stuff
+#include <opencv2/highgui/highgui.hpp>
+
 #include <sstream>
 #include <iostream>
-#include <sensor_msgs/CameraInfo.h>
 
 using namespace std;
 using namespace cv;
