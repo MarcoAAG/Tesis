@@ -1,8 +1,0 @@
-prefix=/home/marco/Tesis/ROS/devel
-
-Name: tms570lc43
-Description: Description of tms570lc43
-Version: 0.0.0
-Cflags: -I/home/marco/Tesis/ROS/src/tms570lc43/include
-Libs: -L${prefix}/lib -ltms570lc43
-Requires: roscpp serial std_msgs

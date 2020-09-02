@@ -72,6 +72,31 @@
       \field{title}{Next Generation Artificial Vision System}
       \field{year}{2008}
     \endentry
+    \entry{Book:Barfoot2020}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fc1f3d31d72631a7bd7cc7cb1b0fa5a6}{%
+           family={Barfoot},
+           familyi={B\bibinitperiod},
+           given={Timothy\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{fullhash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{bibnamehash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{authorbibnamehash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{authornamehash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{authorfullhash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \field{labelalpha}{Bar20}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{State Estimation for robotics}
+      \field{year}{2020}
+    \endentry
     \entry{Book:Corke2011}{book}{}
       \name{author}{1}{}{%
         {{hash=c0e503339314930d140b67b5e7c55c3e}{%
@@ -1051,6 +1076,32 @@
       \field{labeltitlesource}{title}
       \field{title}{Next Generation Artificial Vision System}
       \field{year}{2008}
+    \endentry
+    \entry{Book:Barfoot2020}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fc1f3d31d72631a7bd7cc7cb1b0fa5a6}{%
+           family={Barfoot},
+           familyi={B\bibinitperiod},
+           given={Timothy\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{fullhash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{bibnamehash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{authorbibnamehash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{authornamehash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \strng{authorfullhash}{fc1f3d31d72631a7bd7cc7cb1b0fa5a6}
+      \field{labelalpha}{Bar20}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{State Estimation for robotics}
+      \field{year}{2020}
     \endentry
     \entry{Book:Corke2011}{book}{}
       \name{author}{1}{}{%

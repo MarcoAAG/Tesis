@@ -1,8 +1,0 @@
-prefix=/home/marco/Tesis/ROS/install
-
-Name: tf2_system
-Description: Description of tf2_system
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

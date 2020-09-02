@@ -419,7 +419,7 @@ punto que el torque externo; por consiguiente, pueden considerarse como perturba
 \\
 Vamos a suponer que los productos de la inercia pueden ser despreciados
 \begin{equation}
-	D_{xy} = D_{xz} D_{yz} = 0
+	D_{xy} = D_{xz} = D_{yz} = 0
 \end{equation}
 Asumiendo además que
 \begin{equation}
@@ -448,7 +448,7 @@ Donde el término $\tau_D$ entra como disturbio al sistema
 
 \subsection{Rotación sobre Yaw}
 En la figura 3.12 podemos observar que B coincide con K para $v_1 = 0$. Asociado con esas rotaciones
-tenemos las siguientes transformaciones
+tenemos las siguientes transformaciones, donde la transformación de K respecto a B fue antes descrita en la ecuación (3.14)
 \begin{equation}
 	L_{KB} =
 	\begin{bmatrix}
@@ -465,6 +465,7 @@ tenemos las siguientes transformaciones
 		sin(v_2) & 0 & cos(v_2)
 	\end{bmatrix}
 \end{equation}
+La ecuación (3.34) representa la transformación del marco de referencia del pitch[A] respecto a yaw[K].\\
 El momento angular del sistema es la suma del momento angular de las rotaciones
 de Pich y Yaw \cite{Paper::Yoon2001}\\
 El momento angular del sistema esta dada por $J\omega$ donde J es la matriz de inercia y $\omega$
@@ -534,9 +535,92 @@ Donde
 	+(D_{yz}sin(v_2) + D_{xy}cos(v_2))(q_a+q_k) - J_{ay}p_k]
 	$
 \end{center}
-df
-gggqjhgjhgjhghd
-\section{jhgjhgj}
+Podemos tomar a $\tau_{d1}$, $\tau_{d2}$, $\tau_{d3}$ como disturbios que entran al sistema. De manera similar que en Pitch haremos algunas suposiciones, donde decimos que
+la expresión (3.29) y (3.30) también son aplicables para la ecuación 3.36.
+\begin{equation}
+	D_{xy} = D_{xz} = D_{yz} = 0
+\end{equation}
+\begin{equation}
+	J_{ax} = J_{az}
+\end{equation}
+Además, si los productos de la inercia del gimbal en Yaw también pueden ser despreciados, es decir si
+\begin{equation}
+	d_{xy} = d_{xz} = d_{yz} = 0
+\end{equation}
+Por lo que ahora obtenemos 
+\begin{equation}
+	J_k = J_{kz} + J_{az}
+\end{equation}
+\begin{equation}
+	T_{d1} = [J_{kx} + J_{ax} - (J_ky + J_ay)]p_kq_k
+\end{equation}
+\begin{equation}
+	T_{d2} = 0
+\end{equation}
+\begin{equation}
+	T_{d3} = -J_{ay} \dot{v}_2p_k
+\end{equation}
+Podemos incluso seguir elimando disturbios de entrada, haciendo que
+\begin{equation}
+	J_{kx} + J_{ax} = J_{ky}
+\end{equation}
+Dando como resultado
+\begin{equation}
+	T_d = T_{d1} + T_{d2} + T_{d3}
+\end{equation}
+\begin{equation}
+	T_d = J_{ay}(p_kq_k - p_k\dot{v}_2)
+\end{equation}
+Entre el marco de referencia B y K tenemos la rotación $v_1$ sobre el eje z, podemos obtener de \cite{Book:Barfoot2020} la relación (3.51)
+\begin{equation}
+	\begin{bmatrix}
+		p_k\\
+		q_k\\
+		r_k
+	\end{bmatrix}
+	=L_{KB}
+	\begin{bmatrix}
+		p\\
+		q\\
+		r
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+		0\\
+		0\\
+		\dot{v}_1
+	\end{bmatrix}
+\end{equation}
+Desarrollando (3.48) tenemos
+\begin{equation}\nonumber
+	p_k=pcos(v_1) + qsin(v_1)
+\end{equation}
+\begin{equation}
+	q_k = -psin(v_1) + qcos(v_1)
+\end{equation}
+\begin{equation}\nonumber
+	r_k= r + \dot{v}_1
+\end{equation}
+De manera similar, entre el marco de referencia Yaw [K] y el Pitch [A] tenemos
+\begin{equation}\nonumber
+	p_a = p_kcos(v_2) - r_ksin(v_2)
+\end{equation}
+\begin{equation}
+	q_a = q_k + \dot{v}_2
+\end{equation}
+\begin{equation}\nonumber
+	r_a = p_ksin(v_2) + r_kcos(v_2)
+\end{equation}
+Hasta aquí hemos obtenido una ecuación de movimiento para Yaw en el marco de referencia K, es decir $r_k$. Sin embargo la salida es la velocidad angular $r_a$ es decir
+la velocidad de rotación en el eje "y" respecto al marco de referencia A, por lo que las ecuaciones 3.53 nos ayudan a obtener la relación de $r_a$ y $r_k$.\\
+EL diagrama de bloques de la ecuación de movimiento de Yaw se puede observar en la figura 3.14
+\begin{center}
+	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo3/Fig22.eps}
+	\captionof{figure}{Representación de la ecuación de movimiento en Yaw}
+	\label{fig:ModeloMat:Fig1}
+\end{center}
+
+
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
 % *********************************************************************************************************

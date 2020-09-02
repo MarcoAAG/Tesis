@@ -1,6 +1,0 @@
-<launch>
-
-    <node pkg="msp430" type="transmitter" name="transmitter" output="screen">
-    </node>
-
-</launch> 
