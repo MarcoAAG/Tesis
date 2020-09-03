@@ -87,11 +87,11 @@ void control(uint16_t inX, uint16_t inY)
   last_error[1] = error[1];
   error[0] = referenceX - inX;
   error[1] = referenceY - inY;
-  sum_error[0] += error[0];
-  if(inY < 340 && inY > 140)
+  sum_error[1] += error[1];
+  /*if(inY < 290 && inY > 190)
   {
     sum_error[1] += error[1];   
-  }
+  }*/
   
 
   //ErrorX.data = error[0];
@@ -103,9 +103,9 @@ void control(uint16_t inX, uint16_t inY)
   KP[0]= 0.0;
   KP[1] = (double)(analogRead(A0) * 0.8 / 1023.0);
   KD[0] = 0.0;
-  KD[1] = (double)(analogRead(A1) * 15.0 / 1023.0);
+  KD[1] = 0.0;
   KI[0] = 0.0;
-  KI[1] = (double)(analogRead(A2) * 0.0001 / 1023.0);
+  KI[1] = (double)(analogRead(A2) * 0.00001 / 1023.0);
   
 
   //guardar el tiempo anterior
