@@ -15,19 +15,24 @@ de la investigación y se exponen las aportaciones derivadas del tema de tesis.
 
 \section{Tema de investigación}
 En el campo de la aeronáutica hay una rama que en los últimos años ha sido objeto
-de estudio debido a su exponencial importancia para tareas criticas, se trata de los
+de estudio debido a su exponencial importancia para tareas críticas, se trata de los
 vehículos aéreos no tripulados UAV (del inglés unmanned aerial vehicle), donde dichas
-tareas criticas han podido alcanzar sus objetivos en parte gracias a la implementación
+tareas críticas han podido alcanzar sus objetivos en parte gracias a la implementación
 reciente de visión artificial.\\
-En la implementación de cámaras para el sistema visual de los UAV's la estabilidad
-juega un rol importante, debido a que el sistema se encuentra expuesto a diversos
-factores que hacen que la captura de imágenes sea deficiente. Es por ello que la
-implementación de un sistema estabilizador de cámaras en necesario.\\
-Tareas tales como la geo-localizacion requieren como entrada ángulos de azimuth
-y de elevación que son entregadas por el sistema gimbal embebido en el UAV.
-El algoritmo de geo-localización utiliza la salida del GPS, el vector de línea de
-visión normalizado del algoritmo de visión y la actitud para estimar la posición del
-objeto en el marco de inercia y la distancia al objeto.
+Sensores como radar, láser y cámaras se han utilizado ampliamente en muchas aplicaciones, como el procesamiento de imágenes, sistemas de rastreo y sistemas de navegación.
+En este tipo de sensores, el eje del sensor óptico debe apuntar con precisión desde una base móvil a un objetivo fijo o móvil.\\
+En un entorno de este tipo, en el que el equipo suele estar montado en una plataforma móvil, mantener la orientación de los sensores hacia un objetivo es un serio desafío.
+Una plataforma de estabilización inercial es una forma apropiada de resolver este desafío.
+Este trabajo se centra en el control de una gimbal de dos grados de libertad a través de una cámara montada sobre la plataforma interna de la misma gimbal.
+% En la implementación de cámaras para el sistema visual de los UAV's la estabilidad
+% juega un rol importante, debido a que el sistema se encuentra expuesto a diversos
+% factores que hacen que la captura de imágenes sea deficiente. Es por ello que la
+% implementación de un sistema estabilizador de cámaras en necesario.\\
+% Tareas tales como la geo-localizacion requieren como entrada ángulos de azimuth
+% y de elevación que son entregadas por el sistema gimbal embebido en el UAV.
+% El algoritmo de geo-localización utiliza la salida del GPS, el vector de línea de
+% visión normalizado del algoritmo de visión y la actitud para estimar la posición del
+% objeto en el marco de inercia y la distancia al objeto.
 
 \section{Justificación}
 La presente investigación se enfocara en la implementación de una gimbal de dos grados
@@ -43,12 +48,12 @@ investigación en MAV'S \footnote{Micro air vehicle}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Diseñar, instrumentar y controlar un dispositivo gimbal que sea capaz de seguir un objeto a través de visión artificial para
 implementarse en un UAV de categoría pequeña a velocidad baja.
-\begin{figure}[htb]
-	\centering
-	\includegraphics[width=1\textwidth]{Contenido/Cuerpo/Capitulo1/Fig0.eps}
-	\captionof{figure}{Representación grafica del objetivo del proyecto}
-	\label{fig:Introduccion:Fig1}
-\end{figure}
+% \begin{figure}[htb]
+% \centering
+% \includegraphics[width=1\textwidth]{Contenido/Cuerpo/Capitulo1/Fig0.eps}
+% \captionof{figure}{Representación grafica del objetivo del proyecto}
+% \label{fig:Introduccion:Fig1}
+% \end{figure}
 
 \section{Objetivos específicos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,8 +61,8 @@ implementarse en un UAV de categoría pequeña a velocidad baja.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
 	\item Definir el modelo matemático de una gimbal con base a los grados de libertad.
-	\item Diseñar e implementar el sistema embebido que dará el soporte electrónico a la gimbal.
 	\item Capturar figuras geométricas definidas  mediante el uso de una cámara digital y emplear algoritmos de visión artificial para la obtención de datos.
+	\item Diseñar e implementar el sistema embebido que dará el soporte electrónico a la gimbal.
 	\item Diseñar un controlador autónomo con base en el modelo matemático, previamente obtenido.
 \end{itemize}
 
@@ -84,7 +89,7 @@ tecnológico.
 		      \label{fig:Introduccion:Fig2}
 	      \end{figure}
 
-	      En esta aplicación, la Unidad de medición inercial (IMU) está equipada con tres
+	      En la figura 1.1, la Unidad de medición inercial (IMU) está equipada con tres
 	      giroscopios montados ortogonalmente para detectar la rotación alrededor de todos
 	      los ejes en el espacio tridimensional. Las salidas giroscópicas accionan motores
 	      que controlan la orientación de los tres gimbal según sea necesario para mantener
@@ -97,11 +102,11 @@ tecnológico.
 	      por motor. Para controlar el giro, se utilizan motores gemelos con señales de
 	      control de inclinación diferencial o guiñada para proporcionar torque sobre el
 	      eje de balanceo del vehículo.\\
-	      Uno de los motores más famosos es el J-2X.Es un motor de cohete avanzado altamente
+	      En la figura 1.2 se puede observar uno de los motores más famosos es el J-2X.Es un motor de cohete avanzado altamente
 	      eficiente y versátil con las características ideales de empuje y rendimiento para
 	      impulsar la etapa superior del espacio de la NASA.\cite{WEB:NASA}
 	      \begin{center}
-		      \includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo1/Fig2.eps}
+		      \includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo1/Fig2.eps}
 		      \captionof{figure}{Uso de una gimbal en un motor de propulsión \cite{WEB:NASA2JX} }
 		      \label{fig:Introduccion:Fig3}
 	      \end{center}
@@ -113,11 +118,12 @@ tecnológico.
 	      dar movimientos de balanceo, cabeceo y guiñada a velocidades de hasta 30
 	      revoluciones por minuto, mayores que las esperadas en vuelos espaciales reales.
 	      Los chorros de gas nitrógeno, unidos a las tres jaulas, controlaron el movimiento.
-	      Desde el 15 de febrero hasta el 4 de marzo de 1960, la plataforma de cardán
+	      Desde el 15 de febrero hasta el 4 de marzo de 1960, la plataforma gimbal
 	      proporcionó una capacitación valiosa para los siete astronautas del Proyecto
-	      Mercurio. Cada uno experimentó unas cinco horas de tiempo de vuelo simulado.\cite{WEB:MERCURY}
+	      Mercurio. Cada uno experimentó unas cinco horas de tiempo de vuelo simulado.\cite{WEB:MERCURY} EN la figura 1.3 se ilustra el sistema antes descrito, que permitió dar un gran
+	      paso hacia la capacitación de astronautas.
 	      \begin{center}
-		      \includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo1/Fig3.eps}
+		      \includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo1/Fig3.eps}
 		      \captionof{figure}{Jerrie Cobb, uno de los Mercury 13, da un giro en la plataforma gimbal.
 			      Créditos: NASA }
 		      \label{fig:Introduccion:Fig4}
@@ -147,6 +153,10 @@ tecnológico.
 	      Ganador de un Premio de la Academia, que hizo su debut cinematográfico en la
 	      película "Bound for Glory", y se destacó en las películas "Rocky y "The Shining"
 
+	\item \textbf{Control de una gimbal}\\
+		  En la literatura se han empleado muchos métodos de control del sistema gimbal de dos ejes. En donde se han propuesto enfoques de agrupación de polos y control óptimo 
+		  lineal \cite{Paper::Salatun1983},redes neuronales adaptativas de avance multicapa \cite{Paper::Lin2001}, controlador LQG/LTR \cite{Paper::Lee2006} y controlador integral 
+		  (PI) proporcional\cite{Paper::Kim2010}.
 
 \end{itemize}
 
@@ -154,11 +164,9 @@ tecnológico.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                         Contribuciones                                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Actualmente la forma en que se desarrollan los sistemas gimbal de los vehículos aéreos no tripulados están basados en el procesamiento
-de datos con Arduino conectado a ROS, la idea de migrar a una tarjeta micro controladora más fiable como la TMS570LC43 hace que esta sea una
-de las principales aportaciones, ya que queda bajo licencia de software libre, además de la investigación en mejorar el algoritmo de búsqueda
-de centroide de la visión artificial, mediante el uso de corrección de factor gamma. Lo que nos puede permitir ajustar los filtros con un sensor
-de luminancia\\
+Actualmente la forma en que se desarrollan los sistemas gimbal es mediante el uso de una IMU y cámara, para posteriormente aplicar algún control, en este trabajo se enfoca en omitir
+la IMU y hacer la retroalimentación por medio de la cámara, esto nos permite tener un ahorro económico al momento de diseñar el sistema, además de dar otra aproximación al
+algoritmo de búsqueda de centroide de la visión artificial, mediante el uso de corrección de factor gamma. Lo que nos puede permitir ajustar los filtros con un sensor de luminancia\\
 A nivel escolar, es la primera tesis que incluye visión artificial en la carrera de Ingeniería Electrónica y Control de Sistemas de Aeronaves,
 siendo esta investigación el inicio de un proyecto de instrumentación de Vehículos Aéreos no Tripulados con la incorporación de una tarjeta monoprocesador con ROS.
 
@@ -170,10 +178,10 @@ de filtros morfológicos (solo opening y closing) y sé verá limitado por la co
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % La investigacion actual tiene los siguientes alcances:
 % \begin{itemize}
-	% \item Hacer el control para dos grados de libertad.
-	% \item Utilizar filtros morfologicos(opening y closing).
-	% \item Que la variacion de gamma sea por software y no por hardware
-	% \item No sera acoplado a un vehiculo aereo, queda en simulación en tierra.
+% \item Hacer el control para dos grados de libertad.
+% \item Utilizar filtros morfologicos(opening y closing).
+% \item Que la variacion de gamma sea por software y no por hardware
+% \item No sera acoplado a un vehiculo aereo, queda en simulación en tierra.
 % \end{itemize}
 
 

@@ -3,15 +3,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Representaci\IeC {\'o}n grafica del objetivo del proyecto\relax }}{2}{figure.caption.10}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Uso de una gimbal para un sensor inercial \cite {Book:InNav}\relax }}{3}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Uso de una gimbal para un sensor inercial \cite {Book:InNav}\relax }}{3}{figure.caption.13}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Uso de una gimbal en un motor de propulsi\IeC {\'o}n \cite {WEB:NASA2JX} \relax }}{4}{figure.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Uso de una gimbal en un motor de propulsi\IeC {\'o}n \cite {WEB:NASA2JX} \relax }}{4}{figure.1.3}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Jerrie Cobb, uno de los Mercury 13, da un giro en la plataforma gimbal. Cr\IeC {\'e}ditos: NASA \relax }}{4}{figure.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Jerrie Cobb, uno de los Mercury 13, da un giro en la plataforma gimbal. Cr\IeC {\'e}ditos: NASA \relax }}{5}{figure.1.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Primer uso de la steadicam\relax }}{5}{figure.1.5}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Primer uso de la steadicam\relax }}{5}{figure.1.4}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -21,7 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Formaci\IeC {\'o}n de una imagen en el ojo\relax }}{10}{figure.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Componentes de la camara\relax }}{12}{figure.2.4}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Componentes de la c\IeC {\'a}mara\relax }}{12}{figure.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Proceso general de captura de luz por el sensor de la c\IeC {\'a}mara digital\relax }}{13}{figure.2.5}
 \defcounter {refsection}{0}\relax 
@@ -31,11 +29,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Regla 2\relax }}{14}{figure.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Regla 3\relax }}{14}{figure.2.9}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Regla 3\relax }}{15}{figure.2.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Obtenci\IeC {\'o}n geom\IeC {\'e}trica de la imagen\relax }}{15}{figure.2.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Modelo de lente fina\relax }}{15}{figure.2.11}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Modelo de lente fina\relax }}{16}{figure.2.11}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Modelo pinhole tomado de \cite {Book:Geoffrey2006}\relax }}{16}{figure.2.12}
 \defcounter {refsection}{0}\relax 
@@ -47,37 +45,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Comunicaci\IeC {\'o}n de mensajes\relax }}{22}{figure.2.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Representaci\IeC {\'o}n 2D de im\IeC {\'a}genes digitales mediante conjuntos de puntos discretos en una matriz rectangular\relax }}{23}{figure.2.17}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Representaci\IeC {\'o}n 2D de im\IeC {\'a}genes digitales mediante conjuntos de puntos discretos en una matriz rectangular\relax }}{24}{figure.2.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Ilustraci\IeC {\'o}n de cuantizaci\IeC {\'o}n\cite {Book:Bernd1997}.La misma imagen se muestra con diferentes niveles de cuantizaci\IeC {\'o}n: a 16, b 8, c 4, d 2. Muy pocos niveles de cuantificaci\IeC {\'o}n producen bordes falsos y hacen que las caracter\IeC {\'\i }sticas con bajo contraste desaparezcan parcial o totalmente.\relax }}{25}{figure.2.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Tomada de \cite {Book:Corke2011}; a) Imagen con distorsi\IeC {\'o}n; b) Imagen despues de calibrar\relax }}{27}{figure.caption.34}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Tomada de \cite {Book:Corke2011}; a) Imagen con distorsi\IeC {\'o}n; b) Imagen despues de calibrar\relax }}{27}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Representaci\IeC {\'o}n del espacio de color RGB\relax }}{28}{figure.caption.36}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Representaci\IeC {\'o}n del espacio de color HSI\relax }}{29}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Representaci\IeC {\'o}n del espacio de color HSI\relax }}{29}{figure.caption.37}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Ejemplo de formas b\IeC {\'a}sicas de elementos estructurantes planos\relax }}{32}{figure.2.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Ejemplo de formas b\IeC {\'a}sicas de elementos estructurantes planos\relax }}{33}{figure.2.22}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces (a) Erosi\IeC {\'o}n de X por el elemento estructurante Y. (b) Los elementos conectados del conjunto X m\IeC {\'a}s peque\IeC {\~n}os que Y son eliminados. \relax }}{33}{figure.2.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.23}{\ignorespaces (a) Erosi\IeC {\'o}n de X por el elemento estructurante Y. (b) Los elementos conectados del conjunto X m\IeC {\'a}s peque\IeC {\~n}os que Y son eliminados. \relax }}{34}{figure.2.23}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces (a) Dilataci\IeC {\'o}n de X por el elemento estructurante Y. (b) El conjunto X aumenta su definici\IeC {\'o}n. \relax }}{34}{figure.2.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.24}{\ignorespaces (a) Dilataci\IeC {\'o}n de X por el elemento estructurante Y. (b) El conjunto X aumenta su definici\IeC {\'o}n. \relax }}{34}{figure.2.24}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) Eliminaci\IeC {\'o}n de objetos menores en tama\IeC {\~n}o al elemento estructurante. La apertura redondea las convexidades importantes. \relax }}{35}{figure.2.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.25}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) Eliminaci\IeC {\'o}n de objetos menores en tama\IeC {\~n}o al elemento estructurante. La apertura redondea las convexidades importantes. \relax }}{35}{figure.2.25}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) El cierre redondea las concavidades importantes. \relax }}{35}{figure.2.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.26}{\ignorespaces (a) Apertura morfol\IeC {\'o}gica del conjunto X por el elemento estructurante Y. (b) El cierre redondea las concavidades importantes. \relax }}{36}{figure.2.26}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Area de D limitada por C \relax }}{37}{figure.2.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Area de D limitada por C \relax }}{37}{figure.2.27}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Diagrama de bloques de sistema de control\relax }}{38}{figure.2.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Diagrama de bloques de sistema de control\relax }}{38}{figure.2.28}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Diagrama de bloques de sistema de control\relax }}{39}{figure.2.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Diagrama de bloques de sistema de control\relax }}{39}{figure.2.29}
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Diagrama de bloques de la funci\IeC {\'o}n de transferencia\relax }}{40}{figure.2.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.30}{\ignorespaces Diagrama de bloques de la funci\IeC {\'o}n de transferencia\relax }}{41}{figure.2.30}
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del espacio de estado y vector de estado\relax }}{41}{figure.2.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.31}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del espacio de estado y vector de estado\relax }}{41}{figure.2.31}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.32}{\ignorespaces (a) Lazo abierto (b) Lazo cerrado\relax }}{45}{figure.2.32}
+\contentsline {figure}{\numberline {2.31}{\ignorespaces (a) Lazo abierto (b) Lazo cerrado\relax }}{44}{figure.2.31}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

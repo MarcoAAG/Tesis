@@ -2,7 +2,7 @@
 \cleanchapterquote{Nunca memorices algo que puedes consultar.}{Albert Einstein}{(Físico teórico)}
 
 
-En este capitulo desarrolla la teoría que fundamenta el proyecto de investigación con base
+En este capitulo se desarrolla la teoría que fundamenta el proyecto de investigación con base
 en el problema previamente descrito.\\
 Antes de entrar a la teoría es necesario entender cuales son las fases del proyecto y
 el porque de ellas.
@@ -57,6 +57,7 @@ cerebro donde tiene lugar la mayor parte del procesamiento visual.\cite{Book:Ani
 \end{center}
 En términos generales, cuanto más nos alejamos del camino visual del ojo, menos
 entendemos lo que está sucediendo.
+En la figura 2.2 se ilustra el sistema óptico de un ser humano.
 
 % ----------------------------------------------------------------------------------------------------------------------------
 % NUEVA SUBSECCION
@@ -126,7 +127,7 @@ una imagen con base en la luz disponible.
 	\captionof{figure}{Formación de una imagen en el ojo}
 	\label{fig:MarcoTeorico:Fig3}
 \end{center}
-El cerebro es quien realmente ve las imágenes. Endereza la imagen invertida de la
+El cerebro es quien realmente ve las imágenes. Tal y como se aprecia en la figura 2.3 endereza la imagen invertida de la
 retina e interpreta la información de color, tamaño, posición, etc.
 La distancia entre el centro del
 cristalino y la retina (que llamaremos distancia focal), varía de
@@ -178,9 +179,10 @@ la apertura de la lente y el sensor de imagen de la cámara. \cite{WEB:CameraWor
 \end{itemize}
 \begin{center}
 	\includegraphics[width=0.80 \textwidth]{Contenido/Cuerpo/Capitulo2/Fig1_5.eps}
-	\captionof{figure}{Componentes de la camara}
+	\captionof{figure}{Componentes de la cámara}
 	\label{fig:MarcoTeorico:Fig4}
 \end{center}
+En la figura 2.4 se ilustran todos los componentes antes descritos de la cámara.
 
 % ----------------------------------------------------------------------------------------------------------------------------
 % NUEVA SUBSECCION
@@ -189,7 +191,7 @@ la apertura de la lente y el sensor de imagen de la cámara. \cite{WEB:CameraWor
 En una cámara fotográfica se recibe la luz que traspasa el diafragma, pasa por los
 cristales de la cámara hasta llegar al CCD(Charge Coupled Device o, en español,
 Dispositivo de Carga Acoplada) o sensor, que es donde se forma la imagen correcta y se
-envía al procesador.\\
+envía al procesador. Donde cada uno de los componenetes estan ilustrados en la figura 2.5\\
 Algo similar pasa en el ojo, la pupila es el diagrama natural que filtra la luz que
 entra en el ojo, pasa por la lente (el cristalino)  que converge los rayos hasta
 llegar a la retina, que es la estructura que tiene las células fotosensibles y dónde
@@ -360,7 +362,8 @@ prioritaria.
 % ----------------------------------------------------------------------------------------------------------------------------
 \subsection{Tarjeta procesadora}
 La elección del hardware que será el cerebro de nuestro sistema es una tarea importante ya que de ello depende el éxito de
-nuestro proyecto, y en estos tiempos el mercado ofrece una gran variedad de tarjetas procesadoras.
+nuestro proyecto, y en estos tiempos el mercado ofrece una gran variedad de tarjetas procesadoras. En la figura 2.13 solo se muestran algunas de las mas importantes en el 
+mercado actual.
 \begin{center}
 	\includegraphics[width=0.60 \textwidth]{Contenido/Cuerpo/Capitulo2/Fig7.eps}
 	\captionof{figure}{Tarjetas procesadoras de datos}
@@ -551,7 +554,7 @@ el dominio y el rango son discretos, como en el caso de las imágenes, la señal
 Las computadoras no pueden manejar imágenes continuas sino solo matrices de números digitales. Por lo tanto, se
 requiere representar imágenes como conjuntos de puntos bidimensionales. Un punto en la cuadrícula 2D se llama píxel o pel.\\
 Un píxel representa la irradiancia en la posición de cuadrícula correspondiente. En el caso más simple, los píxeles se encuentran
-en una cuadrícula rectangular. La posición del píxel se da en la notación común para matrices.
+en una cuadrícula rectangular como en la figura 2.17. La posición del píxel se da en la notación común para matrices.
 El primer índice, m, denota la posición de la fila, el segundo, n, la posición de la columna.
 \begin{center}
 	\includegraphics[width=0.41\textwidth]{Contenido/Cuerpo/Capitulo2/Fig8.eps}
@@ -591,7 +594,7 @@ intensidad.En general, los datos de imagen se cuantifican en 256 valores de gris
 Luego, cada píxel ocupa 8 bits o un byte. Para el caso de tener 256 niveles de gris (0-255), el 0 corresponde a un
 objeto no iluminado o que absorbe todos los rayos luminosos que inciden sobre él
 (negro), y el nivel 255 a un objeto muy iluminado o que refleja todos los rayos que
-inciden sobre él (blanco).
+inciden sobre él (blanco) asi como se ilustra en la figura 2.18.
 \begin{center}
 	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo2/Fig9.eps}
 	\captionof{figure}{Ilustración de cuantización\cite{Book:Bernd1997}.La misma imagen se muestra con diferentes niveles de cuantización: a 16, b 8, c 4, d 2. Muy pocos niveles de
@@ -656,7 +659,7 @@ aproximarse a un polinomio de la siguiente manera.
 \end{equation}
 Donde definimos a r como la distancia del punto de imagen desde el punto principal.\\
 La distorsión ocurre cuando la ampliación disminuye con la distancia desde el punto principal, lo que hace
-que las líneas rectas cerca del borde de la imagen se curven hacia afuera.
+que las líneas rectas cerca del borde de la imagen se curven hacia afuera como se puede observar en la figura 2.19 a)
 % \begin{center}
 % \includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo2/Fig20.eps}
 % \captionof{figure}{Tomada de \cite{Book:Corke2011}; a) Imagen con distorsión; b) Imagen despues de calibrar}
@@ -664,7 +667,7 @@ que las líneas rectas cerca del borde de la imagen se curven hacia afuera.
 % \end{center}
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.9 \textwidth]{Contenido/Cuerpo/Capitulo2/Fig20.eps}
+		\includegraphics[width=0.95 \textwidth]{Contenido/Cuerpo/Capitulo2/Fig20.eps}
 		\caption{Tomada de \cite{Book:Corke2011}; a) Imagen con distorsión; b) Imagen despues de calibrar}
 		\label{fig:20}
 	\end{center}
@@ -723,13 +726,13 @@ tres procesos fundamentales de visión del color R, G y B (Rojo, Verde y Azul).
 \end{equation}
 donde dR es el incremento / decremento en magnitud del estímulo descrito por el proceso
 fundamental R, y comparable para los otros dos estímulos.\cite{Book:Rolf2003}
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.35 \textwidth]{Contenido/Cuerpo/Capitulo2/Fig10.eps}
-		\caption{Representación del espacio de color RGB}
-		\label{fig:20}
-	\end{center}
-\end{figure}
+% \begin{figure}[h]
+	% \begin{center}
+		% \includegraphics[width=0.35 \textwidth]{Contenido/Cuerpo/Capitulo2/Fig10.eps}
+		% \caption{Representación del espacio de color RGB}
+		% \label{fig:20}
+	% \end{center}
+% \end{figure}
 Uno de los principales problema que el modelo RGB presenta es la mezcla de la información
 del color (tono y saturación) y la intensidad. Aun así sigue siendo el modelo más utilizado y
 el que los productores de cámara utilizan para ser implementadas en estas. Estos dos inconvenientes
@@ -755,7 +758,7 @@ son realizadas normalmente mediante hardware específico. Las ecuaciones son:
 	S = 1 - \frac{min(R,G,B)}{I}
 \end{equation}
 Así como el espacio RGB se representa por un cubo, el HSI lo forman dos
-pirámides unidas por su base. Dependiendo de la intensidad se tiene un corte a los
+pirámides unidas por su base como en la figura 2.20. Dependiendo de la intensidad se tiene un corte a los
 conos.
 \begin{figure}[h]
 	\begin{center}
@@ -917,7 +920,7 @@ De la ecuación 2.25 podemos decir entonces que la erosión es más pronunciada 
 	\captionof{figure}{(a) Erosión de X por el elemento estructurante Y. (b) Los elementos conectados del conjunto X más pequeños que Y son eliminados. }
 	\label{fig:MarcoTeorico:Fig23}
 \end{center}
-De la figura 2.23 se puede observar como en (b) el proceso de erosión disminuye la dimensión de las figuras, y en algunos casos elimina la totalidad de estos.
+De la figura 2.22 se puede observar como en (b) el proceso de erosión disminuye la dimensión de las figuras, y en algunos casos elimina la totalidad de estos.
 
 \subsubsection{Dilatación}
 La transformación de dilatación es el proceso "inverso" al de la erosión, en otras palabras, las operaciones de erosión y dilatación son duales una de otra.\\
@@ -929,7 +932,7 @@ Tomando en cuenta la dualidad antes mencionada, podemos obtener matemáticamente
 \begin{equation}
 	X \otimes \tilde{B} = (X^c \otimes \tilde{B})^c
 \end{equation}
-La figura 2.24 ilustra el resultado de aplicar la operación de dilatación de donde el elemnto estructurante Y tiene forma de disco.
+La figura 2.23 ilustra el resultado de aplicar la operación de dilatación de donde el elemnto estructurante Y tiene forma de disco.
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo2/Fig15.eps}
 	\captionof{figure}{(a) Dilatación de X por el elemento estructurante Y. (b) El conjunto X aumenta su definición.  }
@@ -1011,7 +1014,7 @@ Donde i, j nos indican la ubicación de los pixeles.
 \subsection{Teorema de Green}
 En el campo de las matemáticas hay un teorema que nos da la relación entre una integral
 de línea, es decir donde la función a integrar se evalúa a lo largo de una curva, C y una
-integral doble sobre una región plana D con límites C, tal como se ilustra en la figura 2.27.
+integral doble sobre una región plana D con límites C, tal como se ilustra en la figura 2.26.
 \begin{center}
 	\includegraphics[width=0.5 \textwidth]{Contenido/Cuerpo/Capitulo2/Fig18.eps}
 	\captionof{figure}{Area de D limitada por C }
@@ -1074,12 +1077,12 @@ entrada especificada.
 	\captionof{figure}{Diagrama de bloques de sistema de control}
 	\label{fig:MarcoTeorico:Fig25}
 \end{center}
-La figura 2.28 muestra un sistema de control en su forma más simple, donde la entrada representa
+La figura 2.27 muestra un sistema de control en su forma más simple, donde la entrada representa
 una salida deseada.\\
 A manera de ejemplo tenemos los sistemas de desarrollo de piloto automático en los automóviles de
 última generación, donde un usuario puede ingresar el destino deseado y el automóvil debe llevarlo.
 Al ubicar el punto en el mapa le damos al sistema una entrada que es la salida deseada, mostrada
-en la figura 2.29 y la respuesta del sistema se ilustra con la curva azul.
+en la figura 2.28 y la respuesta del sistema se ilustra con la curva azul.
 \begin{center}
 	\includegraphics[width=0.85 \textwidth]{Contenido/Cuerpo/Capitulo2/Fig23.eps}
 	\captionof{figure}{Diagrama de bloques de sistema de control}
@@ -1312,7 +1315,7 @@ condiciones iniciales cero. Luego representamos la ecuación diferencial en el e
 Para poder tener la seguridad que nuestro sistema va a hacer lo que tiene que hacer, es importante
 aplicar un controlador al sistema este variara dependiendo de la aplicación y de los recursos
 disponibles.\\
-La teoría de control se basa en dos principales ramas, de lazo abierto y lazo cerrado.
+La teoría de control se basa en dos principales ramas, de lazo abierto y lazo cerrado asi como se ilustra en la figura 2.31.
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo2/Fig21.eps}
 	\captionof{figure}{(a) Lazo abierto (b) Lazo cerrado}

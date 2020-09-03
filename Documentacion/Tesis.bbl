@@ -356,6 +356,60 @@
       \field{title}{IMAGE FILTERING IN HS COLOR SPACE}
       \field{year}{2000}
     \endentry
+    \entry{Paper::Kim2010}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=09f276c98e1c9f63d12ea303d708ddb6}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=7f839337f2732f6af98367dcf8d05774}{%
+           family={Kwak},
+           familyi={K\bibinitperiod},
+           given={Y.\bibnamedelimi K.},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{fullhash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{bibnamehash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{authorbibnamehash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{authornamehash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{authorfullhash}{635f24caeb324eadcb4782f986d10efd}
+      \field{labelalpha}{KK10}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robust control for two-axis gimbaled sensor system with multivariable feedback systems}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper::Lee2006}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=5359aabac90743bca29a239661e1b3a3}{%
+           family={K.\bibnamedelimi J.\bibnamedelimi Seong},
+           familyi={K\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={H.\bibnamedelimi G.\bibnamedelimi Kang},
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=80e77bfcebc771e4cbf5cb6cf3441896}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{fullhash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{bibnamehash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{authorbibnamehash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{authornamehash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{authorfullhash}{415816a154c5134b17fb7f9d0d275539}
+      \field{labelalpha}{KL06}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The stabilization loop design for a two-axis gimbal system using LQG/LTR controller}
+      \field{year}{2006}
+    \endentry
     \entry{Book:Rolf2003}{book}{}
       \name{author}{1}{}{%
         {{hash=c1f4a874ed6fccff9f8904b2209451e6}{%
@@ -380,6 +434,33 @@
       \field{labeltitlesource}{title}
       \field{title}{Color Space and Its Divisions Color Order from Antiquity to the Present}
       \field{year}{2003}
+    \endentry
+    \entry{Paper::Lin2001}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=1436c71ffaa06e0de1139a7fd327301a}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi L},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=4d15e0ed57f8e11ae3c144240ad61a1b}{%
+           family={Hsiao},
+           familyi={H\bibinitperiod},
+           given={Y.\bibnamedelimi H.},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{fullhash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{bibnamehash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{authorbibnamehash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{authornamehash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{authorfullhash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \field{labelalpha}{LH01}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Adaptive feedforward control for disturbance torque rejection in seeker stabilizing loop}
+      \field{year}{2001}
     \endentry
     \entry{Book:InNav}{book}{}
       \name{author}{1}{}{%
@@ -841,6 +922,33 @@
       \verb{url}
       \verb http://wiki.ros.org/ROS/Concepts
       \endverb
+    \endentry
+    \entry{Paper::Salatun1983}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=e3554a315b52decde3b44d4302f0a925}{%
+           family={Salatun},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1ff6d76739d2e2025e1f35447bdc8c5c}{%
+           family={Bainum},
+           familyi={B\bibinitperiod},
+           given={P.\bibnamedelimi M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{fullhash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{bibnamehash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{authorbibnamehash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{authornamehash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{authorfullhash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \field{labelalpha}{SB83}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analysis of a double gimbaled reaction wheel spacecraft attitude stabilization system}
+      \field{year}{1983}
     \endentry
     \entry{Book:Serra1984}{book}{}
       \name{author}{1}{}{%
@@ -1372,6 +1480,62 @@
       \field{title}{IMAGE FILTERING IN HS COLOR SPACE}
       \field{year}{2000}
     \endentry
+    \entry{Paper::Kim2010}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=09f276c98e1c9f63d12ea303d708ddb6}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=7f839337f2732f6af98367dcf8d05774}{%
+           family={Kwak},
+           familyi={K\bibinitperiod},
+           given={Y.\bibnamedelimi K.},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{fullhash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{bibnamehash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{authorbibnamehash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{authornamehash}{635f24caeb324eadcb4782f986d10efd}
+      \strng{authorfullhash}{635f24caeb324eadcb4782f986d10efd}
+      \field{labelalpha}{KK10}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robust control for two-axis gimbaled sensor system with multivariable feedback systems}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper::Lee2006}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=5359aabac90743bca29a239661e1b3a3}{%
+           family={K.\bibnamedelimi J.\bibnamedelimi Seong},
+           familyi={K\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={H.\bibnamedelimi G.\bibnamedelimi Kang},
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=80e77bfcebc771e4cbf5cb6cf3441896}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{fullhash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{bibnamehash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{authorbibnamehash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{authornamehash}{415816a154c5134b17fb7f9d0d275539}
+      \strng{authorfullhash}{415816a154c5134b17fb7f9d0d275539}
+      \field{labelalpha}{KL06}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The stabilization loop design for a two-axis gimbal system using LQG/LTR controller}
+      \field{year}{2006}
+    \endentry
     \entry{Book:Rolf2003}{book}{}
       \name{author}{1}{}{%
         {{hash=c1f4a874ed6fccff9f8904b2209451e6}{%
@@ -1397,6 +1561,34 @@
       \field{labeltitlesource}{title}
       \field{title}{Color Space and Its Divisions Color Order from Antiquity to the Present}
       \field{year}{2003}
+    \endentry
+    \entry{Paper::Lin2001}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=1436c71ffaa06e0de1139a7fd327301a}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi L},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=4d15e0ed57f8e11ae3c144240ad61a1b}{%
+           family={Hsiao},
+           familyi={H\bibinitperiod},
+           given={Y.\bibnamedelimi H.},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{fullhash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{bibnamehash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{authorbibnamehash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{authornamehash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \strng{authorfullhash}{92214a73f27c99e7cb7128a80a4f8eda}
+      \field{labelalpha}{LH01}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Adaptive feedforward control for disturbance torque rejection in seeker stabilizing loop}
+      \field{year}{2001}
     \endentry
     \entry{Book:InNav}{book}{}
       \name{author}{1}{}{%
@@ -1875,6 +2067,34 @@
       \verb{url}
       \verb http://wiki.ros.org/ROS/Concepts
       \endverb
+    \endentry
+    \entry{Paper::Salatun1983}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=e3554a315b52decde3b44d4302f0a925}{%
+           family={Salatun},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1ff6d76739d2e2025e1f35447bdc8c5c}{%
+           family={Bainum},
+           familyi={B\bibinitperiod},
+           given={P.\bibnamedelimi M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{fullhash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{bibnamehash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{authorbibnamehash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{authornamehash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \strng{authorfullhash}{ee7b89bb4fdcd91bab64f5a48585f6eb}
+      \field{labelalpha}{SB83}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analysis of a double gimbaled reaction wheel spacecraft attitude stabilization system}
+      \field{year}{1983}
     \endentry
     \entry{Book:Serra1984}{book}{}
       \name{author}{1}{}{%
