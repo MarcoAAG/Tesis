@@ -1,5 +1,5 @@
 \chapter{Sistema Embebido}
-\cleanchapterquote{I do not fear computers. I fear lack of them.}{Isaac Asimov}{(American writer and professor of biochemistry)}
+\cleanchapterquote{No me dan miedo los ordenadores. Temo la falta de ellos}{Isaac Asimov}{(Escritor americano)}
 
 En este capitulo se abordan los procedimientos de diseño del sistema embebido desde la parte mecánica hasta la
 obtención del controlador.
@@ -8,28 +8,32 @@ obtención del controlador.
 La arquitectura general del sistema embebido está dividido en 3 diferentes sub-áreas que en su conjunto ayudan al
 seguimiento de un objetivo mediante visión artificial.
 \begin{center}
-	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo5/Fig12.eps}
+	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo5/Fig12.eps}
 	\captionof{figure}{Modulos del sistema}\label{Fig1}
 \end{center}
-Tal y como se ilustra en la figura anterior, dichas sub-áreas se relacionan entre si, compartiendo datos para tener un
+Tal y como se ilustra en la figura 5.1, dichas áreas se relacionan entre si, compartiendo datos para tener un
 sistema integrado y robusto.
 \begin{itemize}
-	\item Visión: Identifica el centroide del objetivo, el desarrollo del algoritmo se abordó en el Capitulo 4
+	\item Visión: Identifica el centroide del objetivo, el desarrollo del algoritmo se abordó en el capítulo 4. Interacciona con el sistema de control enviando la retroalimentación
+	      y recibe de este ultimo datos del error.
 	\item Control: Un micro-controlador es el encargado de interactuar con los datos de la cámara y retroalimentarlos con la
-	      salida deseada, para después controlar con un PID.
+	      salida deseada, para después controlar con un PI.
 	\item Mecánico: Son los actuadores del sistema que hacen que la cámara tenga dos grados de libertad de movimiento, que
 	      son las rotaciones en Pitch y Yaw, el modelo se abordó en el Capitulo 3.
 \end{itemize}
-La comunicación de datos se da por varios buses de datos, entre todos los componentes del sistema, la siguiente imagen ilustra
+La comunicación de datos se da por varios buses de datos, entre todos los componentes del sistema, la figura 5.2 ilustra
 la interacción entre ellos y se presenta la arquitectura propuesta
 \begin{center}
 	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo5/Fig13.eps}
 	\captionof{figure}{Arquitectura del sistema}\label{Fig1}
 \end{center}
-El microcontrolador es de 32bits arquitectura RISC, las especificaciones detalladas de los motores y de la tarjeta de desarrollo
+El microcontrolador es de 32 bits arquitectura RISC, las especificaciones detalladas de los motores y de la tarjeta de desarrollo
 ODROID puede ser consultada en el Apéndice B.\\
+El Bus señalado con líneas punteadas en rojo representan la conexión de voltaje con los demás componentes, mientras que la línea punteada en negro entre la cámara y la odroid
+simboliza la conexión USB para la transferencia de datos, la comunicación entre ODROID y el MCU se da mediante el módulo RS-323 integrado en el microcontrolador que a su vez
+se comunica con los periféricos deseados utilizando sus salidas digitales.\\
 Este tipo de Arquitectura permite que la ODROID pueda comunicarse paralelamente con el MCU por medio del protocolo serial, que va
-a 57000 baudios, ademas de que permite que el microcontrolador tenga la posibilidad de publicar en ROS.
+a 57000 baudios, además de que permite que el microcontrolador tenga la posibilidad de publicar en ROS.
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
@@ -41,21 +45,21 @@ a 57000 baudios, ademas de que permite que el microcontrolador tenga la posibili
 El diseño del sistema fue hecho mediante el uso de software libre llamado OpenSCAD, en el cual se trazó el prototipo del
 sistema utilizando dos motores tipo servo, es decir, que tienen su propio controlador de velocidad integrado vía PWM.
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo5/Fig14.eps}
+	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig14.eps}
 	\captionof{figure}{Diseño CAD del prototipo}\label{Fig1}
 \end{center}
-Los motores estan representados en color azul, mienntras que la camara esta de amarillo, como se puede apreciar
-la camra recae sobre un soporte de color verde, dicha camara esta sujeta por un par de ligas que ayudan a que esta no se
-caiga cuando hay movimientos de "\ Till "\.\\
-A continuación se presentan algunas medidas del diseño, las unidades estan en mm.
+En la figura 5.3 los motores están representados en color azul, mientras que la cámara esta de amarillo, como se puede apreciar
+la cámara recae sobre un soporte de color verde, dicha cámara está sujeta por un par de ligas que ayudan a que esta no se
+caiga cuando hay rotación en pitch\\
+A continuación en la figura 5.4 se presentan algunas medidas del diseño, las unidades están en mm.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig16.eps}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig16.eps}
 	\captionof{figure}{Dimensiones del CAD}\label{Fig1}
 \end{center}
 Como se vio previamente en los capítulos 2 y 3 este sistema tendrá dos ejes de libertad, que en términos técnicos, a estos
 movimientos también se les conoce como "\ Till \" y "\ Pan \" que es no es mas que otra manera de decirle a la rotación
 sobre el eje Y y Z.\\
-Es entonces que esos movimientos pueden ser visualizados como se presenta a continuación.
+Es entonces que esos movimientos pueden ser visualizados como se presenta en la figura 5.5.
 \begin{center}
 	\includegraphics[width=0.35\textwidth]{Contenido/Cuerpo/Capitulo5/Fig15.eps}
 	\captionof{figure}{Grados de libertad del sistema}\label{Fig1}
@@ -73,21 +77,23 @@ Donde
 \section{Prototipo físico}
 Para la realización del prototipo se utilizó un material ligero para que no agregue mucho peso adicional al sistema.
 \begin{center}
-	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo5/Fig17.eps}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig17.eps}
 	\captionof{figure}{Prototipo del sistema hecho con madera}\label{Fig1}
 \end{center}
-Como se puede observar la cámara esta sujeta a la base por medio de ligas que le dan mejor soporte y ayudan a que
+Como se puede observar en la figura 5.6 la cámara esta sujeta a la base por medio de ligas que le dan mejor soporte y ayudan a que
 esta no se caiga al momento de seguir a los objetivos.
 \begin{itemize}
 	\item Peso del sistema sin motores ni cámara : 70 g
 	\item Peso con motores y cámara : 215 g
 \end{itemize}
-En b) y c) de la imagen anterior se ilustra el movimiento que puede realizar el sistema, y que será controlado
+En b) y c) de la figura 5.6 se ilustra el movimiento que puede realizar el sistema, y que será controlado
 por la cámara y actuado por los motores.\\
 Adicionalmente se diseñó un pequeño circuito que sirve como terminal para las conexiones de alimentación y señales,
-dicho circuito se encuentra en la parte lateral del sistema sujetado por ligas y pegamento.
+dicho circuito se encuentra en la parte lateral del sistema sujetado por ligas y pegamento.\\
+La conexiones eléctricas se ilustra en la figura 5.7. Es una esquemático que muestra la conexión entre los componentes principales: la cámara(OCAM), monoprocesador(ODROID),
+el microcontrolador (ATMEGA) y los motores (Servomotores)
 \begin{center}
-	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo5/Fig18.eps}
+	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig21.eps}
 	\captionof{figure}{Circuito eléctrico}\label{Fig1}
 \end{center}
 
@@ -183,7 +189,7 @@ Ahora encontraremos las constantes eléctricas, $K_t / R_a$ y $K_b$. De la curva
 \begin{itemize}
 	\item $T_{stall}$ = 1.078
 	\item $\omega_{sincarga}$ = 0.0673
-	\item $e_a$ = 6v 
+	\item $e_a$ = 6v
 \end{itemize}
 Las constantes electricas son
 \begin{equation}

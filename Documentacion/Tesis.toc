@@ -169,22 +169,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}ROS-Microcontrolador}{95}{section*.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Control}{96}{section*.74}
+\contentsline {section}{\numberline {5.5}Control}{97}{section*.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Funci\IeC {\'o}n de tranferencia}{97}{section*.75}
+\contentsline {subsection}{\numberline {5.5.1}Funci\IeC {\'o}n de tranferencia}{98}{section*.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Algortimo de control}{99}{section*.76}
+\contentsline {subsection}{\numberline {5.5.2}Algortimo de control}{100}{section*.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{103}{chapter*.77}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{105}{chapter*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{107}{section*.80}
+\contentsline {chapter}{\'{I}ndice de figuras}{109}{section*.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{111}{section*.81}
+\contentsline {chapter}{\'{I}ndice de cuadros}{113}{section*.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{113}{section*.83}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{115}{section*.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{115}{appendix.Alph1}
+\contentsline {chapter}{\numberline {A}Apendice A}{117}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{119}{appendix.Alph2}
+\contentsline {chapter}{\numberline {B}Apendice B}{121}{appendix.Alph2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{119}{section*.86}
+\contentsline {section}{\numberline {B.1}ODROID}{121}{section*.86}

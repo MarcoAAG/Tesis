@@ -102,11 +102,11 @@ void control(uint16_t inX, uint16_t inY)
   pub_ey.publish(&ErrorY); //Publicar error en coordenada Y
 
   //Establecemos ganancias
-  KP[0]= (double)(analogRead(A0) * 0.1 / 1023.0);
-  KP[1] = 0.0;
-  KD[0] = (double)(analogRead(A1) * 10.0 / 1023.0);
-  KD[1] = 0.0; 
-  KI[0] = (double)(analogRead(A2) * 0.00001 / 1023.0);
+  KP[0]= 0.0;//(double)(analogRead(A0) * 0.2 / 1023.0);
+  KP[1] = (double)(analogRead(A2) * 0.2 / 1023.0);
+  KD[0] = 0.0;
+  KD[1] = (double)(analogRead(A3) * 0.1 / 1023.0); 
+  KI[0] = 0.0;//(double)(analogRead(A1) * 0.00002 / 1023.0);
   KI[1] = 0.0;
   
 
@@ -127,7 +127,7 @@ void control(uint16_t inX, uint16_t inY)
   }
   if(CTRL[0] < 0 )
   {
-    PWM[0] = 1554 + (int)CTRL[0] * -1;
+    PWM[0] = 1553 + (int)CTRL[0] * -1;
   }
   if(error[0] == 0 || CTRL[0] == 0)
   {
@@ -137,7 +137,7 @@ void control(uint16_t inX, uint16_t inY)
   //Establecer entrada de control [1]
   if(CTRL[1] > 0)
   {
-    PWM[1] = 1545 + (int)CTRL[1];
+    PWM[1] = 1544 + (int)CTRL[1];
   }
   if(CTRL[1] < 0 )
   {

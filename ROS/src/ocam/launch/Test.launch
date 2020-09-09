@@ -1,5 +1,5 @@
 <launch>
-    <param name="com" type = "int" value= "2" />
+    <param name="com" type = "int" value= "1" />
     <param name="sampletime" type = "int" value= "25" />
     <param name="Publisher_nodeName" type = "string" value="/ocam/image_raw"/>
 
