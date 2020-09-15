@@ -67,12 +67,13 @@
 \BOOKMARK [1][]{section*.72}{5.3 Prototipo f\355sico}{chapter.5}% 67
 \BOOKMARK [1][]{section*.73}{5.4 ROS-Microcontrolador}{chapter.5}% 68
 \BOOKMARK [1][]{section*.74}{5.5 Control}{chapter.5}% 69
-\BOOKMARK [2][]{section*.75}{5.5.1 Funci\363n de tranferencia}{section*.74}% 70
-\BOOKMARK [2][]{section*.76}{5.5.2 Algortimo de control}{section*.74}% 71
-\BOOKMARK [0][]{chapter*.77}{Bibliograf\355a}{}% 72
-\BOOKMARK [0][]{section*.80}{\315ndice de figuras}{}% 73
-\BOOKMARK [0][]{section*.81}{\315ndice de cuadros}{}% 74
-\BOOKMARK [0][]{section*.83}{Lista de c\363digos}{}% 75
-\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 76
-\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 77
-\BOOKMARK [1][]{section*.86}{B.1 ODROID}{appendix.Alph2}% 78
+\BOOKMARK [2][]{section*.75}{5.5.1 Control servomotor}{section*.74}% 70
+\BOOKMARK [2][]{section*.76}{5.5.2 Control en Pitch}{section*.74}% 71
+\BOOKMARK [2][]{section*.77}{5.5.3 Algortimo de control}{section*.74}% 72
+\BOOKMARK [0][]{chapter*.78}{Bibliograf\355a}{}% 73
+\BOOKMARK [0][]{section*.81}{\315ndice de figuras}{}% 74
+\BOOKMARK [0][]{section*.82}{\315ndice de cuadros}{}% 75
+\BOOKMARK [0][]{section*.84}{Lista de c\363digos}{}% 76
+\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 77
+\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 78
+\BOOKMARK [1][]{section*.87}{B.1 ODROID}{appendix.Alph2}% 79

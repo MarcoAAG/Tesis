@@ -145,25 +145,15 @@ salida deseada $x^{des}(t)$. Para lograr esto vamos a utilizar la siguiente apro
 \end{equation}
 Donde $e(t)$ representa el error. Por lo que la estrategia es encontrar un $u(t)$ tal que
 \begin{equation}
-	\ddot{e} + k_v\dot{e} + k_pe = 0
+	K_i\int e + k_pe = 0
 \end{equation}
-Donde $k_v$ y $k_p$ $> 0$\\
-Y tal y como se abordo en el capitulo 2 esto nos lleva al control Proporcional-Derivativo
+Donde $k_i$ y $k_p$ $> 0$\\
+Y tal y como se abordo en el capitulo 2 esto nos lleva al control Proporcional-Integral
 \begin{equation}
-	u(t) = \ddot{x}^{des}(t) + k_v\dot{e}(t) + k_pe(t)
+	u(t) = k_i\int{e}(t) + k_pe(t)
 \end{equation}
 
-La siguiente imagen ilustra el diagrama de bloques correspondiente al control del sistema para la coordenada X
-\begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig6.eps}
-	\captionof{figure}{Lazo de control}\label{Fig4}
-\end{center}
-Es un sistema de segundo orden retroalimentado por la camara y procesado en ROS. El lazo de control es aplicable también para la coordenada Y, como
-fue abordado en la sección 5.4 la comunicación se da mediante
-el protocolo serial, y debido a que la tarea que se encarga de realizar el algoritmo de control se debe suscribir al nodo de
-coordenadas, este se ve limitado, a un tiempo de muestreo de 60fps, o dicho de otro modo a 16.66 ms.
-
-\subsection{Función de tranferencia}
+\subsection{Control servomotor}
 Como vimos en el capítulo 3, la función de transferencia de un motor de corriente continua es de segundo orden, e involucra algunas constantes que dependen del toque máximo y
 de la velocidad sin carga.
 \begin{equation}
@@ -222,6 +212,20 @@ Debido a lo pequeño de estos valores, podemos hacer 0 a la variable $J_m$, por 
 \begin{equation}
 	\frac{\theta_m (s)}{E_a(s)} = \frac{K_t / R_a}{s \left[ s +  \left( \frac{K_tK_b}{R_a} \right) \right]} = \frac{0.17966}{s(s+16)}
 \end{equation}
+
+
+
+\subsection{Control en Pitch}
+La siguiente imagen ilustra el diagrama de bloques correspondiente al control del sistema para la coordenada X
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig6.eps}
+	\captionof{figure}{Lazo de control}\label{Fig4}
+\end{center}
+Es un sistema de segundo orden retroalimentado por la camara y procesado en ROS. El lazo de control es aplicable también para la coordenada Y, como
+fue abordado en la sección 5.4 la comunicación se da mediante
+el protocolo serial, y debido a que la tarea que se encarga de realizar el algoritmo de control se debe suscribir al nodo de
+coordenadas, este se ve limitado, a un tiempo de muestreo de 60fps, o dicho de otro modo a 16.66 ms.
+
 
 \subsection{Algortimo de control}
 El algoritmo general del control esta descrito en los siguientes diagramas, basado en programación orientado a objetos
