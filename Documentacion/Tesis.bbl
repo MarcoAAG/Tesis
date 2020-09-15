@@ -72,6 +72,33 @@
       \field{title}{Next Generation Artificial Vision System}
       \field{year}{2008}
     \endentry
+    \entry{Paper::Abdo2013}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=d872401ecfe7d2bc5d1faa0bd10b430f}{%
+           family={Abdo},
+           familyi={A\bibinitperiod},
+           given={Maher},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b5b18cfe50d81cbd6960df97c8cf6563}{%
+           family={Vali},
+           familyi={V\bibinitperiod},
+           given={Ahmad\bibnamedelima Reza},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{fullhash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{bibnamehash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{authorbibnamehash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{authornamehash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{authorfullhash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \field{labelalpha}{AV13}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Research on the Cross-Coupling of a two Axes Gimbal System with Dynamic Unbalance}
+      \field{year}{2013}
+    \endentry
     \entry{Book:Barfoot2020}{book}{}
       \name{author}{1}{}{%
         {{hash=fc1f3d31d72631a7bd7cc7cb1b0fa5a6}{%
@@ -1184,6 +1211,34 @@
       \field{labeltitlesource}{title}
       \field{title}{Next Generation Artificial Vision System}
       \field{year}{2008}
+    \endentry
+    \entry{Paper::Abdo2013}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=d872401ecfe7d2bc5d1faa0bd10b430f}{%
+           family={Abdo},
+           familyi={A\bibinitperiod},
+           given={Maher},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b5b18cfe50d81cbd6960df97c8cf6563}{%
+           family={Vali},
+           familyi={V\bibinitperiod},
+           given={Ahmad\bibnamedelima Reza},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{fullhash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{bibnamehash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{authorbibnamehash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{authornamehash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \strng{authorfullhash}{193fd4e9fecb169aeaa1f22401e51b7c}
+      \field{labelalpha}{AV13}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Research on the Cross-Coupling of a two Axes Gimbal System with Dynamic Unbalance}
+      \field{year}{2013}
     \endentry
     \entry{Book:Barfoot2020}{book}{}
       \name{author}{1}{}{%

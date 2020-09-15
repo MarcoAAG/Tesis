@@ -175,7 +175,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.5.2}Control en Pitch}{99}{section*.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}Algortimo de control}{100}{section*.77}
+\contentsline {subsection}{\numberline {5.5.3}Algortimo de control}{101}{section*.77}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{105}{chapter*.78}
 \defcounter {refsection}{0}\relax 

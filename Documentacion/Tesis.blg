@@ -1,24 +1,24 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'Tesis.blg'
-[26] biber:313> INFO - === jue sep  3, 2020, 06:35:29
-[46] Biber.pm:371> INFO - Reading 'Tesis.bcf'
-[106] Biber.pm:857> INFO - Found 43 citekeys in bib section 0
-[127] Biber.pm:3981> INFO - Processing section 0
-[137] Biber.pm:4154> INFO - Looking for bibtex format file 'Referencias.bib' for section 0
-[139] bibtex.pm:1468> INFO - LaTeX decoding ...
-[167] bibtex.pm:1294> INFO - Found BibTeX data source 'Referencias.bib'
-[212] Utils.pm:169> WARN - month field 'Jan' in entry 'Book:Jose2005' is not an integer - this will probably not sort properly.
-[283] Utils.pm:169> WARN - month field 'may' in entry 'WEB:Ieeeucsa2019' is not an integer - this will probably not sort properly.
-[305] Utils.pm:169> WARN - BibTeX subsystem: /tmp/PO4NDmpLOQ/Referencias.bib_8372.utf8, line 2, warning: 93 characters of junk seen at toplevel
-[305] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[305] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[306] Utils.pm:169> WARN - I didn't find a database entry for 'hardkernel2017' (section 0)
-[356] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[356] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[356] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
-[424] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[424] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[424] Biber.pm:3809> INFO - Sorting list 'anyt/global/@/global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
-[470] bbl.pm:617> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
-[508] bbl.pm:720> INFO - Output to Tesis.bbl
-[508] Biber.pm:110> INFO - WARNINGS: 6
+[30] biber:313> INFO - === mar sep 15, 2020, 13:27:20
+[54] Biber.pm:371> INFO - Reading 'Tesis.bcf'
+[140] Biber.pm:857> INFO - Found 44 citekeys in bib section 0
+[166] Biber.pm:3981> INFO - Processing section 0
+[179] Biber.pm:4154> INFO - Looking for bibtex format file 'Referencias.bib' for section 0
+[180] bibtex.pm:1468> INFO - LaTeX decoding ...
+[216] bibtex.pm:1294> INFO - Found BibTeX data source 'Referencias.bib'
+[275] Utils.pm:169> WARN - month field 'Jan' in entry 'Book:Jose2005' is not an integer - this will probably not sort properly.
+[366] Utils.pm:169> WARN - month field 'may' in entry 'WEB:Ieeeucsa2019' is not an integer - this will probably not sort properly.
+[403] Utils.pm:169> WARN - BibTeX subsystem: /tmp/bI8fmrCu3I/Referencias.bib_26148.utf8, line 2, warning: 93 characters of junk seen at toplevel
+[403] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[403] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[403] Utils.pm:169> WARN - I didn't find a database entry for 'hardkernel2017' (section 0)
+[473] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[473] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[473] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
+[554] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[554] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[554] Biber.pm:3809> INFO - Sorting list 'anyt/global/@/global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
+[607] bbl.pm:617> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
+[660] bbl.pm:720> INFO - Output to Tesis.bbl
+[660] Biber.pm:110> INFO - WARNINGS: 6

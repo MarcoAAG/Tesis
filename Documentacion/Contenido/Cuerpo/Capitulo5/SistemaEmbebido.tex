@@ -216,10 +216,39 @@ Debido a lo pequeño de estos valores, podemos hacer 0 a la variable $J_m$, por 
 
 
 \subsection{Control en Pitch}
-La siguiente imagen ilustra el diagrama de bloques correspondiente al control del sistema para la coordenada X
+El sistema dinamico de Pitch obtenida en el capitulo 3 se trata de una ecuación de primer orden
+\begin{equation}
+	J_{ay}\dot{q}_a = T_y
+\end{equation}
+Pasando la ecuacion 5.11 en el dominio de Laplace obtenemos
+\begin{equation}
+	J_{ay}SQ_a(s) = T_y(s)
+\end{equation}
+Dividimos entrada sobre salida, o en otras palabras, obtenemos la funcion de transferencia en lazo abierto
+\begin{equation}
+	G = \frac{Q_a(s)}{T_y(s)} =  \frac{1}{J_{ay}s}
+\end{equation}
+Y en lazo cerrado la ecuacion 5.13 se transforma en 
+\begin{equation}
+	G_c = \frac{G}{1 +GH} = \frac{1}{J_{ay}s+1}
+\end{equation}
+La figura 5.13 es el resultado de la simulación del sistema dinamico de pitch en lazo cerrado ante una entrada escalon.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig6.eps}
-	\captionof{figure}{Lazo de control}\label{Fig4}
+	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo5/Fig23.eps}
+	\captionof{figure}{Simulación entrada escalon}\label{Fig4}
+\end{center}
+Los valores para la ecuacion 5.14 se obtuvieron del trabajo de \cite{Paper::Abdo2013}, debido a la simulitud del sistema fisico, donde 
+$J_{ay} = 0.1$ 
+
+Como se abordo en el capitulo 3, el sistema dinamico de la gimbal es de primer orden para los movimientos en pitch y yaw, y como se definio en la seccion 5.1
+el control que se implemento es el Proporcional-Integral. siendo este el necesario para hacer que el error converga a cero.\\
+El diagrama de bloques de la figura 5.13 une todas las etapas de control, pasando por el control del servomotor, que hace una retroalimentación interna con base
+en la dinamica vista en la seccion 5.1 y que obtenemos como salida el torque de entrada de la funcion de transferencia de la dinamica de Pitch para posteriormente
+obtener la velocidad angular $q_a$, que despues pasa por un integrador y asi obtener la posición respecto al marco de referencia de la camara, es decir, en 
+pixeles de la coordenada Y.
+\begin{center}
+	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig22.eps}
+	\captionof{figure}{Lazo de control para Pitch}\label{Fig4}
 \end{center}
 Es un sistema de segundo orden retroalimentado por la camara y procesado en ROS. El lazo de control es aplicable también para la coordenada Y, como
 fue abordado en la sección 5.4 la comunicación se da mediante
