@@ -175,18 +175,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.5.2}Control en Pitch}{99}{section*.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}Algortimo de control}{101}{section*.77}
+\contentsline {subsubsection}{Algortimo de control}{101}{figure.5.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{105}{chapter*.78}
+\contentsline {subsubsection}{Sintonizaci\IeC {\'o}n de control}{102}{figure.5.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{109}{section*.81}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{107}{chapter*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{113}{section*.82}
+\contentsline {chapter}{\'{I}ndice de figuras}{111}{section*.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{115}{section*.84}
+\contentsline {chapter}{\'{I}ndice de cuadros}{115}{section*.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{117}{appendix.Alph1}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{117}{section*.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{121}{appendix.Alph2}
+\contentsline {chapter}{\numberline {A}Apendice A}{119}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{121}{section*.87}
+\contentsline {chapter}{\numberline {B}Apendice B}{123}{appendix.Alph2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}ODROID}{123}{section*.86}

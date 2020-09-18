@@ -105,9 +105,9 @@ void control(uint16_t inX, uint16_t inY)
   KP[0]= 0.0;//(double)(analogRead(A0) * 0.2 / 1023.0);
   KP[1] = (double)(analogRead(A2) * 0.2 / 1023.0);
   KD[0] = 0.0;
-  KD[1] = (double)(analogRead(A3) * 0.1 / 1023.0); 
+  KD[1] = 0.0;
   KI[0] = 0.0;//(double)(analogRead(A1) * 0.00002 / 1023.0);
-  KI[1] = 0.0;
+  KI[1] = (double)(analogRead(A3) * 0.00002 / 1023.0);
   
 
   //guardar el tiempo anterior
@@ -141,7 +141,7 @@ void control(uint16_t inX, uint16_t inY)
   }
   if(CTRL[1] < 0 )
   {
-    PWM[1] = 1436 + (int)CTRL[1];
+    PWM[1] = 1437 + (int)CTRL[1];
   }
   if(error[1] == 0 || CTRL[1] == 0)
   {

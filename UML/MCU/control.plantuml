@@ -5,9 +5,10 @@ start
 :Inicializar motores a 1450 ms de PWM;
 repeat : Suscribirse a nodo "/Coordinates";
   :Calcular errores;
-  :Obtener valores de ganancias Kp, Ki, Kd;
-  :Calcular PID;
-  :Convertir PID a valor de PWM;
+  :Calcular la suma de los errores;
+  :Obtener valores de ganancias Kp, Ki;
+  :Calcular PI;
+  :Convertir PI a valor de PWM;
   (A)
   detach
   (B)

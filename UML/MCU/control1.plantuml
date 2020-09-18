@@ -1,8 +1,8 @@
 @startuml control
   (A)
-  :Sumar el PID al valor de PWM;
+  :Sumar el PI al valor de PWM;
   :Establecer los limites;
   :Enviar PWM a motores;
-  :Publicar errores;
+  :Publicar errores en ROS;
   (B)
 @enduml

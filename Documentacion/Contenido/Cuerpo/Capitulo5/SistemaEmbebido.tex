@@ -250,19 +250,51 @@ pixeles de la coordenada Y.
 	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig22.eps}
 	\captionof{figure}{Lazo de control para Pitch}\label{Fig4}
 \end{center}
-Es un sistema de segundo orden retroalimentado por la camara y procesado en ROS. El lazo de control es aplicable también para la coordenada Y, como
-fue abordado en la sección 5.4 la comunicación se da mediante
-el protocolo serial, y debido a que la tarea que se encarga de realizar el algoritmo de control se debe suscribir al nodo de
-coordenadas, este se ve limitado, a un tiempo de muestreo de 60fps, o dicho de otro modo a 16.66 ms.
+% Es un sistema de segundo orden retroalimentado por la camara y procesado en ROS. El lazo de control es aplicable también para la coordenada Y, como
+% fue abordado en la sección 5.4 la comunicación se da mediante
+% el protocolo serial, y debido a que la tarea que se encarga de realizar el algoritmo de control se debe suscribir al nodo de
+% coordenadas, este se ve limitado, a un tiempo de muestreo de 60fps, o dicho de otro modo a 16.66 ms.
 
 
-\subsection{Algortimo de control}
-El algoritmo general del control esta descrito en los siguientes diagramas, basado en programación orientado a objetos
-donde hay dos puntos claves, la obtención de datos y la publicación de los errores para después ser graficados.
+\subsubsection{Algortimo de control}
+El algoritmo general del control tanto para pitch y para yaw esta descrito en el diagrama 5.15, basado en programación orientado a objetos
+donde hay dos puntos claves, la obtención de datos de la camara via serial y la publicación de los errores para su posterior uso en graficas.
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig7.eps}
-	\captionof{figure}{Lazo de control}\label{Fig4}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig24.eps}
+	\captionof{figure}{Diagrama de flujo de algoritmo de control}\label{Fig4}
 \end{center}
+
+\subsubsection{Sintonización de control}
+Lo primero que se realizo fue un controlador proporcional y se analizo su respuesta en el tiempo, de la cual se grafico el error, teniendo 
+como referencia el cero.\\
+La figura 5.16 muestra el resultado de sintonizar la ganancia Kp a uno, como se puede observar el sistema comienza en las primeras 50 muestras
+para despues dar paso a un reposo, el error se mantiene en 20, por lo que el siguiente paso fue reducir la ganancia Kp
+\begin{center}
+	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig25.eps}
+	\captionof{figure}{Grafica del error en Pitch con ganancia Kp = 1}\label{Fig4}
+\end{center}
+Para reducir un posco las oscilaciones el siguiente paso fue reducir la ganancia Kp, esto conllevo que el sistema tardara un poco mas en 
+llegar a la referencia, la figura 5.17 muestra la respuesta del sistema con un controlador proporcional con ganancia Kp = 0.62
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig26.eps}
+	\captionof{figure}{Grafica del error en Pitch con ganancia Kp = 0.62}\label{Fig4}
+\end{center}
+Las oscilaciones antes de que se mantenga estable fueron menores en comparación con ganancia Kp, por lo que, el valor de la ganancia se 
+redujo a 0.35, obteniendo como resultado la figura 5.18 
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig27.eps}
+	\captionof{figure}{Grafica del error en Pitch con ganancia Kp = 0.35}\label{Fig4}
+\end{center}
+Es claro que en la grafica 5.18 no hay presencia de oscilaciones, sin embargo el error no converge a cero, se mantiene en 10, esto se 
+puede solucionar con un control PI, reducir el error en estado estacionario agregando la suma de los errores multiplicada por una ganacia 
+Ki.Finalmante la grafica de la figura 5.19 muestra el resultado de agregar un controlador PI a la planta en Pitch, donde el error en estado 
+estacionario es eliminado por la ganancia Ki, que a su vez ayuda a que el sistema converga en meno tiempo, aunque parezca que el valor de 
+Ki es pequeño, este ayuda a mantener el error en +-1 pixeles, lo cual resulta aceptable.
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig28.eps}
+	\captionof{figure}{Grafica del error en Pitch con control PI}\label{Fig4}
+\end{center}
+
 
 % Una vez que obtenemos los datos las primeras que se hicieron fueron con los siguientes valores:
 % \begin{table}[ht]
@@ -279,35 +311,34 @@ donde hay dos puntos claves, la obtención de datos y la publicación de los err
 % 	\caption{Valores del controlador Proporcional}
 % \end{table}
 
-Lo primero que se realizo fue un controlador proporcional y analizar su respuesta, de la cual se grafico el error, teniendo como
-referencia el cero.
-\begin{center}
-	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo5/Fig8.eps}
-	\captionof{figure}{Control proporcional sobre el eje X}\label{Fig4}
-\end{center}
-El primer control se hizo variando el valor de Kp para poder ver la respuesta de la oscilación del sistema, donde se puede ver claramente que la
-frecuencia aumenta conforme la ganancia lo hace, por lo que mete inestabilidad a la lectura.\\
-Haciendo el mismo procedimiento en el eje Y variando las ganancias tenemos:
-\begin{center}
-	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo5/Fig9.eps}
-	\captionof{figure}{Control proporcional sobre el eje Y}\label{Fig4}
-\end{center}
-Similar a lo que pasa en X ocurre a Y, donde conforme la oscilación aumenta a un nivel incontrolable.\\
-El siguiente paso es reducir las oscilaciones utilizando el control Derivativo, que sirve como amortiguador para tener un mejor control.
-Empezando por agregar varios valores de Kd hasta lograr que pueda amortiguar y llegar a un punto donde las oscilaciones sean en estado
-estacionario.\\
-El metodo de sintonización esta basado en primero hacer oscilar al sistema por medio de la adicion de un control proporcional para despues
-amortiguar el sistema agregando un control derivativo, dejando entonces al sistema con pequeñas oscilaciones que pueden ser corregidas con un
-control integral. \\
-Las siguientes graficas ilustran las variaciones de Kd en el control del Yaw:
-\begin{center}
-	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo5/Fig10.eps}
-	\captionof{figure}{Control proporcional derivativo sobre el eje X}\label{Fig4}
-\end{center}
-De donde podemos observar como es que la señal es amortiguada a tal nivel que el error se acerca a cero con +-3, que para ser
-un error de pixeles se vuelve un control deseado, debido a que la diferencia entre un pixel y otro esta en el orden de los milis.\\
-Por su parte tenemos el control en Pitch donde se siguio el mismo procedimiento que en el otro eje descrito.
-\begin{center}
-	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig11.eps}
-	\captionof{figure}{Control proporcional derivativo sobre el eje Y}\label{Fig4}
-\end{center}
+
+% \begin{center}
+% 	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo5/Fig8.eps}
+% 	\captionof{figure}{Control proporcional sobre el eje X}\label{Fig4}
+% \end{center}
+% El primer control se hizo variando el valor de Kp para poder ver la respuesta de la oscilación del sistema, donde se puede ver claramente que la
+% frecuencia aumenta conforme la ganancia lo hace, por lo que mete inestabilidad a la lectura.\\
+% Haciendo el mismo procedimiento en el eje Y variando las ganancias tenemos:
+% \begin{center}
+% 	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo5/Fig9.eps}
+% 	\captionof{figure}{Control proporcional sobre el eje Y}\label{Fig4}
+% \end{center}
+% Similar a lo que pasa en X ocurre a Y, donde conforme la oscilación aumenta a un nivel incontrolable.\\
+% El siguiente paso es reducir las oscilaciones utilizando el control Derivativo, que sirve como amortiguador para tener un mejor control.
+% Empezando por agregar varios valores de Kd hasta lograr que pueda amortiguar y llegar a un punto donde las oscilaciones sean en estado
+% estacionario.\\
+% El metodo de sintonización esta basado en primero hacer oscilar al sistema por medio de la adicion de un control proporcional para despues
+% amortiguar el sistema agregando un control derivativo, dejando entonces al sistema con pequeñas oscilaciones que pueden ser corregidas con un
+% control integral. \\
+% Las siguientes graficas ilustran las variaciones de Kd en el control del Yaw:
+% \begin{center}
+% 	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo5/Fig10.eps}
+% 	\captionof{figure}{Control proporcional derivativo sobre el eje X}\label{Fig4}
+% \end{center}
+% De donde podemos observar como es que la señal es amortiguada a tal nivel que el error se acerca a cero con +-3, que para ser
+% un error de pixeles se vuelve un control deseado, debido a que la diferencia entre un pixel y otro esta en el orden de los milis.\\
+% Por su parte tenemos el control en Pitch donde se siguio el mismo procedimiento que en el otro eje descrito.
+% \begin{center}
+% 	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig11.eps}
+% 	\captionof{figure}{Control proporcional derivativo sobre el eje Y}\label{Fig4}
+% \end{center}
