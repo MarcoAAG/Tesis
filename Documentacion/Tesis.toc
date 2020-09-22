@@ -179,16 +179,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Sintonizaci\IeC {\'o}n de control}{102}{figure.5.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{107}{chapter*.77}
+\contentsline {subsection}{\numberline {5.5.3}Control en Yaw}{105}{section*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{111}{section*.80}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{107}{chapter*.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{115}{section*.81}
+\contentsline {chapter}{\'{I}ndice de figuras}{111}{section*.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{117}{section*.83}
+\contentsline {chapter}{\'{I}ndice de cuadros}{115}{section*.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{117}{section*.84}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Apendice A}{119}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {B}Apendice B}{123}{appendix.Alph2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{123}{section*.86}
+\contentsline {section}{\numberline {B.1}ODROID}{123}{section*.87}

@@ -1,7 +1,7 @@
 clc;
 clear all;
 clf;
-data = load('data2.txt');
+data = load('data5.txt');
 x = zeros(size(data));
 R = zeros(size(data));
 for i = [1 : length(data)]
@@ -14,5 +14,5 @@ grid on;
 xlabel ("Muestras");
 ylabel ("Error");
 title ("Control en Pitch");
-h = legend ({"Control PI"}, "Referencia");
+h = legend ({"Control P"}, "Referencia");
 legend (h, "location", "northeastoutside");

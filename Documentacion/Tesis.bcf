@@ -1986,7 +1986,8 @@
     <bcf:citekey order="60">Book:Barfoot2020</bcf:citekey>
     <bcf:citekey order="61">WEB:Ocam</bcf:citekey>
     <bcf:citekey order="62">Paper::Abdo2013</bcf:citekey>
-    <bcf:citekey order="69">hardkernel2017</bcf:citekey>
+    <bcf:citekey order="63">Paper::Abdo2013</bcf:citekey>
+    <bcf:citekey order="70">hardkernel2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
