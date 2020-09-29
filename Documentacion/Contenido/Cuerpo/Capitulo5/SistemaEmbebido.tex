@@ -322,3 +322,44 @@ La figura 5.19 es el resultado de la simulación del sistema dinamico de pitch e
 \end{center}
 Los valores para la ecuacion 5.18 se obtuvieron del trabajo de \cite{Paper::Abdo2013}, debido a la simulitud del sistema fisico, donde 
 $J_{k} = 0.5$ 
+De manera similar que en pitch tenemos un sistema de lazo cerrado donde se involucra el lazo de control del 
+servomotor y la retroalimentación en la camara como se observa en la figura 5.21
+\begin{center}
+	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig34.eps}
+	\captionof{figure}{Lazo de control para Yaw}\label{Fig4}
+\end{center}
+El controlador sigue el mismo algoritmo descrito en el diagrama 5.15
+
+\subsubsection{Sintonización de control}
+Para sintonizar el control PI primero se aplica ganancia Kp y se observa el comportmaiento del sistema, este
+metodo nos ayuda a llegar lo mas cerca a la referencia, que en este caso es cero ya que estamos controlado
+respecto a la dinamica del error. 
+\begin{center}
+	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig30.eps}
+	\captionof{figure}{Grafica del error en Yaw con ganancia Kp = 0.59}\label{Fig4}
+\end{center}
+La figura 5.22 muestra un control proporcional con ganancia mayor al 0.5, hay un sobre impulso que posteriormente 
+hace que el sistema se mantenga con un error en 20, le toma al sistema llegar a la referencia en 10 tiempos de 
+muestreo, pero el control no se mantiene en error cero. Es por eso que se experimento bajar la ganancia asi 
+como en la figura 5.23
+\begin{center}
+	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig31.eps}
+	\captionof{figure}{Grafica del error en Yaw con ganancia Kp = 0.368}\label{Fig4}
+\end{center}
+Ahora la ganancia es menor que 0.5, lo que hace que el sistema no tenga un sobre impulso, pero tampoco llega 
+a la referencia, se mantiene en un error de aproximadamente -20 pixeles, lo que tampoco es un comportamiento deseado.
+Despues de varios intentos se llego al valor que se considero aceptable para la gancia Kp, que es el de 
+la figura 5.24
+\begin{center}
+	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig32.eps}
+	\captionof{figure}{Grafica del error en Yaw con ganancia Kp = 0.44}\label{Fig4}
+\end{center}
+Con un valor de 0.44 en Kp el error se mantiene en -8, y no hay sobre impulso, lo que resta entonces es agregar
+un control integral, donde la ganancia Ki hara que el sistema corrija el error en estado estacionando, haciendo
+que el sistema llegue a la referencia, con un valor Ki de 0.00032, el resultado se muestra en la figura 5.25
+\begin{center}
+	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig33.eps}
+	\captionof{figure}{Grafica del error en Yaw con control PI}\label{Fig4}
+\end{center}
+Donde no hay sobre impulso, el sistema llega a la refrerencia y se mantiene en +-1 error en pixeles todo esto
+en menos de 20 veces el tiempo de muestreo.

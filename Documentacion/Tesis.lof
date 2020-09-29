@@ -223,10 +223,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.20}{\ignorespaces Simulaci\IeC {\'o}n entrada escalon para yaw\relax }}{106}{figure.5.20}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Lazo de control para Yaw\relax }}{106}{figure.5.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.59\relax }}{107}{figure.5.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.368\relax }}{108}{figure.5.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.44\relax }}{108}{figure.5.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Grafica del error en Yaw con control PI\relax }}{109}{figure.5.25}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{123}{figure.Alph2.1}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{127}{figure.Alph2.1}
