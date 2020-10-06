@@ -103,7 +103,7 @@ void control(uint16_t inX, uint16_t inY)
 
   //Establecemos ganancias
   KP[0]= (double)(analogRead(A0) * 0.2 / 1023.0);
-  KP[1] = (double)(analogRead(A2) * 0.2 / 1023.0);
+  KP[1] = (double)(analogRead(A2) * 0.3 / 1023.0);
   KD[0] = 0.0;
   KD[1] = 0.0;
   KI[0] = (double)(analogRead(A1) * 0.00002 / 1023.0);

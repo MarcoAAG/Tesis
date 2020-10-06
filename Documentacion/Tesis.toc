@@ -183,16 +183,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Sintonizaci\IeC {\'o}n de control}{107}{figure.5.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{111}{chapter*.78}
+\contentsline {chapter}{\numberline {6}Conclusiones}{111}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{115}{section*.81}
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{113}{chapter*.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{119}{section*.82}
+\contentsline {chapter}{\'{I}ndice de figuras}{117}{section*.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{121}{section*.84}
+\contentsline {chapter}{\'{I}ndice de cuadros}{121}{section*.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{123}{appendix.Alph1}
+\contentsline {chapter}{\nonumberline Lista de c\IeC {\'o}digos}{123}{section*.85}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{127}{appendix.Alph2}
+\contentsline {chapter}{\numberline {A}Apendice A}{125}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{127}{section*.87}
+\contentsline {chapter}{\numberline {B}Apendice B}{129}{appendix.Alph2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}ODROID}{129}{section*.88}
