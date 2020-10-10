@@ -1,80 +1,78 @@
 \BOOKMARK [0][]{Cover.0}{Cover}{}% 1
 \BOOKMARK [0][]{Titlepage.0}{Titlepage}{}% 2
-\BOOKMARK [0][]{Abstract.0}{Abstract}{}% 3
-\BOOKMARK [0][]{Agradecimientos.0}{Agradecimientos}{}% 4
-\BOOKMARK [0][]{toc.0}{\315ndice general}{}% 5
-\BOOKMARK [0][]{chapter.1}{1 Introducci\363n}{}% 6
-\BOOKMARK [1][]{section*.7}{1.1 Tema de investigaci\363n}{chapter.1}% 7
-\BOOKMARK [1][]{section*.8}{1.2 Justificaci\363n}{chapter.1}% 8
-\BOOKMARK [1][]{section*.9}{1.3 Objetivo}{chapter.1}% 9
-\BOOKMARK [1][]{section*.10}{1.4 Objetivos espec\355ficos}{chapter.1}% 10
-\BOOKMARK [1][]{section*.11}{1.5 Estado de la cuestion}{chapter.1}% 11
-\BOOKMARK [1][]{section*.13}{1.6 Contribuciones}{chapter.1}% 12
-\BOOKMARK [1][]{section*.14}{1.7 Alcances}{chapter.1}% 13
-\BOOKMARK [0][]{chapter.2}{2 Marco T\351orico}{}% 14
-\BOOKMARK [1][]{section*.16}{2.1 \323ptica}{chapter.2}% 15
-\BOOKMARK [2][]{section*.17}{2.1.1 Descripci\363n general del sistema visual humano}{section*.16}% 16
-\BOOKMARK [2][]{section*.18}{2.1.2 Estructura del ojo humano}{section*.16}% 17
-\BOOKMARK [2][]{section*.19}{2.1.3 Formaci\363n de im\341genes en el ojo}{section*.16}% 18
-\BOOKMARK [2][]{section*.20}{2.1.4 Camara digital}{section*.16}% 19
-\BOOKMARK [2][]{section*.21}{2.1.5 Componetes de la camara}{section*.16}% 20
-\BOOKMARK [2][]{section*.22}{2.1.6 Formaci\363n de la imagen en la camara}{section*.16}% 21
-\BOOKMARK [2][]{section*.23}{2.1.7 C\341lculo de la imagen}{section*.16}% 22
-\BOOKMARK [2][]{section*.24}{2.1.8 Modelo de la c\341mara}{section*.16}% 23
-\BOOKMARK [1][]{section*.25}{2.2 Procesamiento de datos}{chapter.2}% 24
-\BOOKMARK [2][]{section*.26}{2.2.1 Tarjeta procesadora}{section*.25}% 25
-\BOOKMARK [2][]{section*.27}{2.2.2 Sistema operativo}{section*.25}% 26
-\BOOKMARK [2][]{section*.28}{2.2.3 ROS}{section*.25}% 27
-\BOOKMARK [2][]{section*.29}{2.2.4 Procesamiento de imagenes}{section*.25}% 28
-\BOOKMARK [2][]{section*.30}{2.2.5 Cuantizaci\363n}{section*.25}% 29
-\BOOKMARK [2][]{section*.31}{2.2.6 Librerias OPENCV}{section*.25}% 30
-\BOOKMARK [2][]{section*.32}{2.2.7 Calibraci\363n de camara}{section*.25}% 31
-\BOOKMARK [2][]{section*.34}{2.2.8 Espacio de color}{section*.25}% 32
-\BOOKMARK [2][]{section*.36}{2.2.9 Transformaciones morfol\363gicas}{section*.25}% 33
-\BOOKMARK [2][]{section*.37}{2.2.10 Contraste y brillo}{section*.25}% 34
-\BOOKMARK [2][]{section*.38}{2.2.11 Teorema de Green}{section*.25}% 35
-\BOOKMARK [1][]{section*.39}{2.3 Control}{chapter.2}% 36
-\BOOKMARK [2][]{section*.40}{2.3.1 Obtencion de sistemas de control}{section*.39}% 37
-\BOOKMARK [2][]{section*.41}{2.3.2 Lazo abierto y cerrado}{section*.39}% 38
-\BOOKMARK [2][]{section*.42}{2.3.3 Respuesta en el tiempo}{section*.39}% 39
-\BOOKMARK [2][]{section*.43}{2.3.4 Sistemas controlados por computadora}{section*.39}% 40
-\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 41
-\BOOKMARK [1][]{section*.45}{3.1 Marco de referencia}{chapter.3}% 42
-\BOOKMARK [2][]{section*.46}{3.1.1 Marco de referencia Inercial [I]}{section*.45}% 43
-\BOOKMARK [2][]{section*.47}{3.1.2 Marco de referencia del cuerpo [B]}{section*.45}% 44
-\BOOKMARK [2][]{section*.48}{3.1.3 Marco de referencia de la gimbal [G]}{section*.45}% 45
-\BOOKMARK [1][]{section*.49}{3.2 Matrices de rotaci\363n}{chapter.3}% 46
-\BOOKMARK [1][]{section*.50}{3.3 Ecuaciones de movimiento de una gimbal}{chapter.3}% 47
-\BOOKMARK [2][]{section*.51}{3.3.1 Rotaci\363n sobre Pitch}{section*.50}% 48
-\BOOKMARK [2][]{section*.52}{3.3.2 Rotaci\363n sobre Yaw}{section*.50}% 49
-\BOOKMARK [1][]{section*.53}{3.4 Modelo matem\341tico del motor DC}{chapter.3}% 50
-\BOOKMARK [0][]{chapter.4}{4 Visi\363n Artificial}{}% 51
-\BOOKMARK [1][]{section*.55}{4.1 C\341mara}{chapter.4}% 52
-\BOOKMARK [1][]{section*.56}{4.2 Algoritmo general}{chapter.4}% 53
-\BOOKMARK [1][]{section*.57}{4.3 Comunicaci\363n con ROS}{chapter.4}% 54
-\BOOKMARK [2][]{section*.58}{4.3.1 Publisher}{section*.57}% 55
-\BOOKMARK [2][]{section*.59}{4.3.2 Subscriber}{section*.57}% 56
-\BOOKMARK [1][]{section*.60}{4.4 Calibraci\363n de camara}{chapter.4}% 57
-\BOOKMARK [1][]{section*.61}{4.5 Espacio de color}{chapter.4}% 58
-\BOOKMARK [2][]{section*.63}{4.5.1 Pruebas de campo}{section*.61}% 59
-\BOOKMARK [1][]{section*.65}{4.6 Correcci\363n de brillo}{chapter.4}% 60
-\BOOKMARK [2][]{section*.66}{4.6.1 Correcci\363n de Gamma}{section*.65}% 61
-\BOOKMARK [1][]{section*.67}{4.7 Filtro morfologico}{chapter.4}% 62
-\BOOKMARK [1][]{section*.68}{4.8 Centroide}{chapter.4}% 63
-\BOOKMARK [0][]{chapter.5}{5 Sistema Embebido}{}% 64
-\BOOKMARK [1][]{section*.70}{5.1 Arquitectura}{chapter.5}% 65
-\BOOKMARK [1][]{section*.71}{5.2 Mecanismo m\363vil}{chapter.5}% 66
-\BOOKMARK [1][]{section*.72}{5.3 Prototipo f\355sico}{chapter.5}% 67
-\BOOKMARK [1][]{section*.73}{5.4 ROS-Microcontrolador}{chapter.5}% 68
-\BOOKMARK [1][]{section*.74}{5.5 Control}{chapter.5}% 69
-\BOOKMARK [2][]{section*.75}{5.5.1 Control servomotor}{section*.74}% 70
-\BOOKMARK [2][]{section*.76}{5.5.2 Control en Pitch}{section*.74}% 71
-\BOOKMARK [2][]{section*.77}{5.5.3 Control en Yaw}{section*.74}% 72
-\BOOKMARK [0][]{chapter.6}{6 Conclusiones}{}% 73
-\BOOKMARK [0][]{chapter*.79}{Bibliograf\355a}{}% 74
-\BOOKMARK [0][]{section*.82}{\315ndice de figuras}{}% 75
-\BOOKMARK [0][]{section*.83}{\315ndice de cuadros}{}% 76
-\BOOKMARK [0][]{section*.85}{Lista de c\363digos}{}% 77
-\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 78
-\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 79
-\BOOKMARK [1][]{section*.88}{B.1 ODROID}{appendix.Alph2}% 80
+\BOOKMARK [0][]{Agradecimientos.0}{Agradecimientos}{}% 3
+\BOOKMARK [0][]{toc.0}{\315ndice general}{}% 4
+\BOOKMARK [0][]{chapter.1}{1 Introducci\363n}{}% 5
+\BOOKMARK [1][]{section*.5}{1.1 Tema de investigaci\363n}{chapter.1}% 6
+\BOOKMARK [1][]{section*.6}{1.2 Justificaci\363n}{chapter.1}% 7
+\BOOKMARK [1][]{section*.7}{1.3 Objetivo}{chapter.1}% 8
+\BOOKMARK [1][]{section*.8}{1.4 Objetivos espec\355ficos}{chapter.1}% 9
+\BOOKMARK [1][]{section*.9}{1.5 Estado de la cuestion}{chapter.1}% 10
+\BOOKMARK [1][]{section*.11}{1.6 Contribuciones}{chapter.1}% 11
+\BOOKMARK [1][]{section*.12}{1.7 Alcances}{chapter.1}% 12
+\BOOKMARK [0][]{chapter.2}{2 Marco T\351orico}{}% 13
+\BOOKMARK [1][]{section*.14}{2.1 \323ptica}{chapter.2}% 14
+\BOOKMARK [2][]{section*.15}{2.1.1 Descripci\363n general del sistema visual humano}{section*.14}% 15
+\BOOKMARK [2][]{section*.16}{2.1.2 Estructura del ojo humano}{section*.14}% 16
+\BOOKMARK [2][]{section*.17}{2.1.3 Formaci\363n de im\341genes en el ojo}{section*.14}% 17
+\BOOKMARK [2][]{section*.18}{2.1.4 Camara digital}{section*.14}% 18
+\BOOKMARK [2][]{section*.19}{2.1.5 Componetes de la camara}{section*.14}% 19
+\BOOKMARK [2][]{section*.20}{2.1.6 Formaci\363n de la imagen en la camara}{section*.14}% 20
+\BOOKMARK [2][]{section*.21}{2.1.7 C\341lculo de la imagen}{section*.14}% 21
+\BOOKMARK [2][]{section*.22}{2.1.8 Modelo de la c\341mara}{section*.14}% 22
+\BOOKMARK [1][]{section*.23}{2.2 Procesamiento de datos}{chapter.2}% 23
+\BOOKMARK [2][]{section*.24}{2.2.1 Tarjeta procesadora}{section*.23}% 24
+\BOOKMARK [2][]{section*.25}{2.2.2 Sistema operativo}{section*.23}% 25
+\BOOKMARK [2][]{section*.26}{2.2.3 ROS}{section*.23}% 26
+\BOOKMARK [2][]{section*.27}{2.2.4 Procesamiento de imagenes}{section*.23}% 27
+\BOOKMARK [2][]{section*.28}{2.2.5 Cuantizaci\363n}{section*.23}% 28
+\BOOKMARK [2][]{section*.29}{2.2.6 Librerias OPENCV}{section*.23}% 29
+\BOOKMARK [2][]{section*.30}{2.2.7 Calibraci\363n de camara}{section*.23}% 30
+\BOOKMARK [2][]{section*.32}{2.2.8 Espacio de color}{section*.23}% 31
+\BOOKMARK [2][]{section*.34}{2.2.9 Transformaciones morfol\363gicas}{section*.23}% 32
+\BOOKMARK [2][]{section*.35}{2.2.10 Contraste y brillo}{section*.23}% 33
+\BOOKMARK [2][]{section*.36}{2.2.11 Teorema de Green}{section*.23}% 34
+\BOOKMARK [1][]{section*.37}{2.3 Control}{chapter.2}% 35
+\BOOKMARK [2][]{section*.38}{2.3.1 Obtencion de sistemas de control}{section*.37}% 36
+\BOOKMARK [2][]{section*.39}{2.3.2 Lazo abierto y cerrado}{section*.37}% 37
+\BOOKMARK [2][]{section*.40}{2.3.3 Respuesta en el tiempo}{section*.37}% 38
+\BOOKMARK [0][]{chapter.3}{3 Modelo matem\341tico}{}% 39
+\BOOKMARK [1][]{section*.42}{3.1 Marco de referencia}{chapter.3}% 40
+\BOOKMARK [2][]{section*.43}{3.1.1 Marco de referencia Inercial [I]}{section*.42}% 41
+\BOOKMARK [2][]{section*.44}{3.1.2 Marco de referencia del cuerpo [B]}{section*.42}% 42
+\BOOKMARK [2][]{section*.45}{3.1.3 Marco de referencia de la gimbal [G]}{section*.42}% 43
+\BOOKMARK [1][]{section*.46}{3.2 Matrices de rotaci\363n}{chapter.3}% 44
+\BOOKMARK [1][]{section*.47}{3.3 Ecuaciones de movimiento de una gimbal}{chapter.3}% 45
+\BOOKMARK [2][]{section*.48}{3.3.1 Rotaci\363n sobre Pitch}{section*.47}% 46
+\BOOKMARK [2][]{section*.49}{3.3.2 Rotaci\363n sobre Yaw}{section*.47}% 47
+\BOOKMARK [1][]{section*.50}{3.4 Modelo matem\341tico del motor DC}{chapter.3}% 48
+\BOOKMARK [0][]{chapter.4}{4 Visi\363n Artificial}{}% 49
+\BOOKMARK [1][]{section*.52}{4.1 C\341mara}{chapter.4}% 50
+\BOOKMARK [1][]{section*.53}{4.2 Algoritmo general}{chapter.4}% 51
+\BOOKMARK [1][]{section*.54}{4.3 Comunicaci\363n con ROS}{chapter.4}% 52
+\BOOKMARK [2][]{section*.55}{4.3.1 Publisher}{section*.54}% 53
+\BOOKMARK [2][]{section*.56}{4.3.2 Subscriber}{section*.54}% 54
+\BOOKMARK [1][]{section*.57}{4.4 Calibraci\363n de camara}{chapter.4}% 55
+\BOOKMARK [1][]{section*.58}{4.5 Espacio de color}{chapter.4}% 56
+\BOOKMARK [2][]{section*.60}{4.5.1 Pruebas de campo}{section*.58}% 57
+\BOOKMARK [1][]{section*.62}{4.6 Correcci\363n de brillo}{chapter.4}% 58
+\BOOKMARK [2][]{section*.63}{4.6.1 Correcci\363n de Gamma}{section*.62}% 59
+\BOOKMARK [1][]{section*.64}{4.7 Filtro morfologico}{chapter.4}% 60
+\BOOKMARK [1][]{section*.65}{4.8 Centroide}{chapter.4}% 61
+\BOOKMARK [0][]{chapter.5}{5 Sistema Embebido}{}% 62
+\BOOKMARK [1][]{section*.67}{5.1 Arquitectura}{chapter.5}% 63
+\BOOKMARK [1][]{section*.68}{5.2 Mecanismo m\363vil}{chapter.5}% 64
+\BOOKMARK [1][]{section*.69}{5.3 Prototipo f\355sico}{chapter.5}% 65
+\BOOKMARK [1][]{section*.70}{5.4 ROS-Microcontrolador}{chapter.5}% 66
+\BOOKMARK [1][]{section*.71}{5.5 Control}{chapter.5}% 67
+\BOOKMARK [2][]{section*.72}{5.5.1 Control servomotor}{section*.71}% 68
+\BOOKMARK [2][]{section*.73}{5.5.2 Control en Pitch}{section*.71}% 69
+\BOOKMARK [2][]{section*.74}{5.5.3 Control en Yaw}{section*.71}% 70
+\BOOKMARK [0][]{chapter.6}{6 Conclusiones}{}% 71
+\BOOKMARK [0][]{chapter*.76}{Bibliograf\355a}{}% 72
+\BOOKMARK [0][]{section*.79}{\315ndice de figuras}{}% 73
+\BOOKMARK [0][]{section*.80}{\315ndice de cuadros}{}% 74
+\BOOKMARK [0][]{section*.82}{Lista de c\363digos}{}% 75
+\BOOKMARK [0][]{appendix.Alph1}{A Apendice A}{}% 76
+\BOOKMARK [0][]{appendix.Alph2}{B Apendice B}{}% 77
+\BOOKMARK [1][]{section*.85}{B.1 ODROID}{appendix.Alph2}% 78

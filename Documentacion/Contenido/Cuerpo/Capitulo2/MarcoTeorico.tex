@@ -1343,6 +1343,58 @@ transferencia se vuelva infinita o (2) cualquier raíz del denominador de la fun
 \subsubsection{Ceros en la función de transferencia}
 Los ceros de una función de transferencia son (1) los valores de la variable de la transformada de Laplace, s, que hacen que la función de
 transferencia sea cero, o (2) cualquier raíz del numerador de la función de transferencia que sea común a las raíces del denominador.
+\subsubsection{Sistemas de primer orden}
+Un sistema de primer orden sin ceros puede describirse mediante la función de transferencia que se muestra en la figura 2.32
+\begin{center}
+	\includegraphics[width=0.3\textwidth]{Contenido/Cuerpo/Capitulo2/Fig26.eps}
+	\captionof{figure}{Función de transferencia de un sistema de primer orden}
+	\label{fig:MarcoTeorico:Fig25}
+\end{center}
+Si la entrada es un escalon unitario, es decir, $R(s) = \frac{1}{s}$, la salida que obtenemos es 
+\begin{equation}
+	C(s) = R(s)G(s) = \frac{a}{s(s+a)}
+\end{equation}
+Aplicando la inversa de laplace de la ecuación 2.50, la respuesta escalon esta dada por
+\begin{equation}
+	c(t) = 1 - e^{-at}
+\end{equation}
+Examinemos el significado del parámetro a, el único parámetro necesario para describir la respuesta transitoria. Cuando t = 1/a
+\begin{equation}
+	e^{at}|_{t=1/a} = e^{-1} = 0.37
+\end{equation}
+o
+\begin{equation}
+	c(t)|_{t=1/a} = 1-e^{-at}|_{t=1/a} = 1 - 0.37 = 0.63
+\end{equation}
+Ahora utilizamos las Ecs. (2.51), (2.52) y (2.53) para definir tres especificaciones de rendimiento de respuesta transitoria: tiempo constante, 
+tiempo de subida y tiempo de asentamiento.
+\begin{itemize}
+	\item \textbf{Constante de tiempo}
+\end{itemize}
+Llamamos 1/a a la constante de tiempo de la respuesta. A partir de la Ec. (2.52), la constante de tiempo puede describirse como el tiempo para que $e^{-at}$ decaiga hasta el 37\% de su valor inicial. 
+Alternativamente, a partir de la Ec. (2.53) la constante de tiempo es el tiempo que le toma a la respuesta escalon elevarse al 63\% de su valor final.
+\begin{center}
+	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo2/Fig27.eps}
+	\captionof{figure}{Respuesta de un Sistema de Primer orden a un escalon uinitario, tomada de \cite{Book:Nise2010}}
+	\label{fig:MarcoTeorico:Fig25}
+\end{center}
+\begin{itemize}
+	\item Tiempo de subida
+\end{itemize}
+En la figura 2.33 la sección $T_r$ hace referencia al tiempo de subida que se define como el tiempo para que la forma de onda pase de 0,1 a 0,9 de su valor final. El tiempo de subida se encuentra 
+resolviendo la Ec. (2.53) para la diferencia de tiempo en c(t) = 0.9 y c(t)=0.1. Por lo tanto,
+\begin{equation}
+	T_r = \frac{2.31}{a} - \frac{0.11}{a} = \frac{2.2}{a}
+\end{equation}
+\begin{itemize}
+	\item Tiempo de asentamiento
+\end{itemize}
+En la figura 2.43 $T_s$ hace referencia al tiempo de asentamiento que se define como el tiempo para que la respuesta alcance, y se mantenga dentro, del 2\% de su valor final. 
+Dejando c(t)=0:98 en la Ec. (2.53) y resolviendo para el tiempo, t, encontramos que el tiempo de asentamiento es
+\begin{equation}
+	T_s = \frac{4}{a}
+\end{equation}
+
 \subsubsection{Sistemas de segundo orden}
 La mayoría de lo sistemas de control se basan en la obtención de su sistema dinámico que se encuentra en el orden cuadrático, siendo este
 donde se realizan las diversas técnicas de diseño de control, por lo que si el sistema es mayor a segundo orden, lo que se hace es dividir
@@ -1352,14 +1404,3 @@ La forma general de una planta de segundo orden es la siguiente
 	\frac{b}{s^2+as+b}
 \end{equation}
 Esta ecuación nos entrega 4 diferentes comportamientos en la salida de nuestro sistema, tal y como se ilustra en la siguiente figura
-
-% ----------------------------------------------------------------------------------------------------------------------------
-% NUEVA SUBSECCION
-% ----------------------------------------------------------------------------------------------------------------------------
-
-\subsection{Sistemas controlados por computadora}
-En muchos sistemas modernos, el controlador (o compensador) es una computadora digital. La ventaja
-de usar una computadora es que muchos bucles pueden ser controlados o compensados por la misma
-computadora a través del tiempo. \cite{Book:Nise2010}\\
-Además, cualquier ajuste de los parámetros del compensador requerido para producir una respuesta
-deseada puede realizarse mediante cambios en el software en lugar del hardware.
