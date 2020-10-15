@@ -234,11 +234,11 @@ Y en lazo cerrado la ecuacion 5.13 se transforma en
 \end{equation}
 La figura 5.13 es el resultado de la simulación del sistema dinamico de pitch en lazo cerrado ante una entrada escalon.
 \begin{center}
-	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo5/Fig23.eps}
+	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo5/Fig35.eps}
 	\captionof{figure}{Simulación entrada escalon}\label{Fig4}
 \end{center}
 Los valores para la ecuacion 5.14 se obtuvieron del trabajo de \cite{Paper::Abdo2013}, debido a la simulitud del sistema fisico, donde 
-$J_{ay} = 0.1$ 
+$J_{ay} = 0.002$ 
 
 Como se abordo en el capitulo 3, el sistema dinamico de la gimbal es de primer orden para los movimientos en pitch y yaw, y como se definio en la seccion 5.1
 el control que se implemento es el Proporcional-Integral. siendo este el necesario para hacer que el error converga a cero.\\
@@ -255,41 +255,117 @@ pixeles de la coordenada Y.
 % el protocolo serial, y debido a que la tarea que se encarga de realizar el algoritmo de control se debe suscribir al nodo de
 % coordenadas, este se ve limitado, a un tiempo de muestreo de 60fps, o dicho de otro modo a 16.66 ms.
 
-
+\subsubsection{Diseño de controlador}
+El sistema tiene un controlador PI, donde tenemos la accion proporcional al error, que se encarga de acelerar la respuesta del sistema para llegar a la referencia
+y tendra la accion integradora que se encarga de ajustar automaticamente el BIAS integrando el area bajo la curva del error presente en el proceso y de esa forma 
+eliminar el error en estado estacionario. Tenemos que la función de transferencia del controlador PI viene dado por la expresion 
+\begin{equation}
+	C(s) = Kp(1 + \frac{1}{T_is})
+\end{equation}
+Donde $K_p$ es la ganancia proporcional y $T_i$ es el tiempo integral. La tecnica para el diseño del control se llama asignación de polos.\\
+Aplicamos el lazo cerrado a la planta con el controlador, es decir $G_c(s) =  G(s)C(S)$
+\begin{equation}
+	G_c(s) = \frac{500K_ps + \frac{500K_p}{T_i}}{s^2 + 500K_ps + \frac{500K_p}{T_i}}
+\end{equation}
+De donde obtenemos la ecuacion caracteristica 
+\begin{equation}
+	E.C_1 = s^2 + 500K_ps + \frac{500K_p}{T_i}
+\end{equation}
+Como todavía no hemos definido cuales serán los parámetros del controlador PI, estos nos servirán para ubicar los polos en el lugar que nosotros queremos, es por 
+eso que esta técnica es conocida como asignación de polos.\\
+Como condiciones de diseño tenemos que considerar lo siguiente:
+\begin{itemize}
+	\item El sistema teoricamente podria establecerse en un tiempo de 0.01 segundos acorde a la figura 5.13, sin embardo fisicamente no es posible debido a dos 
+		  factores, los motores ya tienen su lazo de control incluido como se detallo en la seccion 5.5.1 y la velocidad sin carga es de 0.14s lo cual es una
+		  limitante y segundo el tiempo de muestreo de la camara es mayor al de establecimiento del control, ya que esta en 60Hz.
+	\item Por lo anterior el tiempo de asentamiento $T_s$ se establece en 0.2s 
+	\item El porcentaje de error se establece en 2\%
+	\item Y el pico Maximo $M_p$ no debe pasar del 2\%
+\end{itemize}
+La función deseada que cumpla los puntos anteriores es de la forma 
+\begin{equation}
+	G_d(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega + \omega_n^2}
+\end{equation}
+donde el factor de amortiguamiento esta dado por
+\begin{equation}
+	\zeta = \sqrt{\frac{\ln\left(\frac{M_p}{100}\right)^2}{\pi^2 + \ln\left(\frac{M_p}{100}\right)^2}}
+\end{equation}
+y la frecuencia natural viene dada por la expresion
+\begin{equation}
+	\omega_n = \frac{3}{\zeta T_s}
+\end{equation}
+Apartir de las ecuaciones 5.19 y 5.20 y con los parametros de diseño obtenemos la funcionde transferencia con los polos deseados 
+\begin{equation}
+	Gd(s) = \frac{1086}{s^2 + 60s + 1086}
+\end{equation}
+La ecuacion caracteristica de la funcion de transferencia de la ecuacion 5.21 viene dada por la 
+expresion 5.22
+\begin{equation}
+	E.C_2 = s^2 + 60s + 1086 = s^2 + \alpha_1s + \alpha_2
+\end{equation}
+Donde los polos deseados se situan en $s_{1,2} = -30, \pm 13.6437j$ \\
+Igualamos la ecuacion 5.22 con 5.17 para calcular el valor de $K_p$ y $T_i$
+\begin{equation}
+	500K_p = \alpha_1
+\end{equation}
+\begin{equation}
+	\frac{500K_p}{T_i} = \alpha_2
+\end{equation}
+Apartir de las ecuaciones 5.23 y 5.24 obtenemos los valores de $K_p = 0.118$ y $T_i = 0.054$, por lo que nuestro controlador viene dado por la siguiente 
+ecuacion
+\begin{equation}
+	C(s) = 0.118 + \frac{2.1851}{s}
+\end{equation}
+El diagrama de la figura 5.15 muestra el lazo cerrado de controladorPI y la planta de PITCH
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig37.eps}
+	\captionof{figure}{Lazo cerrado del sistema con control PI}\label{Fig4}
+\end{center}
+Si aplicamos U(s) = 1, obtenemos la siguiente respuesta en el tiempo del sistema. 
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig38.eps}
+	\captionof{figure}{Simulación respuesta escalon en PITCH}\label{Fig4}
+\end{center}
+La simulación de la figura 5.16 muestra que el sistema tiene un tiempo de establecimiento de 0.2 segundos tal y como se 
+planeó en la etapa de diseño, hay un pequeño sobre impulso que en la practica no representara mas del 2\%. El codigo para 
+la simulación esta hecho en python y puede ser consultado en mi repositorio de \href{https://github.com/MarcoAAG/Tesis}{\textbf{GitHub}}.
+La Ganancia Ki de la ecuacion 5.25 se ve modificada en el microcontrolador debido a que se utiliza el metodo numerico para la integracion del error, por lo que 
+la ganacia se multiplica por el tiempo de muestreo que es de 0.016, entonces la ecuacion 5.25 se convierte en:
+\begin{equation}
+	C(s) = 0.118 + \frac{0.034}{s}
+\end{equation}
 \subsubsection{Algortimo de control}
-El algoritmo general del control tanto para pitch y para yaw esta descrito en el diagrama 5.15, basado en programación orientado a objetos
+El algoritmo general del control tanto para pitch y para yaw esta descrito en el diagrama 5.17, basado en programación orientado a objetos
 donde hay dos puntos claves, la obtención de datos de la camara via serial y la publicación de los errores para su posterior uso en graficas.
 \begin{center}
 	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig24.eps}
 	\captionof{figure}{Diagrama de flujo de algoritmo de control}\label{Fig4}
 \end{center}
-
 \subsubsection{Sintonización de control}
-Lo primero que se realizo fue un controlador proporcional y se analizo su respuesta en el tiempo, de la cual se grafico el error, teniendo 
+Lo primero que se realizo fue un controlador proporcional y se analizo su respuesta en el tiempo, de la cual se graficó el error, teniendo 
 como referencia el cero.\\
-La figura 5.16 muestra el resultado de sintonizar la ganancia Kp a uno, como se puede observar el sistema comienza en las primeras 50 muestras
+La figura 5.18 muestra el resultado de sintonizar la ganancia Kp a uno, como se puede observar el sistema comienza en las primeras 50 muestras
 para despues dar paso a un reposo, el error se mantiene en 20, por lo que el siguiente paso fue reducir la ganancia Kp
 \begin{center}
 	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig25.eps}
 	\captionof{figure}{Grafica del error en Pitch con ganancia Kp = 1}\label{Fig4}
 \end{center}
-Para reducir un posco las oscilaciones el siguiente paso fue reducir la ganancia Kp, esto conllevo que el sistema tardara un poco mas en 
-llegar a la referencia, la figura 5.17 muestra la respuesta del sistema con un controlador proporcional con ganancia Kp = 0.62
+Como abordó anteriormente las ganancias deseadas para el control PI se ubican por debajo de cero, por lo que la siguiente prueba fue bajar la ganancia Kp.
+La figura 5.19 muestra la respuesta del sistema con un controlador proporcional con ganancia Kp = 0.5
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig26.eps}
-	\captionof{figure}{Grafica del error en Pitch con ganancia Kp = 0.62}\label{Fig4}
+	\captionof{figure}{Grafica del error en Pitch con ganancia Kp = 0.5}\label{Fig4}
 \end{center}
 Las oscilaciones antes de que se mantenga estable fueron menores en comparación con ganancia Kp, por lo que, el valor de la ganancia se 
-redujo a 0.35, obteniendo como resultado la figura 5.18 
+redujo a 0.35, obteniendo como resultado la figura 5.20 
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig27.eps}
 	\captionof{figure}{Grafica del error en Pitch con ganancia Kp = 0.35}\label{Fig4}
 \end{center}
-Es claro que en la grafica 5.18 no hay presencia de oscilaciones, sin embargo el error no converge a cero, se mantiene en 10, esto se 
-puede solucionar con un control PI, reducir el error en estado estacionario agregando la suma de los errores multiplicada por una ganacia 
-Ki.Finalmante la grafica de la figura 5.19 muestra el resultado de agregar un controlador PI a la planta en Pitch, donde el error en estado 
-estacionario es eliminado por la ganancia Ki, que a su vez ayuda a que el sistema converga en meno tiempo, aunque parezca que el valor de 
-Ki es pequeño, este ayuda a mantener el error en +-1 pixeles, lo cual resulta aceptable.
+Es claro que en la grafica 5.20 el sobre impulso es menor al 2\% sin embargo el error no converge a cero, se mantiene en 10, esto se 
+puede solucionar con un control Integral, reducir el error en estado estacionario agregando la suma de los errores multiplicada por una ganacia 
+Ki.Finalmante la grafica de la figura 5.21 muestra el resultado de agregar un controlador PI a la planta en Pitch, donde el error en estado 
+estacionario es eliminado por la ganancia Ki, que a su vez ayuda a que el sistema converga en menor tiempo, donde se cumple una condición de diseño de $T_s = 0.2s$.
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig28.eps}
 	\captionof{figure}{Grafica del error en Pitch con control PI}\label{Fig4}
@@ -309,27 +385,51 @@ Dividimos entrada sobre salida, o en otras palabras, obtenemos la funcion de tra
 \begin{equation}
 	G = \frac{R_k(s)}{T_z(s)} =  \frac{1}{J_{k}s}
 \end{equation}
-Y en lazo cerrado la ecuacion 5.17 se transforma en 
+Y en lazo cerrado la ecuacion 5.29 se transforma en 
 \begin{equation}
 	G_c = \frac{G}{1 +GH} = \frac{1}{J_{k}s+1}
 \end{equation}
 Donde \\
 $J_k = J_{kz} + J_{az} $ 
-La figura 5.19 es el resultado de la simulación del sistema dinamico de pitch en lazo cerrado ante una entrada escalon.
+La figura 5.22 es el resultado de la simulación del sistema dinamico de pitch en lazo cerrado ante una entrada escalon.
 \begin{center}
-	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo5/Fig29.eps}
+	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo5/Fig39.eps}
 	\captionof{figure}{Simulación entrada escalon para yaw}\label{Fig4}
 \end{center}
-Los valores para la ecuacion 5.18 se obtuvieron del trabajo de \cite{Paper::Abdo2013}, debido a la simulitud del sistema fisico, donde 
-$J_{k} = 0.5$ 
+Los valores para la ecuacion 5.30 se obtuvieron del trabajo de \cite{Paper::Abdo2013}, debido a la simulitud del sistema fisico, donde 
+$J_{k} = 0.008$ 
 De manera similar que en pitch tenemos un sistema de lazo cerrado donde se involucra el lazo de control del 
-servomotor y la retroalimentación en la camara como se observa en la figura 5.21
+servomotor y la retroalimentación en la camara como se observa en la figura 5.23
 \begin{center}
-	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig34.eps}
+	\includegraphics[width=0.95\textwidth]{Contenido/Cuerpo/Capitulo5/Fig34.eps}
 	\captionof{figure}{Lazo de control para Yaw}\label{Fig4}
 \end{center}
-El controlador sigue el mismo algoritmo descrito en el diagrama 5.15
-
+\subsubsection{Diseño de control}
+De manera similar que en el control de Pitch en Yaw se diseñó un control PI debido a que dichos sitemas comparten comportamiento similares y se modelaron como sistemas de primer orden.
+Para este sistema los parametros de diseño son los siguientes
+\begin{itemize}
+	\item $T_s$ = 0.3s
+	\item Error menor al 2\%
+	\item El Maximo sobre impulso no sobre pasa del 2\%
+\end{itemize}
+El procedimiento es el mismo que se abordo al diseñar el control para pitch, por lo que solo se agregan puntos claves del proceso.
+La funcion de transferencia deseada se satisface las condiciones de diseño esta dada por la expresion 5.31
+\begin{equation}
+	G_d = \frac{482.7}{s^2 + 40s + 482.7}
+\end{equation}
+Donde los polos de la ecuación caracteristica se situan en $-20 \pm 9.0958j$\\
+Despues de calcular la ganancia $K_p$ y el tiempo $T_i$ con base en los polos desados, obtenemos la funcion de trasferencia(ecuación 5.32) 
+\begin{equation}
+	G_c = 0.312 + \frac{3.8623}{s}
+\end{equation}
+Aplicando el lazo cerrado de la figura 5.15 y aplicando una entrada escalon se simuló la respuesta en el tiempo de la planta y el control.
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo5/Fig40.eps}
+	\captionof{figure}{Simulación del control PI en Yaw}\label{Fig4}
+\end{center}
+En la figura 5.24 podemos observar que el sistema simulado llega a la referencia en 0.3 segundos. Las ganancia que hacen que el sistema se comporte con los polos deseados son 
+$K_p = 0.312$ y $K_i = 0.06179$\\
+El controlador sigue el mismo algoritmo descrito en el diagrama 5.17
 \subsubsection{Sintonización de control}
 Para sintonizar el control PI primero se aplica ganancia Kp y se observa el comportmaiento del sistema, este
 metodo nos ayuda a llegar lo mas cerca a la referencia, que en este caso es cero ya que estamos controlado
@@ -338,28 +438,23 @@ respecto a la dinamica del error.
 	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig30.eps}
 	\captionof{figure}{Grafica del error en Yaw con ganancia Kp = 0.59}\label{Fig4}
 \end{center}
-La figura 5.22 muestra un control proporcional con ganancia mayor al 0.5, hay un sobre impulso que posteriormente 
-hace que el sistema se mantenga con un error en 20, le toma al sistema llegar a la referencia en 10 tiempos de 
-muestreo, pero el control no se mantiene en error cero. Es por eso que se experimento bajar la ganancia asi 
-como en la figura 5.23
+La figura 5.25 muestra un control proporcional con ganancia mayor al 0.5, hay un sobre impulso que posteriormente 
+hace que el sistema se mantenga con un error en 20 pixeles, le toma al sistema llegar a la referencia en 10 tiempos de 
+muestreo, pero el control no se mantiene en error cero. Con base en la ganacia obtenida en la etapa de diseño del control la ganacia proporcional debe estar por debajo de 0.5.
 \begin{center}
 	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig31.eps}
 	\captionof{figure}{Grafica del error en Yaw con ganancia Kp = 0.368}\label{Fig4}
 \end{center}
 Ahora la ganancia es menor que 0.5, lo que hace que el sistema no tenga un sobre impulso, pero tampoco llega 
 a la referencia, se mantiene en un error de aproximadamente -20 pixeles, lo que tampoco es un comportamiento deseado.
-Despues de varios intentos se llego al valor que se considero aceptable para la gancia Kp, que es el de 
-la figura 5.24
+La ganancia en 0.44 hace que el errror se mantenga cerano a cero (figura 5.24), con lo cual podemos aplicar la ganancia integral para erradicar el error ene stado estacionario 
 \begin{center}
 	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig32.eps}
 	\captionof{figure}{Grafica del error en Yaw con ganancia Kp = 0.44}\label{Fig4}
 \end{center}
-Con un valor de 0.44 en Kp el error se mantiene en -8, y no hay sobre impulso, lo que resta entonces es agregar
-un control integral, donde la ganancia Ki hara que el sistema corrija el error en estado estacionando, haciendo
-que el sistema llegue a la referencia, con un valor Ki de 0.00032, el resultado se muestra en la figura 5.25
+Con una ganancia integral de 0.0351 el sistema se comporta como las especificaciones de diseño marcan, llegar a la referencia y mantenerse estable le toma al sistema 16 tiempos de 
+muestreo, que equivalen a 0.3s y ademas el sobre impulso se ubica en menos del 2\% por lo que podemos decir que el control satisface los requerimientos.
 \begin{center}
 	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig33.eps}
 	\captionof{figure}{Grafica del error en Yaw con control PI}\label{Fig4}
 \end{center}
-Donde no hay sobre impulso, el sistema llega a la refrerencia y se mantiene en +-1 error en pixeles todo esto
-en menos de 20 veces el tiempo de muestreo.

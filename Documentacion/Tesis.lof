@@ -215,27 +215,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Lazo de control para Pitch\relax }}{103}{figure.5.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Diagrama de flujo de algoritmo de control\relax }}{104}{figure.5.15}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Lazo cerrado del sistema con control PI\relax }}{105}{figure.5.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 1\relax }}{105}{figure.5.16}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Simulaci\IeC {\'o}n respuesta escalon en PITCH\relax }}{105}{figure.5.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 0.62\relax }}{105}{figure.5.17}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Diagrama de flujo de algoritmo de control\relax }}{106}{figure.5.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 0.35\relax }}{106}{figure.5.18}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 1\relax }}{107}{figure.5.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Grafica del error en Pitch con control PI\relax }}{107}{figure.5.19}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 0.5\relax }}{108}{figure.5.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Simulaci\IeC {\'o}n entrada escalon para yaw\relax }}{108}{figure.5.20}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 0.35\relax }}{108}{figure.5.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Lazo de control para Yaw\relax }}{108}{figure.5.21}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Grafica del error en Pitch con control PI\relax }}{109}{figure.5.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.59\relax }}{109}{figure.5.22}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Simulaci\IeC {\'o}n entrada escalon para yaw\relax }}{110}{figure.5.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.368\relax }}{110}{figure.5.23}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Lazo de control para Yaw\relax }}{110}{figure.5.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.44\relax }}{110}{figure.5.24}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Simulaci\IeC {\'o}n del control PI en Yaw\relax }}{111}{figure.5.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Grafica del error en Yaw con control PI\relax }}{111}{figure.5.25}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.59\relax }}{112}{figure.5.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.368\relax }}{113}{figure.5.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.44\relax }}{113}{figure.5.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Grafica del error en Yaw con control PI\relax }}{114}{figure.5.28}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -245,4 +251,4 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{131}{figure.Alph2.1}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{133}{figure.Alph2.1}
