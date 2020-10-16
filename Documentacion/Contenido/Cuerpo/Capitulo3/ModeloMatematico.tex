@@ -1,7 +1,9 @@
 \chapter{Modelo matemático}
 \cleanchapterquote{En matemáticas no entiendes las cosas, te acostumbras a ellas.}{John von Neumann}{(Físico matemático)}
 
-En el presente capitulo se aborda el modelo matemático para el seguimiento de objetivos de una gimbal embebida en un UAV.
+En el presente capitulo se aborda el modelo matemático que fundamenta el diseño de control en el capítulo 5, pasando por
+la definición de los marcos de referencia del sistema, la obtención de sistema dinámico con base en
+investigaciones de otros autores y una breve definición del modelo dinámico del motor DC con engranes.
 
 % ---------------------------------------------------------------------------------------------------------
 % *********************************************************************************************************
@@ -18,7 +20,7 @@ En la figura 3.1 asociamos con cualquier posición y orientación un marco de re
 \end{center}
 En el marco A, podemos encontrar 3 vectores linealmente independientes $a_1$, $a_2$ y $a_3$
 y de la misma manera en el marco B tenemos tres vectores $b_1$, $b_2$ y $b_3$, podemos
-escribir cualquier vector como una combinación lineal del vector base en cualquier marco
+escribir cualquier vector como una combinación lineal del vector base en cualquier marco:
 \begin{equation}
 	\textbf{v} = v_1 \textbf{a}_1 + v_2 \textbf{a}_2 + v_3 \textbf{a}_3
 \end{equation}
@@ -30,7 +32,7 @@ la transformación g queda ilustrada en la figura 3.2.
 	\label{fig:ModeloMat:Fig1}
 \end{center}
 Podemos escribir ambos vectores ortogonales unitarios en un solo marco de referencia como
-una combinacipon lineal de ambos
+una combinación lineal de ambos
 \begin{subequations}
 	\begin{equation}
 		\textbf{b}_1 = R_{11}\textbf{a}_1 + R_{12}\textbf{a}_2 + R_{13}\textbf{a}_3
@@ -56,7 +58,7 @@ pueden acomodar en un arreglo de 3x3 llamada matriz de rotación
 Y las propiedades de esta matriz son las siguientes
 \begin{itemize}
 	\item Ortogonal
-	\item Su determínate es +1
+	\item Su determinante es +1
 	\item El producto de dos matrices de rotación da como resultado otra matriz de rotación
 	\item La inversa de una matriz de rotación es también una matriz de rotación
 \end{itemize}
@@ -64,9 +66,9 @@ La importancia de las matrices de rotación radican en que con ayuda de software
 podemos aplicar técnicas de mapeo y simulación, además de que para el sistema de la gimbal
 entra en juego múltiples marcos de referencia que constantemente cambian su orientación y
 desplazamiento.\\
-Ahora bien si trazamos un vector Q en cada marco de referencia como en la siguiente imagen
+Ahora bien si trazamos un vector Q en cada marco de referencia como en la figura 3.3
 \begin{center}
-	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo3/Fig12.eps}
+	\includegraphics[width=0.85\textwidth]{Contenido/Cuerpo/Capitulo3/Fig12.eps}
 	\captionof{figure}{Vectores de rotación}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
@@ -129,7 +131,7 @@ hacer sus matrices de transformación.
 \subsection{Marco de referencia Inercial [I]}
 Antes de abordar el control de la gimbal, es necesario y obvio conocer el comportamiento
 de dicho sistema, empezaremos por definir el marco de referencia inercial, es decir
-el de la tierra. La siguiente imagen ilustra los ejes de este marco.
+el de la tierra. La Figura 3.4 ilustra los ejes de este marco.
 \begin{center}
 	\includegraphics[width=0.25\textwidth]{Contenido/Cuerpo/Capitulo3/Fig4.eps}
 	\captionof{figure}{Marco de referencia inercial}
@@ -142,15 +144,15 @@ refieren a (Norte, Este y Abajo) de ahí su nombre NED(siglas en inglés).
 Una aeronave tiene la libertad de rotar en 3 ejes, en la aeronáutica son conocidos como
 Yaw, Pitch y Roll. Dichas rotaciones son importantes en el control de aeronaves ya
 que sirven para conocer la dinámica del sistema, dicha rotaciones pueden ser mejor
-detalladas en una imagen, por lo que en la siguiente ilustración se grafica un plano
+detalladas en una imagen, por lo que en la ilustración 3.5 se grafica un plano
 y se asigna nombre a cada rotación de los ejes.
 \begin{center}
 	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo3/Fig6.eps}
-	\captionof{figure}{Rotación en 3 ejes.}
+	\captionof{figure}{Rotación en 3 ejes.Tomada de freepik}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
 Vamos a llamar marco de referencia del cuerpo a las coordenadas del UAV, es necesario establecer el centro del plano en el
-centro de masas de la aeronave, como se ilustra en la figura 3.7.
+centro de masas de la aeronave, como se ilustra en la figura 3.6.
 \begin{center}
 	\includegraphics[width=0.9 \textwidth]{Contenido/Cuerpo/Capitulo3/Fig5.eps}
 	\captionof{figure}{Marco de referencia del cuerpo.}
@@ -220,7 +222,7 @@ Ahora tenemos un punto Q'' que es el punto Q' trasladado en el marco de referenc
 		q_3
 	\end{bmatrix}
 \end{equation}
-La rotación sobre el eje k queda de la siguiente manera
+La rotación sobre el eje k se ilustra en la figura 3.10.
 \begin{center}
 	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo3/Fig15.eps}
 	\captionof{figure}{Rotación en el eje k}
@@ -626,16 +628,14 @@ EL diagrama de bloques de la ecuación de movimiento de Yaw se puede observar en
 % *********************************************************************************************************
 % ---------------------------------------------------------------------------------------------------------
 \section{Modelo matemático del motor DC}
-El mecanismo móvil del sistema esta conformado por un par de motores de corriente directa, como vimos
-en el capítulo 2 para poder hacer diseñar un controlador necesitamos primero obtener la ecuación dinámica
-del sistema, en este caso la ecuación dinámica del motor.\\
+El mecanismo móvil del sistema esta conformado por un par de motores de corriente directa.
 La figura 3.12 muestra el diagrama electrico de un motor de corriente directa
 \begin{center}
 	\includegraphics[width=0.5\textwidth]{Contenido/Cuerpo/Capitulo3/Fig16.eps}
 	\captionof{figure}{Diagrama electrico de motor de corriente directa}
 	\label{fig:ModeloMat:Fig1}
 \end{center}
-Tenemos que la fuerza contra motriz $v_b$ es igual a la expresión de la ecuación 3.20
+Tenemos que la fuerza contra motriz $v_b$ es igual a la expresión de la ecuación 3.54
 \begin{equation}
 	v_b(t) =K_b \frac{d\theta_m(t)}{dt}
 \end{equation}
@@ -643,11 +643,11 @@ donde
 \begin{itemize}
 	\item $ \frac{d\theta_m(t)}{dt} $ = $ \omega_m(t) $
 \end{itemize}
-Aplicamos laplace a la ecuación 3.20
+Aplicamos laplace a la ecuación 3.54
 \begin{equation}
 	V_b(s) = K_bS\Theta_m(s)
 \end{equation}
-Aplicando la ley de Kirkoff a la red eléctrica de la figura 3.12 obtenemos
+Aplicando la ley de Kirkoff a la red eléctrica de la figura 3.15 obtenemos
 \begin{equation}
 	R_aI_a(s) + L_aSI_a(s) + V_b(s) = E_a(s)
 \end{equation}
@@ -657,11 +657,11 @@ El torque empleado por el motor es proporcional a la corriente del inducido; por
 \end{equation}
 donde $\tau_m$ es el torque del motor y $K_\tau$ es una constante de proporcionalidad, llamada constante de par del motor, que depende de las características del motor y del
 campo magnético.\\
-En un arreglo consistente de unidades, el valor de $K_t$ es igual al valor de $K_b$. Reordenando la ecuación 3.23.
+En un arreglo consistente de unidades, el valor de $K_t$ es igual al valor de $K_b$. Reordenando la ecuación 3.57.
 \begin{equation}
 	I_a = \frac{1}{K_\tau} \tau_m (s)
 \end{equation}
-Para encontrar la función de transferencia del motor, primero sustituimos las ecuaciones (3.21) y (3.24) en (3.22), produciendo
+Para encontrar la función de transferencia del motor, primero sustituimos las ecuaciones (3.55) y (3.58) en (3.56), produciendo
 \begin{equation}
 	\frac{(R_a + L_aS) \tau_m(s)}{K_\tau} + K_bS \Theta_m(s) = E_a(s)
 \end{equation}
@@ -671,12 +671,12 @@ El torque del motor puede ser expresado como
 \end{equation}
 $J_m$ es la inercia equivalente en la armadura e incluye tanto la inercia de la armadura como la inercia de carga reflejada en la armadura. $D_m$ es la amortiguación viscosa
 equivalente en la armadura e incluye tanto la amortiguación viscosa de la armadura como la amortiguación viscosa de la carga reflejada en la armadura.\\
-Sustituyendo $\tau_m$ en la ecuación 3.20 obtenemos
+Sustituyendo $\tau_m$ en la ecuación 3.54 obtenemos
 \begin{equation}
 	\frac{(R_a + L_aS) (J_mS^2 + D_mS) \Theta_m(s) }{K_\tau} + K_bS \Theta_m(s) = E_a(s)
 \end{equation}
 Si suponemos que la inductancia de la armadura, $L_a$, es pequeña en comparación con la resistencia de la armadura, $R_a$, que es habitual para un motor de corriente continua,
-la ecuación. (3.22) se convierte
+la ecuación. (3.61) se convierte
 \begin{equation}
 	\left[ \frac{R_a }{K_\tau} (J_mS^2 + D_mS) + k_b \right] S\Theta_m(s)  = E_a(s)
 \end{equation}
@@ -707,7 +707,7 @@ equivalente, $J_m$, y la amortiguación equivalente, $D_m$, en la armadura son
 	\end{equation}
 \end{subequations}
 Ahora que hemos evaluado las constantes mecánicas, $J_m$ y $D_m$, tenemos que obtener las constantes electricas vistas en la
-ecuación 3.29. Sustituyendo las ecuaciones (3.21) y (3.24) en la ecuación. (3.22), con $L_a = 0$, produce
+ecuación 3.29. Sustituyendo las ecuaciones (3.55) y (3.58) en la ecuación. (3.56), con $L_a = 0$, produce
 \begin{equation}
 	\frac{R_a}{K_t} \tau_m (s) + K_bS\theta_m(s) = E_a(s)
 \end{equation}
@@ -716,12 +716,12 @@ Aplicando la transformada inversa de laplace obtenemos
 	\frac{R_a}{K_t} \tau_m (t) + K_b\omega_m(t) = e_a(s)
 \end{equation}
 Si se aplica un voltaje de CC, $e_a$, el motor girará a una velocidad angular constante, $\omega_m$, con un torque constante,$\tau_m$.
-Por lo tanto,podemos descartar la relación funcional basada en el tiempo de la ecuación (3.33), la siguiente relación existe
+Por lo tanto,podemos descartar la relación funcional basada en el tiempo de la ecuación (3.67), la siguiente relación existe
 cuando el motor está funcionando en estado estable con una entrada de voltaje de CC:
 \begin{equation}
 	\frac{R_a}{K_t} \tau_m + K_b\omega_m = e_a
 \end{equation}
-La ecuación 3.35 representa una linea recta de $\tau_m$ vs $\omega_m$
+La ecuación 3.69 representa una linea recta de $\tau_m$ vs $\omega_m$
 \begin{equation}
 	\tau_m = -\frac{K_bK_t}{R_a} \omega_m + \frac{K_t}{R_a}e_a
 \end{equation}
@@ -740,7 +740,7 @@ La velocidad angular que ocurre cuando el torque es cero se llama velocidad sin 
 \begin{equation}
 	\omega_{sin carga} = \frac{e_a}{K_b}
 \end{equation}
-Las constantes eléctricas de la función de transferencia del motor ahora se pueden encontrar en las ecuaciones (3.36) y (3.37) como
+Las constantes eléctricas de la función de transferencia del motor ahora se pueden encontrar en las ecuaciones (3.70) y (3.71) como
 \begin{equation}
 	\frac{K_t}{R_a} = \frac{T_{stall}}{e_a}
 \end{equation}

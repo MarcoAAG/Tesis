@@ -1,1 +1,24 @@
 \chapter{Conclusiones}
+En el presente trabajo se abordaron temas tanto de vision artificial como de control de sistemas, de los cuales se obtuvieron
+experiencias enriquecedoras de aprendizaje y se saraon las siguientes conlusiones.
+\begin{itemize}
+    \item Tal y como se esperaba la implementación del algoritmo de vision artificial en ROS hizo que se pudiera tener una mejor modularidad 
+    en el sistema debido a que se pudo hacer diversos nodos que podian ser ejecutados en tiempo real e incluso llegar a ser 
+    ejecutados en paralelo. ROS ademas permitio tener una interfaz grafica para obtener la respuesta en el tiempo del control sin necesdiad
+    de migrar datos a un programa exterior, esto permitió que al sintonizar el control uno como diseñador del mismo tenga control tenga 
+    mejor noción del error y los valores de las ganacias del sistema en tiempo real.
+    \item La implementación del sistea en un vehiculo aereo no tripulado requiere que el sistema emita señales de control, tal y como 
+    se planteo en un inicio de este trabajo, al implementarse con ROS permite que se pueda crear diversos nodos remotos via UDP, y con 
+    la tarjeta monoprocesadora ODROID en el drone, haria que la obtencion de datos en tierra sea un tarea relativamente sencilla.
+    \item En el algortimo de vision artificial para el seguimiento de objetivos, una de las tareas que tomaron mas tiempo de analisis 
+    fue la de clasificiación de colores, como se abordo en el capitulo 4 diversos factores ambientales afectaron a la percepción y 
+    clasificiación de colores, la solución que muchos autores, citados en este trabajo, hicieron para lidiar con este problema es modificar 
+    los valores del espacio de color, esto fue probado en este trabajo pero los resultados no fueron los esperados ya que debe de realizarse 
+    siempre en un espacio controlado, lo que no permetiria una correcta implementación en UAV, ademas de la cantidad de procesamiento 
+    que se tiene que hacer para modificar los valores cada frame, es por eso que la idea inicial de modificar los rangos de colores respecto
+    al entonrno quedo descartada dando pie a la implementación del control gamma de iluminación, lo que nos permitio tener que modificar 
+    solo un valor(gamma) y con esto se redujo hasta un 66\% de carga al precesador. Como se mencionó al inicio del actual trabajo se desconocia
+    esta tecnica de mejorar la nitidez de colores, dando incluso mejores resultados para el usuario final, ademas pensar en la implementación
+    de un sensor de brillo ahora es posible, lo cual nos ahorraria modificar el valor de gamma manualmente.
+\end{itemize}
+

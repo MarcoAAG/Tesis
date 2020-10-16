@@ -19,36 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
-    \entry{WEB:American}{online}{}
-      \name{author}{1}{}{%
-        {{hash=eecf744da18543a48676661bf14fee61}{%
-           family={{American Academy of Ophthalmology"}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{eecf744da18543a48676661bf14fee61}
-      \strng{fullhash}{eecf744da18543a48676661bf14fee61}
-      \strng{bibnamehash}{eecf744da18543a48676661bf14fee61}
-      \strng{authorbibnamehash}{eecf744da18543a48676661bf14fee61}
-      \strng{authornamehash}{eecf744da18543a48676661bf14fee61}
-      \strng{authorfullhash}{eecf744da18543a48676661bf14fee61}
-      \field{labelalpha}{Ame17}
-      \field{sortinit}{A}
-      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Fotorreceptores}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.aao.org/salud-ocular/anatomia/fotorreceptores"
-      \endverb
-      \verb{url}
-      \verb https://www.aao.org/salud-ocular/anatomia/fotorreceptores%22
-      \endverb
-    \endentry
     \entry{Book:Anil2008}{book}{}
       \name{author}{1}{}{%
         {{hash=00dabe154d1c2367c73e5ac146c7e3e5}{%
@@ -656,31 +626,6 @@
       \field{title}{Control systems engineering}
       \field{year}{2010}
     \endentry
-    \entry{Book:Ogata2010}{book}{}
-      \name{author}{1}{}{%
-        {{hash=72cb1e667ce543119df1b777c0db24de}{%
-           family={Ogata},
-           familyi={O\bibinitperiod},
-           given={Katsuhiko},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {PEARSON EDUCACIÓN, S.A.,}%
-      }
-      \strng{namehash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{fullhash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{bibnamehash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{authorbibnamehash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{authornamehash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{authorfullhash}{72cb1e667ce543119df1b777c0db24de}
-      \field{labelalpha}{Oga10}
-      \field{sortinit}{O}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{INGENIERÍA DE CONTROL MODERNA}
-      \field{year}{2010}
-    \endentry
     \entry{WEB:Opencv}{online}{}
       \name{author}{1}{}{%
         {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
@@ -1051,36 +996,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Visual perception and robotic manipulation}
       \field{year}{2006}
-    \endentry
-    \entry{WEB:Ubuntu}{online}{}
-      \name{author}{1}{}{%
-        {{hash=3d945423f8e9496c429a5d8c65b4604f}{%
-           family={Ubuntu},
-           familyi={U\bibinitperiod}}}%
-      }
-      \strng{namehash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{fullhash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{bibnamehash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{authorbibnamehash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{authornamehash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{authorfullhash}{3d945423f8e9496c429a5d8c65b4604f}
-      \field{labelalpha}{Ubu14}
-      \field{sortinit}{U}
-      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{What is Ubuntu MATE?}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{year}{2014}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ubuntu-mate.org/what-is-ubuntu-mate/
-      \endverb
-      \verb{url}
-      \verb https://ubuntu-mate.org/what-is-ubuntu-mate/
-      \endverb
     \endentry
     \entry{WEB:Ieeeucsa2019}{online}{}
       \name{author}{1}{}{%
@@ -1157,37 +1072,6 @@
     \endentry
   \enddatalist
   \datalist[entry]{anyt/global/@/global/global}
-    \entry{WEB:American}{online}{}
-      \name{author}{1}{}{%
-        {{hash=eecf744da18543a48676661bf14fee61}{%
-           family={{American Academy of Ophthalmology"}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{eecf744da18543a48676661bf14fee61}
-      \strng{fullhash}{eecf744da18543a48676661bf14fee61}
-      \strng{bibnamehash}{eecf744da18543a48676661bf14fee61}
-      \strng{authorbibnamehash}{eecf744da18543a48676661bf14fee61}
-      \strng{authornamehash}{eecf744da18543a48676661bf14fee61}
-      \strng{authorfullhash}{eecf744da18543a48676661bf14fee61}
-      \field{labelalpha}{Ame17}
-      \field{sortinit}{A}
-      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
-      \field{labelprefix}{@}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Fotorreceptores}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.aao.org/salud-ocular/anatomia/fotorreceptores"
-      \endverb
-      \verb{url}
-      \verb https://www.aao.org/salud-ocular/anatomia/fotorreceptores%22
-      \endverb
-    \endentry
     \entry{Book:Anil2008}{book}{}
       \name{author}{1}{}{%
         {{hash=00dabe154d1c2367c73e5ac146c7e3e5}{%
@@ -1818,32 +1702,6 @@
       \field{title}{Control systems engineering}
       \field{year}{2010}
     \endentry
-    \entry{Book:Ogata2010}{book}{}
-      \name{author}{1}{}{%
-        {{hash=72cb1e667ce543119df1b777c0db24de}{%
-           family={Ogata},
-           familyi={O\bibinitperiod},
-           given={Katsuhiko},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {PEARSON EDUCACIÓN, S.A.,}%
-      }
-      \strng{namehash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{fullhash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{bibnamehash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{authorbibnamehash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{authornamehash}{72cb1e667ce543119df1b777c0db24de}
-      \strng{authorfullhash}{72cb1e667ce543119df1b777c0db24de}
-      \field{labelalpha}{Oga10}
-      \field{sortinit}{O}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{labelprefix}{@}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{INGENIERÍA DE CONTROL MODERNA}
-      \field{year}{2010}
-    \endentry
     \entry{WEB:Opencv}{online}{}
       \name{author}{1}{}{%
         {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
@@ -2228,37 +2086,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Visual perception and robotic manipulation}
       \field{year}{2006}
-    \endentry
-    \entry{WEB:Ubuntu}{online}{}
-      \name{author}{1}{}{%
-        {{hash=3d945423f8e9496c429a5d8c65b4604f}{%
-           family={Ubuntu},
-           familyi={U\bibinitperiod}}}%
-      }
-      \strng{namehash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{fullhash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{bibnamehash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{authorbibnamehash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{authornamehash}{3d945423f8e9496c429a5d8c65b4604f}
-      \strng{authorfullhash}{3d945423f8e9496c429a5d8c65b4604f}
-      \field{labelalpha}{Ubu14}
-      \field{sortinit}{U}
-      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
-      \field{labelprefix}{@}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{What is Ubuntu MATE?}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{year}{2014}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ubuntu-mate.org/what-is-ubuntu-mate/
-      \endverb
-      \verb{url}
-      \verb https://ubuntu-mate.org/what-is-ubuntu-mate/
-      \endverb
     \endentry
     \entry{WEB:Ieeeucsa2019}{online}{}
       \name{author}{1}{}{%
