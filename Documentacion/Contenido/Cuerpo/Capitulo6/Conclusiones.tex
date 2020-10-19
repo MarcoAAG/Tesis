@@ -1,24 +1,39 @@
 \chapter{Conclusiones}
-En el presente trabajo se abordaron temas tanto de vision artificial como de control de sistemas, de los cuales se obtuvieron
-experiencias enriquecedoras de aprendizaje y se saraon las siguientes conlusiones.
+% En el presente trabajo se abordaron temas tanto de vision artificial como de control de sistemas, de los cuales se obtuvieron
+% experiencias enriquecedoras de aprendizaje y se saraon las siguientes conlusiones.
+En este trabajo, se propuso y formuló un sistema gimbal de dos grados de libertad utilizando la segunda ley de Newton. Se introdujo
+la obtención de imágenes y su debido procesamiento para detectar figuras dadas ciertas características predefinidas. Las ecuaciones de
+movimiento de los grados de libertad de la gimbal se derivaron para un sistema con masas equilibradas. Posteriormente se realizaron simulaciones
+utilizando python y con una propuesta de diseño proporcional-integral,el controlador está completamente diseñado a partir de la comparación de los 
+datos de la simulación con los datos del experimento.Finalmente se probó el sistema físico y se graficó el desempeño
+que tiene el sistema para mantener el equilibrio. Basado en lo anterior se pueden sacar las siguientes conclusiones:
 \begin{itemize}
-    \item Tal y como se esperaba la implementación del algoritmo de vision artificial en ROS hizo que se pudiera tener una mejor modularidad 
-    en el sistema debido a que se pudo hacer diversos nodos que podian ser ejecutados en tiempo real e incluso llegar a ser 
-    ejecutados en paralelo. ROS ademas permitio tener una interfaz grafica para obtener la respuesta en el tiempo del control sin necesdiad
-    de migrar datos a un programa exterior, esto permitió que al sintonizar el control uno como diseñador del mismo tenga control tenga 
-    mejor noción del error y los valores de las ganacias del sistema en tiempo real.
-    \item La implementación del sistea en un vehiculo aereo no tripulado requiere que el sistema emita señales de control, tal y como 
-    se planteo en un inicio de este trabajo, al implementarse con ROS permite que se pueda crear diversos nodos remotos via UDP, y con 
-    la tarjeta monoprocesadora ODROID en el drone, haria que la obtencion de datos en tierra sea un tarea relativamente sencilla.
-    \item En el algortimo de vision artificial para el seguimiento de objetivos, una de las tareas que tomaron mas tiempo de analisis 
-    fue la de clasificiación de colores, como se abordo en el capitulo 4 diversos factores ambientales afectaron a la percepción y 
-    clasificiación de colores, la solución que muchos autores, citados en este trabajo, hicieron para lidiar con este problema es modificar 
-    los valores del espacio de color, esto fue probado en este trabajo pero los resultados no fueron los esperados ya que debe de realizarse 
-    siempre en un espacio controlado, lo que no permetiria una correcta implementación en UAV, ademas de la cantidad de procesamiento 
+    \item Tal y como se esperaba la implementación del algoritmo de visión artificial en ROS hizo que se pudiera tener una mejor modularidad
+    en el sistema debido a que se pudo hacer diversos nodos que podían ser ejecutados en tiempo real e incluso llegar a ser
+    ejecutados en paralelo. ROS además permitió tener una interfaz gráfica para obtener la respuesta en el tiempo del control sin necesidad
+    de migrar datos a un programa exterior, esto permitió que al sintonizar el control uno como diseñador del mismo tenga control tenga
+    mejor noción del error y los valores de las ganancias del sistema en tiempo real.
+    \item La implementación del sistema en un vehículo aéreo no tripulado requiere que el sistema emita señales de control, tal y como
+    se planteó en un inicio de este trabajo, al implementarse con ROS permite que se pueda crear diversos nodos remotos vía UDP, y con
+    la tarjeta monoprocesador ODROID en el drone, haría que la obtención de datos en tierra sea una tarea relativamente sencilla.
+    \item En el algoritmo de visión artificial para el seguimiento de objetivos, una de las tareas que tomaron más tiempo de análisis
+    fue la de clasificación de colores, como se abordó en el capítulo 4 diversos factores ambientales afectaron a la percepción y
+    clasificación de colores, la solución que muchos autores, citados en este trabajo, hicieron para lidiar con este problema es modificar
+    los valores del espacio de color, esto fue probado en este trabajo pero los resultados no fueron los esperados, ya que debe de realizarse
+    siempre en un espacio controlado, lo que no permitiría una correcta implementación en UAV, además de la cantidad de procesamiento
     que se tiene que hacer para modificar los valores cada frame, es por eso que la idea inicial de modificar los rangos de colores respecto
-    al entonrno quedo descartada dando pie a la implementación del control gamma de iluminación, lo que nos permitio tener que modificar 
-    solo un valor(gamma) y con esto se redujo hasta un 66\% de carga al precesador. Como se mencionó al inicio del actual trabajo se desconocia
-    esta tecnica de mejorar la nitidez de colores, dando incluso mejores resultados para el usuario final, ademas pensar en la implementación
-    de un sensor de brillo ahora es posible, lo cual nos ahorraria modificar el valor de gamma manualmente.
+    al entorno quedo descartada dando pie a la implementación del control gamma de iluminación, lo que nos permitió tener que modificar
+    solo un valor(gamma) y con esto se redujo hasta un 66\% de carga al procesador. Como se mencionó al inicio del actual trabajo se desconocía
+    esta técnica de mejorar la nitidez de colores, dando incluso mejores resultados para el usuario final, además pensar en la implementación
+    de un sensor de brillo ahora es posible, lo cual nos ahorraría modificar el valor de gamma manualmente.
+    \item Diversos tipos de controladores están disponibles en la actualidad, debido a la linealidad del modelo presentado había dos
+    caminos a tomar, la decisión de hacer un diseño PI se dio porque ya se había probado implementar un controlador PD, donde los resultados no
+    fueron los esperados, ya que si bien es cierto se podía quitar el sobre impulso, el error en estado estacionario no convergía a cero.
+    Por esta razón y dadas las condiciones del proyecto utilizar el controlador proporcional integral fue la mejor opción para controlar al
+    sistema.
+    \item Los resultados muestran que los errores en píxeles de los datos obtenidos experimentalmente están muy por debajo de lo permitido (2\%).
+    Sin embargo, hay que reconocer que, por muy satisfactoria que sea la exactitud de la medición podría ser insuficiente para la implementación
+    en un sistema aéreo a alta velocidad, debido a la limitada resolución de la cámara, y de la respuesta del propio control. Resolver
+    el problema es uno de los objetivos a futuro.
 \end{itemize}
 
