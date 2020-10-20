@@ -191,49 +191,49 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Prototipo del sistema hecho con madera\relax }}{90}{figure.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Circuito el\IeC {\'e}ctrico\relax }}{91}{figure.5.7}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Vista frontal del prototipo\relax }}{91}{figure.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{92}{figure.5.8}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Circuito el\IeC {\'e}ctrico\relax }}{92}{figure.5.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de secuencia\relax }}{92}{figure.5.9}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Protocolo de comunicaci\IeC {\'o}n\relax }}{92}{figure.5.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Nodos y Topicos activos\relax }}{93}{figure.5.10}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagrama de secuencia\relax }}{93}{figure.5.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Gr\IeC {\'a}fica torque-velocidad\relax }}{94}{figure.5.11}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Nodos y Topicos activos\relax }}{93}{figure.5.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Calculando momentos de inercia\relax }}{95}{figure.5.12}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Gr\IeC {\'a}fica torque-velocidad\relax }}{95}{figure.5.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Simulaci\IeC {\'o}n entrada escalon\relax }}{96}{figure.5.13}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Simulaci\IeC {\'o}n entrada escal\IeC {\'o}n\relax }}{96}{figure.5.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Lazo de control para Pitch\relax }}{97}{figure.5.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Lazo cerrado del sistema con control PI\relax }}{99}{figure.5.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Simulaci\IeC {\'o}n respuesta escalon en PITCH\relax }}{99}{figure.5.16}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Simulaci\IeC {\'o}n respuesta escal\IeC {\'o}n en pitch\relax }}{99}{figure.5.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Diagrama de flujo de algoritmo de control\relax }}{100}{figure.5.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 1\relax }}{101}{figure.5.18}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Gr\IeC {\'a}fica del error en Pitch con ganancia Kp = 1\relax }}{101}{figure.5.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 0.5\relax }}{102}{figure.5.19}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Gr\IeC {\'a}fica del error en Pitch con ganancia Kp = 0.5\relax }}{102}{figure.5.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Grafica del error en Pitch con ganancia Kp = 0.35\relax }}{102}{figure.5.20}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Gr\IeC {\'a}fica del error en Pitch con ganancia Kp = 0.35\relax }}{102}{figure.5.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Grafica del error en Pitch con control PI\relax }}{103}{figure.5.21}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Gr\IeC {\'a}fica del error en Pitch con control PI\relax }}{103}{figure.5.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Simulaci\IeC {\'o}n entrada escalon para yaw\relax }}{104}{figure.5.22}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Simulaci\IeC {\'o}n entrada escal\IeC {\'o}n para yaw\relax }}{104}{figure.5.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.23}{\ignorespaces Lazo de control para Yaw\relax }}{104}{figure.5.23}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.24}{\ignorespaces Simulaci\IeC {\'o}n del control PI en Yaw\relax }}{105}{figure.5.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.59\relax }}{106}{figure.5.25}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Gr\IeC {\'a}fica del error en Yaw con ganancia Kp = 0.59\relax }}{106}{figure.5.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.368\relax }}{107}{figure.5.26}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Gr\IeC {\'a}fica del error en Yaw con ganancia Kp = 0.368\relax }}{107}{figure.5.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.27}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.44\relax }}{107}{figure.5.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Grafica del error en Yaw con control PI\relax }}{108}{figure.5.28}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Gr\IeC {\'a}fica del error en Yaw con control PI\relax }}{108}{figure.5.28}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
