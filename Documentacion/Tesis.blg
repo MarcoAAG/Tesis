@@ -1,24 +1,25 @@
-[0] Config.pm:302> INFO - This is Biber 2.9
-[0] Config.pm:305> INFO - Logfile is 'Tesis.blg'
-[29] biber:313> INFO - === mar oct 20, 2020, 06:16:04
-[51] Biber.pm:371> INFO - Reading 'Tesis.bcf'
-[114] Biber.pm:857> INFO - Found 41 citekeys in bib section 0
-[136] Biber.pm:3981> INFO - Processing section 0
-[145] Biber.pm:4154> INFO - Looking for bibtex format file 'Referencias.bib' for section 0
-[147] bibtex.pm:1468> INFO - LaTeX decoding ...
-[175] bibtex.pm:1294> INFO - Found BibTeX data source 'Referencias.bib'
-[219] Utils.pm:169> WARN - month field 'Jan' in entry 'Book:Jose2005' is not an integer - this will probably not sort properly.
-[291] Utils.pm:169> WARN - month field 'may' in entry 'WEB:Ieeeucsa2019' is not an integer - this will probably not sort properly.
-[316] Utils.pm:169> WARN - BibTeX subsystem: /tmp/cku96dNPYg/Referencias.bib_22786.utf8, line 2, warning: 93 characters of junk seen at toplevel
-[316] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[316] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[316] Utils.pm:169> WARN - I didn't find a database entry for 'hardkernel2017' (section 0)
-[367] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[367] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[367] Biber.pm:3809> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
-[427] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[427] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[427] Biber.pm:3809> INFO - Sorting list 'anyt/global/@/global/global' of type 'entry' with template 'anyt' and locale 'es-ES'
-[465] bbl.pm:617> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
-[505] bbl.pm:720> INFO - Output to Tesis.bbl
-[505] Biber.pm:110> INFO - WARNINGS: 6
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'Tesis.blg'
+[132] biber:322> INFO - === mié nov 11, 2020, 15:34:31
+[188] Biber.pm:415> INFO - Reading 'Tesis.bcf'
+[259] Biber.pm:943> INFO - Found 41 citekeys in bib section 0
+[322] Biber.pm:4256> INFO - Processing section 0
+[322] Utils.pm:75> INFO - Globbing data source 'Referencias.bib'
+[322] Utils.pm:91> INFO - Globbed data source 'Referencias.bib' to Referencias.bib
+[389] Biber.pm:4455> INFO - Looking for bibtex format file 'Referencias.bib' for section 0
+[392] bibtex.pm:1653> INFO - LaTeX decoding ...
+[425] bibtex.pm:1471> INFO - Found BibTeX data source 'Referencias.bib'
+[529] Utils.pm:293> WARN - month field 'Jan' in entry 'Book:Jose2005' is not an integer - this will probably not sort properly.
+[592] Utils.pm:293> WARN - month field 'may' in entry 'WEB:Ieeeucsa2019' is not an integer - this will probably not sort properly.
+[617] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_32M9/Referencias.bib_26973.utf8, line 2, warning: 93 characters of junk seen at toplevel
+[617] Utils.pm:293> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[617] Utils.pm:293> WARN - I didn't find a database entry for 'hardkernel2017' (section 0)
+[672] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[672] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[672] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[741] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[741] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[741] Biber.pm:4084> INFO - Sorting list 'nty/global/518ED29525738CEBDAC49C49E60EA9D3/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[811] bbl.pm:652> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
+[858] bbl.pm:755> INFO - Output to Tesis.bbl
+[858] Biber.pm:128> INFO - WARNINGS: 5
