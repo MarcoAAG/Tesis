@@ -94,41 +94,43 @@
 \usepackage{multicol}
 \usepackage{hyperref}
 
+\usepackage{pdfpages}
+
 % generar los cuadros de color---------------------------------------------------
 \usepackage{tcolorbox}
 \tcbuselibrary{listingsutf8} % o listings o minted
 % Cuadro numerado para ejemplos
 \newtcolorbox[auto counter, number within=section]{example}[2][]
 {colback=green!5!white,colframe=green!75!black,
-fonttitle=\bfseries, title=Función~\thetcbcounter: #2,#1}
+    fonttitle=\bfseries, title=Función~\thetcbcounter: #2,#1}
 % generar los cuadros de color---------------------------------------------------
 
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definición}[section]
- 
+
 \lstset{ frame=Ltb,
-framerule=0pt,
-aboveskip=0.5cm,
-framextopmargin=3pt,
-framexbottommargin=3pt,
-framexleftmargin=0.4cm,
-framesep=0pt,
-rulesep=.4pt,
-backgroundcolor=\color{gray97},
-rulesepcolor=\color{black},
-%
-stringstyle=\ttfamily,
-showstringspaces = false,
-basicstyle=\small\ttfamily,
-commentstyle=\color{gray45},
-keywordstyle=\bfseries,
-%
-numbers=left,
-numbersep=15pt,
-numberstyle=\tiny,
-numberfirstline = false,
-breaklines=true,
+    framerule=0pt,
+    aboveskip=0.5cm,
+    framextopmargin=3pt,
+    framexbottommargin=3pt,
+    framexleftmargin=0.4cm,
+    framesep=0pt,
+    rulesep=.4pt,
+    backgroundcolor=\color{gray97},
+    rulesepcolor=\color{black},
+    %
+    stringstyle=\ttfamily,
+    showstringspaces = false,
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{gray45},
+    keywordstyle=\bfseries,
+    %
+    numbers=left,
+    numbersep=15pt,
+    numberstyle=\tiny,
+    numberfirstline = false,
+    breaklines=true,
 }
 
 % minimizar fragmentado de listados
@@ -137,7 +139,7 @@ breaklines=true,
 
 \lstdefinestyle{consola}
 {basicstyle=\scriptsize\bf\ttfamily,
-backgroundcolor=\color{gray75},
+    backgroundcolor=\color{gray75},
 }
 
 \lstdefinestyle{C++}
