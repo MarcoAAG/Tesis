@@ -18,19 +18,21 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
+  \datalist[entry]{nyt/global//global/global}
     \entry{Paper::Abdo2013}{misc}{}
       \name{author}{2}{}{%
-        {{hash=d872401ecfe7d2bc5d1faa0bd10b430f}{%
+        {{un=0,uniquepart=base,hash=d872401ecfe7d2bc5d1faa0bd10b430f}{%
            family={Abdo},
            familyi={A\bibinitperiod},
            given={Maher},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7be0727c95ee7912b5fb38cbb9b2362a}{%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7be0727c95ee7912b5fb38cbb9b2362a}{%
            family={Vali},
            familyi={V\bibinitperiod},
            given={Ahmad\bibnamedelima Reza},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{cd2f534170ddd31a199404fc4d8589aa}
       \strng{fullhash}{cd2f534170ddd31a199404fc4d8589aa}
@@ -38,9 +40,10 @@
       \strng{authorbibnamehash}{cd2f534170ddd31a199404fc4d8589aa}
       \strng{authornamehash}{cd2f534170ddd31a199404fc4d8589aa}
       \strng{authorfullhash}{cd2f534170ddd31a199404fc4d8589aa}
-      \field{labelalpha}{AV13}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Research on the Cross-Coupling of a two Axes Gimbal System with Dynamic Unbalance}
@@ -48,7 +51,7 @@
     \endentry
     \entry{Book:Anil2008}{book}{}
       \name{author}{1}{}{%
-        {{hash=cd4f055438fae122ae025be4c410d1dd}{%
+        {{un=0,uniquepart=base,hash=cd4f055438fae122ae025be4c410d1dd}{%
            family={{Anil Bharath}},
            familyi={A\bibinitperiod}}}%
       }
@@ -61,9 +64,10 @@
       \strng{authorbibnamehash}{cd4f055438fae122ae025be4c410d1dd}
       \strng{authornamehash}{cd4f055438fae122ae025be4c410d1dd}
       \strng{authorfullhash}{cd4f055438fae122ae025be4c410d1dd}
-      \field{labelalpha}{Ani08}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Next Generation Artificial Vision System}
@@ -71,11 +75,12 @@
     \endentry
     \entry{Book:Barfoot2020}{book}{}
       \name{author}{1}{}{%
-        {{hash=b2c352c24cb7305c1e2d9b232a6fc453}{%
+        {{un=0,uniquepart=base,hash=b2c352c24cb7305c1e2d9b232a6fc453}{%
            family={Barfoot},
            familyi={B\bibinitperiod},
            given={Timothy\bibnamedelima D.},
-           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
@@ -86,9 +91,10 @@
       \strng{authorbibnamehash}{b2c352c24cb7305c1e2d9b232a6fc453}
       \strng{authornamehash}{b2c352c24cb7305c1e2d9b232a6fc453}
       \strng{authorfullhash}{b2c352c24cb7305c1e2d9b232a6fc453}
-      \field{labelalpha}{Bar20}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{State Estimation for robotics}
@@ -96,11 +102,12 @@
     \endentry
     \entry{Book:Corke2011}{book}{}
       \name{author}{1}{}{%
-        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+        {{un=0,uniquepart=base,hash=c0e503339314930d140b67b5e7c55c3e}{%
            family={Corke},
            familyi={C\bibinitperiod},
            given={Peter},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Springer}%
@@ -111,9 +118,10 @@
       \strng{authorbibnamehash}{c0e503339314930d140b67b5e7c55c3e}
       \strng{authornamehash}{c0e503339314930d140b67b5e7c55c3e}
       \strng{authorfullhash}{c0e503339314930d140b67b5e7c55c3e}
-      \field{labelalpha}{Cor11}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Robotics, Vision and Control: Fundamental Algoritms in MATLAB}
@@ -121,13 +129,15 @@
     \endentry
     \entry{Book:Arturo2011}{book}{}
       \name{author}{1}{}{%
-        {{hash=efe63cccf01d76361e4e5d69dbb00018}{%
+        {{un=0,uniquepart=base,hash=efe63cccf01d76361e4e5d69dbb00018}{%
            family={Escalera},
            familyi={E\bibinitperiod},
            given={Arturo},
            giveni={A\bibinitperiod},
+           givenun=0,
            prefix={de\bibnamedelima la},
-           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod},
+           prefixun=0}}%
       }
       \list{publisher}{1}{%
         {Prentice Hall}%
@@ -138,9 +148,10 @@
       \strng{authorbibnamehash}{efe63cccf01d76361e4e5d69dbb00018}
       \strng{authornamehash}{efe63cccf01d76361e4e5d69dbb00018}
       \strng{authorfullhash}{efe63cccf01d76361e4e5d69dbb00018}
-      \field{labelalpha}{Esc11}
       \field{sortinit}{E}
       \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Visión por Computador. Fundamentos y métodos}
@@ -148,11 +159,12 @@
     \endentry
     \entry{Book:Jan2009}{book}{}
       \name{author}{1}{}{%
-        {{hash=c14dc8f341097fbe818bc919d748af7c}{%
+        {{un=0,uniquepart=base,hash=c14dc8f341097fbe818bc919d748af7c}{%
            family={Flusser},
            familyi={F\bibinitperiod},
            given={Jan},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Wiley Sons Ltd}%
@@ -163,9 +175,10 @@
       \strng{authorbibnamehash}{c14dc8f341097fbe818bc919d748af7c}
       \strng{authornamehash}{c14dc8f341097fbe818bc919d748af7c}
       \strng{authorfullhash}{c14dc8f341097fbe818bc919d748af7c}
-      \field{labelalpha}{Flu09}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Moments and Moment Invariants in Pattern Recognition}
@@ -173,11 +186,12 @@
     \endentry
     \entry{Book:Goldstein1980}{book}{}
       \name{author}{1}{}{%
-        {{hash=c0e35b6777e73243aa18df96822aa96b}{%
+        {{un=0,uniquepart=base,hash=c0e35b6777e73243aa18df96822aa96b}{%
            family={Goldstein},
            familyi={G\bibinitperiod},
            given={Herbert},
-           giveni={H\bibinitperiod}}}%
+           giveni={H\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Addison-Weasley}%
@@ -188,17 +202,18 @@
       \strng{authorbibnamehash}{c0e35b6777e73243aa18df96822aa96b}
       \strng{authornamehash}{c0e35b6777e73243aa18df96822aa96b}
       \strng{authorfullhash}{c0e35b6777e73243aa18df96822aa96b}
-      \field{labelalpha}{Gol80}
       \field{sortinit}{G}
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Calssical Mechanics}
       \field{year}{1980}
     \endentry
-    \entry{WEB:Ocam}{online}{}
+    \entry{WEB:HK2020}{online}{}
       \name{author}{1}{}{%
-        {{hash=7c25f72a350912714863be6893ba12bb}{%
+        {{un=0,uniquepart=base,hash=7c25f72a350912714863be6893ba12bb}{%
            family={HardKernel},
            familyi={H\bibinitperiod}}}%
       }
@@ -209,39 +224,11 @@
       \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
       \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
       \field{extraname}{1}
-      \field{labelalpha}{Har}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{oCam : 5MP USB 3.0 Camera}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
-      \endverb
-      \verb{url}
-      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
-      \endverb
-    \endentry
-    \entry{WEB:HK2020}{online}{}
-      \name{author}{1}{}{%
-        {{hash=7c25f72a350912714863be6893ba12bb}{%
-           family={HardKernel},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{7c25f72a350912714863be6893ba12bb}
-      \strng{fullhash}{7c25f72a350912714863be6893ba12bb}
-      \strng{bibnamehash}{7c25f72a350912714863be6893ba12bb}
-      \strng{authorbibnamehash}{7c25f72a350912714863be6893ba12bb}
-      \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
-      \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
-      \field{extraname}{2}
-      \field{labelalpha}{Har20}
-      \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ODROID XU-4}
@@ -257,13 +244,46 @@
       \verb https://www.hardkernel.com/shop/odroid-xu4-special-price/
       \endverb
     \endentry
+    \entry{WEB:Ocam}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7c25f72a350912714863be6893ba12bb}{%
+           family={HardKernel},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{fullhash}{7c25f72a350912714863be6893ba12bb}
+      \strng{bibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorbibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{oCam : 5MP USB 3.0 Camera}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
+      \endverb
+      \verb{url}
+      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
+      \endverb
+    \endentry
     \entry{Book:Bernd1997}{book}{}
       \name{author}{1}{}{%
-        {{hash=2af9a87ab3a028f0648eedb98f353969}{%
+        {{un=0,uniquepart=base,hash=2af9a87ab3a028f0648eedb98f353969}{%
            family={Jähne},
            familyi={J\bibinitperiod},
            given={Bernd},
-           giveni={B\bibinitperiod}}}%
+           giveni={B\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Springer}%
@@ -274,9 +294,10 @@
       \strng{authorbibnamehash}{2af9a87ab3a028f0648eedb98f353969}
       \strng{authornamehash}{2af9a87ab3a028f0648eedb98f353969}
       \strng{authorfullhash}{2af9a87ab3a028f0648eedb98f353969}
-      \field{labelalpha}{Jäh97}
       \field{sortinit}{J}
       \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Digital Image processing}
@@ -284,7 +305,7 @@
     \endentry
     \entry{Book:Jose2005}{book}{}
       \name{author}{1}{}{%
-        {{hash=bb723fcd8ebec87ec09750dece8d6690}{%
+        {{un=0,uniquepart=base,hash=bb723fcd8ebec87ec09750dece8d6690}{%
            family={{José Ramón Mejía Vilet}},
            familyi={J\bibinitperiod}}}%
       }
@@ -297,9 +318,10 @@
       \strng{authorbibnamehash}{bb723fcd8ebec87ec09750dece8d6690}
       \strng{authornamehash}{bb723fcd8ebec87ec09750dece8d6690}
       \strng{authorfullhash}{bb723fcd8ebec87ec09750dece8d6690}
-      \field{labelalpha}{Jos05}
       \field{sortinit}{J}
       \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{First}
@@ -309,11 +331,12 @@
     \endentry
     \entry{Book:Lentin2018}{book}{}
       \name{author}{1}{}{%
-        {{hash=6899949d3918f5d0b97064b0c6adfba7}{%
+        {{un=0,uniquepart=base,hash=6899949d3918f5d0b97064b0c6adfba7}{%
            family={Joseph},
            familyi={J\bibinitperiod},
            given={Lentin},
-           giveni={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Apress}%
@@ -324,9 +347,10 @@
       \strng{authorbibnamehash}{6899949d3918f5d0b97064b0c6adfba7}
       \strng{authornamehash}{6899949d3918f5d0b97064b0c6adfba7}
       \strng{authorfullhash}{6899949d3918f5d0b97064b0c6adfba7}
-      \field{labelalpha}{Jos18}
       \field{sortinit}{J}
       \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Robot Operating System for Absolute Beginners: Robotics Programming Made Easy}
@@ -334,16 +358,18 @@
     \endentry
     \entry{Paper::Lee2006}{misc}{}
       \name{author}{2}{}{%
-        {{hash=5dcae9c149a04cec73402569aba65f12}{%
+        {{un=0,uniquepart=base,hash=5dcae9c149a04cec73402569aba65f12}{%
            family={K.\bibnamedelimi J.\bibnamedelimi Seong},
            familyi={K\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
            given={H.\bibnamedelimi G.\bibnamedelimi Kang},
-           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=0abbb62d8c7fbfb92944bd0fd12fbb42}{%
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0abbb62d8c7fbfb92944bd0fd12fbb42}{%
            family={Lee},
            familyi={L\bibinitperiod},
            given={H.\bibnamedelimi P.},
-           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{444e72068377ebfe5b4c03a725e2dcb8}
       \strng{fullhash}{444e72068377ebfe5b4c03a725e2dcb8}
@@ -351,9 +377,10 @@
       \strng{authorbibnamehash}{444e72068377ebfe5b4c03a725e2dcb8}
       \strng{authornamehash}{444e72068377ebfe5b4c03a725e2dcb8}
       \strng{authorfullhash}{444e72068377ebfe5b4c03a725e2dcb8}
-      \field{labelalpha}{KL06}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The stabilization loop design for a two-axis gimbal system using LQG/LTR controller}
@@ -361,16 +388,18 @@
     \endentry
     \entry{Paper::Kim2010}{misc}{}
       \name{author}{2}{}{%
-        {{hash=8ad63ae9ca57b7077a15ba1f4c8f24a3}{%
+        {{un=1,uniquepart=given,hash=8ad63ae9ca57b7077a15ba1f4c8f24a3}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={S.\bibnamedelimi B.},
-           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=7d494fc2c80aed79eb741a2e7082f515}{%
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=7d494fc2c80aed79eb741a2e7082f515}{%
            family={Kwak},
            familyi={K\bibinitperiod},
            given={Y.\bibnamedelimi K.},
-           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{c0e44b7949a6f56e60dfadd87a7eb175}
       \strng{fullhash}{c0e44b7949a6f56e60dfadd87a7eb175}
@@ -378,9 +407,10 @@
       \strng{authorbibnamehash}{c0e44b7949a6f56e60dfadd87a7eb175}
       \strng{authornamehash}{c0e44b7949a6f56e60dfadd87a7eb175}
       \strng{authorfullhash}{c0e44b7949a6f56e60dfadd87a7eb175}
-      \field{labelalpha}{KK10}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Robust control for two-axis gimbaled sensor system with multivariable feedback systems}
@@ -388,11 +418,12 @@
     \endentry
     \entry{Article:taiy2000}{article}{}
       \name{author}{1}{}{%
-        {{hash=255df244898db0d20389d4a67e56fdfc}{%
+        {{un=1,uniquepart=given,hash=255df244898db0d20389d4a67e56fdfc}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Taiyi\bibnamedelimb ChengHyun\bibnamedelimb Wook\bibnamedelima ParkYongmin},
-           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=1}}%
       }
       \strng{namehash}{255df244898db0d20389d4a67e56fdfc}
       \strng{fullhash}{255df244898db0d20389d4a67e56fdfc}
@@ -400,9 +431,10 @@
       \strng{authorbibnamehash}{255df244898db0d20389d4a67e56fdfc}
       \strng{authornamehash}{255df244898db0d20389d4a67e56fdfc}
       \strng{authorfullhash}{255df244898db0d20389d4a67e56fdfc}
-      \field{labelalpha}{Kim00}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{University of Washington}
@@ -411,11 +443,12 @@
     \endentry
     \entry{Book:Rolf2003}{book}{}
       \name{author}{1}{}{%
-        {{hash=3ecb96736f61a2a70ba1056b75795f70}{%
+        {{un=0,uniquepart=base,hash=3ecb96736f61a2a70ba1056b75795f70}{%
            family={Kuehni},
            familyi={K\bibinitperiod},
            given={Rolf\bibnamedelima G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Wiley-Interscience}%
@@ -426,9 +459,10 @@
       \strng{authorbibnamehash}{3ecb96736f61a2a70ba1056b75795f70}
       \strng{authornamehash}{3ecb96736f61a2a70ba1056b75795f70}
       \strng{authorfullhash}{3ecb96736f61a2a70ba1056b75795f70}
-      \field{labelalpha}{Kue03}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Color Space and Its Divisions Color Order from Antiquity to the Present}
@@ -436,16 +470,18 @@
     \endentry
     \entry{Paper::Lin2001}{misc}{}
       \name{author}{2}{}{%
-        {{hash=b12da867a209e9a29dd651fee997e08a}{%
+        {{un=0,uniquepart=base,hash=b12da867a209e9a29dd651fee997e08a}{%
            family={Lin},
            familyi={L\bibinitperiod},
            given={C.\bibnamedelimi L},
-           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=168a90a29febd723e1dceaae59fbd82f}{%
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=168a90a29febd723e1dceaae59fbd82f}{%
            family={Hsiao},
            familyi={H\bibinitperiod},
            given={Y.\bibnamedelimi H.},
-           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{f3e57fc980c6526568230ebe0fb4f015}
       \strng{fullhash}{f3e57fc980c6526568230ebe0fb4f015}
@@ -453,9 +489,10 @@
       \strng{authorbibnamehash}{f3e57fc980c6526568230ebe0fb4f015}
       \strng{authornamehash}{f3e57fc980c6526568230ebe0fb4f015}
       \strng{authorfullhash}{f3e57fc980c6526568230ebe0fb4f015}
-      \field{labelalpha}{LH01}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Adaptive feedforward control for disturbance torque rejection in seeker stabilizing loop}
@@ -463,7 +500,7 @@
     \endentry
     \entry{Book:InNav}{book}{}
       \name{author}{1}{}{%
-        {{hash=cbb467ff31caddd20460ffcd06a94a87}{%
+        {{un=0,uniquepart=base,hash=cbb467ff31caddd20460ffcd06a94a87}{%
            family={{Mohinder S. Grewal}},
            familyi={M\bibinitperiod}}}%
       }
@@ -476,9 +513,10 @@
       \strng{authorbibnamehash}{cbb467ff31caddd20460ffcd06a94a87}
       \strng{authornamehash}{cbb467ff31caddd20460ffcd06a94a87}
       \strng{authorfullhash}{cbb467ff31caddd20460ffcd06a94a87}
-      \field{labelalpha}{Moh07}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Global Positioning Systems, inertial navigation, and integration}
@@ -486,7 +524,7 @@
     \endentry
     \entry{WEB:Cerebro}{online}{}
       \name{author}{1}{}{%
-        {{hash=80c60a63f5ba88e97d54d995cb89559e}{%
+        {{un=0,uniquepart=base,hash=80c60a63f5ba88e97d54d995cb89559e}{%
            family={MUNDIARIO},
            familyi={M\bibinitperiod}}}%
       }
@@ -496,9 +534,10 @@
       \strng{authorbibnamehash}{80c60a63f5ba88e97d54d995cb89559e}
       \strng{authornamehash}{80c60a63f5ba88e97d54d995cb89559e}
       \strng{authorfullhash}{80c60a63f5ba88e97d54d995cb89559e}
-      \field{labelalpha}{MUN}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Cómo el cerebro procesa las imágenes}
@@ -513,9 +552,9 @@
       \verb https://www.mundiario.com/articulo/sociedad/cerebro-procesa-imagenes/20190304191451147484.html
       \endverb
     \endentry
-    \entry{WEB:NASA2JX}{online}{}
+    \entry{WEB:MERCURY}{online}{}
       \name{author}{1}{}{%
-        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+        {{un=0,uniquepart=base,hash=1f99771bc3e23e6097509a331544ab65}{%
            family={{NASA}},
            familyi={N\bibinitperiod}}}%
       }
@@ -526,10 +565,43 @@
       \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
       \field{extraname}{1}
-      \field{labelalpha}{NAS}
       \field{sortinit}{N}
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
-      \field{extraalpha}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Gimbal Rig Mercury Astronaut Trainer)}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
+      \endverb
+      \verb{url}
+      \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
+      \endverb
+    \endentry
+    \entry{WEB:NASA2JX}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{extraname}{2}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{gimbal bearing – Liquid Rocket Engines (J-2X, RS-25, general)}
@@ -546,7 +618,7 @@
     \endentry
     \entry{WEB:NASA}{online}{}
       \name{author}{1}{}{%
-        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+        {{un=0,uniquepart=base,hash=1f99771bc3e23e6097509a331544ab65}{%
            family={{NASA}},
            familyi={N\bibinitperiod}}}%
       }
@@ -556,11 +628,12 @@
       \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
-      \field{extraname}{2}
-      \field{labelalpha}{NAS}
+      \field{extraname}{3}
       \field{sortinit}{N}
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
-      \field{extraalpha}{2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{NASA's J-2X Rocket Engine Development}
@@ -575,44 +648,14 @@
       \verb https://www.nasa.gov/exploration/systems/sls/j2x
       \endverb
     \endentry
-    \entry{WEB:MERCURY}{online}{}
-      \name{author}{1}{}{%
-        {{hash=1f99771bc3e23e6097509a331544ab65}{%
-           family={{NASA}},
-           familyi={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
-      \field{extraname}{3}
-      \field{labelalpha}{NAS17}
-      \field{sortinit}{N}
-      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The Gimbal Rig Mercury Astronaut Trainer)}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
-      \endverb
-      \verb{url}
-      \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
-      \endverb
-    \endentry
     \entry{Book:Nise2010}{book}{}
       \name{author}{1}{}{%
-        {{hash=6471dd8f12306fa47b496ba10e1e99e2}{%
+        {{un=0,uniquepart=base,hash=6471dd8f12306fa47b496ba10e1e99e2}{%
            family={Nise},
            familyi={N\bibinitperiod},
            given={Norman\bibnamedelima S.},
-           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
@@ -623,9 +666,10 @@
       \strng{authorbibnamehash}{6471dd8f12306fa47b496ba10e1e99e2}
       \strng{authornamehash}{6471dd8f12306fa47b496ba10e1e99e2}
       \strng{authorfullhash}{6471dd8f12306fa47b496ba10e1e99e2}
-      \field{labelalpha}{Nis10}
       \field{sortinit}{N}
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Control systems engineering}
@@ -633,7 +677,7 @@
     \endentry
     \entry{WEB:Opencv}{online}{}
       \name{author}{1}{}{%
-        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+        {{un=0,uniquepart=base,hash=5bd4c87976f48e6a53919d53e14025e9}{%
            family={OpenCV},
            familyi={O\bibinitperiod}}}%
       }
@@ -644,10 +688,10 @@
       \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
       \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
       \field{extraname}{1}
-      \field{labelalpha}{Ope}
       \field{sortinit}{O}
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
-      \field{extraalpha}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{About it}
@@ -664,7 +708,7 @@
     \endentry
     \entry{WEB:Opencvcolor}{online}{}
       \name{author}{1}{}{%
-        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+        {{un=0,uniquepart=base,hash=5bd4c87976f48e6a53919d53e14025e9}{%
            family={OpenCV},
            familyi={O\bibinitperiod}}}%
       }
@@ -675,10 +719,9 @@
       \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
       \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
       \field{extraname}{2}
-      \field{labelalpha}{Ope}
       \field{sortinit}{O}
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
-      \field{extraalpha}{2}
+      \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Color conversions}
@@ -689,43 +732,14 @@
       \verb https://docs.opencv.org/master/de/d25/imgproc_color_conversions.html
       \endverb
     \endentry
-    \entry{WEB:OpencvCalibracion}{online}{}
-      \name{author}{1}{}{%
-        {{hash=8e48393f1a311e989a80615a6c4fcb78}{%
-           family={Opencv},
-           familyi={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{fullhash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{bibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{authorbibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{authornamehash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{authorfullhash}{8e48393f1a311e989a80615a6c4fcb78}
-      \field{labelalpha}{Ope}
-      \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
-      \field{extraalpha}{3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Camera calibration With OpenCV}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
-      \endverb
-      \verb{url}
-      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
-      \endverb
-    \endentry
     \entry{10045_10053}{misc}{}
       \name{author}{1}{}{%
-        {{hash=16cf80640a1ba3e668f32e95cc028b15}{%
+        {{un=0,uniquepart=base,hash=16cf80640a1ba3e668f32e95cc028b15}{%
            family={Ortiz\bibnamedelima Zamora},
            familyi={O\bibinitperiod\bibinitdelim Z\bibinitperiod},
            given={Francisco\bibnamedelima Gabriel},
-           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{16cf80640a1ba3e668f32e95cc028b15}
       \strng{fullhash}{16cf80640a1ba3e668f32e95cc028b15}
@@ -733,9 +747,10 @@
       \strng{authorbibnamehash}{16cf80640a1ba3e668f32e95cc028b15}
       \strng{authornamehash}{16cf80640a1ba3e668f32e95cc028b15}
       \strng{authorfullhash}{16cf80640a1ba3e668f32e95cc028b15}
-      \field{labelalpha}{Ort02}
       \field{sortinit}{O}
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Procesamiento morfológico de imágenes en color: aplicación a la reconstrucción geodésica}
@@ -743,11 +758,12 @@
     \endentry
     \entry{WEB:CameraWorks}{online}{}
       \name{author}{1}{}{%
-        {{hash=44f6f3cead099c2628ac4985ac6b8c2c}{%
+        {{un=0,uniquepart=base,hash=44f6f3cead099c2628ac4985ac6b8c2c}{%
            family={PHOTOGRAPHY},
            familyi={P\bibinitperiod},
            given={EASY\bibnamedelima BASIC},
-           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{44f6f3cead099c2628ac4985ac6b8c2c}
       \strng{fullhash}{44f6f3cead099c2628ac4985ac6b8c2c}
@@ -755,9 +771,10 @@
       \strng{authorbibnamehash}{44f6f3cead099c2628ac4985ac6b8c2c}
       \strng{authornamehash}{44f6f3cead099c2628ac4985ac6b8c2c}
       \strng{authorfullhash}{44f6f3cead099c2628ac4985ac6b8c2c}
-      \field{labelalpha}{PHO}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{How Cameras Work-The Parts of a Camera}
@@ -774,7 +791,7 @@
     \endentry
     \entry{WEB:Gimbal}{online}{}
       \name{author}{1}{}{%
-        {{hash=d71c4ac5faccea6d260415674fd02801}{%
+        {{un=0,uniquepart=base,hash=d71c4ac5faccea6d260415674fd02801}{%
            family={{PlayList}},
            familyi={P\bibinitperiod}}}%
       }
@@ -784,9 +801,10 @@
       \strng{authorbibnamehash}{d71c4ac5faccea6d260415674fd02801}
       \strng{authornamehash}{d71c4ac5faccea6d260415674fd02801}
       \strng{authorfullhash}{d71c4ac5faccea6d260415674fd02801}
-      \field{labelalpha}{Pla}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Gimbal}
@@ -803,11 +821,12 @@
     \endentry
     \entry{Book:Morgan2015}{book}{}
       \name{author}{1}{}{%
-        {{hash=9404eebbe5c52f5580a6f6515ebcbb80}{%
+        {{un=0,uniquepart=base,hash=9404eebbe5c52f5580a6f6515ebcbb80}{%
            family={Quigley},
            familyi={Q\bibinitperiod},
            given={Morgan},
-           giveni={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {O’Reilly}%
@@ -818,9 +837,10 @@
       \strng{authorbibnamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
       \strng{authornamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
       \strng{authorfullhash}{9404eebbe5c52f5580a6f6515ebcbb80}
-      \field{labelalpha}{Qui15}
       \field{sortinit}{Q}
       \field{sortinithash}{c54e16deb53fc904a621fa8fd8703b5a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Programming Robots with ROS}
@@ -828,11 +848,12 @@
     \endentry
     \entry{Book:Rafael2002}{book}{}
       \name{author}{1}{}{%
-        {{hash=03c8df49ed3d59d4d17735b6aaef9962}{%
+        {{un=0,uniquepart=base,hash=03c8df49ed3d59d4d17735b6aaef9962}{%
            family={Rafael\bibnamedelimb C.\bibnamedelimi Gonzalez},
            familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod},
            given={Richard\bibnamedelimb E.\bibnamedelimi Woods},
-           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Prentice Hall}%
@@ -843,9 +864,10 @@
       \strng{authorbibnamehash}{03c8df49ed3d59d4d17735b6aaef9962}
       \strng{authornamehash}{03c8df49ed3d59d4d17735b6aaef9962}
       \strng{authorfullhash}{03c8df49ed3d59d4d17735b6aaef9962}
-      \field{labelalpha}{Raf02}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Digital image processing}
@@ -853,11 +875,12 @@
     \endentry
     \entry{Paper::Ricolfe2008}{misc}{}
       \name{author}{1}{}{%
-        {{hash=5224c629e0ff346dea23174d16c5e018}{%
+        {{un=0,uniquepart=base,hash=5224c629e0ff346dea23174d16c5e018}{%
            family={Ricolfe\bibnamedelimb Viala\bibnamedelimb y\bibnamedelimb Sánchez\bibnamedelima Salmerón},
            familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
            given={A.\bibnamedelimi J.},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{5224c629e0ff346dea23174d16c5e018}
       \strng{fullhash}{5224c629e0ff346dea23174d16c5e018}
@@ -865,9 +888,10 @@
       \strng{authorbibnamehash}{5224c629e0ff346dea23174d16c5e018}
       \strng{authornamehash}{5224c629e0ff346dea23174d16c5e018}
       \strng{authorfullhash}{5224c629e0ff346dea23174d16c5e018}
-      \field{labelalpha}{Ric08}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Procedimiento completo para el calibrado de cámaras utilizando una plantilla plana.}
@@ -875,7 +899,7 @@
     \endentry
     \entry{WEB:ROS}{online}{}
       \name{author}{1}{}{%
-        {{hash=05665b7826ff460887094429e8a32116}{%
+        {{un=0,uniquepart=base,hash=05665b7826ff460887094429e8a32116}{%
            family={ROS},
            familyi={R\bibinitperiod}}}%
       }
@@ -885,9 +909,10 @@
       \strng{authorbibnamehash}{05665b7826ff460887094429e8a32116}
       \strng{authornamehash}{05665b7826ff460887094429e8a32116}
       \strng{authorfullhash}{05665b7826ff460887094429e8a32116}
-      \field{labelalpha}{ROS}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ROS/Concepts - ROS Wiki}
@@ -904,16 +929,18 @@
     \endentry
     \entry{Paper::Salatun1983}{misc}{}
       \name{author}{2}{}{%
-        {{hash=2dad484caa203edf5da50dcb8a0868b2}{%
+        {{un=0,uniquepart=base,hash=2dad484caa203edf5da50dcb8a0868b2}{%
            family={Salatun},
            familyi={S\bibinitperiod},
            given={A.\bibnamedelimi S.},
-           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=d831247e34914958829d0ed1e654014d}{%
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d831247e34914958829d0ed1e654014d}{%
            family={Bainum},
            familyi={B\bibinitperiod},
            given={P.\bibnamedelimi M.},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{e3bb594fbda2bedf61df25ff449661ef}
       \strng{fullhash}{e3bb594fbda2bedf61df25ff449661ef}
@@ -921,9 +948,10 @@
       \strng{authorbibnamehash}{e3bb594fbda2bedf61df25ff449661ef}
       \strng{authornamehash}{e3bb594fbda2bedf61df25ff449661ef}
       \strng{authorfullhash}{e3bb594fbda2bedf61df25ff449661ef}
-      \field{labelalpha}{SB83}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Analysis of a double gimbaled reaction wheel spacecraft attitude stabilization system}
@@ -931,11 +959,12 @@
     \endentry
     \entry{Book:Serra1984}{book}{}
       \name{author}{1}{}{%
-        {{hash=8d7a75bad90a58dc55fdb5efa83df9ff}{%
+        {{un=0,uniquepart=base,hash=8d7a75bad90a58dc55fdb5efa83df9ff}{%
            family={Serra},
            familyi={S\bibinitperiod},
            given={Jean},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Academic Press}%
@@ -946,9 +975,10 @@
       \strng{authorbibnamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
       \strng{authornamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
       \strng{authorfullhash}{8d7a75bad90a58dc55fdb5efa83df9ff}
-      \field{labelalpha}{Ser84}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Image Analysis and Mathematical Morphology, Volume 1}
@@ -956,11 +986,12 @@
     \endentry
     \entry{Book:Richard2011}{book}{}
       \name{author}{1}{}{%
-        {{hash=f2e556c93256e7d70895d67702e14f1a}{%
+        {{un=0,uniquepart=base,hash=f2e556c93256e7d70895d67702e14f1a}{%
            family={Szeliski},
            familyi={S\bibinitperiod},
            given={Richard},
-           giveni={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Springer}%
@@ -971,9 +1002,10 @@
       \strng{authorbibnamehash}{f2e556c93256e7d70895d67702e14f1a}
       \strng{authornamehash}{f2e556c93256e7d70895d67702e14f1a}
       \strng{authorfullhash}{f2e556c93256e7d70895d67702e14f1a}
-      \field{labelalpha}{Sze11}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Computer Vision: Algorithms and Applications}
@@ -981,11 +1013,12 @@
     \endentry
     \entry{Book:Geoffrey2006}{book}{}
       \name{author}{1}{}{%
-        {{hash=93be1f04dc8d8e8b8a7e2868b6106cc6}{%
+        {{un=0,uniquepart=base,hash=93be1f04dc8d8e8b8a7e2868b6106cc6}{%
            family={Taylor},
            familyi={T\bibinitperiod},
            given={Geoffrey},
-           giveni={G\bibinitperiod}}}%
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Springer-Verlag Berlin Heidelberg}%
@@ -996,9 +1029,10 @@
       \strng{authorbibnamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
       \strng{authornamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
       \strng{authorfullhash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
-      \field{labelalpha}{Tay06}
       \field{sortinit}{T}
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Visual perception and robotic manipulation}
@@ -1006,11 +1040,12 @@
     \endentry
     \entry{WEB:Ieeeucsa2019}{online}{}
       \name{author}{1}{}{%
-        {{hash=d952b3cfb5b37b9f5d243ef8cf430b9e}{%
+        {{un=0,uniquepart=base,hash=d952b3cfb5b37b9f5d243ef8cf430b9e}{%
            family={UCSA},
            familyi={U\bibinitperiod},
            given={IEEE},
-           giveni={I\bibinitperiod}}}%
+           giveni={I\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
       \strng{fullhash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
@@ -1018,9 +1053,10 @@
       \strng{authorbibnamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
       \strng{authornamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
       \strng{authorfullhash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
-      \field{labelalpha}{UCS19}
       \field{sortinit}{U}
       \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{5}
@@ -1035,11 +1071,12 @@
     \endentry
     \entry{Paper::Lauren1994}{misc}{}
       \name{author}{1}{}{%
-        {{hash=f3ea4947755623b7180b9ff28d692124}{%
+        {{un=0,uniquepart=base,hash=f3ea4947755623b7180b9ff28d692124}{%
            family={YANG},
            familyi={Y\bibinitperiod},
            given={LUREN},
-           giveni={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{f3ea4947755623b7180b9ff28d692124}
       \strng{fullhash}{f3ea4947755623b7180b9ff28d692124}
@@ -1047,9 +1084,10 @@
       \strng{authorbibnamehash}{f3ea4947755623b7180b9ff28d692124}
       \strng{authornamehash}{f3ea4947755623b7180b9ff28d692124}
       \strng{authorfullhash}{f3ea4947755623b7180b9ff28d692124}
-      \field{labelalpha}{YAN94}
       \field{sortinit}{Y}
       \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{FAST AND EXACT COMPUTATION OF CARTESIAN GEOMETRIC MOMENTS USING DISCRETE GREEN'S THEOREM}
@@ -1057,11 +1095,12 @@
     \endentry
     \entry{Paper::Yoon2001}{misc}{}
       \name{author}{1}{}{%
-        {{hash=687eed717dee36009398d9d98a5da55d}{%
+        {{un=0,uniquepart=base,hash=687eed717dee36009398d9d98a5da55d}{%
            family={Yoon},
            familyi={Y\bibinitperiod},
            given={Sungpil},
-           giveni={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{687eed717dee36009398d9d98a5da55d}
       \strng{fullhash}{687eed717dee36009398d9d98a5da55d}
@@ -1069,28 +1108,31 @@
       \strng{authorbibnamehash}{687eed717dee36009398d9d98a5da55d}
       \strng{authornamehash}{687eed717dee36009398d9d98a5da55d}
       \strng{authorfullhash}{687eed717dee36009398d9d98a5da55d}
-      \field{labelalpha}{Yoo01}
       \field{sortinit}{Y}
       \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Equations of Motion for a Two-Axes Gimbal System}
       \field{year}{2001}
     \endentry
   \enddatalist
-  \datalist[entry]{nty/global/518ED29525738CEBDAC49C49E60EA9D3/global/global}
+  \datalist[entry]{nyt/global/518ED29525738CEBDAC49C49E60EA9D3/global/global}
     \entry{Paper::Abdo2013}{misc}{}
       \name{author}{2}{}{%
-        {{hash=d872401ecfe7d2bc5d1faa0bd10b430f}{%
+        {{un=0,uniquepart=base,hash=d872401ecfe7d2bc5d1faa0bd10b430f}{%
            family={Abdo},
            familyi={A\bibinitperiod},
            given={Maher},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7be0727c95ee7912b5fb38cbb9b2362a}{%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7be0727c95ee7912b5fb38cbb9b2362a}{%
            family={Vali},
            familyi={V\bibinitperiod},
            given={Ahmad\bibnamedelima Reza},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{cd2f534170ddd31a199404fc4d8589aa}
       \strng{fullhash}{cd2f534170ddd31a199404fc4d8589aa}
@@ -1098,9 +1140,10 @@
       \strng{authorbibnamehash}{cd2f534170ddd31a199404fc4d8589aa}
       \strng{authornamehash}{cd2f534170ddd31a199404fc4d8589aa}
       \strng{authorfullhash}{cd2f534170ddd31a199404fc4d8589aa}
-      \field{labelalpha}{AV13}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1109,7 +1152,7 @@
     \endentry
     \entry{Book:Anil2008}{book}{}
       \name{author}{1}{}{%
-        {{hash=cd4f055438fae122ae025be4c410d1dd}{%
+        {{un=0,uniquepart=base,hash=cd4f055438fae122ae025be4c410d1dd}{%
            family={{Anil Bharath}},
            familyi={A\bibinitperiod}}}%
       }
@@ -1122,9 +1165,10 @@
       \strng{authorbibnamehash}{cd4f055438fae122ae025be4c410d1dd}
       \strng{authornamehash}{cd4f055438fae122ae025be4c410d1dd}
       \strng{authorfullhash}{cd4f055438fae122ae025be4c410d1dd}
-      \field{labelalpha}{Ani08}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1133,11 +1177,12 @@
     \endentry
     \entry{Book:Barfoot2020}{book}{}
       \name{author}{1}{}{%
-        {{hash=b2c352c24cb7305c1e2d9b232a6fc453}{%
+        {{un=0,uniquepart=base,hash=b2c352c24cb7305c1e2d9b232a6fc453}{%
            family={Barfoot},
            familyi={B\bibinitperiod},
            given={Timothy\bibnamedelima D.},
-           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
@@ -1148,9 +1193,10 @@
       \strng{authorbibnamehash}{b2c352c24cb7305c1e2d9b232a6fc453}
       \strng{authornamehash}{b2c352c24cb7305c1e2d9b232a6fc453}
       \strng{authorfullhash}{b2c352c24cb7305c1e2d9b232a6fc453}
-      \field{labelalpha}{Bar20}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1159,11 +1205,12 @@
     \endentry
     \entry{Book:Corke2011}{book}{}
       \name{author}{1}{}{%
-        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+        {{un=0,uniquepart=base,hash=c0e503339314930d140b67b5e7c55c3e}{%
            family={Corke},
            familyi={C\bibinitperiod},
            given={Peter},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Springer}%
@@ -1174,9 +1221,10 @@
       \strng{authorbibnamehash}{c0e503339314930d140b67b5e7c55c3e}
       \strng{authornamehash}{c0e503339314930d140b67b5e7c55c3e}
       \strng{authorfullhash}{c0e503339314930d140b67b5e7c55c3e}
-      \field{labelalpha}{Cor11}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1185,13 +1233,15 @@
     \endentry
     \entry{Book:Arturo2011}{book}{}
       \name{author}{1}{}{%
-        {{hash=efe63cccf01d76361e4e5d69dbb00018}{%
+        {{un=0,uniquepart=base,hash=efe63cccf01d76361e4e5d69dbb00018}{%
            family={Escalera},
            familyi={E\bibinitperiod},
            given={Arturo},
            giveni={A\bibinitperiod},
+           givenun=0,
            prefix={de\bibnamedelima la},
-           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod},
+           prefixun=0}}%
       }
       \list{publisher}{1}{%
         {Prentice Hall}%
@@ -1202,9 +1252,10 @@
       \strng{authorbibnamehash}{efe63cccf01d76361e4e5d69dbb00018}
       \strng{authornamehash}{efe63cccf01d76361e4e5d69dbb00018}
       \strng{authorfullhash}{efe63cccf01d76361e4e5d69dbb00018}
-      \field{labelalpha}{Esc11}
       \field{sortinit}{E}
       \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1213,11 +1264,12 @@
     \endentry
     \entry{Book:Jan2009}{book}{}
       \name{author}{1}{}{%
-        {{hash=c14dc8f341097fbe818bc919d748af7c}{%
+        {{un=0,uniquepart=base,hash=c14dc8f341097fbe818bc919d748af7c}{%
            family={Flusser},
            familyi={F\bibinitperiod},
            given={Jan},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Wiley Sons Ltd}%
@@ -1228,9 +1280,10 @@
       \strng{authorbibnamehash}{c14dc8f341097fbe818bc919d748af7c}
       \strng{authornamehash}{c14dc8f341097fbe818bc919d748af7c}
       \strng{authorfullhash}{c14dc8f341097fbe818bc919d748af7c}
-      \field{labelalpha}{Flu09}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1239,11 +1292,12 @@
     \endentry
     \entry{Book:Goldstein1980}{book}{}
       \name{author}{1}{}{%
-        {{hash=c0e35b6777e73243aa18df96822aa96b}{%
+        {{un=0,uniquepart=base,hash=c0e35b6777e73243aa18df96822aa96b}{%
            family={Goldstein},
            familyi={G\bibinitperiod},
            given={Herbert},
-           giveni={H\bibinitperiod}}}%
+           giveni={H\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Addison-Weasley}%
@@ -1254,18 +1308,19 @@
       \strng{authorbibnamehash}{c0e35b6777e73243aa18df96822aa96b}
       \strng{authornamehash}{c0e35b6777e73243aa18df96822aa96b}
       \strng{authorfullhash}{c0e35b6777e73243aa18df96822aa96b}
-      \field{labelalpha}{Gol80}
       \field{sortinit}{G}
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Calssical Mechanics}
       \field{year}{1980}
     \endentry
-    \entry{WEB:Ocam}{online}{}
+    \entry{WEB:HK2020}{online}{}
       \name{author}{1}{}{%
-        {{hash=7c25f72a350912714863be6893ba12bb}{%
+        {{un=0,uniquepart=base,hash=7c25f72a350912714863be6893ba12bb}{%
            family={HardKernel},
            familyi={H\bibinitperiod}}}%
       }
@@ -1276,40 +1331,11 @@
       \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
       \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
       \field{extraname}{1}
-      \field{labelalpha}{Har}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
-      \field{labelprefix}{@}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{oCam : 5MP USB 3.0 Camera}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
-      \endverb
-      \verb{url}
-      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
-      \endverb
-    \endentry
-    \entry{WEB:HK2020}{online}{}
-      \name{author}{1}{}{%
-        {{hash=7c25f72a350912714863be6893ba12bb}{%
-           family={HardKernel},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{7c25f72a350912714863be6893ba12bb}
-      \strng{fullhash}{7c25f72a350912714863be6893ba12bb}
-      \strng{bibnamehash}{7c25f72a350912714863be6893ba12bb}
-      \strng{authorbibnamehash}{7c25f72a350912714863be6893ba12bb}
-      \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
-      \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
-      \field{extraname}{2}
-      \field{labelalpha}{Har20}
-      \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1326,13 +1352,47 @@
       \verb https://www.hardkernel.com/shop/odroid-xu4-special-price/
       \endverb
     \endentry
+    \entry{WEB:Ocam}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7c25f72a350912714863be6893ba12bb}{%
+           family={HardKernel},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{fullhash}{7c25f72a350912714863be6893ba12bb}
+      \strng{bibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorbibnamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authornamehash}{7c25f72a350912714863be6893ba12bb}
+      \strng{authorfullhash}{7c25f72a350912714863be6893ba12bb}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{oCam : 5MP USB 3.0 Camera}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
+      \endverb
+      \verb{url}
+      \verb https://www.hardkernel.com/shop/ocam-5mp-usb-3-0-camera/
+      \endverb
+    \endentry
     \entry{Book:Bernd1997}{book}{}
       \name{author}{1}{}{%
-        {{hash=2af9a87ab3a028f0648eedb98f353969}{%
+        {{un=0,uniquepart=base,hash=2af9a87ab3a028f0648eedb98f353969}{%
            family={Jähne},
            familyi={J\bibinitperiod},
            given={Bernd},
-           giveni={B\bibinitperiod}}}%
+           giveni={B\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Springer}%
@@ -1343,9 +1403,10 @@
       \strng{authorbibnamehash}{2af9a87ab3a028f0648eedb98f353969}
       \strng{authornamehash}{2af9a87ab3a028f0648eedb98f353969}
       \strng{authorfullhash}{2af9a87ab3a028f0648eedb98f353969}
-      \field{labelalpha}{Jäh97}
       \field{sortinit}{J}
       \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1354,7 +1415,7 @@
     \endentry
     \entry{Book:Jose2005}{book}{}
       \name{author}{1}{}{%
-        {{hash=bb723fcd8ebec87ec09750dece8d6690}{%
+        {{un=0,uniquepart=base,hash=bb723fcd8ebec87ec09750dece8d6690}{%
            family={{José Ramón Mejía Vilet}},
            familyi={J\bibinitperiod}}}%
       }
@@ -1367,9 +1428,10 @@
       \strng{authorbibnamehash}{bb723fcd8ebec87ec09750dece8d6690}
       \strng{authornamehash}{bb723fcd8ebec87ec09750dece8d6690}
       \strng{authorfullhash}{bb723fcd8ebec87ec09750dece8d6690}
-      \field{labelalpha}{Jos05}
       \field{sortinit}{J}
       \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1380,11 +1442,12 @@
     \endentry
     \entry{Book:Lentin2018}{book}{}
       \name{author}{1}{}{%
-        {{hash=6899949d3918f5d0b97064b0c6adfba7}{%
+        {{un=0,uniquepart=base,hash=6899949d3918f5d0b97064b0c6adfba7}{%
            family={Joseph},
            familyi={J\bibinitperiod},
            given={Lentin},
-           giveni={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Apress}%
@@ -1395,9 +1458,10 @@
       \strng{authorbibnamehash}{6899949d3918f5d0b97064b0c6adfba7}
       \strng{authornamehash}{6899949d3918f5d0b97064b0c6adfba7}
       \strng{authorfullhash}{6899949d3918f5d0b97064b0c6adfba7}
-      \field{labelalpha}{Jos18}
       \field{sortinit}{J}
       \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1406,16 +1470,18 @@
     \endentry
     \entry{Paper::Lee2006}{misc}{}
       \name{author}{2}{}{%
-        {{hash=5dcae9c149a04cec73402569aba65f12}{%
+        {{un=0,uniquepart=base,hash=5dcae9c149a04cec73402569aba65f12}{%
            family={K.\bibnamedelimi J.\bibnamedelimi Seong},
            familyi={K\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
            given={H.\bibnamedelimi G.\bibnamedelimi Kang},
-           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=0abbb62d8c7fbfb92944bd0fd12fbb42}{%
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0abbb62d8c7fbfb92944bd0fd12fbb42}{%
            family={Lee},
            familyi={L\bibinitperiod},
            given={H.\bibnamedelimi P.},
-           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{444e72068377ebfe5b4c03a725e2dcb8}
       \strng{fullhash}{444e72068377ebfe5b4c03a725e2dcb8}
@@ -1423,9 +1489,10 @@
       \strng{authorbibnamehash}{444e72068377ebfe5b4c03a725e2dcb8}
       \strng{authornamehash}{444e72068377ebfe5b4c03a725e2dcb8}
       \strng{authorfullhash}{444e72068377ebfe5b4c03a725e2dcb8}
-      \field{labelalpha}{KL06}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1434,16 +1501,18 @@
     \endentry
     \entry{Paper::Kim2010}{misc}{}
       \name{author}{2}{}{%
-        {{hash=8ad63ae9ca57b7077a15ba1f4c8f24a3}{%
+        {{un=1,uniquepart=given,hash=8ad63ae9ca57b7077a15ba1f4c8f24a3}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={S.\bibnamedelimi B.},
-           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=7d494fc2c80aed79eb741a2e7082f515}{%
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=7d494fc2c80aed79eb741a2e7082f515}{%
            family={Kwak},
            familyi={K\bibinitperiod},
            given={Y.\bibnamedelimi K.},
-           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{c0e44b7949a6f56e60dfadd87a7eb175}
       \strng{fullhash}{c0e44b7949a6f56e60dfadd87a7eb175}
@@ -1451,9 +1520,10 @@
       \strng{authorbibnamehash}{c0e44b7949a6f56e60dfadd87a7eb175}
       \strng{authornamehash}{c0e44b7949a6f56e60dfadd87a7eb175}
       \strng{authorfullhash}{c0e44b7949a6f56e60dfadd87a7eb175}
-      \field{labelalpha}{KK10}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1462,11 +1532,12 @@
     \endentry
     \entry{Article:taiy2000}{article}{}
       \name{author}{1}{}{%
-        {{hash=255df244898db0d20389d4a67e56fdfc}{%
+        {{un=1,uniquepart=given,hash=255df244898db0d20389d4a67e56fdfc}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Taiyi\bibnamedelimb ChengHyun\bibnamedelimb Wook\bibnamedelima ParkYongmin},
-           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=1}}%
       }
       \strng{namehash}{255df244898db0d20389d4a67e56fdfc}
       \strng{fullhash}{255df244898db0d20389d4a67e56fdfc}
@@ -1474,9 +1545,10 @@
       \strng{authorbibnamehash}{255df244898db0d20389d4a67e56fdfc}
       \strng{authornamehash}{255df244898db0d20389d4a67e56fdfc}
       \strng{authorfullhash}{255df244898db0d20389d4a67e56fdfc}
-      \field{labelalpha}{Kim00}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1486,11 +1558,12 @@
     \endentry
     \entry{Book:Rolf2003}{book}{}
       \name{author}{1}{}{%
-        {{hash=3ecb96736f61a2a70ba1056b75795f70}{%
+        {{un=0,uniquepart=base,hash=3ecb96736f61a2a70ba1056b75795f70}{%
            family={Kuehni},
            familyi={K\bibinitperiod},
            given={Rolf\bibnamedelima G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Wiley-Interscience}%
@@ -1501,9 +1574,10 @@
       \strng{authorbibnamehash}{3ecb96736f61a2a70ba1056b75795f70}
       \strng{authornamehash}{3ecb96736f61a2a70ba1056b75795f70}
       \strng{authorfullhash}{3ecb96736f61a2a70ba1056b75795f70}
-      \field{labelalpha}{Kue03}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1512,16 +1586,18 @@
     \endentry
     \entry{Paper::Lin2001}{misc}{}
       \name{author}{2}{}{%
-        {{hash=b12da867a209e9a29dd651fee997e08a}{%
+        {{un=0,uniquepart=base,hash=b12da867a209e9a29dd651fee997e08a}{%
            family={Lin},
            familyi={L\bibinitperiod},
            given={C.\bibnamedelimi L},
-           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=168a90a29febd723e1dceaae59fbd82f}{%
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=168a90a29febd723e1dceaae59fbd82f}{%
            family={Hsiao},
            familyi={H\bibinitperiod},
            given={Y.\bibnamedelimi H.},
-           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{f3e57fc980c6526568230ebe0fb4f015}
       \strng{fullhash}{f3e57fc980c6526568230ebe0fb4f015}
@@ -1529,9 +1605,10 @@
       \strng{authorbibnamehash}{f3e57fc980c6526568230ebe0fb4f015}
       \strng{authornamehash}{f3e57fc980c6526568230ebe0fb4f015}
       \strng{authorfullhash}{f3e57fc980c6526568230ebe0fb4f015}
-      \field{labelalpha}{LH01}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1540,7 +1617,7 @@
     \endentry
     \entry{Book:InNav}{book}{}
       \name{author}{1}{}{%
-        {{hash=cbb467ff31caddd20460ffcd06a94a87}{%
+        {{un=0,uniquepart=base,hash=cbb467ff31caddd20460ffcd06a94a87}{%
            family={{Mohinder S. Grewal}},
            familyi={M\bibinitperiod}}}%
       }
@@ -1553,9 +1630,10 @@
       \strng{authorbibnamehash}{cbb467ff31caddd20460ffcd06a94a87}
       \strng{authornamehash}{cbb467ff31caddd20460ffcd06a94a87}
       \strng{authorfullhash}{cbb467ff31caddd20460ffcd06a94a87}
-      \field{labelalpha}{Moh07}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1564,7 +1642,7 @@
     \endentry
     \entry{WEB:Cerebro}{online}{}
       \name{author}{1}{}{%
-        {{hash=80c60a63f5ba88e97d54d995cb89559e}{%
+        {{un=0,uniquepart=base,hash=80c60a63f5ba88e97d54d995cb89559e}{%
            family={MUNDIARIO},
            familyi={M\bibinitperiod}}}%
       }
@@ -1574,9 +1652,10 @@
       \strng{authorbibnamehash}{80c60a63f5ba88e97d54d995cb89559e}
       \strng{authornamehash}{80c60a63f5ba88e97d54d995cb89559e}
       \strng{authorfullhash}{80c60a63f5ba88e97d54d995cb89559e}
-      \field{labelalpha}{MUN}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1592,9 +1671,9 @@
       \verb https://www.mundiario.com/articulo/sociedad/cerebro-procesa-imagenes/20190304191451147484.html
       \endverb
     \endentry
-    \entry{WEB:NASA2JX}{online}{}
+    \entry{WEB:MERCURY}{online}{}
       \name{author}{1}{}{%
-        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+        {{un=0,uniquepart=base,hash=1f99771bc3e23e6097509a331544ab65}{%
            family={{NASA}},
            familyi={N\bibinitperiod}}}%
       }
@@ -1605,73 +1684,10 @@
       \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
       \field{extraname}{1}
-      \field{labelalpha}{NAS}
       \field{sortinit}{N}
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
-      \field{labelprefix}{@}
-      \field{extraalpha}{1}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{gimbal bearing – Liquid Rocket Engines (J-2X, RS-25, general)}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://blogs.nasa.gov/J2X/tag/gimbal-bearing/
-      \endverb
-      \verb{url}
-      \verb https://blogs.nasa.gov/J2X/tag/gimbal-bearing/
-      \endverb
-    \endentry
-    \entry{WEB:NASA}{online}{}
-      \name{author}{1}{}{%
-        {{hash=1f99771bc3e23e6097509a331544ab65}{%
-           family={{NASA}},
-           familyi={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
-      \field{extraname}{2}
-      \field{labelalpha}{NAS}
-      \field{sortinit}{N}
-      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
-      \field{labelprefix}{@}
-      \field{extraalpha}{2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{NASA's J-2X Rocket Engine Development}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.nasa.gov/exploration/systems/sls/j2x
-      \endverb
-      \verb{url}
-      \verb https://www.nasa.gov/exploration/systems/sls/j2x
-      \endverb
-    \endentry
-    \entry{WEB:MERCURY}{online}{}
-      \name{author}{1}{}{%
-        {{hash=1f99771bc3e23e6097509a331544ab65}{%
-           family={{NASA}},
-           familyi={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
-      \field{extraname}{3}
-      \field{labelalpha}{NAS17}
-      \field{sortinit}{N}
-      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1688,13 +1704,80 @@
       \verb https://www.nasa.gov/centers/glenn/about/history/mastif.html
       \endverb
     \endentry
+    \entry{WEB:NASA2JX}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{extraname}{2}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{gimbal bearing – Liquid Rocket Engines (J-2X, RS-25, general)}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blogs.nasa.gov/J2X/tag/gimbal-bearing/
+      \endverb
+      \verb{url}
+      \verb https://blogs.nasa.gov/J2X/tag/gimbal-bearing/
+      \endverb
+    \endentry
+    \entry{WEB:NASA}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{extraname}{3}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelprefix}{@}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{NASA's J-2X Rocket Engine Development}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nasa.gov/exploration/systems/sls/j2x
+      \endverb
+      \verb{url}
+      \verb https://www.nasa.gov/exploration/systems/sls/j2x
+      \endverb
+    \endentry
     \entry{Book:Nise2010}{book}{}
       \name{author}{1}{}{%
-        {{hash=6471dd8f12306fa47b496ba10e1e99e2}{%
+        {{un=0,uniquepart=base,hash=6471dd8f12306fa47b496ba10e1e99e2}{%
            family={Nise},
            familyi={N\bibinitperiod},
            given={Norman\bibnamedelima S.},
-           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
@@ -1705,9 +1788,10 @@
       \strng{authorbibnamehash}{6471dd8f12306fa47b496ba10e1e99e2}
       \strng{authornamehash}{6471dd8f12306fa47b496ba10e1e99e2}
       \strng{authorfullhash}{6471dd8f12306fa47b496ba10e1e99e2}
-      \field{labelalpha}{Nis10}
       \field{sortinit}{N}
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1716,7 +1800,7 @@
     \endentry
     \entry{WEB:Opencv}{online}{}
       \name{author}{1}{}{%
-        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+        {{un=0,uniquepart=base,hash=5bd4c87976f48e6a53919d53e14025e9}{%
            family={OpenCV},
            familyi={O\bibinitperiod}}}%
       }
@@ -1727,11 +1811,11 @@
       \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
       \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
       \field{extraname}{1}
-      \field{labelalpha}{Ope}
       \field{sortinit}{O}
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelprefix}{@}
-      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{About it}
@@ -1748,7 +1832,7 @@
     \endentry
     \entry{WEB:Opencvcolor}{online}{}
       \name{author}{1}{}{%
-        {{hash=5bd4c87976f48e6a53919d53e14025e9}{%
+        {{un=0,uniquepart=base,hash=5bd4c87976f48e6a53919d53e14025e9}{%
            family={OpenCV},
            familyi={O\bibinitperiod}}}%
       }
@@ -1759,11 +1843,10 @@
       \strng{authornamehash}{5bd4c87976f48e6a53919d53e14025e9}
       \strng{authorfullhash}{5bd4c87976f48e6a53919d53e14025e9}
       \field{extraname}{2}
-      \field{labelalpha}{Ope}
       \field{sortinit}{O}
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labeldatesource}{nodate}
       \field{labelprefix}{@}
-      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Color conversions}
@@ -1774,44 +1857,14 @@
       \verb https://docs.opencv.org/master/de/d25/imgproc_color_conversions.html
       \endverb
     \endentry
-    \entry{WEB:OpencvCalibracion}{online}{}
-      \name{author}{1}{}{%
-        {{hash=8e48393f1a311e989a80615a6c4fcb78}{%
-           family={Opencv},
-           familyi={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{fullhash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{bibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{authorbibnamehash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{authornamehash}{8e48393f1a311e989a80615a6c4fcb78}
-      \strng{authorfullhash}{8e48393f1a311e989a80615a6c4fcb78}
-      \field{labelalpha}{Ope}
-      \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
-      \field{labelprefix}{@}
-      \field{extraalpha}{3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Camera calibration With OpenCV}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
-      \endverb
-      \verb{url}
-      \verb https://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html
-      \endverb
-    \endentry
     \entry{10045_10053}{misc}{}
       \name{author}{1}{}{%
-        {{hash=16cf80640a1ba3e668f32e95cc028b15}{%
+        {{un=0,uniquepart=base,hash=16cf80640a1ba3e668f32e95cc028b15}{%
            family={Ortiz\bibnamedelima Zamora},
            familyi={O\bibinitperiod\bibinitdelim Z\bibinitperiod},
            given={Francisco\bibnamedelima Gabriel},
-           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{16cf80640a1ba3e668f32e95cc028b15}
       \strng{fullhash}{16cf80640a1ba3e668f32e95cc028b15}
@@ -1819,9 +1872,10 @@
       \strng{authorbibnamehash}{16cf80640a1ba3e668f32e95cc028b15}
       \strng{authornamehash}{16cf80640a1ba3e668f32e95cc028b15}
       \strng{authorfullhash}{16cf80640a1ba3e668f32e95cc028b15}
-      \field{labelalpha}{Ort02}
       \field{sortinit}{O}
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1830,11 +1884,12 @@
     \endentry
     \entry{WEB:CameraWorks}{online}{}
       \name{author}{1}{}{%
-        {{hash=44f6f3cead099c2628ac4985ac6b8c2c}{%
+        {{un=0,uniquepart=base,hash=44f6f3cead099c2628ac4985ac6b8c2c}{%
            family={PHOTOGRAPHY},
            familyi={P\bibinitperiod},
            given={EASY\bibnamedelima BASIC},
-           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{44f6f3cead099c2628ac4985ac6b8c2c}
       \strng{fullhash}{44f6f3cead099c2628ac4985ac6b8c2c}
@@ -1842,9 +1897,10 @@
       \strng{authorbibnamehash}{44f6f3cead099c2628ac4985ac6b8c2c}
       \strng{authornamehash}{44f6f3cead099c2628ac4985ac6b8c2c}
       \strng{authorfullhash}{44f6f3cead099c2628ac4985ac6b8c2c}
-      \field{labelalpha}{PHO}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1862,7 +1918,7 @@
     \endentry
     \entry{WEB:Gimbal}{online}{}
       \name{author}{1}{}{%
-        {{hash=d71c4ac5faccea6d260415674fd02801}{%
+        {{un=0,uniquepart=base,hash=d71c4ac5faccea6d260415674fd02801}{%
            family={{PlayList}},
            familyi={P\bibinitperiod}}}%
       }
@@ -1872,9 +1928,10 @@
       \strng{authorbibnamehash}{d71c4ac5faccea6d260415674fd02801}
       \strng{authornamehash}{d71c4ac5faccea6d260415674fd02801}
       \strng{authorfullhash}{d71c4ac5faccea6d260415674fd02801}
-      \field{labelalpha}{Pla}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1892,11 +1949,12 @@
     \endentry
     \entry{Book:Morgan2015}{book}{}
       \name{author}{1}{}{%
-        {{hash=9404eebbe5c52f5580a6f6515ebcbb80}{%
+        {{un=0,uniquepart=base,hash=9404eebbe5c52f5580a6f6515ebcbb80}{%
            family={Quigley},
            familyi={Q\bibinitperiod},
            given={Morgan},
-           giveni={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {O’Reilly}%
@@ -1907,9 +1965,10 @@
       \strng{authorbibnamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
       \strng{authornamehash}{9404eebbe5c52f5580a6f6515ebcbb80}
       \strng{authorfullhash}{9404eebbe5c52f5580a6f6515ebcbb80}
-      \field{labelalpha}{Qui15}
       \field{sortinit}{Q}
       \field{sortinithash}{c54e16deb53fc904a621fa8fd8703b5a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1918,11 +1977,12 @@
     \endentry
     \entry{Book:Rafael2002}{book}{}
       \name{author}{1}{}{%
-        {{hash=03c8df49ed3d59d4d17735b6aaef9962}{%
+        {{un=0,uniquepart=base,hash=03c8df49ed3d59d4d17735b6aaef9962}{%
            family={Rafael\bibnamedelimb C.\bibnamedelimi Gonzalez},
            familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod},
            given={Richard\bibnamedelimb E.\bibnamedelimi Woods},
-           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Prentice Hall}%
@@ -1933,9 +1993,10 @@
       \strng{authorbibnamehash}{03c8df49ed3d59d4d17735b6aaef9962}
       \strng{authornamehash}{03c8df49ed3d59d4d17735b6aaef9962}
       \strng{authorfullhash}{03c8df49ed3d59d4d17735b6aaef9962}
-      \field{labelalpha}{Raf02}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1944,11 +2005,12 @@
     \endentry
     \entry{Paper::Ricolfe2008}{misc}{}
       \name{author}{1}{}{%
-        {{hash=5224c629e0ff346dea23174d16c5e018}{%
+        {{un=0,uniquepart=base,hash=5224c629e0ff346dea23174d16c5e018}{%
            family={Ricolfe\bibnamedelimb Viala\bibnamedelimb y\bibnamedelimb Sánchez\bibnamedelima Salmerón},
            familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
            given={A.\bibnamedelimi J.},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{5224c629e0ff346dea23174d16c5e018}
       \strng{fullhash}{5224c629e0ff346dea23174d16c5e018}
@@ -1956,9 +2018,10 @@
       \strng{authorbibnamehash}{5224c629e0ff346dea23174d16c5e018}
       \strng{authornamehash}{5224c629e0ff346dea23174d16c5e018}
       \strng{authorfullhash}{5224c629e0ff346dea23174d16c5e018}
-      \field{labelalpha}{Ric08}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1967,7 +2030,7 @@
     \endentry
     \entry{WEB:ROS}{online}{}
       \name{author}{1}{}{%
-        {{hash=05665b7826ff460887094429e8a32116}{%
+        {{un=0,uniquepart=base,hash=05665b7826ff460887094429e8a32116}{%
            family={ROS},
            familyi={R\bibinitperiod}}}%
       }
@@ -1977,9 +2040,10 @@
       \strng{authorbibnamehash}{05665b7826ff460887094429e8a32116}
       \strng{authornamehash}{05665b7826ff460887094429e8a32116}
       \strng{authorfullhash}{05665b7826ff460887094429e8a32116}
-      \field{labelalpha}{ROS}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1997,16 +2061,18 @@
     \endentry
     \entry{Paper::Salatun1983}{misc}{}
       \name{author}{2}{}{%
-        {{hash=2dad484caa203edf5da50dcb8a0868b2}{%
+        {{un=0,uniquepart=base,hash=2dad484caa203edf5da50dcb8a0868b2}{%
            family={Salatun},
            familyi={S\bibinitperiod},
            given={A.\bibnamedelimi S.},
-           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=d831247e34914958829d0ed1e654014d}{%
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d831247e34914958829d0ed1e654014d}{%
            family={Bainum},
            familyi={B\bibinitperiod},
            given={P.\bibnamedelimi M.},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{e3bb594fbda2bedf61df25ff449661ef}
       \strng{fullhash}{e3bb594fbda2bedf61df25ff449661ef}
@@ -2014,9 +2080,10 @@
       \strng{authorbibnamehash}{e3bb594fbda2bedf61df25ff449661ef}
       \strng{authornamehash}{e3bb594fbda2bedf61df25ff449661ef}
       \strng{authorfullhash}{e3bb594fbda2bedf61df25ff449661ef}
-      \field{labelalpha}{SB83}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -2025,11 +2092,12 @@
     \endentry
     \entry{Book:Serra1984}{book}{}
       \name{author}{1}{}{%
-        {{hash=8d7a75bad90a58dc55fdb5efa83df9ff}{%
+        {{un=0,uniquepart=base,hash=8d7a75bad90a58dc55fdb5efa83df9ff}{%
            family={Serra},
            familyi={S\bibinitperiod},
            given={Jean},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Academic Press}%
@@ -2040,9 +2108,10 @@
       \strng{authorbibnamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
       \strng{authornamehash}{8d7a75bad90a58dc55fdb5efa83df9ff}
       \strng{authorfullhash}{8d7a75bad90a58dc55fdb5efa83df9ff}
-      \field{labelalpha}{Ser84}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -2051,11 +2120,12 @@
     \endentry
     \entry{Book:Richard2011}{book}{}
       \name{author}{1}{}{%
-        {{hash=f2e556c93256e7d70895d67702e14f1a}{%
+        {{un=0,uniquepart=base,hash=f2e556c93256e7d70895d67702e14f1a}{%
            family={Szeliski},
            familyi={S\bibinitperiod},
            given={Richard},
-           giveni={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Springer}%
@@ -2066,9 +2136,10 @@
       \strng{authorbibnamehash}{f2e556c93256e7d70895d67702e14f1a}
       \strng{authornamehash}{f2e556c93256e7d70895d67702e14f1a}
       \strng{authorfullhash}{f2e556c93256e7d70895d67702e14f1a}
-      \field{labelalpha}{Sze11}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -2077,11 +2148,12 @@
     \endentry
     \entry{Book:Geoffrey2006}{book}{}
       \name{author}{1}{}{%
-        {{hash=93be1f04dc8d8e8b8a7e2868b6106cc6}{%
+        {{un=0,uniquepart=base,hash=93be1f04dc8d8e8b8a7e2868b6106cc6}{%
            family={Taylor},
            familyi={T\bibinitperiod},
            given={Geoffrey},
-           giveni={G\bibinitperiod}}}%
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Springer-Verlag Berlin Heidelberg}%
@@ -2092,9 +2164,10 @@
       \strng{authorbibnamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
       \strng{authornamehash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
       \strng{authorfullhash}{93be1f04dc8d8e8b8a7e2868b6106cc6}
-      \field{labelalpha}{Tay06}
       \field{sortinit}{T}
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -2103,11 +2176,12 @@
     \endentry
     \entry{WEB:Ieeeucsa2019}{online}{}
       \name{author}{1}{}{%
-        {{hash=d952b3cfb5b37b9f5d243ef8cf430b9e}{%
+        {{un=0,uniquepart=base,hash=d952b3cfb5b37b9f5d243ef8cf430b9e}{%
            family={UCSA},
            familyi={U\bibinitperiod},
            given={IEEE},
-           giveni={I\bibinitperiod}}}%
+           giveni={I\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
       \strng{fullhash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
@@ -2115,9 +2189,10 @@
       \strng{authorbibnamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
       \strng{authornamehash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
       \strng{authorfullhash}{d952b3cfb5b37b9f5d243ef8cf430b9e}
-      \field{labelalpha}{UCS19}
       \field{sortinit}{U}
       \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -2133,11 +2208,12 @@
     \endentry
     \entry{Paper::Lauren1994}{misc}{}
       \name{author}{1}{}{%
-        {{hash=f3ea4947755623b7180b9ff28d692124}{%
+        {{un=0,uniquepart=base,hash=f3ea4947755623b7180b9ff28d692124}{%
            family={YANG},
            familyi={Y\bibinitperiod},
            given={LUREN},
-           giveni={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{f3ea4947755623b7180b9ff28d692124}
       \strng{fullhash}{f3ea4947755623b7180b9ff28d692124}
@@ -2145,9 +2221,10 @@
       \strng{authorbibnamehash}{f3ea4947755623b7180b9ff28d692124}
       \strng{authornamehash}{f3ea4947755623b7180b9ff28d692124}
       \strng{authorfullhash}{f3ea4947755623b7180b9ff28d692124}
-      \field{labelalpha}{YAN94}
       \field{sortinit}{Y}
       \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -2156,11 +2233,12 @@
     \endentry
     \entry{Paper::Yoon2001}{misc}{}
       \name{author}{1}{}{%
-        {{hash=687eed717dee36009398d9d98a5da55d}{%
+        {{un=0,uniquepart=base,hash=687eed717dee36009398d9d98a5da55d}{%
            family={Yoon},
            familyi={Y\bibinitperiod},
            given={Sungpil},
-           giveni={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{687eed717dee36009398d9d98a5da55d}
       \strng{fullhash}{687eed717dee36009398d9d98a5da55d}
@@ -2168,9 +2246,10 @@
       \strng{authorbibnamehash}{687eed717dee36009398d9d98a5da55d}
       \strng{authornamehash}{687eed717dee36009398d9d98a5da55d}
       \strng{authorfullhash}{687eed717dee36009398d9d98a5da55d}
-      \field{labelalpha}{Yoo01}
       \field{sortinit}{Y}
       \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelprefix}{@}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}

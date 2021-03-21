@@ -11,13 +11,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Objetivos específicos}{2}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Estado de la cuestion}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Estado de la cuestión}{3}{section.1.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.6}Contribuciones}{6}{section.1.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.7}Alcances}{7}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Marco Téorico}{9}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Marco Teórico}{9}{chapter.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Óptica}{10}{section.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -27,11 +27,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.3}Formación de imágenes en el ojo}{12}{subsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}Camara digital}{14}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.4}Cámara digital}{14}{subsection.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.5}Componetes de la camara}{14}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.5}Componentes de la cámara}{14}{subsection.2.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.6}Formación de la imagen en la camara}{15}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.6}Formación de la imagen en la cámara}{15}{subsection.2.1.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.7}Cálculo de la imagen}{17}{subsection.2.1.7}%
 \defcounter {refsection}{0}\relax 
@@ -47,21 +47,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Nivel de gráfico de cómputo ROS}{23}{section*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Procesamiento de imagenes}{25}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Procesamiento de imágenes}{25}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Cuantización}{27}{subsection.2.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.5}Librerias OPENCV}{27}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.5}Librerías OPENCV}{27}{subsection.2.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.6}Calibración de camara}{28}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.6}Calibración de cámara}{28}{subsection.2.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.7}Espacio de color}{30}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.7}Espacio de color}{29}{subsection.2.2.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline HSI}{30}{section*.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Características del modeldo HSV}{32}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Espacio de color en OpenCV}{33}{section*.10}%
+\contentsline {subsubsection}{\nonumberline Espacio de color en OpenCV}{32}{section*.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.8}Transformaciones morfológicas}{33}{subsection.2.2.8}%
 \defcounter {refsection}{0}\relax 
@@ -69,9 +69,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Transformaciones morfológicas elementales}{35}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Erosión}{36}{section*.13}%
+\contentsline {subsubsection}{\nonumberline Erosión}{35}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Dilatación}{37}{section*.14}%
+\contentsline {subsubsection}{\nonumberline Dilatación}{36}{section*.14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Apertura y Cierre}{37}{section*.15}%
 \defcounter {refsection}{0}\relax 
@@ -81,13 +81,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.9}Contraste y brillo}{39}{subsection.2.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.10}Teorema de Green}{40}{subsection.2.2.10}%
+\contentsline {subsection}{\numberline {2.2.10}Teorema de Green}{39}{subsection.2.2.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Momentos}{41}{section*.18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Control}{41}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Obtencion de sistemas de control}{43}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Obtención de sistemas de control}{43}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Función de transferencia}{43}{section*.19}%
 \defcounter {refsection}{0}\relax 
@@ -121,72 +121,68 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}Rotación sobre Yaw}{61}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Modelo matemático del motor DC}{65}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Visión Artificial}{67}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Visión Artificial}{71}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Cámara}{67}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Cámara}{71}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Algoritmo general}{68}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Algoritmo general}{72}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Comunicación con ROS}{69}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Comunicación con ROS}{73}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Publisher}{69}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Publisher}{73}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Subscriber}{71}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Subscriber}{75}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Calibración de cámara}{71}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Calibración de camara}{75}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Espacio de color}{74}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Espacio de color}{77}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Pruebas de campo}{78}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Pruebas de campo}{82}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Corrección de brillo}{80}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Corrección de brillo}{84}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Corrección de Gamma}{83}{subsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Corrección de Gamma}{88}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Filtro morfológico}{86}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Filtro morfologico}{91}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Centroide}{88}{section.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Centroide}{93}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Sistema Embebido}{93}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Sistema Embebido}{99}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Arquitectura}{93}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Arquitectura}{99}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Mecanismo móvil}{95}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Mecanismo móvil}{101}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Prototipo físico}{97}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Prototipo físico}{103}{section.5.3}%
+\contentsline {section}{\numberline {5.4}ROS-Microcontrolador}{99}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}ROS-Microcontrolador}{105}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Control}{100}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Control}{106}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Control en Pitch}{101}{subsection.5.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Control servomotor}{107}{subsection.5.5.1}%
+\contentsline {subsubsection}{\nonumberline Diseño de controlador}{103}{section*.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Control en Pitch}{108}{subsection.5.5.2}%
+\contentsline {subsubsection}{\nonumberline Algortimo de control}{106}{section*.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Diseño de controlador}{110}{section*.26}%
+\contentsline {subsubsection}{\nonumberline Sintonización de control}{107}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Algortimo de control}{113}{section*.27}%
+\contentsline {subsection}{\numberline {5.5.2}Control en Yaw}{110}{subsection.5.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Sintonización de control}{114}{section*.28}%
+\contentsline {subsubsection}{\nonumberline Diseño de control}{112}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}Control en Yaw}{117}{subsection.5.5.3}%
+\contentsline {subsubsection}{\nonumberline Sintonización de control}{113}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Diseño de control}{119}{section*.29}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{117}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Sintonización de control}{120}{section*.30}%
+\contentsline {chapter}{\'{I}ndice de figuras}{123}{section*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusiones}{125}{chapter.6}%
+\contentsline {chapter}{\'{I}ndice de cuadros}{127}{section*.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{127}{chapter*.31}%
+\contentsline {chapter}{\numberline {A}Apendice A}{131}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de figuras}{131}{section*.33}%
+\contentsline {chapter}{\numberline {B}Apendice B}{135}{appendix.Alph2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'{I}ndice de cuadros}{135}{section*.34}%
+\contentsline {section}{\numberline {B.1}ODROID}{135}{section.Alph2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Apendice A}{139}{appendix.Alph1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Apendice B}{143}{appendix.Alph2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}ODROID}{143}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Atmega328P}{136}{section.Alph2.2}%

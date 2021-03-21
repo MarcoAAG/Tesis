@@ -43,7 +43,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Representación 2D de imágenes digitales mediante conjuntos de puntos discretos en una matriz rectangular\relax }}{26}{figure.2.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Tomada de \cite {Book:Corke2011}; a) Imagen con distorsión; b) Imagen despues de calibrar\relax }}{29}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Tomada de \cite {Book:Corke2011}; a) Imagen con distorsión; b) Imagen después de calibrar\relax }}{29}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Representación del espacio de color HSI. Tomada de Google\relax }}{31}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
@@ -69,13 +69,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.28}{\ignorespaces Función de transferencia de un sistema de primer orden\relax }}{46}{figure.2.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Respuesta de un Sistema de Primer orden a un escalon uinitario, tomada de \cite {Book:Nise2010}\relax }}{47}{figure.2.29}%
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Respuesta de un Sistema de Primer orden a un escalón unitario, tomada de \cite {Book:Nise2010}\relax }}{47}{figure.2.29}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Desplazamiento cuerpo rigido\relax }}{49}{figure.3.1}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Drone con diferente grado de orientación\relax }}{49}{figure.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Desplazamiento cuerpo rigido\relax }}{50}{figure.3.2}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Desplazamiento cuerpo rígido\relax }}{50}{figure.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Vectores de rotación\relax }}{51}{figure.3.3}%
 \defcounter {refsection}{0}\relax 
@@ -101,139 +101,131 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Representación de la ecuación de movimiento en Yaw\relax }}{65}{figure.3.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama electrico de motor de corriente directa\relax }}{65}{figure.3.15}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Motor DC que acciona una carga mecánica rotacional\relax }}{67}{figure.3.16}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Cámara 'Ocam' obtenida de \cite {WEB:Ocam}\relax }}{67}{figure.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Curva de par-velocidad\relax }}{68}{figure.3.17}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{69}{figure.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicación entre opencv y ROS\relax }}{69}{figure.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{70}{figure.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de clases del subscriber\relax }}{71}{figure.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comunicación ROS con calibrador\relax }}{72}{figure.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Proceso de calibración utilizando un tablero de ajedrez\relax }}{72}{figure.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Proceso de calibración utilizando un tablero de ajedrez; corrección de distorsión\relax }}{73}{figure.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Diagrama de flujo para cambio de espacio de color\relax }}{74}{figure.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces a)Imagen RGB; b) Imagen HSV\relax }}{75}{figure.4.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Espacio de color HSV, a)Hue; b)Saturation; c)Value\relax }}{75}{figure.4.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Espectro de colores\relax }}{76}{figure.4.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Separación de colores en 4 rangos\relax }}{77}{figure.4.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Separación de colores\relax }}{77}{figure.4.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Separación de color azul\relax }}{78}{figure.4.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Separación de colore azul\relax }}{78}{figure.4.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Separación de colores RGB utilizando el modelo HSV\relax }}{79}{figure.4.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.18}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de contraste; c) Histograma de a y b\relax }}{80}{figure.4.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.19}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de contraste en 1.5; c) Histograma de a y b\relax }}{81}{figure.4.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.20}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de brillo en 50; c) Histograma de a y b\relax }}{82}{figure.4.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.21}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de brillo en 100; c) Histograma de a y b\relax }}{83}{figure.4.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.22}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de gamma < 1; c) Histograma de a y b\relax }}{84}{figure.4.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.23}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de gamma > 1; c) Histograma de a y b\relax }}{85}{figure.4.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Comunicación de nodos\relax }}{85}{figure.4.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Corrección de gamma, la imagen de la derecha es la corregida\relax }}{86}{figure.4.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.26}{\ignorespaces A) Imagen original, B)Aplicación de flitros\relax }}{87}{figure.4.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.27}{\ignorespaces A) Imagen original, B)Aplicación de flitros. Con size de 3\relax }}{87}{figure.4.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.28}{\ignorespaces A) Imagen original,B) Espacio de color HSV C)Aplicación de flitros\relax }}{88}{figure.4.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Obtención del centroide sin correción de $\gamma $\relax }}{89}{figure.4.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Obtención del centroide con correción de $\gamma $ en 0.4\relax }}{89}{figure.4.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Obtención del centroide con correción de $\gamma $ en 0.2\relax }}{90}{figure.4.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Pruebas del centroide con diferentes formas geométricas\relax }}{90}{figure.4.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Pruebas del centroide con figura de geometría irregular\relax }}{91}{figure.4.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Nodos de ROS\relax }}{92}{figure.4.34}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Cámara 'Ocam' obtenida de \cite {WEB:Ocam}\relax }}{71}{figure.4.1}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Módulos del sistema\relax }}{93}{figure.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Nodos y topic\relax }}{73}{figure.4.2}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura del sistema\relax }}{94}{figure.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comunicación entre opencv y ROS\relax }}{73}{figure.4.3}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diseño CAD del prototipo\relax }}{95}{figure.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de flujo del programa publisher\relax }}{74}{figure.4.4}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Dimensiones del CAD\relax }}{96}{figure.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de clases del subscriber\relax }}{75}{figure.4.5}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Grados de libertad del sistema\relax }}{96}{figure.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Comunicación ROS con calibrador\relax }}{76}{figure.4.6}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Prototipo del sistema hecho con madera\relax }}{97}{figure.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Proceso de calibración utilizando un tablero de ajedrez\relax }}{76}{figure.4.7}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Vista frontal del prototipo\relax }}{98}{figure.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Proceso de calibración utilizando un tablero de ajedrez; corrección de distorsión\relax }}{77}{figure.4.8}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Circuito eléctrico\relax }}{98}{figure.5.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Diagrama de flujo para cambio de espacio de color\relax }}{78}{figure.4.9}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Protocolo de comunicación\relax }}{99}{figure.5.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces a)Imagen RGB; b) Imagen HSV\relax }}{79}{figure.4.10}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagrama de secuencia\relax }}{100}{figure.5.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Espacio de color HSV, a)Hue; b)Saturation; c)Value\relax }}{79}{figure.4.11}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Nodos y Tópicos activos\relax }}{100}{figure.5.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Espectro de colores\relax }}{80}{figure.4.12}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Simulación entrada escalón\relax }}{102}{figure.5.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Separación de colores en 4 rangos\relax }}{81}{figure.4.13}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Lazo de control para Pitch\relax }}{103}{figure.5.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Separación de colores\relax }}{81}{figure.4.14}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Lazo cerrado del sistema con control PI\relax }}{105}{figure.5.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Separación de color azul\relax }}{82}{figure.4.15}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Simulación respuesta escalón en pitch\relax }}{106}{figure.5.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Separación de colore azul\relax }}{82}{figure.4.16}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Diagrama de flujo de algoritmo de control\relax }}{107}{figure.5.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Separación de colores RGB utilizando el modelo HSV\relax }}{83}{figure.4.17}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Gráfica del error en Pitch con ganancia Kp = 1\relax }}{108}{figure.5.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de contraste; c) Histograma de a y b\relax }}{85}{figure.4.18}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Gráfica del error en Pitch con ganancia Kp = 0.5\relax }}{108}{figure.5.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de contraste en 1.5; c) Histograma de a y b\relax }}{86}{figure.4.19}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Gráfica del error en Pitch con ganancia Kp = 0.35\relax }}{109}{figure.5.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de brillo en 50; c) Histograma de a y b\relax }}{87}{figure.4.20}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Gráfica del error en Pitch con control PI\relax }}{110}{figure.5.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.21}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de brillo en 100; c) Histograma de a y b\relax }}{87}{figure.4.21}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Simulación entrada escalón para yaw\relax }}{111}{figure.5.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.22}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de gamma < 1; c) Histograma de a y b\relax }}{89}{figure.4.22}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Lazo de control para Yaw\relax }}{111}{figure.5.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.23}{\ignorespaces a) Imagen captada por la cámara; b) Corrección de gamma > 1; c) Histograma de a y b\relax }}{90}{figure.4.23}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Simulación del control PI en Yaw\relax }}{113}{figure.5.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Comunicación de nodos\relax }}{90}{figure.4.24}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Gráfica del error en Yaw con ganancia Kp = 0.59\relax }}{114}{figure.5.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.25}{\ignorespaces correción de gamma, la imagen de la derecha es la corregida\relax }}{91}{figure.4.25}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Gráfica del error en Yaw con ganancia Kp = 0.368\relax }}{114}{figure.5.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.26}{\ignorespaces A) Imagen original, B)Aplicación de flitros\relax }}{92}{figure.4.26}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.44\relax }}{115}{figure.5.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.27}{\ignorespaces A) Imagen original, B)Aplicación de flitros. Con size de 3\relax }}{92}{figure.4.27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.28}{\ignorespaces A) Imagen original,B) Espacio de color HSV C)Aplicación de flitros\relax }}{93}{figure.4.28}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Obtención del centroide sin correción de $\gamma $\relax }}{94}{figure.4.29}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Obtención del centroide con correción de $\gamma $ en 0.4\relax }}{95}{figure.4.30}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Obtención del centroide con correción de $\gamma $ en 0.2\relax }}{95}{figure.4.31}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Pruebas del centroide con diferentes formas geométricas\relax }}{96}{figure.4.32}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Pruebas del centroide con figura de geometría irregular\relax }}{96}{figure.4.33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Nodos de ROS\relax }}{97}{figure.4.34}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Modulos del sistema\relax }}{99}{figure.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura del sistema\relax }}{100}{figure.5.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diseño CAD del prototipo\relax }}{101}{figure.5.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Dimensiones del CAD\relax }}{102}{figure.5.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Grados de libertad del sistema\relax }}{102}{figure.5.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Prototipo del sistema hecho con madera\relax }}{103}{figure.5.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Vista frontal del prototipo\relax }}{104}{figure.5.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Circuito eléctrico\relax }}{104}{figure.5.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Protocolo de comunicación\relax }}{105}{figure.5.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagrama de secuencia\relax }}{106}{figure.5.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Nodos y Topicos activos\relax }}{106}{figure.5.11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Gráfica torque-velocidad\relax }}{108}{figure.5.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Simulación entrada escalón\relax }}{109}{figure.5.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Lazo de control para Pitch\relax }}{110}{figure.5.14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Lazo cerrado del sistema con control PI\relax }}{112}{figure.5.15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Simulación respuesta escalón en pitch\relax }}{113}{figure.5.16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Diagrama de flujo de algoritmo de control\relax }}{114}{figure.5.17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Gráfica del error en Pitch con ganancia Kp = 1\relax }}{115}{figure.5.18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Gráfica del error en Pitch con ganancia Kp = 0.5\relax }}{115}{figure.5.19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Gráfica del error en Pitch con ganancia Kp = 0.35\relax }}{116}{figure.5.20}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Gráfica del error en Pitch con control PI\relax }}{117}{figure.5.21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Simulación entrada escalón para yaw\relax }}{118}{figure.5.22}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Lazo de control para Yaw\relax }}{118}{figure.5.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Simulación del control PI en Yaw\relax }}{120}{figure.5.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Gráfica del error en Yaw con ganancia Kp = 0.59\relax }}{121}{figure.5.25}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Gráfica del error en Yaw con ganancia Kp = 0.368\relax }}{122}{figure.5.26}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Grafica del error en Yaw con ganancia Kp = 0.44\relax }}{123}{figure.5.27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Gráfica del error en Yaw con control PI\relax }}{124}{figure.5.28}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Gráfica del error en Yaw con control PI\relax }}{116}{figure.5.27}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -241,6 +233,4 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{144}{figure.Alph2.1}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Odroid XU-4\relax }}{136}{figure.Alph2.1}%

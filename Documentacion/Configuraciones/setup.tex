@@ -57,13 +57,32 @@
     configurelistings=true,%
     colorize=full,%
     colortheme=bluemagenta,%
+    % bib config
     configurebiblatex=true,%
     bibsys=biber,%
     bibfile=Referencias,%
-    bibstyle=alphabetic,%
-    bibsorting=nty,%
+    style=apa,
+    citestyle=numeric,
+    bibstyle=authoryear,%
+    bibsorting=nyt,%
 }{cleanthesis}
 \usepackage{cleanthesis}
+
+\DeclareCiteCommand{\cite}[\mkbibparens]
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \printtext[bibhyperref]{\usebibmacro{cite}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand*{\cite}[\mkbibparens]
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \printtext[bibhyperref]{\usebibmacro{citeyear}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+
 
 \hypersetup{% setup the hyperref-package options
     pdftitle={\thesisTitle},    %   - title (PDF meta)
@@ -149,3 +168,4 @@
 \definecolor{gray97}{gray}{.97}
 \definecolor{gray75}{gray}{.75}
 \definecolor{gray45}{gray}{.45}
+

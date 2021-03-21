@@ -17,14 +17,14 @@ Ocam.
 \end{center}
 Que tiene las siguientes especificaciones.
 \begin{itemize}
-	\item \textbf{Sensor:} CMOS image sensor.
-	\item \textbf{Lente: } Lente estandar M12 distancia focal de 3.6mm.
-	\item \textbf{Field of view: } 65 grados.
-	\item \textbf{Tamaño del sensor: }0.25inch (3673.6 $\mu$m x 2738.4 $\mu$m)
-	\item \textbf{Tamaño del pixel: } 1.4 $\mu$m x 1.4 $\mu$m.
-	\item \textbf{Interfaz: }USB 3.0 Super-Speed.
-	\item \textbf{Frame rate: }\\
-	      1920 x 1080 a 30fps, 1280 x 720 a45fps, 640 x 480 a30fps
+    \item \textbf{Sensor:} CMOS sensor de imagen.
+    \item \textbf{Lente: } Lente estándar M12 distancia focal de 3.6mm.
+    \item \textbf{Field of view: } 65 grados.
+    \item \textbf{Tamaño del sensor: }0.25inch (3673.6 $\mu$m x 2738.4 $\mu$m)
+    \item \textbf{Tamaño del pixel: } 1.4 $\mu$m x 1.4 $\mu$m.
+    \item \textbf{Interfaz: }USB 3.0 Super-Speed.
+    \item \textbf{Frame rate: }\\
+          1920 x 1080 a 30fps, 1280 x 720 a45fps, 640 x 480 a30fps
 \end{itemize}
 El acceso directo a la memoria a través de USB 3.0 permite que los datos se
 escriban en la memoria principal sin pasar por la CPU. Reduce significativamente
@@ -62,7 +62,7 @@ procesamiento de imágenes, podemos entonces definir esos pasos como un algoritm
 
 
 \section{Comunicación con ROS}
-En la sección de vision artificial se lanzan dos nodos, uno encargado de capturar y
+En la sección de visión artificial se lanzan dos nodos, uno encargado de capturar y
 publicar frames a 60hz y el otro que se suscribe a dicho nodo y realiza un procesamiento
 con la información obtenida para posterior publicar coordenadas.
 \begin{center}
@@ -75,7 +75,7 @@ encargado de comunicar la imagen de un nodo a otro.
 Como vimos anteriormente opencv es una librería open-source que se encarga del procesamiento
 de imágenes, también abordamos un poco acerca de como ROS comunica nodos y los
 tipos de datos que pueden ser publicados. Al hablar de que se va a publicar una imagen
-estamos refiriéndonos a una matriz que en este caso sera de 640 x 480.\\
+estamos refiriéndonos a una matriz que en este caso será de 640 x 480.\\
 ROS pasa las imágenes en su propio formato sensor\_msgs/Image, pero
 en este caso usaremos ROS junto con las librerías de OpenCV. CvBridge es una
 biblioteca ROS que proporciona una interfaz entre ROS y OpenCV.
@@ -107,7 +107,7 @@ El código se encuentra en la parte del Apéndice A, 'código 1'
 Este nodo tiene dos funciones principales, Suscribirse al nodo publisher y publicar
 un array de tamaño 2, tipo entero que guardara las coordenadas en X y Y del centroide
 del objetivo.\\
-El proceso que se ejecuta sé vera más a detalle en las siguientes secciones de este
+El proceso que se ejecuta se verá mas a detalle en las siguientes secciones de este
 capítulo.\\
 Dichos procesos están incluidos en una clase llamada 'objectTracking' que se ilustra
 en el diagrama de clases de la figura 4.5.
@@ -122,10 +122,11 @@ en el diagrama de clases de la figura 4.5.
 % *********************************************************************************************************
 % ---------------------------------------------------------------------------------------------------------
 
-\section{Calibración de camara}
+\section{Calibración de cámara}
 Siguiendo la calibración basada en el algoritmo de Zhangs, previamente descrito en el capítulo 2,
 comenzamos por posicionar la cámara en una mesa fija y colocando un tablero de ajedrez de dimensión
-2.65 x 2.6cm cada cuadrito.\\ Lanzando los nodos de ROS y graficando en RQT
+2.65 x 2.6cm cada cuadro.\\ En la figura 4.6 ilustra los nodos activos para el procedimiento de calibración 
+de cámara.
 \begin{center}
 	\includegraphics[width=0.8 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig11.eps}
 	\captionof{figure}{Comunicación ROS con calibrador}\label{Fig1}
@@ -148,7 +149,7 @@ Tal como se ilustra en la figura 4.7
 	\includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo4/Fig12.eps}
 	\captionof{figure}{Proceso de calibración utilizando un tablero de ajedrez}\label{Fig1}
 \end{center}
-Despues del proceso de calibración los resultados son los siguientes:
+Después del proceso de calibración los resultados son los siguientes:
 Matriz de distorsión D[]
 \begin{equation}
 	D=
@@ -175,7 +176,7 @@ Matriz de proyección de cámara P
 		0.        & 0.        & 1.        & 0.
 	\end{bmatrix}
 \end{equation}
-Una vez cambiando los parametros anteriores al pubicador da como resultado la figura 4.8
+Una vez cambiando los parámetros anteriores al publicador da como resultado la figura 4.8
 \begin{center}
 	\includegraphics[width=0.9\textwidth]{Contenido/Cuerpo/Capitulo4/Fig10.eps}
 	\captionof{figure}{Proceso de calibración utilizando un tablero de ajedrez; corrección de distorsión}\label{Fig1}
@@ -189,7 +190,7 @@ Una vez cambiando los parametros anteriores al pubicador da como resultado la fi
 
 \section{Espacio de color}
 Como se puede apreciar en el algoritmo general, el paso 5 es el cambio de espacio de color
-de RGB a HSV, además ya sabemos el porque es mejor generar colores partiendo del
+de RGB a HSV, además ya sabemos el porqué es mejor generar colores partiendo del
 modelo HSV. Así que lo que ahora sigue es la implementación en código y las pruebas
 que se hicieron para tener un rango de colores y así tener una base de datos a la
 cual recurriremos después.\\
@@ -218,7 +219,7 @@ Donde
 El formato de color predeterminado en OpenCV a menudo se denomina RGB, pero en realidad
 es BGR (los bytes se invierten). Entonces, el primer byte en una imagen en color estándar
 (24 bits) será un componente azul de 8 bits, el segundo byte será verde y el tercer
-byte será rojo. El cuarto, quinto y sexto bytes serían el segundo píxel (Azul, luego
+byte será rojo. El cuarto, quinto y sexto byte serían el segundo píxel (Azul, luego
 Verde, luego Rojo), y así sucesivamente.
 \begin{center}
 	\includegraphics[width=0.95 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig2.eps}
@@ -247,24 +248,24 @@ Donde
 	\item \textbf{upper}  matriz de límite superior o un escalar.
 	\item \textbf{dst} Conjunto de salida dst del mismo tamaño que src y tipo CV\_8U.
 \end{itemize}
-Debido a que no hay un solo color azul o rojo, etc, si no más bien un rango que cubre
+Debido a que no hay un solo color azul o rojo, etc., si no más bien un rango que cubre
 la gama de azules, amarillo, naranja, etc. Por esa razón se hicieron pruebas para
 determinar los valores HSV que corresponden a los siguientes colores: Amarillo, Azul,
 Rojo, Verde y Naranja y de esta manera a la hora de seguir un objetivo de dado color
 el sistema no tenga problemas en reconocer esa gama de color.\\
 La figura 4.12 ilustra una gama de colores que va desde el rojo al azul, donde la
-tarea es obtener un conjunto de imagenes que correspondan a un sector de la misma.
+tarea es obtener un conjunto de imágenes que correspondan a un sector de la misma.
 \begin{center}
 	\includegraphics[width=0.67\textwidth]{Contenido/Cuerpo/Capitulo4/Fig4.eps}
 	\captionof{figure}{Espectro de colores}\label{Fig6}
 \end{center}
-De donde apartir del código 2 se obtuvieron los siguientes resultados.
+De donde a partir del código 2 se obtuvieron los siguientes resultados.
 \begin{center}
 	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo4/Fig5.eps}
 	\captionof{figure}{Separación de colores en 4 rangos}\label{Fig6}
 \end{center}
-En la figura 4.13 se aprecia la separación de la gigura 4.12 en 4 colores; Rojo, Amarillo, Verde y Azul.
-con los siguientes rangos de valores.\\
+En la figura 4.13 se aprecia la separación de la figura 4.12 en 4 colores; Rojo, Amarillo, Verde y Azul.
+Con los siguientes rangos de valores.\\
 \begin{table}[ht]
 	\begin{center}
 		\caption{Valores para cada rango de color}
@@ -298,7 +299,7 @@ energía solar, probando primero el rango de color azul.
 \end{center}
 Como se puede observar en la figura 4.15 gran parte del color verde está encapsulada
 en lo que debería ser únicamente color azul, esto debido a que en las pruebas iniciales
-no se consideró la variación de iluminación en el entorno, por lo que reajustar los
+no se consideró la variación de iluminación en el entorno, por lo que reajustar
 valores se hace una tarea necesaria. Aunque los primeros valores de la tabla 4.1
 no son exactos, nos sirven para tener una referencia de donde empezar a trabajar.\\
 Una vez corregido el resultado del color azul se muestra en la figura 4.16.
@@ -358,7 +359,7 @@ El ajuste de brillo y saturación se da a partir de la ecuación 4.4
 Donde $\alpha$ es el encargado de ajustar el contraste, mientras que $\beta$ se encarga del brillo.
 Los valores de $\alpha$ van en el rango de 1 a 3, de tipo float y los de $\beta$ van de 0 a 100 de tipo entero.
 \begin{center}
-	\includegraphics[width=0.7\textwidth]{Contenido/Cuerpo/Capitulo4/Fig19.eps}
+	\includegraphics[width=0.63\textwidth]{Contenido/Cuerpo/Capitulo4/Fig19.eps}
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de contraste; c) Histograma de a y b}\label{Fig9}
 \end{center}
 Al aplicar un valor de $\alpha$ de 1.2 podemos observar que la imagen 4.18 b) contrasta mejor los colores, esto puede ser observado
@@ -387,7 +388,7 @@ Finalmente probamos el valor del brillo al máximo, es decir, al 100 mostrada en
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de brillo en 100; c) Histograma de a y b}\label{Fig9}
 \end{center}
 Al igual que el histograma al modificar el contraste en 1.5 la gráfica c) muestra la mayor parte de los píxeles en blanco, debido
-a que ahora la imagen ya está muy clara que a su ves se ve con poco brillo.\\
+a que ahora la imagen ya está muy clara que a su vez se ve con poco brillo.\\
 Puede ocurrir que jugar con el valor de $\beta$ mejore el brillo, pero al mismo tiempo la imagen aparecerá con un ligero
 velo a medida que se reducirá el contraste. La ganancia $\alpha$ se puede usar para disminuir este efecto, pero debido a la
 saturación, perderemos algunos detalles en las regiones brillantes originales.
@@ -400,7 +401,7 @@ valores de entrada y su salida mapeada.
 Cuando $\gamma <1$, las regiones oscuras originales serán más brillantes y el histograma se desplazará hacia la derecha, mientras que será
 lo opuesto con $\gamma> 1$.
 \begin{center}
-	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig23.eps}
+	\includegraphics[width=0.75 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig23.eps}
 	\captionof{figure}{a) Imagen captada por la cámara; b) Corrección de gamma < 1; c) Histograma de a y b}\label{Fig9}
 \end{center}
 La figura 4.22 es el resultado de una modificación de gamma a 0.5, es decir, que hace que la imagen se vea con más brillo de lo que originalmente
@@ -414,17 +415,17 @@ Por otro lado tenemos cuando gamma es mayor a 1, que en la figura 4.23 el valor 
 De esta manera el valor de gamma va a variar dependiendo del entorno en el que se encuentre la cámara, una manera de no hacerlo
 manual seria con la implementación de un sensor de luminosidad pero eso no entra en los límites de este proyecto.
 
-Los nodos y topicos que estan activados en ROS se muestran en la figura 4.24
+Los nodos y tópicos que están activados en ROS se muestran en la figura 4.24
 \begin{center}
 	\includegraphics[width=1.0 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig14.eps}
 	\captionof{figure}{Comunicación de nodos}\label{Fig9}
 \end{center}
 El nodo en rojo es el correspondiente a la etapa de corrección, que se agrega a los nodos
 publicador y calibrador.\\
-Como prueba se utilizó un conjunto de letras de diferentes colores, impresas en papel blanco
+Como prueba se utilizó un conjunto de letras de diferentes colores, impresas en papel blanco.
 \begin{center}
 	\includegraphics[width=0.85 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig13.eps}
-	\captionof{figure}{correción de gamma, la imagen de la derecha es la corregida}\label{Fig9}
+	\captionof{figure}{Corrección de gamma, la imagen de la derecha es la corregida}\label{Fig9}
 \end{center}
 De la figura 4.25 podemos observar dos cosas importantes, la primera es la barra de valores
 que interactúan con el usuario, que va de 0 a 200 y es la correspondiente al valor de gamma. Y
@@ -436,12 +437,12 @@ ayuda a limpiar la imagen al no agregar ruido innecesario.
 % *********************************************************************************************************
 % ---------------------------------------------------------------------------------------------------------
 
-\section{Filtro morfologico}
+\section{Filtro morfológico}
 Como vimos en la sección de HSV el entorno puede llegar a introducir a nuestra
 imagen un poco de ruido por lo que es necesario aplicar técnicas de filtrado.\\
 Las librerías de opencv proveen operadores morfológicos que nos ayudan a limpiar
 nuestra imagen.
-Dicho filtros son los que abordamos en el capitulo 1, opening y closing que nos ayudaran
+Dichos filtros son los que abordamos en el capítulo 1, opening y closing que nos ayudaran
 a limpiar el objetivo por dentro y por fuera.
 \begin{example}[label={ex:serie}]{Operación Morfologica}
 	\textcolor{Mulberry}{void} \textcolor{RoyalBlue}{morphologyOperation(}\textcolor{BurntOrange}{Mat}
@@ -451,12 +452,12 @@ a limpiar el objetivo por dentro y por fuera.
 \end{example}
 De la función anterior tenemos que:
 \begin{itemize}
-	\item \textbf{\_Image} es la imagen de entrada.
-	\item \textbf{Image\_} es la imagen de salida
-	\item \textbf{Oper} indica la operación Morfologica, 0 para opening y 1 para closing.
-	\item \textbf{size} El tamaño del kernel.
-	\item \textbf{elemn} La forma del kernel; 0 $\rightarrow$ Rectangular; 1 $\rightarrow$ Elipse y
-	      2 $\rightarrow$ Cruz.
+    \item \textbf{\_Image} es la imagen de entrada.
+    \item \textbf{Image\_} es la imagen de salida
+    \item \textbf{Oper} indica la operación Morfológica, 0 para opening y 1 para closing.
+    \item \textbf{size} El tamaño del kernel.
+    \item \textbf{elemn} La forma del kernel; 0 $\rightarrow$ Rectangular; 1 $\rightarrow$ Elipse y
+          2 $\rightarrow$ Cruz.
 \end{itemize}
 Los últimos dos parámetros son lo que se modificaron en las siguientes pruebas.
 \begin{center}
@@ -474,7 +475,7 @@ grados.
 En la figura 4.27 hubo ligeros cambios, solo desaparecieron algunos puntos que son ruido por lo que es conveniente aumentar
 el parámetro \textbf{size}.
 \begin{center}
-	\includegraphics[width=0.7 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig15.eps}
+	\includegraphics[width=1.0 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig15.eps}
 	\captionof{figure}{A) Imagen original,B) Espacio de color HSV C)Aplicación de flitros}\label{Fig9}
 \end{center}
 Para la figura 4.28 se modificó el size a 5 para el kernel del filtro opening se obtuvo un resultado que considero aceptable porque
@@ -490,7 +491,7 @@ Para obtener el centroide de un objeto en una imagen binaria tenemos que hacer u
 teorema de green, visto en el capítulo 2, y de las librerías opencv.\\
 En esta sección haremos uso de los métodos \textbf{centroid}, \textbf{drawCentroid} y \textbf{publishCoordinates} de la clase
 \textbf{objectTracking} descrita en la sección 4.3.2\\
-El metodo centroid tiene los siguientes parametros
+El método centroid tiene los siguientes parámetros
 \begin{example}[label={ex:serie}]{Centroid}
 	\textcolor{Mulberry}{void} \textcolor{RoyalBlue}{centroid(}\textcolor{BurntOrange}{Mat}
 	\textcolor{Mulberry}{\&}\textcolor{Bittersweet}{\_Image}, \textcolor{BurntOrange}{uint16\_t} \textcolor{Mulberry}{\&}\textcolor{Bittersweet}{x}
@@ -498,7 +499,7 @@ El metodo centroid tiene los siguientes parametros
 	\textcolor{RoyalBlue}{)}
 \end{example}
 La salida del filtro morfológico es una de las entradas de la función 4.8.1, además de pedir dos variables de tipo uint16 donde
-se almacenaran las coordenadas (X, Y) del centroide de la figura.
+se almacenarán las coordenadas (X, Y) del centroide de la figura.
 \begin{center}
 	\includegraphics[width=0.45 \textwidth]{Contenido/Cuerpo/Capitulo4/Fig25.eps}
 	\captionof{figure}{Obtención del centroide sin correción de $\gamma$}\label{Fig9}
@@ -512,14 +513,14 @@ los valores que establecimos en HSV y con dada iluminación del ambiente el algo
 para eso la solución propuesta es la modificación del valor de gamma para ajustar los tonos.\\
 Para la siguiente prueba ahora modificamos a gamma en un valor de 0.4 y el resultado se muestra en la figura 4.30.
 \begin{center}
-	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig26.eps}
+	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo4/Fig26.eps}
 	\captionof{figure}{Obtención del centroide con correción de $\gamma$ en 0.4}\label{Fig9}
 \end{center}
 Es notable la mejora que tuvo con una corrección de gamma en 0.4, ya que ahora podemos ver que en b) detecta por completo el
-recuadro azul con un poco de ruido añadido pero en c) el ruido es limpiado completamente para que en d) tengamos el círculo verde
+recuadro azul con un poco de ruido añadido, pero en c) el ruido es limpiado completamente para que en d) tengamos el círculo verde
 dibujado en el centroide del cuadro azul.
 \begin{center}
-	\includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo4/Fig27.eps}
+	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo4/Fig27.eps}
 	\captionof{figure}{Obtención del centroide con correción de $\gamma$ en 0.2}\label{Fig9}
 \end{center}
 Si se baja aún más el valor de gamma podemos observar que en la figura 4.31 en b) la salida del proceso HSV sale con muy
@@ -539,7 +540,7 @@ impreso en la figura, por lo que podemos afirmar que encuentra el centroide real
 como sucede en c) hay un punto rojo que no coincide con el punto verde creado por el sistema, esto es porque el punto impreso
 en la figura es el centro del rectángulo que toca los bordes de la figura, como se ilustra en la siguiente imagen
 \begin{center}
-	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo4/Fig29.eps}
+	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo4/Fig29.eps}
 	\captionof{figure}{Pruebas del centroide con figura de geometría irregular}\label{Fig9}
 \end{center}
 En la figura 4.33 en a) tenemos un centro que no es el correcto, hay que recordar que la búsqueda del centroide se basa en el teorema de Green,

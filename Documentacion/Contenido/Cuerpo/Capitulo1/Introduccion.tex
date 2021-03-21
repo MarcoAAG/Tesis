@@ -7,7 +7,7 @@
 \cleanchapterquote{El experimentador que no sabe lo que está buscando no comprenderá lo que encuentra.}{Claude Bernard}{(Biólogo teórico, médico y fisiólogo francés.)}
 
 
-En el presente capitulo se expone el objetivo general, así como sus derivados. En la
+En el presente capítulo se expone el objetivo general, así como sus derivados. En la
 primera sección se aborda el tema de investigación donde especifica la justificación del
 presente trabajo, posteriormente se sintetiza algunas de las investigaciones que sirvieron
 como base para la elección del tema previamente descrito. Finalmente se dan las razones
@@ -24,22 +24,13 @@ En este tipo de sensores, el eje del sensor óptico debe apuntar con precisión 
 En un entorno de este tipo, en el que el equipo suele estar montado en una plataforma móvil, mantener la orientación de los sensores hacia un objetivo es un serio desafío.
 Una plataforma de estabilización inercial es una forma apropiada de resolver este desafío.
 Este trabajo se centra en el control de una gimbal de dos grados de libertad a través de una cámara montada sobre la plataforma interna de la misma gimbal.
-% En la implementación de cámaras para el sistema visual de los UAV's la estabilidad
-% juega un rol importante, debido a que el sistema se encuentra expuesto a diversos
-% factores que hacen que la captura de imágenes sea deficiente. Es por ello que la
-% implementación de un sistema estabilizador de cámaras en necesario.\\
-% Tareas tales como la geo-localizacion requieren como entrada ángulos de azimuth
-% y de elevación que son entregadas por el sistema gimbal embebido en el UAV.
-% El algoritmo de geo-localización utiliza la salida del GPS, el vector de línea de
-% visión normalizado del algoritmo de visión y la actitud para estimar la posición del
-% objeto en el marco de inercia y la distancia al objeto.
 
 \section{Justificación}
-La presente investigación se enfocara en la implementación de una gimbal de dos grados
+La presente investigación se enfocará en la implementación de una gimbal de dos grados
 de libertad utilizando un framework de código abierto y bajo la licencia de Open-Source
 siendo este el motivo principal de contribuir a la comunidad y el de la creación de
 un repositorio de libre acceso para futuras investigaciones y mejoramiento de la calidad.\\
-Para la universidad aeronáutica en Querétaro representara solo el inicio de una potencial
+Para la universidad aeronáutica en Querétaro representará solo el inicio de una potencial
 investigación en MAV'S \footnote{Micro air vehicle}.
 
 \section{Objetivo}
@@ -60,17 +51,17 @@ implementarse en un UAV de categoría pequeña a velocidad baja.
 %Seran los capitulos de la tesis %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-	\item Definir el modelo matemático de una gimbal con base a los grados de libertad.
-	\item Capturar figuras geométricas definidas  mediante el uso de una cámara digital y emplear algoritmos de visión artificial para la obtención de datos.
+	\item Definir el modelo matemático de una gimbal con base a los grados de libertad definidos.
+	\item Capturar figuras geométricas predefinidas  mediante el uso de una cámara digital y emplear algoritmos de visión artificial para la obtención de datos.
 	\item Diseñar e implementar el sistema embebido que dará el soporte electrónico a la gimbal.
 	\item Diseñar un controlador autónomo con base en el modelo matemático, previamente obtenido.
 \end{itemize}
 
-\section{Estado de la cuestion}
+\section{Estado de la cuestión}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Descripción breve de las obras, proyectos, intentos universitarios más significativos %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-La aparición de la gimbal no es un termino para nada nuevo, de hecho es viejo más de lo que
+La aparición de la gimbal no es un término para nada nuevo, de hecho es viejo más de lo que
 muchos podemos creer. Fue en el 250 antes de nuestra era cuando el inventor Philo of Byzantium diseño un sistema que pudiera estabilizar la inyección de tinta. \cite{WEB:Gimbal}\\
 Desde entonces y hasta la fecha múltiples científicos han desarrollado investigaciones alrededor
 de dicho artefacto, algunos teniendo más éxito que otros; los cuales serán brevemente expuestos
@@ -81,7 +72,7 @@ tecnológico.
 	      En la navegación inercial, como se aplica a los barcos y submarinos, se necesita
 	      un mínimo de tres gimbals para permitir que un sistema de navegación inercial
 	      (masa estable) permanezca fijo en el espacio inercial, compensando los cambios
-	      en el guiñada, inclinación y balanceo del barco.
+	      en la guiñada, inclinación y balanceo del barco.
 	      \begin{figure}[htb]
 		      \centering
 		      \includegraphics[width=0.6\textwidth]{Contenido/Cuerpo/Capitulo1/Fig1.eps}
@@ -96,15 +87,15 @@ tecnológico.
 	      la orientación de la IMU.
 
 	\item \textbf{Motores de cohete}\\
-	      En la propulsión de naves espaciales, los motores de cohetes generalmente se
-	      montan en un par de gimbals para permitir que un solo motor logre el empuje
-	      sobre los ejes de inclinación y guiñada; o, a veces, solo se proporciona un eje
-	      por motor. Para controlar el giro, se utilizan motores gemelos con señales de
-	      control de inclinación diferencial o guiñada para proporcionar torque sobre el
-	      eje de balanceo del vehículo.\\
-	      En la figura 1.2 se puede observar uno de los motores más famosos es el J-2X.Es un motor de cohete avanzado altamente
-	      eficiente y versátil con las características ideales de empuje y rendimiento para
-	      impulsar la etapa superior del espacio de la NASA.\cite{WEB:NASA}
+		  En la propulsión de naves espaciales, los motores de cohetes generalmente se
+		  montan en un par de gimbals para permitir que un solo motor logre el empuje
+		  sobre los ejes de inclinación y guiñada; o, a veces, solo se proporciona un eje
+		  por motor. Para controlar el giro, se utilizan motores gemelos con señales de
+		  control de inclinación diferencial o guiñada para proporcionar torque sobre el
+		  eje de balanceo del vehículo.\\
+		  En la figura 1.2 se puede observar uno de los motores más famosos es el J-2X. Es un motor de cohete avanzado altamente
+		  eficiente y versátil con las características ideales de empuje y rendimiento para
+		  impulsar la etapa superior del espacio de la NASA.\cite{WEB:NASA}
 	      \begin{center}
 		      \includegraphics[width=0.65\textwidth]{Contenido/Cuerpo/Capitulo1/Fig2.eps}
 		      \captionof{figure}{Uso de una gimbal en un motor de propulsión \cite{WEB:NASA2JX} }
@@ -129,20 +120,20 @@ tecnológico.
 		      \label{fig:Introduccion:Fig4}
 	      \end{center}
 
-	\item \textbf{Estabilizador de Camaras}\\
-	      Los gimbals también se utilizan para montar todo, desde lentes de cámara pequeñas
-	      hasta telescopios fotográficos grandes.\\
-	      En los equipos de fotografía portátiles, se utilizan gimbals de un
-	      solo eje para permitir un movimiento equilibrado de la cámara y las lentes.
-	      Esto resulta útil en la fotografía semi-profesional, así como en cualquier otro
-	      caso en el que se adopten teleobjetivos muy largos y pesados: un eje de la gimbal
-	      gira un lente alrededor de su centro de gravedad, lo que permite una manipulación
-	      fácil y suave mientras se rastrea a los sujetos en movimiento.\\
-	      Los montajes de gimbal muy grandes en forma de montajes de altitud-altitud de 2 o 3 ejes
-	      se utilizan en la fotografía satelital con fines de seguimiento.\\
-	      En la década de 1970, el director de fotografía estadounidense Garrett Brown tuvo
-	      una idea simple pero revolucionaria: hacer un dispositivo que pudiera suavizar las
-	      tomas de acción manuales.
+	\item \textbf{Estabilizador de Cámaras}\\
+		  Los gimbals también se utilizan para montar todo, desde lentes de cámara pequeñas
+		  hasta telescopios fotográficos grandes.\\
+		  En los equipos de fotografía portátiles, se utilizan gimbals de un
+		  solo eje para permitir un movimiento equilibrado de la cámara y las lentes.
+		  Esto resulta útil en la fotografía semi-profesional, así como en cualquier otro
+		  caso en el que se adopten teleobjetivos muy largos y pesados: un eje de la gimbal
+		  gira un lente alrededor de su centro de gravedad, lo que permite una manipulación
+		  fácil y suave mientras se rastrea a los sujetos en movimiento.\\
+		  Los montajes de gimbal muy grandes en forma de montajes de altitud-altitud de 2 o 3 ejes
+		  se utilizan en la fotografía satelital con fines de seguimiento.\\
+		  En la década de 1970, el director de fotografía estadounidense Garrett Brown tuvo
+		  una idea simple, pero revolucionaria: hacer un dispositivo que pudiera suavizar las
+		  tomas de acción manuales.
 	      \begin{center}
 		      \includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo1/Fig4.eps}
 		      \captionof{figure}{Primer uso de la steadicam}
@@ -154,9 +145,9 @@ tecnológico.
 	      película "Bound for Glory", y se destacó en las películas "Rocky y "The Shining"
 
 	\item \textbf{Control de una gimbal}\\
-		  En la literatura se han empleado muchos métodos de control del sistema gimbal de dos ejes. En donde se han propuesto enfoques de agrupación de polos y control óptimo 
-		  lineal \cite{Paper::Salatun1983},redes neuronales adaptativas de avance multicapa \cite{Paper::Lin2001}, controlador LQG/LTR \cite{Paper::Lee2006} y controlador integral 
-		  (PI) proporcional\cite{Paper::Kim2010}.
+	      En la literatura se han empleado muchos métodos de control del sistema gimbal de dos ejes. En donde se han propuesto enfoques de agrupación de polos y control óptimo
+	      lineal \cite{Paper::Salatun1983},redes neuronales adaptativas de avance multicapa \cite{Paper::Lin2001}, controlador LQG/LTR \cite{Paper::Lee2006} y controlador integral
+	      (PI) proporcional\cite{Paper::Kim2010}.
 
 \end{itemize}
 
@@ -173,16 +164,3 @@ siendo esta investigación el inicio de un proyecto de instrumentación de Vehí
 \section{Alcances}
 Se tendrá un sistema de control de dos grados de libertad capaz de seguir un objeto de color sólido y geometría conocida en un ambiente controlado, el sistema hará uso
 de filtros morfológicos (solo opening y closing) y sé verá limitado por la corrección del brillo mediante software y no hardware.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%¿Porque es relevante la solucion o mejora o implementacion.? ¿por que es novedosa? %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% La investigacion actual tiene los siguientes alcances:
-% \begin{itemize}
-% \item Hacer el control para dos grados de libertad.
-% \item Utilizar filtros morfologicos(opening y closing).
-% \item Que la variacion de gamma sea por software y no por hardware
-% \item No sera acoplado a un vehiculo aereo, queda en simulación en tierra.
-% \end{itemize}
-
-
-% \section{Estructura de la tesis}

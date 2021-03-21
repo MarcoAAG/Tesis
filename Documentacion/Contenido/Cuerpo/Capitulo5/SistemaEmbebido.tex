@@ -9,17 +9,17 @@ La arquitectura general del sistema embebido está dividido en 3 diferentes sub-
 seguimiento de un objetivo mediante visión artificial.
 \begin{center}
 	\includegraphics[width=0.45\textwidth]{Contenido/Cuerpo/Capitulo5/Fig12.eps}
-	\captionof{figure}{Modulos del sistema}\label{Fig1}
+	\captionof{figure}{Módulos del sistema}\label{Fig1}
 \end{center}
 Tal y como se ilustra en la figura 5.1, dichas áreas se relacionan entre si, compartiendo datos para tener un
 sistema integrado y robusto.
 \begin{itemize}
-	\item Visión: Identifica el centroide del objetivo, el desarrollo del algoritmo se abordó en el capítulo 4. Interacciona con el sistema de control enviando la retroalimentación
-	      y recibe de este ultimo datos del error.
-	\item Control: Un micro-controlador es el encargado de interactuar con los datos de la cámara y retroalimentarlos con la
-	      salida deseada, para después controlar con un PI.
-	\item Mecánico: Son los actuadores del sistema que hacen que la cámara tenga dos grados de libertad de movimiento, que
-	      son las rotaciones en Pitch y Yaw, el modelo se abordó en el Capitulo 3.
+    \item Visión: Identifica el centroide del objetivo, el desarrollo del algoritmo se abordó en el capítulo 4. Interacciona con el sistema de control enviando la retroalimentación
+          y recibe de este ultimo, datos del error.
+    \item Control: Un microcontrolador es el encargado de interactuar con los datos de la cámara y retroalimentarlos con la
+          salida deseada, para después controlar con una PI.
+    \item Mecánico: Son los actuadores del sistema que hacen que la cámara tenga dos grados de libertad de movimiento, que
+          son las rotaciones en Pitch y Yaw, el modelo se abordó en el capítulo 3.
 \end{itemize}
 La comunicación de datos se da por varios buses de datos, entre todos los componentes del sistema, la figura 5.2 ilustra
 la interacción entre ellos y se presenta la arquitectura propuesta.
@@ -43,7 +43,7 @@ a 57000 baudios, además de que permite que el microcontrolador tenga la posibil
 
 \section{Mecanismo móvil}
 El diseño del sistema fue hecho con un programa de uso de software libre llamado OpenSCAD, en el cual se trazó el prototipo del
-sistema utilizando dos motores tipo servo, es decir, que tienen su propio controlador de velocidad integrado vía PWM.
+sistema utilizando dos motores tipo servo, es decir, que tienen su propio controlador de velocidad integrada vía PWM.
 \begin{center}
 	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig14.eps}
 	\captionof{figure}{Diseño CAD del prototipo}\label{Fig1}
@@ -83,8 +83,8 @@ Para la realización del prototipo se utilizó un material ligero para que no ag
 Como se puede observar en la figura 5.6 la cámara esta sujeta a la base por medio de ligas que le dan mejor soporte y ayudan a que
 esta no se caiga al momento de seguir a los objetivos.
 \begin{itemize}
-	\item Peso del sistema sin motores ni cámara : 70 g
-	\item Peso con motores y cámara : 215 g
+    \item Peso del sistema sin motores ni cámara: 70 g
+    \item Peso con motores y cámara: 215 g
 \end{itemize}
 En b) y c) de la figura 5.6 se ilustra el movimiento que puede realizar el sistema, y que será controlado
 por la cámara y actuado por los motores.
@@ -94,8 +94,8 @@ por la cámara y actuado por los motores.
 \end{center}
 Adicionalmente se diseñó un pequeño circuito que sirve como terminal para las conexiones de alimentación y señales,
 dicho circuito se encuentra en la parte lateral del sistema sujetado por ligas y pegamento.\\
-La conexiones eléctricas se ilustra en la figura 5.8. Es una esquemático que muestra la conexión entre los componentes principales: la cámara(OCAM), monoprocesador(ODROID),
-el microcontrolador (ATMEGA) y los motores (Servomotores)
+La conexiones eléctricas se ilustra en la figura 5.8. Es un esquemático que muestra la conexión entre los componentes principales: la cámara(OCAM), monoprocesador(ODROID),
+el microcontrolador (ATMEGA, ver características en apéndice B) y los motores (Servomotores).
 \begin{center}
 	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig21.eps}
 	\captionof{figure}{Circuito eléctrico}\label{Fig1}
@@ -119,7 +119,7 @@ está siendo ejecutada en ROS?.
 	\includegraphics[width=0.55\textwidth]{Contenido/Cuerpo/Capitulo5/Fig1.eps}
 	\captionof{figure}{Protocolo de comunicación}\label{Fig2}
 \end{center}
-Como se ilustra en la imagen 5.9 el protocolo de comunicación que se utilizó es el serial, debido a su practicad y que ya
+Como se ilustra en la imagen 5.9 el protocolo de comunicación que se utilizó es el serial, debido a su practicidad y que ya
 cuenta con librerías de ROS para el microcontrolador, que para la primera etapa de esta investigación se utiliza el Atmega328p.\\
 La comunicación está basado en ser asíncrona, y se detalla mejor diagrama 5.10.
 \begin{center}
@@ -128,10 +128,10 @@ La comunicación está basado en ser asíncrona, y se detalla mejor diagrama 5.1
 \end{center}
 La velocidad de la comunicación es de 570000 baudios y se conecta a través de un cable usb. El microcontrolador tiene además
 la función de publicar el error con la finalidad de graficar dicho error y obtener conclusiones. Que visto desde el plano
-de ROS tenemos los siguientes Topicos y Nodos:
+de ROS tenemos los siguientes Tópicos y Nodos:
 \begin{center}
 	\includegraphics[width=1.0\textwidth]{Contenido/Cuerpo/Capitulo5/Fig3.eps}
-	\captionof{figure}{Nodos y Topicos activos}\label{Fig4}
+	\captionof{figure}{Nodos y Tópicos activos}\label{Fig4}
 \end{center}
 
 
@@ -157,32 +157,32 @@ La ecuación 5.2 representa un controlador proporcional-integral que se verá m�
 	u(t) = k_i\int{e}(t) + k_pe(t)
 \end{equation}
 
-\subsection{Control servomotor}
-Como vimos en el capítulo 3, la función de transferencia de un motor de corriente continua es de segundo orden ec 5.4, e involucra algunas constantes que dependen del toque máximo y
-de la velocidad sin carga.
-\begin{equation}
-	\frac{\theta_m (s)}{E_a(s)} = \frac{K_t / (R_aJ_m)}{s \left[ s + \frac{1}{J_m} \left( D_m + \frac{K_tK_b}{R_a} \right) \right]}
-\end{equation}
-El motor que se utilizó para hacer el mecanismo móvil es el MG996R, es un motor de tipo servo 360 grados, a diferencia de los servomotores
-convencionales que solo son de 180° este no permitirá hacer un control de posición con base en el error antes descrito. Las especificaciones técnicas son las siguientes:
-\begin{itemize}
-	\item Peso = 55g
-	\item Torque stall = 11kg/cm a 6v
-	\item Velocidad sin carga = 0.14s/ 60° a 6v
-	\item Voltaje de operación = 4.8v a 7.2v
-	\item Temperatura de operación = 0°C - 55°C
-	\item PWM = 20ms (50Hz) de operación
-\end{itemize}
-La gráfica 5.11. muestra la relación que hay entre el torque y la velocidad, que como se puede observar es lineal. Esta grafica se obtuvo con los datos sugeridos del
-provedor.
-\begin{center}
-	\includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig19.eps}
-	\captionof{figure}{Gráfica torque-velocidad}\label{Fig4}
-\end{center}
-Este servomotor como la mayoría en el mercado cuenta con su propio lazo de control, lo que hace que el sistema tenga como limitante la velocidad de respuesta del motor.
-En el capítulo 3 se definieron las ecuaciones dinámicas para los movimientos en pitch y yaw, de donde la entrada viene dada por un porque en el eje z ($T_k$) y en el eje y ($T_y$)
-para este proyecto vamos a tomar los motores como entradas de porque, es decir, que se mueven hacía la posición que el controlador requiera, clara con su debido tiempo de
-respuesta propia del controlador interno del motor.
+% \subsection{Control servomotor}
+% Como vimos en el capítulo 3, la función de transferencia de un motor de corriente continua es de segundo orden ec 5.4, e involucra algunas constantes que dependen del toque máximo y
+% de la velocidad sin carga.
+% \begin{equation}
+	% \frac{\theta_m (s)}{E_a(s)} = \frac{K_t / (R_aJ_m)}{s \left[ s + \frac{1}{J_m} \left( D_m + \frac{K_tK_b}{R_a} \right) \right]}
+% \end{equation}
+% El motor que se utilizó para hacer el mecanismo móvil es el MG996R, es un motor de tipo servo 360 grados, a diferencia de los servomotores
+% convencionales que solo son de 180° este no permitirá hacer un control de posición con base en el error antes descrito. Las especificaciones técnicas son las siguientes:
+% \begin{itemize}
+	% \item Peso = 55g
+	% \item Torque stall = 11kg/cm a 6v
+	% \item Velocidad sin carga = 0.14s/ 60° a 6v
+	% \item Voltaje de operación = 4.8v a 7.2v
+	% \item Temperatura de operación = 0°C - 55°C
+	% \item PWM = 20ms (50Hz) de operación
+% \end{itemize}
+% La gráfica 5.11. muestra la relación que hay entre el torque y la velocidad, que como se puede observar es lineal. Esta grafica se obtuvo con los datos sugeridos del
+% provedor.
+% \begin{center}
+	% \includegraphics[width=0.8\textwidth]{Contenido/Cuerpo/Capitulo5/Fig19.eps}
+	% \captionof{figure}{Gráfica torque-velocidad}\label{Fig4}
+% \end{center}
+% Este servomotor como la mayoría en el mercado cuenta con su propio lazo de control, lo que hace que el sistema tenga como limitante la velocidad de respuesta del motor.
+% En el capítulo 3 se definieron las ecuaciones dinámicas para los movimientos en pitch y yaw, de donde la entrada viene dada por un porque en el eje z ($T_k$) y en el eje y ($T_y$)
+% para este proyecto vamos a tomar los motores como entradas de porque, es decir, que se mueven hacía la posición que el controlador requiera, clara con su debido tiempo de
+% respuesta propia del controlador interno del motor.
 
 
 
@@ -214,7 +214,7 @@ $J_{ay} = 0.002$
 Como se abordó en el capítulo 3, el sistema dinámico de la gimbal es de primer orden para los movimientos en pitch y yaw, y como se introdujo en la sección 5.5
 el control que se implementó es el Proporcional-Integral. Siendo este el necesario para hacer que el error converja a cero.\\
 El diagrama de bloques de la figura 5.14 une todas las etapas de control, pasando por el control del servomotor, que hace una retroalimentación interna con base
-en la dinámica vista en la sección 5.1 y que obtenemos como salida el porque de entrada de la función de transferencia de la dinámica de Pitch para posteriormente
+en la dinámica vista en la sección 5.1 y que obtenemos como salida el porqué de entrada de la función de transferencia de la dinámica de Pitch para posteriormente
 obtener la velocidad angular $q_a$, que después pasa por un integrador y así obtener la posición respecto al marco de referencia de la cámara, es decir, en
 píxeles de la coordenada Y.
 \begin{center}
@@ -387,7 +387,7 @@ La función de transferencia deseada se satisface las condiciones de diseño est
 \begin{equation}
 	G_d = \frac{482.7}{s^2 + 40s + 482.7}
 \end{equation}
-Donde los polos de la ecuación característica se situan en $-20 \pm 9.0958j$\\
+Donde los polos de la ecuación característica se sitúan en $-20 \pm 9.0958j$\\
 Después de calcular la ganancia $K_p$ y el tiempo $T_i$ con base en los polos deseados, obtenemos la función de trasferencia(ecuación 5.26)
 \begin{equation}
 	G_c = 0.312 + \frac{3.8623}{s}
@@ -405,18 +405,18 @@ Para sintonizar el control PI primero se aplica ganancia Kp y se observa el comp
 método nos ayuda a llegar lo más cerca a la referencia, que en este caso es cero, ya que estamos controlando
 respecto a la dinámica del error.
 \begin{center}
-	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig30.eps}
+	\includegraphics[width=0.75\textwidth]{Contenido/Cuerpo/Capitulo5/Fig30.eps}
 	\captionof{figure}{Gráfica del error en Yaw con ganancia Kp = 0.59}\label{Fig4}
 \end{center}
 La figura 5.25 muestra un control proporcional con ganancia mayor al 0.5, hay un sobre impulso que posteriormente
-hace que el sistema se mantenga con un error en 20 pixeles, le toma al sistema llegar a la referencia en 10 tiempos de
+hace que el sistema se mantenga con un error en 20 píxeles, le toma al sistema llegar a la referencia en 10 tiempos de
 muestreo, pero el control no se mantiene en error cero. Con base en la ganancia obtenida en la etapa de diseño del control la ganancia proporcional debe estar por debajo de 0.5.
 \begin{center}
-	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig31.eps}
+	\includegraphics[width=0.74\textwidth]{Contenido/Cuerpo/Capitulo5/Fig31.eps}
 	\captionof{figure}{Gráfica del error en Yaw con ganancia Kp = 0.368}\label{Fig4}
 \end{center}
 Ahora la ganancia es menor que 0.5, lo que hace que el sistema no tenga un sobre impulso, pero tampoco llega
-a la referencia, se mantiene en un error de aproximadamente -20 pixeles, lo que tampoco es un comportamiento deseado.
+a la referencia, se mantiene en un error de aproximadamente -20 píxeles, lo que tampoco es un comportamiento deseado.
 La ganancia en 0.44 hace que el error se mantenga cercano a cero (figura 5.24), con lo cual podemos aplicar la ganancia integral para erradicar el error en estado estacionario. 
 \begin{center}
 	\includegraphics[width=0.83\textwidth]{Contenido/Cuerpo/Capitulo5/Fig32.eps}
