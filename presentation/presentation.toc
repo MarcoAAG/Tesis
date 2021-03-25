@@ -1,0 +1,5 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Introducción}{3}{0}{1}
+\beamer@sectionintoc {2}{Desarrollo}{7}{0}{2}
+\beamer@sectionintoc {3}{Resultados Finales}{30}{0}{3}
+\beamer@sectionintoc {4}{Cierre}{36}{0}{4}

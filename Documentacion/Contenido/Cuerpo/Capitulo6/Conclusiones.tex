@@ -11,7 +11,7 @@ que tiene el sistema para mantener el equilibrio. Basado en lo anterior se puede
     \item Tal y como se esperaba la implementación del algoritmo de visión artificial en ROS hizo que se pudiera tener una mejor modularidad
     en el sistema debido a que se pudo hacer diversos nodos que podían ser ejecutados en tiempo real e incluso llegar a ser
     ejecutados en paralelo. ROS además permitió tener una interfaz gráfica para obtener la respuesta en el tiempo del control sin necesidad
-    de migrar datos a un programa exterior, esto permitió que al sintonizar el control uno como diseñador del mismo tenga control tenga
+    de migrar datos a un programa exterior, esto permitió que al sintonizar el control uno como diseñador tenga
     mejor noción del error y los valores de las ganancias del sistema en tiempo real.
     \item La implementación del sistema en un vehículo aéreo no tripulado requiere que el sistema emita señales de control, tal y como
     se planteó en un inicio de este trabajo, al implementarse con ROS permite que se pueda crear diversos nodos remotos vía UDP, y con
@@ -23,7 +23,7 @@ que tiene el sistema para mantener el equilibrio. Basado en lo anterior se puede
     siempre en un espacio controlado, lo que no permitiría una correcta implementación en UAV, además de la cantidad de procesamiento
     que se tiene que hacer para modificar los valores cada frame, es por eso que la idea inicial de modificar los rangos de colores respecto
     al entorno quedo descartada dando pie a la implementación del control gamma de iluminación, lo que nos permitió tener que modificar
-    solo un valor(gamma) y con esto se redujo hasta un 66\% de carga al procesador. Como se mencionó al inicio del actual trabajo se desconocía
+    solo un valor(gamma) y con esto se rejujo las variables a manipular de carga al procesador. Como se mencionó al inicio del actual trabajo se desconocía
     esta técnica de mejorar la nitidez de colores, dando incluso mejores resultados para el usuario final, además pensar en la implementación
     de un sensor de brillo ahora es posible, lo cual nos ahorraría modificar el valor de gamma manualmente.
     \item Diversos tipos de controladores están disponibles en la actualidad, debido a la linealidad del modelo presentado había dos
